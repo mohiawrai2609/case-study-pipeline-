@@ -42,7 +42,7 @@
  },
  "narrative": {
   "role_summary": "Vibe Coders produce working software by directing AI coding agents in natural language rather than by authoring code directly. The practitioner states intent, evaluates what the agent returns, and iterates until behaviour matches the specification. The role demands enough technical judgement to recognise when generated code is wrong, insecure, or structurally unsound, but not the code fluency that has historically defined software occupations. It is an occupational pattern, not a labour market category: no statistical agency recognises it, no employment or wage series exists, and platform user counts measure tool adoption rather than job holders.",
-  "verdict": "Vibe Coders score APS 0.49, above Software Developers (0.40), because the tasks carrying that role's automation resistance — architecture, algorithmic design, codebase fluency — are delegated to the agent by definition. HRF 0.55 sits below Software Developers (0.70) for a reason that is uncomfortable rather than technical: the tasks that resist automation here are review, security judgement and maintenance, and those are precisely the tasks this practitioner archetype is least equipped to perform. The defence exists; the defender is thin.",
+  "verdict": "Vibe Coders score APS 0.49, above Software Developers (0.42), because the tasks carrying that role's automation resistance — architecture, algorithmic design, codebase fluency — are delegated to the agent by definition. HRF 0.55 sits below Software Developers (0.68) for a reason that is uncomfortable rather than technical: the tasks that resist automation here are review, security judgement and maintenance, and those are precisely the tasks this practitioner archetype is least equipped to perform. The defence exists; the defender is thin.",
   "aps_case": "Generation, iteration and deployment are substantially machine-executed. The vendor layer is the densest in the corpus — forty-three vendors carrying evidence across thirty-nine canonically named products — though vendor density is deliberately excluded from the score. One vendor reports eighty-nine percent of its own committed code now written by its agent, up from thirteen percent five months earlier; that figure is vendor-reported and unverified. Deployment scores highest of any task at 0.80 because agent platforms bundle hosting and release, removing the step. Task composition is one hundred percent cognitive, placing the role in the fastest-moving automation vector with no robotics cost, regulatory lag or licensure friction. Fifty-five percent of the role by importance weight consists of tasks that did not exist before AI code generation, so no accumulated professional norms slow substitution. Three of the strongest tools are free, removing cost as a barrier for exactly this population.",
   "hrf_case": "Human defence is concentrated at the ends of the workflow and is stronger than vendor density suggests. Reviewing generated code for security scores 0.35 and guardrail design 0.30, because the measured failure rate stays high despite tools already deployed at scale: AI-generated code carries roughly 2.74 times the vulnerability density of human-written code, forty-five percent of sampled outputs failed basic security tests, and 440,000 of 2.2 million sampled outputs referenced packages that do not exist. Maintenance is the sharpest constraint, with refactoring down sixty percent, two-week code churn doubled, and teams spending twenty to thirty percent of sprint capacity on defects traceable to generated code by day ninety. Requirement elicitation remains the one task in the role with no vendor at all, and no plausible one: it is the task whose output every other tool consumes as input.",
   "forward_outlook": "The role is unstable in both directions and its RPI understates what is happening to it. It is not being replaced in place; it is dissolving. Practitioners who add systems depth converge on Software Developers and inherit that role's defence. Those who do not are competing directly with the capability curve of the tools they use, and that curve compounds monthly. The spring 2026 correction is the visible edge: platform growth swung sharply negative across the category as the first cohort discovered that reaching sixty to seventy percent functionality quickly is not the same as being able to maintain what was built. Labour market contraction is concentrated at entry level, where boilerplate-heavy work is most automatable, while senior demand holds. A single replaceability figure cannot express a bifurcation — which is the argument for holding this as a separate entry rather than folding it back into Software Developers."
@@ -496,7 +496,7 @@
    "stage": "Not verified",
    "reach": 58,
    "products": 2,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
    "desc": "Amp, Amp — Repository-Scale Context",
@@ -525,7 +525,7 @@
    "stage": "active",
    "reach": 46,
    "products": 2,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#B45309,#92400E)",
    "desc": "Amazon Q Developer, Kiro — Spec-Driven Development",
@@ -554,7 +554,7 @@
    "stage": "active",
    "reach": 59,
    "products": 2,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
    "desc": "Base44, Base44 — Certified Build Environment",
@@ -583,7 +583,7 @@
    "stage": "active",
    "reach": 72,
    "products": 2,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#059669,#047857)",
    "desc": "GitHub Advanced Security, GitHub Copilot Code Review",
@@ -612,7 +612,7 @@
    "stage": "Not verified",
    "reach": 44,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
    "desc": "Anannas",
@@ -641,7 +641,7 @@
    "stage": "Not verified",
    "reach": 51,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#B45309,#92400E)",
    "desc": "AgentOps",
@@ -670,7 +670,7 @@
    "stage": "active",
    "reach": 70,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
    "desc": "Replit Agent — Integrated Build, Host and Deploy",
@@ -694,7 +694,7 @@
    "stage": "Not verified",
    "reach": 55,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#059669,#047857)",
    "desc": "Factory Droids",
@@ -718,7 +718,7 @@
    "stage": "active",
    "reach": 52,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
    "desc": "Bolt.new — Browser-Native App Generation",
@@ -742,7 +742,7 @@
    "stage": "active",
    "reach": 60,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#B45309,#92400E)",
    "desc": "OpenCode",
@@ -766,7 +766,7 @@
    "stage": "Not verified",
    "reach": 74,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
    "desc": "Datadog MCP Server",
@@ -790,7 +790,7 @@
    "stage": "Not verified",
    "reach": 68,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#059669,#047857)",
    "desc": "Artificial Analysis Coding Agent Index",
@@ -814,7 +814,7 @@
    "stage": "Not verified",
    "reach": 62,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
    "desc": "CodeRabbit — AI Code Review",
@@ -838,7 +838,7 @@
    "stage": "Not verified",
    "reach": 59,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#B45309,#92400E)",
    "desc": "Augment Code",
@@ -862,7 +862,7 @@
    "stage": "Not verified",
    "reach": 56,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
    "desc": "Browserbase Agents",
@@ -886,7 +886,7 @@
    "stage": "Not verified",
    "reach": 54,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#059669,#047857)",
    "desc": "OpenHands",
@@ -910,7 +910,7 @@
    "stage": "Not verified",
    "reach": 50,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
    "desc": "Meta Muse Code",
@@ -934,7 +934,7 @@
    "stage": "active",
    "reach": 48,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#B45309,#92400E)",
    "desc": "Cline",
@@ -958,7 +958,7 @@
    "stage": "Not verified",
    "reach": 46,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
    "desc": "Pythagora",
@@ -982,7 +982,7 @@
    "stage": "Not verified",
    "reach": 65,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#059669,#047857)",
    "desc": "SWE-Bench Pro (SEAL Leaderboard)",
@@ -1006,7 +1006,7 @@
    "stage": "Not verified",
    "reach": 57,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
    "desc": "JetBrains Junie",
@@ -1030,7 +1030,7 @@
    "stage": "Not verified",
    "reach": 53,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#B45309,#92400E)",
    "desc": "Superblocks",
@@ -1054,7 +1054,7 @@
    "stage": "Not verified",
    "reach": 52,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
    "desc": "Grok Build — Plan Mode",
@@ -1078,7 +1078,7 @@
    "stage": "Not verified",
    "reach": 49,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#059669,#047857)",
    "desc": "Cloudflare VibeSDK",
@@ -1102,7 +1102,7 @@
    "stage": "active",
    "reach": 41,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
    "desc": "Emergent",
@@ -1126,7 +1126,7 @@
    "stage": "Not verified",
    "reach": 40,
    "products": 1,
-   "evidence": null,
+   "evidence": "Replacement",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#B45309,#92400E)",
    "desc": "Orchids v2",
@@ -1150,7 +1150,7 @@
    "stage": "active",
    "reach": 30,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
    "desc": "Reflection AI Asimov",
@@ -1174,7 +1174,7 @@
    "stage": "Not verified",
    "reach": 63,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#059669,#047857)",
    "desc": "Honeycomb MCP",
@@ -1198,7 +1198,7 @@
    "stage": "active",
    "reach": 47,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
    "desc": "Aider",
@@ -1222,7 +1222,7 @@
    "stage": "active",
    "reach": 45,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Verified",
    "logo": "linear-gradient(135deg,#B45309,#92400E)",
    "desc": "Continue",
@@ -1246,7 +1246,7 @@
    "stage": "Not verified",
    "reach": 42,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
    "desc": "Nimbalyst — Inline AI Diff Review",
@@ -1270,7 +1270,7 @@
    "stage": "Not verified",
    "reach": 38,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#059669,#047857)",
    "desc": "Nectry",
@@ -1294,7 +1294,7 @@
    "stage": "Not verified",
    "reach": 44,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
    "desc": "Giga AI — Context Engineering",
@@ -1318,7 +1318,7 @@
    "stage": "Not verified",
    "reach": 42,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#B45309,#92400E)",
    "desc": "Vibe Kanban",
@@ -1342,7 +1342,7 @@
    "stage": "Not verified",
    "reach": 40,
    "products": 1,
-   "evidence": null,
+   "evidence": "Augmentation",
    "certTier": "Not verified",
    "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
    "desc": "Conductor",
@@ -2664,6 +2664,356 @@
    "url": "https://incidentdatabase.ai/cite/1152/",
    "date": "2025-07",
    "kind": "event"
+  },
+  {
+   "name": "AgentOps — AgentOps",
+   "url": "https://www.agentops.ai",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Aider AI — Aider",
+   "url": "https://aider.chat/docs/leaderboards/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "All Hands AI — OpenHands",
+   "url": "https://github.com/All-Hands-AI/OpenHands",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Amazon Web Services — Amazon Q Developer",
+   "url": "https://aws.amazon.com/q/developer/",
+   "kind": "vendor-evidence",
+   "tier": "Claimed",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Amazon Web Services — Kiro — Spec-Driven Development",
+   "url": "https://kiro.dev/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Amp Inc — Amp — Repository-Scale Context",
+   "url": "https://sourcegraph.com/amp",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Anannas — Anannas",
+   "url": "https://anannas.ai/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Anthropic — Claude Code — Review Subagents",
+   "url": "https://claude.com/product/claude-code",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Anysphere — Cursor Composer — Automated Testing Loop",
+   "url": "https://cursor.com/",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Artificial Analysis — Artificial Analysis Coding Agent Index",
+   "url": "https://artificialanalysis.ai/agents/coding-agents",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Augment Code — Augment Code",
+   "url": "https://www.augmentcode.com/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Base44 — Base44 — Certified Build Environment",
+   "url": "https://base44.com/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Browserbase — Browserbase Agents",
+   "url": "https://www.browserbase.com/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Cline — Cline",
+   "url": "https://cline.bot/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Cloudflare — Cloudflare VibeSDK",
+   "url": "https://build.cloudflare.dev/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "CodeRabbit — CodeRabbit — AI Code Review",
+   "url": "https://www.coderabbit.ai",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Cognition — Devin — Autonomous Plan-Execute-Test-Ship Loop",
+   "url": "https://devin.ai/",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "replacement"
+  },
+  {
+   "name": "Cognition — Windsurf Codemaps",
+   "url": "https://windsurf.com/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Conductor — Conductor",
+   "url": "https://conductor.build/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Continue Dev — Continue",
+   "url": "https://continue.dev/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Datadog — Datadog MCP Server",
+   "url": "https://docs.datadoghq.com/bits_ai/mcp_server/",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Emergent — Emergent",
+   "url": "https://app.emergent.sh/register",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Factory — Factory Droids",
+   "url": "https://www.factory.ai/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Giga AI — Giga AI — Context Engineering",
+   "url": "https://gigamind.dev/context",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "GitHub — GitHub Copilot Code Review",
+   "url": "https://github.com/features/copilot",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Google — Antigravity — Browser-in-the-Loop Verification",
+   "url": "https://antigravity.google/",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Google — Chrome DevTools MCP",
+   "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Google — Google AI Studio — Build Mode",
+   "url": "https://aistudio.google.com/apps",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "replacement"
+  },
+  {
+   "name": "Google — Google Jules",
+   "url": "https://jules.google/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Honeycomb — Honeycomb MCP",
+   "url": "https://www.honeycomb.io",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "JetBrains — JetBrains Junie",
+   "url": "https://www.jetbrains.com/junie/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Lovable — Lovable — Prompt-to-App Full-Stack Generation",
+   "url": "https://lovable.dev/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Meta — Meta Muse Code",
+   "url": "https://developer.meta.com/ai/products/muse-code/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Nectry — Nectry",
+   "url": "https://nectry.com/",
+   "kind": "vendor-evidence",
+   "tier": "Claimed",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Nimbalyst — Nimbalyst — Inline AI Diff Review",
+   "url": "https://nimbalyst.com",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "OpenAI — OpenAI Codex — Plan and Delegate",
+   "url": "https://openai.com/codex/",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "augmentation"
+  },
+  {
+   "name": "OpenRouter — OpenRouter",
+   "url": "https://openrouter.ai/rankings",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Orchids — Orchids v2",
+   "url": "https://www.orchids.app/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Pythagora — Pythagora",
+   "url": "https://github.com/Pythagora-io/gpt-pilot",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Reflection AI — Reflection AI Asimov",
+   "url": "https://reflection.ai/asimov",
+   "kind": "vendor-evidence",
+   "tier": "Claimed",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Replit — Replit Agent — Integrated Build, Host and Deploy",
+   "url": "https://docs.replit.com/replitai/agent",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "replacement"
+  },
+  {
+   "name": "Scale AI — SWE-Bench Pro (SEAL Leaderboard)",
+   "url": "https://scale.com/leaderboard/swe_bench_pro_public",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "SST / Anomaly — OpenCode",
+   "url": "https://opencode.ai",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "StackBlitz — Bolt.new — Browser-Native App Generation",
+   "url": "https://bolt.new/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Superblocks — Superblocks",
+   "url": "https://www.superblocks.com/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Vercel — v0 — Text-to-UI Generation",
+   "url": "https://v0.dev/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "replacement"
+  },
+  {
+   "name": "Vercel — Vercel AI Gateway",
+   "url": "https://vercel.com/blog/ai-gateway-is-now-generally-available",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "Vercel — Vercel — Deploy from Generation",
+   "url": "https://vercel.com/",
+   "kind": "vendor-evidence",
+   "tier": "Verified",
+   "mode": "replacement"
+  },
+  {
+   "name": "Vibe Kanban — Vibe Kanban",
+   "url": "https://vibekanban.com/",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
+  },
+  {
+   "name": "xAI — Grok Build — Plan Mode",
+   "url": "https://x.ai/cli",
+   "kind": "vendor-evidence",
+   "tier": "Credible",
+   "mode": "augmentation"
   }
  ],
  "hero": {

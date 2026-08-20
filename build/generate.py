@@ -16,12 +16,24 @@ and the ratio is taken from the block's role (cover / full-width / inline).
 """
 import argparse, json, os, re, sys, time, urllib.request, urllib.error
 
-HOUSE_STYLE = (
-    "Editorial documentary photograph, photorealistic, medium-format sensor. "
-    "Very dark near-black background, low-key single-source dramatic lighting, deep shadows. "
-    "Cinematic shallow depth of field. Muted desaturated palette with one warm accent. "
-    "No text, no logos, no watermarks, no UI overlays, no direct eye contact."
-)
+# Brand lock: Replaceable.ai is crimson #C41E3A on obsidian #0D0D0F. The article
+# these images sit inside is that dark, so any image carrying a warm-gold or
+# cool-blue cast reads as imported stock the moment it lands next to the chrome.
+# Crimson is the ONLY accent permitted. Amber and emerald are reserved for RPI
+# score bands and must never appear as a photographic accent, and gold #F5B800
+# belongs to Attacked.ai -- it never appears in a Replaceable.ai output at all.
+BRAND = ("Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical "
+         "light source, a reflection, or one crimson object in frame, holding roughly a tenth "
+         "of the frame. An accent, never a colour wash. Everything else stays neutral "
+         "desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, "
+         "purple or pink cast anywhere in the image.")
+HOUSE_STYLE = ("Editorial documentary photograph, photorealistic, medium-format sensor. "
+         
+         "Very dark near-black background, hex #0D0D0F obsidian, low-key single-source "
+         "dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, "
+         "precision-editorial restraint. "
+         + BRAND +
+         " No text, no logos, no watermarks, no UI overlays, no direct eye contact.")
 # block role -> aspect ratio
 RATIO = {"cover": "4:5", "full": "16:9", "inline": "3:2"}
 FAL_MODEL = "fal-ai/flux-pro/v1.1"

@@ -10,6 +10,8 @@ RPI 3.5% · APS 29% capable · HRF 88% human-protected · 21 tasks · 13 vendors
 
 Anything you skip stays an empty slot; the article still builds and reads fine.
 
+**5 slot(s) below need generating.**
+
 ---
 
 ## Hero video
@@ -26,7 +28,7 @@ Slow cinematic tracking shot through the working environment of a elementary sch
 
 ---
 
-## Images (5)
+## Images to generate (5)
 
 ### 1. `empty_classroom_dawn`
 
@@ -37,13 +39,13 @@ Slow cinematic tracking shot through the working environment of a elementary sch
 **ChatGPT / Gemini / Copilot** — paste as-is:
 
 ```
-A primary school classroom at 7.30am, low winter sun through half-open blinds, four-seat pods of small desks with chairs still stacked, clear plastic tubs of counting cubes and pattern blocks on a low shelf, a rolling cart of charging Chromebooks by the door, a laminated alphabet frieze above an interactive whiteboard glowing with a half-loaded lesson slide, a carpet reading corner with cushions. Documentary photography, natural light, no people, muted colour. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 16:9.
+A primary school classroom at 7.30am, low winter sun through half-open blinds, four-seat pods of small desks with chairs still stacked, clear plastic tubs of counting cubes and pattern blocks on a low shelf, a rolling cart of charging Chromebooks by the door, a laminated alphabet frieze above an interactive whiteboard glowing with a half-loaded lesson slide, a carpet reading corner with cushions. Documentary photography, natural light, no people, muted colour. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 16:9.
 ```
 
 **Midjourney:**
 
 ```
-A primary school classroom at 7.30am, low winter sun through half-open blinds, four-seat pods of small desks with chairs still stacked, clear plastic tubs of counting cubes and pattern blocks on a low shelf, a rolling cart of charging Chromebooks by the door, a laminated alphabet frieze above an interactive whiteboard glowing with a half-loaded lesson slide, a carpet reading corner with cushions. Documentary photography, natural light, no people, muted colour. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 16:9 --style raw --v 6.1 --s 750
+A primary school classroom at 7.30am, low winter sun through half-open blinds, four-seat pods of small desks with chairs still stacked, clear plastic tubs of counting cubes and pattern blocks on a low shelf, a rolling cart of charging Chromebooks by the door, a laminated alphabet frieze above an interactive whiteboard glowing with a half-loaded lesson slide, a carpet reading corner with cushions. Documentary photography, natural light, no people, muted colour. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 16:9 --style raw --v 6.1 --s 750
 ```
 
 ### 2. `read_aloud_circle`
@@ -55,13 +57,13 @@ A primary school classroom at 7.30am, low winter sun through half-open blinds, f
 **ChatGPT / Gemini / Copilot** — paste as-is:
 
 ```
-A primary school teacher sitting on a low chair holding an open picture book outward, a semicircle of six and seven year olds cross-legged on a patterned carpet in front of her, hands raised, a felt story-sequence board on an easel behind, cubbies with named trays along the wall, soft classroom lighting. Candid documentary photograph, warm tones, faces of children not clearly identifiable. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 3:2.
+A primary school teacher sitting on a low chair holding an open picture book outward, a semicircle of six and seven year olds cross-legged on a patterned carpet in front of her, hands raised, a felt story-sequence board on an easel behind, cubbies with named trays along the wall, soft classroom lighting. Candid documentary photograph, warm tones, faces of children not clearly identifiable. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 3:2.
 ```
 
 **Midjourney:**
 
 ```
-A primary school teacher sitting on a low chair holding an open picture book outward, a semicircle of six and seven year olds cross-legged on a patterned carpet in front of her, hands raised, a felt story-sequence board on an easel behind, cubbies with named trays along the wall, soft classroom lighting. Candid documentary photograph, warm tones, faces of children not clearly identifiable. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 3:2 --style raw --v 6.1 --s 750
+A primary school teacher sitting on a low chair holding an open picture book outward, a semicircle of six and seven year olds cross-legged on a patterned carpet in front of her, hands raised, a felt story-sequence board on an easel behind, cubbies with named trays along the wall, soft classroom lighting. Candid documentary photograph, warm tones, faces of children not clearly identifiable. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 3:2 --style raw --v 6.1 --s 750
 ```
 
 ### 3. `district_board_meeting`
@@ -73,13 +75,13 @@ A primary school teacher sitting on a low chair holding an open picture book out
 **ChatGPT / Gemini / Copilot** — paste as-is:
 
 ```
-A school district board meeting in a small-town American school library after dark, five board members at a folding table with name placards and microphones, a projector screen showing a procurement slide, forty residents on stacking chairs with one person standing at a comment microphone, fluorescent lighting, bookshelves and student artwork on the walls. Photojournalistic, available light, slightly desaturated. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 3:2.
+A school district board meeting in a small-town American school library after dark, five board members at a folding table with name placards and microphones, a projector screen showing a procurement slide, forty residents on stacking chairs with one person standing at a comment microphone, fluorescent lighting, bookshelves and student artwork on the walls. Photojournalistic, available light, slightly desaturated. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 3:2.
 ```
 
 **Midjourney:**
 
 ```
-A school district board meeting in a small-town American school library after dark, five board members at a folding table with name placards and microphones, a projector screen showing a procurement slide, forty residents on stacking chairs with one person standing at a comment microphone, fluorescent lighting, bookshelves and student artwork on the walls. Photojournalistic, available light, slightly desaturated. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 3:2 --style raw --v 6.1 --s 750
+A school district board meeting in a small-town American school library after dark, five board members at a folding table with name placards and microphones, a projector screen showing a procurement slide, forty residents on stacking chairs with one person standing at a comment microphone, fluorescent lighting, bookshelves and student artwork on the walls. Photojournalistic, available light, slightly desaturated. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 3:2 --style raw --v 6.1 --s 750
 ```
 
 ### 4. `kneeling_beside_desk`
@@ -91,13 +93,13 @@ A school district board meeting in a small-town American school library after da
 **ChatGPT / Gemini / Copilot** — paste as-is:
 
 ```
-A primary school teacher crouched at eye level beside a child's desk in a busy classroom, pointing at a half-finished maths worksheet with a pencil, the child looking up mid-explanation, a tub of coloured counters and a small whiteboard on the desk, other children working in pods in a soft-focus background, an adaptive-learning app open on a tablet propped nearby. Warm natural light from windows, candid documentary photography. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 3:2.
+A primary school teacher crouched at eye level beside a child's desk in a busy classroom, pointing at a half-finished maths worksheet with a pencil, the child looking up mid-explanation, a tub of coloured counters and a small whiteboard on the desk, other children working in pods in a soft-focus background, an adaptive-learning app open on a tablet propped nearby. Warm natural light from windows, candid documentary photography. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 3:2.
 ```
 
 **Midjourney:**
 
 ```
-A primary school teacher crouched at eye level beside a child's desk in a busy classroom, pointing at a half-finished maths worksheet with a pencil, the child looking up mid-explanation, a tub of coloured counters and a small whiteboard on the desk, other children working in pods in a soft-focus background, an adaptive-learning app open on a tablet propped nearby. Warm natural light from windows, candid documentary photography. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 3:2 --style raw --v 6.1 --s 750
+A primary school teacher crouched at eye level beside a child's desk in a busy classroom, pointing at a half-finished maths worksheet with a pencil, the child looking up mid-explanation, a tub of coloured counters and a small whiteboard on the desk, other children working in pods in a soft-focus background, an adaptive-learning app open on a tablet propped nearby. Warm natural light from windows, candid documentary photography. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 3:2 --style raw --v 6.1 --s 750
 ```
 
 ### 5. `adaptive_platform_review`
@@ -109,13 +111,13 @@ A primary school teacher crouched at eye level beside a child's desk in a busy c
 **ChatGPT / Gemini / Copilot** — paste as-is:
 
 ```
-A primary teacher at a classroom desk after school, laptop open showing an adaptive learning dashboard with student proficiency bands and coloured pathway charts, a printed class list annotated in biro beside it, a stack of exercise books and a mug, empty child-sized chairs on desks in the background, late afternoon light. Documentary photography, muted palette, quiet mood. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 3:2.
+A primary teacher at a classroom desk after school, laptop open showing an adaptive learning dashboard with student proficiency bands and coloured pathway charts, a printed class list annotated in biro beside it, a stack of exercise books and a mug, empty child-sized chairs on desks in the background, late afternoon light. Documentary photography, muted palette, quiet mood. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. Aspect ratio 3:2.
 ```
 
 **Midjourney:**
 
 ```
-A primary teacher at a classroom desk after school, laptop open showing an adaptive learning dashboard with student proficiency bands and coloured pathway charts, a printed class list annotated in biro beside it, a stack of exercise books and a mug, empty child-sized chairs on desks in the background, late afternoon light. Documentary photography, muted palette, quiet mood. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, low-key single-source lighting, deep shadows. Cinematic shallow depth of field, muted desaturated palette with one warm accent. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 3:2 --style raw --v 6.1 --s 750
+A primary teacher at a classroom desk after school, laptop open showing an adaptive learning dashboard with student proficiency bands and coloured pathway charts, a printed class list annotated in biro beside it, a stack of exercise books and a mug, empty child-sized chairs on desks in the background, late afternoon light. Documentary photography, muted palette, quiet mood. Editorial documentary photograph, photorealistic, medium-format sensor. Very dark near-black background, hex #0D0D0F obsidian, low-key single-source dramatic lighting, deep shadows. Cinematic shallow depth of field. High contrast, precision-editorial restraint. Single accent colour only: deep crimson red, hex #C41E3A -- present as a practical light source, a reflection, or one crimson object in frame, holding roughly a tenth of the frame. An accent, never a colour wash. Everything else stays neutral desaturated grey and near-black. No amber, orange, gold, yellow, green, teal, blue, purple or pink cast anywhere in the image. No text, no logos, no watermarks, no UI overlays, no direct eye contact. --ar 3:2 --style raw --v 6.1 --s 750
 ```
 
 ---
@@ -123,10 +125,10 @@ A primary teacher at a classroom desk after school, laptop open showing an adapt
 ## When your files are in place
 
 ```bash
-python build/media.py data/fix-25-2021.00.json media/007 --mode inline
-node build/build.mjs data/fix-25-2021.00.json
+python build/media.py data/007-teachers.json media/007 --mode inline
+node build/build.mjs data/007-teachers.json
 ```
 
-For the web build instead, use `--mode url --base <storage-url>`, or run `python build/release.py data/fix-25-2021.00.json` to produce both.
+For the web build instead, use `--mode url --base <storage-url>`, or run `python build/release.py data/007-teachers.json` to produce both.
 
 > Do NOT depict identifiable real people, real company premises, real branding, or anything that could be mistaken for documentary evidence of a specific deployment. Composed and atmospheric, never reportage.
