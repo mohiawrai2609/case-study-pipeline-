@@ -1,0 +1,110 @@
+{
+ "_doc": "Single source of truth for cross-issue peer figures. Every issue that compares itself to another role MUST read the numbers from here -- a figure written into a compose prompt by hand is not verifiable and has already caused one published contradiction (No.008 asserted Software Developers APS as both 0.40 and 42%). aps/hrf are null where we hold no sourced pair: the spine builder omits the comparison rather than inventing one. Where both are present, aps*(1-hrf) must reproduce rpi.",
+ "roles": {
+  "13-1071.00": {
+   "title": "Human Resources Specialists",
+   "rpi": 14.7,
+   "aps": 42,
+   "hrf": 65,
+   "source": "data/fix-13-1071.00.json"
+  },
+  "13-2011.00": {
+   "title": "Accountants and Auditors",
+   "rpi": 15.5,
+   "aps": null,
+   "hrf": null,
+   "source": "corpus chart, No.008 anchors"
+  },
+  "15-1252.00": {
+   "title": "Software Developers",
+   "rpi": 13.4,
+   "aps": 42,
+   "hrf": 68,
+   "source": "aps/hrf verified in No.008 research; 0.42*(1-0.68)=13.44 reproduces the charted rpi 13.4"
+  },
+  "15-1299.VC": {
+   "title": "Vibe Coders",
+   "rpi": 22.05,
+   "aps": 49,
+   "hrf": 55,
+   "source": "data/008-vibe-coders.json"
+  },
+  "23-2011.00": {
+   "title": "Paralegals and Legal Assistants",
+   "rpi": 27.8,
+   "aps": null,
+   "hrf": null,
+   "source": "corpus chart, No.008 anchors"
+  },
+  "25-2021.00": {
+   "title": "Elementary School Teachers, Except Special Education",
+   "rpi": 3.5,
+   "aps": 29,
+   "hrf": 88,
+   "source": "data/007-teachers.json"
+  },
+  "29-1141.00": {
+   "title": "Registered Nurses",
+   "rpi": 2.2,
+   "aps": null,
+   "hrf": null,
+   "source": "corpus chart, No.008 anchors"
+  },
+  "35-3023.00": {
+   "title": "Fast Food and Counter Workers",
+   "rpi": 35.8,
+   "aps": 55,
+   "hrf": 35,
+   "source": "data/001-fast-food.json"
+  },
+  "41-1011.00": {
+   "title": "First-Line Supervisors of Retail Sales Workers",
+   "rpi": 12.2,
+   "aps": 38,
+   "hrf": 68,
+   "source": "data/fix-41-1011.00.json"
+  },
+  "41-2031.00": {
+   "title": "Retail Salespersons",
+   "rpi": 21.3,
+   "aps": null,
+   "hrf": null,
+   "source": "corpus chart, No.008 anchors"
+  },
+  "43-3031.00": {
+   "title": "Bookkeeping, Accounting, and Auditing Clerks",
+   "rpi": 61.6,
+   "aps": 76,
+   "hrf": 19,
+   "source": "data/002-bookkeeping.json"
+  },
+  "43-4051.00": {
+   "title": "Customer Service Representatives",
+   "rpi": 39.0,
+   "aps": null,
+   "hrf": null,
+   "source": "corpus chart, No.008 anchors"
+  },
+  "43-5071.00": {
+   "title": "Shipping and Inventory Clerks",
+   "rpi": 49.0,
+   "aps": null,
+   "hrf": null,
+   "source": "corpus chart, No.008 anchors"
+  },
+  "43-6014.00": {
+   "title": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",
+   "rpi": 30.2,
+   "aps": 58,
+   "hrf": 48,
+   "source": "data/fix-43-6014.00.json"
+  },
+  "53-3032.00": {
+   "title": "Heavy and Tractor-Trailer Truck Driver",
+   "rpi": 18.2,
+   "aps": 38,
+   "hrf": 52,
+   "source": "data/fix-53-3032.00.json"
+  }
+ }
+}

@@ -3067,5 +3067,13 @@
    "label": "Registered Nurses",
    "rpi": 2.2
   }
- ]
+ ],
+ "anchorRole": {
+  "soc": "15-1252.00",
+  "title": "Software Developers",
+  "rpi": 13.4,
+  "aps": 42,
+  "hrf": 68,
+  "source": "aps/hrf verified in No.008 research; 0.42*(1-0.68)=13.44 reproduces the charted rpi 13.4"
+ }
 }

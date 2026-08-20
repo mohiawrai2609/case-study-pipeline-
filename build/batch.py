@@ -3,11 +3,12 @@
 Batch driver — turn one anatomy.batch workflow result into finished articles.
 
     python build/batch.py runs/batch-01.json
-    python build/batch.py runs/batch-01.json --skip-blocked
+    python build/batch.py runs/batch-01.json --build-blocked
 
 Runs adapt -> release for every role in the batch and prints one status table.
-A role with audit blockers is still built (so you can read it) but is flagged
-NEEDS REVIEW; --skip-blocked leaves those unbuilt instead.
+A role whose audit reported blockers is REFUSED, not built: at bulk scale a
+'NEEDS REVIEW' flag in a status table is a flag nobody reads. --build-blocked
+forces one through when you want to read it anyway.
 """
 import argparse, json, os, re, subprocess, sys
 
@@ -27,7 +28,8 @@ def run(cmd):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("result")
-    ap.add_argument("--skip-blocked", action="store_true")
+    ap.add_argument("--build-blocked", action="store_true",
+                    help="build a role even though its audit reported blockers")
     a = ap.parse_args()
 
     raw = json.load(open(a.result, encoding="utf-8"))
@@ -47,8 +49,15 @@ def main():
         blockers = [i for i in (r.get("audit") or {}).get("issues", []) if i["severity"] == "blocker"]
         c = r.get("claims", {})
 
-        if blockers and a.skip_blocked:
-            rows.append((issue, title[:34], c, len(blockers), "SKIPPED (blocked)"))
+        # A blocker is an ungrounded claim, a breached publication limit or a
+        # contradicted score. Building it anyway produced a finished article
+        # carrying one line in a status table -- fine at eight issues, useless at
+        # 259. Blocked runs are refused by default; --build-blocked forces one
+        # through for reading, and the workflow's own publishable flag is honoured
+        # even then when it is present.
+        if (blockers or r.get("publishable") is False) and not a.build_blocked:
+            n = len(blockers) or 1
+            rows.append((issue, title[:34], c, n, "REFUSED (blocked)"))
             blocked_skipped += 1
             continue
 

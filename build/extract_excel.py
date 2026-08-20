@@ -7,8 +7,34 @@ shift) is filled by the compose stage.
 
   python build/extract_excel.py <workbook.xlsx> <out.json> --issue N
 """
-import json, sys, argparse, re
+import json, sys, argparse, re, os, io
 import openpyxl
+
+ANCHORS_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                            'data', '_anchors.json')
+
+
+def load_anchor(soc):
+    """The peer role this issue compares itself to, read from the ONE shared table.
+
+    Cross-role figures must never be typed into a compose prompt by hand: they are
+    asserted to the model as fact and never reach a verifier. No.008 shipped
+    Software Developers' APS as both 0.40 and 42% exactly that way. Returns None
+    when we hold no record, and the spine then makes no comparison at all.
+    """
+    if not soc:
+        return None
+    try:
+        with io.open(ANCHORS_PATH, encoding='utf-8') as fh:
+            table = json.load(fh)['roles']
+    except (OSError, ValueError, KeyError):
+        return None
+    a = table.get(soc)
+    if not a:
+        return None
+    return {'soc': soc, 'title': a.get('title'), 'rpi': a.get('rpi'),
+            'aps': a.get('aps'), 'hrf': a.get('hrf'), 'source': a.get('source')}
+
 
 
 def sheet_rows(wb, name):
@@ -308,6 +334,9 @@ def main():
         },
         'tasks': out_tasks,
         'vendors': out_vendors,
+        # the peer this issue compares itself to -- one shared table, never hand-typed
+        'anchorRole': load_anchor(
+            str(role['anchor_soc_code'][0]).strip() if role.get('anchor_soc_code') else None),
         'vendorRoster': roster,
         'shift': [],
         'sections': [],

@@ -293,6 +293,60 @@ const PRICING_BLOCK = pricing.length
   ? pricing.map(c => `- ${c.text}\n  SOURCE: ${c.source_name}, ${c.source_date} -- ${c.source_url}`).join('\n')
   : '(no pricing claim survived verification)'
 
+// ---- spine: DERIVED, never hand-written -------------------------------------
+// A figure typed into a compose prompt is asserted to the model as fact and never
+// reaches a verifier. No.008 was told "APS 49 vs 40" for Software Developers while
+// the workbook's own verdict said 0.42, and the published piece carried both --
+// the model was faithful, the prompt was wrong. So the spine is computed, and
+// assertSpine() halts the run rather than composing from a figure it cannot source.
+const ANCHOR = D.anchorRole || null      // {soc,title,rpi,aps,hrf,source} from data/_anchors.json
+const TASKS  = D.tasks || []
+const unserved = TASKS.filter(t => String(t.status || '').toUpperCase() === 'UNSERVED')
+const byAps    = [...TASKS].sort((a, b) => a.aps - b.aps)
+const lowest   = byAps[0], highest = byAps[byAps.length - 1]
+const near = (a, b, tol = 0.2) => Math.abs(a - b) < tol
+
+function assertSpine() {
+  const bad = []
+  if (!TASKS.length) bad.push('no tasks in the data file')
+  if (!near(S.aps / 100 * (1 - S.hrf / 100) * 100, S.rpi))
+    bad.push(`RPI identity: ${S.aps}*(1-${S.hrf}) != ${S.rpi}`)
+  const cov = D.readiness && D.readiness.tasksCovered
+  if (cov != null && TASKS.length - unserved.length !== cov)
+    bad.push(`task status disagrees with readiness.tasksCovered (${TASKS.length - unserved.length} vs ${cov})`)
+  if (ANCHOR) {
+    if (ANCHOR.rpi == null) bad.push('anchorRole carries no rpi')
+    if (ANCHOR.aps != null && ANCHOR.hrf != null
+        && !near(ANCHOR.aps / 100 * (1 - ANCHOR.hrf / 100) * 100, ANCHOR.rpi))
+      bad.push(`anchor identity: ${ANCHOR.aps}*(1-${ANCHOR.hrf}) != ${ANCHOR.rpi} for ${ANCHOR.title}`)
+  }
+  if (bad.length) throw new Error('spine inputs failed assertion -- refusing to compose:\n  - ' + bad.join('\n  - '))
+}
+assertSpine()
+
+const cmp = (a, b) => a > b ? 'HIGHER' : a < b ? 'LOWER' : 'THE SAME AS'
+const anchorLine = !ANCHOR ? `  This role has no peer anchor; make no cross-role comparison.`
+  : [`  This role scores ${S.rpi}%, ${cmp(S.rpi, ANCHOR.rpi)} than its structural anchor `
+     + `${ANCHOR.title} (${ANCHOR.rpi}%).`,
+     (ANCHOR.aps != null
+        ? `  Its APS is ${cmp(S.aps, ANCHOR.aps)} (${S.aps} vs ${ANCHOR.aps}) and its HRF is `
+          + `${cmp(S.hrf, ANCHOR.hrf)} (${S.hrf} vs ${ANCHOR.hrf}).`
+        : `  No sourced APS/HRF pair exists for ${ANCHOR.title}; compare on RPI only and do NOT `
+          + `state that role's APS or HRF.`)].join('\n')
+
+const unservedLine = unserved.length
+  ? `  ${unserved.length} of ${TASKS.length} tasks carry NO vendor evidence at all: `
+    + unserved.map(t => `"${t.name}"`).join('; ') + '.'
+  : `  Every one of the ${TASKS.length} tasks carries vendor evidence.`
+
+const SPINE = `WHAT MAKES THIS ROLE DIFFERENT -- the spine of the piece:
+${anchorLine}
+${unservedLine}
+  Lowest automation potential: "${lowest.name}" at ${lowest.aps}%. Highest: "${highest.name}" at ${highest.aps}%.
+  THE WORKBOOK'S OWN VERDICT (authoritative, quote its reasoning not its wording):
+  ${String((D.narrative && D.narrative.verdict) || '(none supplied)').replace(/\s+/g, ' ').trim()}
+  Write the finding this data supports. Do not reach for a jobs-apocalypse frame the numbers do not carry.`
+
 const composePrompt = `${HEAD}
 
 You are writing Automation Anatomy No. ${String(D.issue).padStart(3, '0')} for Replaceable.ai -- long-form
@@ -307,16 +361,7 @@ ${PRICING_BLOCK}
 
 ${LIMITS}
 
-WHAT MAKES THIS ROLE DIFFERENT -- the spine of the piece:
-  This role scores 22.05%, well BELOW Software Developers, and that is the counter-intuitive finding.
-  Its APS is HIGHER (49 vs 40) -- more of the work is machine-executable -- but its HRF is far higher
-  too, because what remains is concentrated in review, guardrails and requirements elicitation.
-  One task in thirteen has no vendor evidence at all: eliciting requirements from stakeholders.
-  It is the lowest-APS task tied with guardrails, and the only unserved one.
-  The workbook's own verdict is that this role is not being replaced in place -- it is dissolving,
-  converging either upward into Software Developers or downward into no distinct role at all.
-  Do NOT write a story about coders losing jobs to AI. Write the story of a job title that may not
-  survive as a category, in either direction.
+${SPINE}
 
 EVERY section carries TWO distinct fields -- do not conflate them:
   "label" = the fixed kicker below, verbatim. Never a number, never invented.
@@ -408,7 +453,16 @@ const audit = await agent(
 const blockers = (audit?.issues || []).filter(i => i.severity === 'blocker')
 log(`audit: ${audit?.ok ? 'clean' : `${blockers.length} blocker(s)`} | ~${audit?.word_count_estimate ?? '?'} words`)
 
+// A blocker is an ungrounded claim, a breached publication limit or a contradicted
+// score. Returning the draft anyway meant one flag in a status table -- survivable
+// at eight issues, not at 259, where nobody reads 259 flags. `publishable` is the
+// gate: build/batch.py refuses to build a run that carries it false.
+const publishable = blockers.length === 0
+if (!publishable) log(`NOT PUBLISHABLE -- ${blockers.length} blocker(s): `
+  + blockers.map(b => String(b.detail || b.message || b.issue || '').slice(0, 90)).join(' | '))
+
 return {
+  publishable,
   soc: R.soc, issue: D.issue, title: R.title,
   claims: { found: all.length, verified: verified.length, killed: killed.length, pricing: pricing.length },
   killed_claims: killed.map(c => ({ lens: c.lens, kind: c.kind, text: String(c.text).slice(0, 140), why: c.why })),
