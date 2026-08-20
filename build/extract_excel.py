@@ -174,12 +174,22 @@ def main():
         ranked.append({
             'name': name,
             'refs': sorted(refs),
-            'breadth': len(refs),
+            # breadth is a FRACTION of the role's tasks, not a count: the 0.16
+            # threshold is fractional (No. 001: 'two tasks out of seventeen, a
+            # breadth of 0.12, below the 0.16 threshold'). Storing the raw count
+            # made every vendor clear the bar and collapsed the matrix to two
+            # quadrants, contradicting prose that reasons from the fraction.
+            'breadth': (len(refs) / len(task_names)) if task_names else 0.0,
             'depth': round(sum(covs) / len(covs), 3) if covs else 0,
             'trust': round(sum(trusts) / len(trusts)) if trusts else 60,
             'rows': rows,
         })
-    ranked.sort(key=lambda v: (v['breadth'], v['depth'], v['trust']), reverse=True)
+    # An entity we could not verify should not outrank one we could. VERIFIED and
+    # CORRECTED both mean the entity was checked; OUTSTANDING means it was not,
+    # and doNotPublish already bars its company facts -- so it must not lead.
+    _VRANK = {'VERIFIED': 2, 'CORRECTED': 2}
+    ranked.sort(key=lambda v: (_VRANK.get(verif_by_vendor.get(v['name'], ('OUTSTANDING', ''))[0], 0),
+                               v['breadth'], v['depth'], v['trust']), reverse=True)
 
     out_vendors = []
     for i, v in enumerate(ranked[:a.vendor_cards]):

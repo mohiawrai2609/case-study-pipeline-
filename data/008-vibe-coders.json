@@ -224,8 +224,8 @@
    "verification": "VERIFIED",
    "verificationNote": "All five confirmed Google-owned. Antigravity released 18 Nov 2025, free public preview; Gemini CLI retired into Antigravity CLI June 2026.",
    "canPublishEntityFacts": true,
-   "breadth": 4,
-   "depth": 0.67,
+   "breadth": 0.3077,
+   "depth": 0.6125,
    "tasks": [
     {
      "name": "Translate product intent into structured",
@@ -250,6 +250,380 @@
    ]
   },
   {
+   "id": "openai",
+   "name": "OpenAI",
+   "initials": "OP",
+   "stage": "active",
+   "reach": 74,
+   "products": 4,
+   "evidence": "Replacement",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#7C3AED,#5B21B6)",
+   "desc": "AGENTS.md Convention, OpenAI Codex, OpenAI Codex — Code Review, OpenAI Codex — Plan and Delegate",
+   "note": "",
+   "verification": "CORRECTED",
+   "verificationNote": "Codex confirmed. AGENTS.md is an OPEN CONVENTION contributed by OpenAI to the Linux Foundation AAIF — it is not an OpenAI product and should not sit in the product table as one.",
+   "canPublishEntityFacts": true,
+   "breadth": 0.2308,
+   "depth": 0.5333,
+   "tasks": [
+    {
+     "name": "Translate product intent into structured",
+     "aps": 55,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Review AI-generated code for correctness",
+     "aps": 35,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Iterate on failing agent output by re-prompting",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "lovable",
+   "name": "Lovable",
+   "initials": "LO",
+   "stage": "active",
+   "reach": 65,
+   "products": 2,
+   "evidence": "Replacement",
+   "certTier": "Credible",
+   "logo": "linear-gradient(135deg,#EA580C,#C2410C)",
+   "desc": "Lovable — Managed Hosting and GitHub Sync, Lovable — Prompt-to-App Full-Stack Generation",
+   "note": "",
+   "verification": "VERIFIED",
+   "verificationNote": "Stockholm, founded 2023 by Anton Osika and Fabian Hedin. Only vendor in the register with a confirmed HQ.",
+   "canPublishEntityFacts": true,
+   "breadth": 0.1538,
+   "depth": 0.7,
+   "tasks": [
+    {
+     "name": "Assemble applications from AI-generated components",
+     "aps": 60,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Deploy applications through managed hosting and",
+     "aps": 80,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "amazon-web-services",
+   "name": "Amazon Web Services",
+   "initials": "AM",
+   "stage": "active",
+   "reach": 46,
+   "products": 2,
+   "evidence": "Augmentation",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Amazon Q Developer, Kiro — Spec-Driven Development",
+   "note": "",
+   "verification": "CORRECTED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.1538,
+   "depth": 0.625,
+   "tasks": [
+    {
+     "name": "Translate product intent into structured",
+     "aps": 55,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Iterate on failing agent output by re-prompt",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "anthropi",
+   "name": "Anthropic",
+   "initials": "AN",
+   "stage": "active",
+   "reach": 76,
+   "products": 2,
+   "evidence": "Replacement",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#0891B2,#0E7490)",
+   "desc": "Claude Code, Claude Code — Review Subagents",
+   "note": "",
+   "verification": "VERIFIED",
+   "verificationNote": "Pre-existing vendor id 76. Claude Code confirmed as Anthropic's terminal/desktop/web agent.",
+   "canPublishEntityFacts": true,
+   "breadth": 0.1538,
+   "depth": 0.525,
+   "tasks": [
+    {
+     "name": "Review AI-generated code for correctness",
+     "aps": 35,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Iterate on failing agent output by re-prompting",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "base44",
+   "name": "Base44",
+   "initials": "BA",
+   "stage": "active",
+   "reach": 59,
+   "products": 2,
+   "evidence": "Replacement",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Base44, Base44 — Certified Build Environment",
+   "note": "",
+   "verification": "CORRECTED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.1538,
+   "depth": 0.45,
+   "tasks": [
+    {
+     "name": "Assemble applications from AI-generated comp",
+     "aps": 60,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Establish guardrails for AI-generated code c",
+     "aps": 30,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "github",
+   "name": "GitHub",
+   "initials": "GI",
+   "stage": "active",
+   "reach": 72,
+   "products": 2,
+   "evidence": "Augmentation",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "GitHub Advanced Security, GitHub Copilot Code Review",
+   "note": "",
+   "verification": "VERIFIED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.1538,
+   "depth": 0.325,
+   "tasks": [
+    {
+     "name": "Review AI-generated code for correctness",
+     "aps": 35,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Establish guardrails for AI-generated code c",
+     "aps": 30,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "replit",
+   "name": "Replit",
+   "initials": "RE",
+   "stage": "active",
+   "reach": 70,
+   "products": 1,
+   "evidence": "Replacement",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Replit Agent — Integrated Build, Host and Deploy",
+   "note": "",
+   "verification": "VERIFIED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.0769,
+   "depth": 0.8,
+   "tasks": [
+    {
+     "name": "Deploy applications",
+     "aps": 80,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "sst-anomaly",
+   "name": "SST / Anomaly",
+   "initials": "SS",
+   "stage": "active",
+   "reach": 60,
+   "products": 1,
+   "evidence": "Replacement",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "OpenCode",
+   "note": "",
+   "verification": "CORRECTED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.0769,
+   "depth": 0.7,
+   "tasks": [
+    {
+     "name": "Iterate on failing agent output by re-prompt",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "cline",
+   "name": "Cline",
+   "initials": "CL",
+   "stage": "active",
+   "reach": 48,
+   "products": 1,
+   "evidence": "Replacement",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Cline",
+   "note": "",
+   "verification": "VERIFIED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.0769,
+   "depth": 0.7,
+   "tasks": [
+    {
+     "name": "Iterate on failing agent output by re-prompt",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "aider-ai",
+   "name": "Aider AI",
+   "initials": "AI",
+   "stage": "active",
+   "reach": 47,
+   "products": 1,
+   "evidence": "Augmentation",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Aider",
+   "note": "",
+   "verification": "VERIFIED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.0769,
+   "depth": 0.7,
+   "tasks": [
+    {
+     "name": "Iterate on failing agent output by re-prompt",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "stackblitz",
+   "name": "StackBlitz",
+   "initials": "ST",
+   "stage": "active",
+   "reach": 52,
+   "products": 1,
+   "evidence": "Replacement",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Bolt.new — Browser-Native App Generation",
+   "note": "",
+   "verification": "VERIFIED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.0769,
+   "depth": 0.6,
+   "tasks": [
+    {
+     "name": "Assemble applications from AI-generated comp",
+     "aps": 60,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "emergent",
+   "name": "Emergent",
+   "initials": "EM",
+   "stage": "active",
+   "reach": 41,
+   "products": 1,
+   "evidence": "Replacement",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Emergent",
+   "note": "",
+   "verification": "VERIFIED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.0769,
+   "depth": 0.6,
+   "tasks": [
+    {
+     "name": "Assemble applications from AI-generated comp",
+     "aps": 60,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "reflection-ai",
+   "name": "Reflection AI",
+   "initials": "RE",
+   "stage": "active",
+   "reach": 30,
+   "products": 1,
+   "evidence": "Augmentation",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Reflection AI Asimov",
+   "note": "",
+   "verification": "CORRECTED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.0769,
+   "depth": 0.5,
+   "tasks": [
+    {
+     "name": "Diagnose runtime failures in code the practi",
+     "aps": 50,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "continue-dev",
+   "name": "Continue Dev",
+   "initials": "CO",
+   "stage": "active",
+   "reach": 45,
+   "products": 1,
+   "evidence": "Augmentation",
+   "certTier": "Verified",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Continue",
+   "note": "",
+   "verification": "VERIFIED",
+   "canPublishEntityFacts": true,
+   "breadth": 0.0769,
+   "depth": 0.4,
+   "tasks": [
+    {
+     "name": "Maintain and extend generated codebases as",
+     "aps": 40,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
    "id": "vercel",
    "name": "Vercel",
    "initials": "VE",
@@ -264,8 +638,8 @@
    "verification": "OUTSTANDING",
    "verificationNote": "Products are real and correctly attributed. Vendor entity facts not verified.",
    "canPublishEntityFacts": false,
-   "breadth": 4,
-   "depth": 0.65,
+   "breadth": 0.3077,
+   "depth": 0.575,
    "tasks": [
     {
      "name": "Govern agent compute consumption against budget",
@@ -304,8 +678,8 @@
    "verification": "OUTSTANDING",
    "verificationNote": "Devin and Windsurf confirmed under Cognition (Windsurf acquired Dec 2025). Acquisition price conflicts across sources (~$250M vs a $3B OpenAI figure). 89% commit-share claim is vendor-reported, single source.",
    "canPublishEntityFacts": false,
-   "breadth": 4,
-   "depth": 0.613,
+   "breadth": 0.3077,
+   "depth": 0.525,
    "tasks": [
     {
      "name": "Translate product intent into structured",
@@ -344,8 +718,8 @@
    "verification": "OUTSTANDING",
    "verificationNote": "Vendor and product confirmed; founded 2022. FINANCIALS UNRESOLVED — two irreconcilable source sets. Do not publish revenue or valuation.",
    "canPublishEntityFacts": false,
-   "breadth": 3,
-   "depth": 0.667,
+   "breadth": 0.2308,
+   "depth": 0.6,
    "tasks": [
     {
      "name": "Iterate on failing agent output by re-prompting",
@@ -365,95 +739,29 @@
    ]
   },
   {
-   "id": "openai",
-   "name": "OpenAI",
-   "initials": "OP",
-   "stage": "active",
-   "reach": 74,
-   "products": 4,
-   "evidence": "Replacement",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#7C3AED,#5B21B6)",
-   "desc": "AGENTS.md Convention, OpenAI Codex, OpenAI Codex — Code Review, OpenAI Codex — Plan and Delegate",
-   "note": "",
-   "verification": "CORRECTED",
-   "verificationNote": "Codex confirmed. AGENTS.md is an OPEN CONVENTION contributed by OpenAI to the Linux Foundation AAIF — it is not an OpenAI product and should not sit in the product table as one.",
-   "canPublishEntityFacts": true,
-   "breadth": 3,
-   "depth": 0.66,
-   "tasks": [
-    {
-     "name": "Translate product intent into structured",
-     "aps": 55,
-     "vec": "Cognitive"
-    },
-    {
-     "name": "Review AI-generated code for correctness",
-     "aps": 35,
-     "vec": "Cognitive"
-    },
-    {
-     "name": "Iterate on failing agent output by re-prompting",
-     "aps": 70,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "lovable",
-   "name": "Lovable",
-   "initials": "LO",
-   "stage": "active",
-   "reach": 65,
+   "id": "amp-inc",
+   "name": "Amp Inc",
+   "initials": "AM",
+   "stage": "Not verified",
+   "reach": 58,
    "products": 2,
    "evidence": "Replacement",
-   "certTier": "Credible",
-   "logo": "linear-gradient(135deg,#EA580C,#C2410C)",
-   "desc": "Lovable — Managed Hosting and GitHub Sync, Lovable — Prompt-to-App Full-Stack Generation",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Amp, Amp — Repository-Scale Context",
    "note": "",
-   "verification": "VERIFIED",
-   "verificationNote": "Stockholm, founded 2023 by Anton Osika and Fabian Hedin. Only vendor in the register with a confirmed HQ.",
-   "canPublishEntityFacts": true,
-   "breadth": 2,
-   "depth": 0.725,
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.1538,
+   "depth": 0.55,
    "tasks": [
     {
-     "name": "Assemble applications from AI-generated components",
-     "aps": 60,
+     "name": "Maintain and extend generated codebases as",
+     "aps": 40,
      "vec": "Cognitive"
     },
     {
-     "name": "Deploy applications through managed hosting and",
-     "aps": 80,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "anthropi",
-   "name": "Anthropic",
-   "initials": "AN",
-   "stage": "active",
-   "reach": 76,
-   "products": 2,
-   "evidence": "Replacement",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#0891B2,#0E7490)",
-   "desc": "Claude Code, Claude Code — Review Subagents",
-   "note": "",
-   "verification": "VERIFIED",
-   "verificationNote": "Pre-existing vendor id 76. Claude Code confirmed as Anthropic's terminal/desktop/web agent.",
-   "canPublishEntityFacts": true,
-   "breadth": 2,
-   "depth": 0.69,
-   "tasks": [
-    {
-     "name": "Review AI-generated code for correctness",
-     "aps": 35,
-     "vec": "Cognitive"
-    },
-    {
-     "name": "Iterate on failing agent output by re-prompting",
+     "name": "Iterate on failing agent output by re-prompt",
      "aps": 70,
      "vec": "Cognitive"
     }
@@ -474,8 +782,8 @@
    "verification": "OUTSTANDING",
    "verificationNote": "Real and correctly attributed. Entity facts not verified.",
    "canPublishEntityFacts": false,
-   "breadth": 2,
-   "depth": 0.6,
+   "breadth": 0.1538,
+   "depth": 0.45,
    "tasks": [
     {
      "name": "Govern agent compute consumption against budget",
@@ -485,122 +793,6 @@
     {
      "name": "Evaluate and select AI code generation tools and",
      "aps": 45,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "amp-inc",
-   "name": "Amp Inc",
-   "initials": "AM",
-   "stage": "Not verified",
-   "reach": 58,
-   "products": 2,
-   "evidence": "Replacement",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
-   "desc": "Amp, Amp — Repository-Scale Context",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 2,
-   "depth": 0.6,
-   "tasks": [
-    {
-     "name": "Maintain and extend generated codebases as",
-     "aps": 40,
-     "vec": "Cognitive"
-    },
-    {
-     "name": "Iterate on failing agent output by re-prompt",
-     "aps": 70,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "amazon-web-services",
-   "name": "Amazon Web Services",
-   "initials": "AM",
-   "stage": "active",
-   "reach": 46,
-   "products": 2,
-   "evidence": "Augmentation",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#B45309,#92400E)",
-   "desc": "Amazon Q Developer, Kiro — Spec-Driven Development",
-   "note": "",
-   "verification": "CORRECTED",
-   "canPublishEntityFacts": true,
-   "breadth": 2,
-   "depth": 0.6,
-   "tasks": [
-    {
-     "name": "Translate product intent into structured",
-     "aps": 55,
-     "vec": "Cognitive"
-    },
-    {
-     "name": "Iterate on failing agent output by re-prompt",
-     "aps": 70,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "base44",
-   "name": "Base44",
-   "initials": "BA",
-   "stage": "active",
-   "reach": 59,
-   "products": 2,
-   "evidence": "Replacement",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
-   "desc": "Base44, Base44 — Certified Build Environment",
-   "note": "",
-   "verification": "CORRECTED",
-   "canPublishEntityFacts": true,
-   "breadth": 2,
-   "depth": 0.59,
-   "tasks": [
-    {
-     "name": "Assemble applications from AI-generated comp",
-     "aps": 60,
-     "vec": "Cognitive"
-    },
-    {
-     "name": "Establish guardrails for AI-generated code c",
-     "aps": 30,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "github",
-   "name": "GitHub",
-   "initials": "GI",
-   "stage": "active",
-   "reach": 72,
-   "products": 2,
-   "evidence": "Augmentation",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#059669,#047857)",
-   "desc": "GitHub Advanced Security, GitHub Copilot Code Review",
-   "note": "",
-   "verification": "VERIFIED",
-   "canPublishEntityFacts": true,
-   "breadth": 2,
-   "depth": 0.55,
-   "tasks": [
-    {
-     "name": "Review AI-generated code for correctness",
-     "aps": 35,
-     "vec": "Cognitive"
-    },
-    {
-     "name": "Establish guardrails for AI-generated code c",
-     "aps": 30,
      "vec": "Cognitive"
     }
    ]
@@ -619,8 +811,8 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 2,
-   "depth": 0.5,
+   "breadth": 0.1538,
+   "depth": 0.45,
    "tasks": [
     {
      "name": "Govern agent compute consumption against bud",
@@ -648,8 +840,8 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 2,
-   "depth": 0.475,
+   "breadth": 0.1538,
+   "depth": 0.35,
    "tasks": [
     {
      "name": "Communicate build status",
@@ -664,25 +856,25 @@
    ]
   },
   {
-   "id": "replit",
-   "name": "Replit",
-   "initials": "RE",
-   "stage": "active",
-   "reach": 70,
+   "id": "jetbrains",
+   "name": "JetBrains",
+   "initials": "JE",
+   "stage": "Not verified",
+   "reach": 57,
    "products": 1,
-   "evidence": "Replacement",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
-   "desc": "Replit Agent — Integrated Build, Host and Deploy",
+   "evidence": "Augmentation",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "JetBrains Junie",
    "note": "",
-   "verification": "VERIFIED",
-   "canPublishEntityFacts": true,
-   "breadth": 1,
-   "depth": 0.85,
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
+   "depth": 0.7,
    "tasks": [
     {
-     "name": "Deploy applications",
-     "aps": 80,
+     "name": "Iterate on failing agent output by re-prompt",
+     "aps": 70,
      "vec": "Cognitive"
     }
    ]
@@ -701,180 +893,12 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.65,
+   "breadth": 0.0769,
+   "depth": 0.7,
    "tasks": [
     {
      "name": "Iterate on failing agent output by re-prompt",
      "aps": 70,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "stackblitz",
-   "name": "StackBlitz",
-   "initials": "ST",
-   "stage": "active",
-   "reach": 52,
-   "products": 1,
-   "evidence": "Replacement",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
-   "desc": "Bolt.new — Browser-Native App Generation",
-   "note": "",
-   "verification": "VERIFIED",
-   "canPublishEntityFacts": true,
-   "breadth": 1,
-   "depth": 0.65,
-   "tasks": [
-    {
-     "name": "Assemble applications from AI-generated comp",
-     "aps": 60,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "sst-anomaly",
-   "name": "SST / Anomaly",
-   "initials": "SS",
-   "stage": "active",
-   "reach": 60,
-   "products": 1,
-   "evidence": "Replacement",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#B45309,#92400E)",
-   "desc": "OpenCode",
-   "note": "",
-   "verification": "CORRECTED",
-   "canPublishEntityFacts": true,
-   "breadth": 1,
-   "depth": 0.62,
-   "tasks": [
-    {
-     "name": "Iterate on failing agent output by re-prompt",
-     "aps": 70,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "datadog",
-   "name": "Datadog",
-   "initials": "DA",
-   "stage": "Not verified",
-   "reach": 74,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
-   "desc": "Datadog MCP Server",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.6,
-   "tasks": [
-    {
-     "name": "Diagnose runtime failures in code the practi",
-     "aps": 50,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "artificial-analysis",
-   "name": "Artificial Analysis",
-   "initials": "AR",
-   "stage": "Not verified",
-   "reach": 68,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#059669,#047857)",
-   "desc": "Artificial Analysis Coding Agent Index",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.6,
-   "tasks": [
-    {
-     "name": "Evaluate and select AI code generation tools",
-     "aps": 45,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "coderabbit",
-   "name": "CodeRabbit",
-   "initials": "CO",
-   "stage": "Not verified",
-   "reach": 62,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
-   "desc": "CodeRabbit — AI Code Review",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.6,
-   "tasks": [
-    {
-     "name": "Review AI-generated code for correctness",
-     "aps": 35,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "augment-code",
-   "name": "Augment Code",
-   "initials": "AU",
-   "stage": "Not verified",
-   "reach": 59,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#B45309,#92400E)",
-   "desc": "Augment Code",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.6,
-   "tasks": [
-    {
-     "name": "Diagnose runtime failures in code the practi",
-     "aps": 50,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "browserbase",
-   "name": "Browserbase",
-   "initials": "BR",
-   "stage": "Not verified",
-   "reach": 56,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
-   "desc": "Browserbase Agents",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.6,
-   "tasks": [
-    {
-     "name": "Verify application behaviour by exercising t",
-     "aps": 60,
      "vec": "Cognitive"
     }
    ]
@@ -893,8 +917,8 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.6,
+   "breadth": 0.0769,
+   "depth": 0.7,
    "tasks": [
     {
      "name": "Iterate on failing agent output by re-prompt",
@@ -917,108 +941,36 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
+   "breadth": 0.0769,
+   "depth": 0.7,
+   "tasks": [
+    {
+     "name": "Iterate on failing agent output by re-prompt",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "browserbase",
+   "name": "Browserbase",
+   "initials": "BR",
+   "stage": "Not verified",
+   "reach": 56,
+   "products": 1,
+   "evidence": "Augmentation",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Browserbase Agents",
+   "note": "",
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
    "depth": 0.6,
    "tasks": [
     {
-     "name": "Iterate on failing agent output by re-prompt",
-     "aps": 70,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "cline",
-   "name": "Cline",
-   "initials": "CL",
-   "stage": "active",
-   "reach": 48,
-   "products": 1,
-   "evidence": "Replacement",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#B45309,#92400E)",
-   "desc": "Cline",
-   "note": "",
-   "verification": "VERIFIED",
-   "canPublishEntityFacts": true,
-   "breadth": 1,
-   "depth": 0.58,
-   "tasks": [
-    {
-     "name": "Iterate on failing agent output by re-prompt",
-     "aps": 70,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "pythagora",
-   "name": "Pythagora",
-   "initials": "PY",
-   "stage": "Not verified",
-   "reach": 46,
-   "products": 1,
-   "evidence": "Replacement",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
-   "desc": "Pythagora",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.58,
-   "tasks": [
-    {
-     "name": "Assemble applications from AI-generated comp",
+     "name": "Verify application behaviour by exercising t",
      "aps": 60,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "scale-ai",
-   "name": "Scale AI",
-   "initials": "SC",
-   "stage": "Not verified",
-   "reach": 65,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#059669,#047857)",
-   "desc": "SWE-Bench Pro (SEAL Leaderboard)",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.55,
-   "tasks": [
-    {
-     "name": "Evaluate and select AI code generation tools",
-     "aps": 45,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "jetbrains",
-   "name": "JetBrains",
-   "initials": "JE",
-   "stage": "Not verified",
-   "reach": 57,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
-   "desc": "JetBrains Junie",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.55,
-   "tasks": [
-    {
-     "name": "Iterate on failing agent output by re-prompt",
-     "aps": 70,
      "vec": "Cognitive"
     }
    ]
@@ -1037,36 +989,12 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.55,
+   "breadth": 0.0769,
+   "depth": 0.6,
    "tasks": [
     {
      "name": "Assemble applications from AI-generated comp",
      "aps": 60,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "xai",
-   "name": "xAI",
-   "initials": "XA",
-   "stage": "Not verified",
-   "reach": 52,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
-   "desc": "Grok Build — Plan Mode",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.55,
-   "tasks": [
-    {
-     "name": "Translate product intent into structured",
-     "aps": 55,
      "vec": "Cognitive"
     }
    ]
@@ -1085,8 +1013,8 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.55,
+   "breadth": 0.0769,
+   "depth": 0.6,
    "tasks": [
     {
      "name": "Assemble applications from AI-generated comp",
@@ -1096,21 +1024,21 @@
    ]
   },
   {
-   "id": "emergent",
-   "name": "Emergent",
-   "initials": "EM",
-   "stage": "active",
-   "reach": 41,
+   "id": "pythagora",
+   "name": "Pythagora",
+   "initials": "PY",
+   "stage": "Not verified",
+   "reach": 46,
    "products": 1,
    "evidence": "Replacement",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
-   "desc": "Emergent",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Pythagora",
    "note": "",
-   "verification": "VERIFIED",
-   "canPublishEntityFacts": true,
-   "breadth": 1,
-   "depth": 0.55,
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
+   "depth": 0.6,
    "tasks": [
     {
      "name": "Assemble applications from AI-generated comp",
@@ -1133,8 +1061,8 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.55,
+   "breadth": 0.0769,
+   "depth": 0.6,
    "tasks": [
     {
      "name": "Assemble applications from AI-generated comp",
@@ -1144,21 +1072,93 @@
    ]
   },
   {
-   "id": "reflection-ai",
-   "name": "Reflection AI",
-   "initials": "RE",
-   "stage": "active",
-   "reach": 30,
+   "id": "nectry",
+   "name": "Nectry",
+   "initials": "NE",
+   "stage": "Not verified",
+   "reach": 38,
    "products": 1,
    "evidence": "Augmentation",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
-   "desc": "Reflection AI Asimov",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "Nectry",
    "note": "",
-   "verification": "CORRECTED",
-   "canPublishEntityFacts": true,
-   "breadth": 1,
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
+   "depth": 0.6,
+   "tasks": [
+    {
+     "name": "Assemble applications from AI-generated comp",
+     "aps": 60,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "xai",
+   "name": "xAI",
+   "initials": "XA",
+   "stage": "Not verified",
+   "reach": 52,
+   "products": 1,
+   "evidence": "Augmentation",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Grok Build — Plan Mode",
+   "note": "",
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
    "depth": 0.55,
+   "tasks": [
+    {
+     "name": "Translate product intent into structured",
+     "aps": 55,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "giga-ai",
+   "name": "Giga AI",
+   "initials": "GI",
+   "stage": "Not verified",
+   "reach": 44,
+   "products": 1,
+   "evidence": "Augmentation",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Giga AI — Context Engineering",
+   "note": "",
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
+   "depth": 0.55,
+   "tasks": [
+    {
+     "name": "Translate product intent into structured",
+     "aps": 55,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "datadog",
+   "name": "Datadog",
+   "initials": "DA",
+   "stage": "Not verified",
+   "reach": 74,
+   "products": 1,
+   "evidence": "Augmentation",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Datadog MCP Server",
+   "note": "",
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
+   "depth": 0.5,
    "tasks": [
     {
      "name": "Diagnose runtime failures in code the practi",
@@ -1181,7 +1181,7 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.5,
    "tasks": [
     {
@@ -1192,49 +1192,97 @@
    ]
   },
   {
-   "id": "aider-ai",
-   "name": "Aider AI",
-   "initials": "AI",
-   "stage": "active",
-   "reach": 47,
+   "id": "augment-code",
+   "name": "Augment Code",
+   "initials": "AU",
+   "stage": "Not verified",
+   "reach": 59,
    "products": 1,
    "evidence": "Augmentation",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
-   "desc": "Aider",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Augment Code",
    "note": "",
-   "verification": "VERIFIED",
-   "canPublishEntityFacts": true,
-   "breadth": 1,
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
    "depth": 0.5,
    "tasks": [
     {
-     "name": "Iterate on failing agent output by re-prompt",
-     "aps": 70,
+     "name": "Diagnose runtime failures in code the practi",
+     "aps": 50,
      "vec": "Cognitive"
     }
    ]
   },
   {
-   "id": "continue-dev",
-   "name": "Continue Dev",
-   "initials": "CO",
-   "stage": "active",
-   "reach": 45,
+   "id": "artificial-analysis",
+   "name": "Artificial Analysis",
+   "initials": "AR",
+   "stage": "Not verified",
+   "reach": 68,
    "products": 1,
    "evidence": "Augmentation",
-   "certTier": "Verified",
-   "logo": "linear-gradient(135deg,#B45309,#92400E)",
-   "desc": "Continue",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "Artificial Analysis Coding Agent Index",
    "note": "",
-   "verification": "VERIFIED",
-   "canPublishEntityFacts": true,
-   "breadth": 1,
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
    "depth": 0.45,
    "tasks": [
     {
-     "name": "Maintain and extend generated codebases as",
-     "aps": 40,
+     "name": "Evaluate and select AI code generation tools",
+     "aps": 45,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "scale-ai",
+   "name": "Scale AI",
+   "initials": "SC",
+   "stage": "Not verified",
+   "reach": 65,
+   "products": 1,
+   "evidence": "Augmentation",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "SWE-Bench Pro (SEAL Leaderboard)",
+   "note": "",
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
+   "depth": 0.45,
+   "tasks": [
+    {
+     "name": "Evaluate and select AI code generation tools",
+     "aps": 45,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "coderabbit",
+   "name": "CodeRabbit",
+   "initials": "CO",
+   "stage": "Not verified",
+   "reach": 62,
+   "products": 1,
+   "evidence": "Augmentation",
+   "certTier": "Not verified",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "CodeRabbit — AI Code Review",
+   "note": "",
+   "verification": "OUTSTANDING",
+   "canPublishEntityFacts": false,
+   "breadth": 0.0769,
+   "depth": 0.35,
+   "tasks": [
+    {
+     "name": "Review AI-generated code for correctness",
+     "aps": 35,
      "vec": "Cognitive"
     }
    ]
@@ -1253,60 +1301,12 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.45,
+   "breadth": 0.0769,
+   "depth": 0.35,
    "tasks": [
     {
      "name": "Review AI-generated code for correctness",
      "aps": 35,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "nectry",
-   "name": "Nectry",
-   "initials": "NE",
-   "stage": "Not verified",
-   "reach": 38,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#059669,#047857)",
-   "desc": "Nectry",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.45,
-   "tasks": [
-    {
-     "name": "Assemble applications from AI-generated comp",
-     "aps": 60,
-     "vec": "Cognitive"
-    }
-   ]
-  },
-  {
-   "id": "giga-ai",
-   "name": "Giga AI",
-   "initials": "GI",
-   "stage": "Not verified",
-   "reach": 44,
-   "products": 1,
-   "evidence": "Augmentation",
-   "certTier": "Not verified",
-   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
-   "desc": "Giga AI — Context Engineering",
-   "note": "",
-   "verification": "OUTSTANDING",
-   "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.4,
-   "tasks": [
-    {
-     "name": "Translate product intent into structured",
-     "aps": 55,
      "vec": "Cognitive"
     }
    ]
@@ -1325,8 +1325,8 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.4,
+   "breadth": 0.0769,
+   "depth": 0.25,
    "tasks": [
     {
      "name": "Communicate build status",
@@ -1349,8 +1349,8 @@
    "note": "",
    "verification": "OUTSTANDING",
    "canPublishEntityFacts": false,
-   "breadth": 1,
-   "depth": 0.35,
+   "breadth": 0.0769,
+   "depth": 0.25,
    "tasks": [
     {
      "name": "Communicate build status",
@@ -1363,7 +1363,7 @@
  "vendorRoster": [
   {
    "name": "Google",
-   "breadth": 4,
+   "breadth": 0.3077,
    "depth": 0.67,
    "trust": 72,
    "tasks": [
@@ -1385,7 +1385,7 @@
   },
   {
    "name": "Vercel",
-   "breadth": 4,
+   "breadth": 0.3077,
    "depth": 0.65,
    "trust": 67,
    "tasks": [
@@ -1404,7 +1404,7 @@
   },
   {
    "name": "Cognition",
-   "breadth": 4,
+   "breadth": 0.3077,
    "depth": 0.613,
    "trust": 68,
    "tasks": [
@@ -1424,7 +1424,7 @@
   },
   {
    "name": "Anysphere",
-   "breadth": 3,
+   "breadth": 0.2308,
    "depth": 0.667,
    "trust": 73,
    "tasks": [
@@ -1442,7 +1442,7 @@
   },
   {
    "name": "OpenAI",
-   "breadth": 3,
+   "breadth": 0.2308,
    "depth": 0.66,
    "trust": 74,
    "tasks": [
@@ -1461,7 +1461,7 @@
   },
   {
    "name": "Lovable",
-   "breadth": 2,
+   "breadth": 0.1538,
    "depth": 0.725,
    "trust": 65,
    "tasks": [
@@ -1477,7 +1477,7 @@
   },
   {
    "name": "Anthropic",
-   "breadth": 2,
+   "breadth": 0.1538,
    "depth": 0.69,
    "trust": 76,
    "tasks": [
@@ -1493,7 +1493,7 @@
   },
   {
    "name": "OpenRouter",
-   "breadth": 2,
+   "breadth": 0.1538,
    "depth": 0.6,
    "trust": 67,
    "tasks": [
@@ -1508,7 +1508,7 @@
   },
   {
    "name": "Amp Inc",
-   "breadth": 2,
+   "breadth": 0.1538,
    "depth": 0.6,
    "trust": 58,
    "tasks": [
@@ -1524,7 +1524,7 @@
   },
   {
    "name": "Amazon Web Services",
-   "breadth": 2,
+   "breadth": 0.1538,
    "depth": 0.6,
    "trust": 46,
    "tasks": [
@@ -1540,7 +1540,7 @@
   },
   {
    "name": "Base44",
-   "breadth": 2,
+   "breadth": 0.1538,
    "depth": 0.59,
    "trust": 59,
    "tasks": [
@@ -1556,7 +1556,7 @@
   },
   {
    "name": "GitHub",
-   "breadth": 2,
+   "breadth": 0.1538,
    "depth": 0.55,
    "trust": 72,
    "tasks": [
@@ -1572,7 +1572,7 @@
   },
   {
    "name": "Anannas",
-   "breadth": 2,
+   "breadth": 0.1538,
    "depth": 0.5,
    "trust": 44,
    "tasks": [
@@ -1587,7 +1587,7 @@
   },
   {
    "name": "AgentOps",
-   "breadth": 2,
+   "breadth": 0.1538,
    "depth": 0.475,
    "trust": 51,
    "tasks": [
@@ -1602,7 +1602,7 @@
   },
   {
    "name": "Replit",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.85,
    "trust": 70,
    "tasks": [
@@ -1616,7 +1616,7 @@
   },
   {
    "name": "Factory",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.65,
    "trust": 55,
    "tasks": [
@@ -1630,7 +1630,7 @@
   },
   {
    "name": "StackBlitz",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.65,
    "trust": 52,
    "tasks": [
@@ -1644,7 +1644,7 @@
   },
   {
    "name": "SST / Anomaly",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.62,
    "trust": 60,
    "tasks": [
@@ -1658,7 +1658,7 @@
   },
   {
    "name": "Datadog",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.6,
    "trust": 74,
    "tasks": [
@@ -1672,7 +1672,7 @@
   },
   {
    "name": "Artificial Analysis",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.6,
    "trust": 68,
    "tasks": [
@@ -1686,7 +1686,7 @@
   },
   {
    "name": "CodeRabbit",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.6,
    "trust": 62,
    "tasks": [
@@ -1700,7 +1700,7 @@
   },
   {
    "name": "Augment Code",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.6,
    "trust": 59,
    "tasks": [
@@ -1714,7 +1714,7 @@
   },
   {
    "name": "Browserbase",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.6,
    "trust": 56,
    "tasks": [
@@ -1728,7 +1728,7 @@
   },
   {
    "name": "All Hands AI",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.6,
    "trust": 54,
    "tasks": [
@@ -1742,7 +1742,7 @@
   },
   {
    "name": "Meta",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.6,
    "trust": 50,
    "tasks": [
@@ -1756,7 +1756,7 @@
   },
   {
    "name": "Cline",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.58,
    "trust": 48,
    "tasks": [
@@ -1770,7 +1770,7 @@
   },
   {
    "name": "Pythagora",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.58,
    "trust": 46,
    "tasks": [
@@ -1784,7 +1784,7 @@
   },
   {
    "name": "Scale AI",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.55,
    "trust": 65,
    "tasks": [
@@ -1798,7 +1798,7 @@
   },
   {
    "name": "JetBrains",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.55,
    "trust": 57,
    "tasks": [
@@ -1812,7 +1812,7 @@
   },
   {
    "name": "Superblocks",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.55,
    "trust": 53,
    "tasks": [
@@ -1826,7 +1826,7 @@
   },
   {
    "name": "xAI",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.55,
    "trust": 52,
    "tasks": [
@@ -1840,7 +1840,7 @@
   },
   {
    "name": "Cloudflare",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.55,
    "trust": 49,
    "tasks": [
@@ -1854,7 +1854,7 @@
   },
   {
    "name": "Emergent",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.55,
    "trust": 41,
    "tasks": [
@@ -1868,7 +1868,7 @@
   },
   {
    "name": "Orchids",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.55,
    "trust": 40,
    "tasks": [
@@ -1882,7 +1882,7 @@
   },
   {
    "name": "Reflection AI",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.55,
    "trust": 30,
    "tasks": [
@@ -1896,7 +1896,7 @@
   },
   {
    "name": "Honeycomb",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.5,
    "trust": 63,
    "tasks": [
@@ -1910,7 +1910,7 @@
   },
   {
    "name": "Aider AI",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.5,
    "trust": 47,
    "tasks": [
@@ -1924,7 +1924,7 @@
   },
   {
    "name": "Continue Dev",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.45,
    "trust": 45,
    "tasks": [
@@ -1938,7 +1938,7 @@
   },
   {
    "name": "Nimbalyst",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.45,
    "trust": 42,
    "tasks": [
@@ -1952,7 +1952,7 @@
   },
   {
    "name": "Nectry",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.45,
    "trust": 38,
    "tasks": [
@@ -1966,7 +1966,7 @@
   },
   {
    "name": "Giga AI",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.4,
    "trust": 44,
    "tasks": [
@@ -1980,7 +1980,7 @@
   },
   {
    "name": "Vibe Kanban",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.4,
    "trust": 42,
    "tasks": [
@@ -1994,7 +1994,7 @@
   },
   {
    "name": "Conductor",
-   "breadth": 1,
+   "breadth": 0.0769,
    "depth": 0.35,
    "trust": 40,
    "tasks": [
