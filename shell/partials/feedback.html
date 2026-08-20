@@ -1,0 +1,35 @@
+<div class="fb" id="fbForm">
+      <div class="fb-t">Rate This Scoring</div>
+      <p style="font-size:.82rem;color:var(--t5);margin-bottom:12px">How accurate does this replaceability score feel for your role?</p>
+      <div class="fb2-acc" id="accBtns">
+        <button class="fb2-acc-btn" data-v="too-low" onclick="setAcc('too-low')">Too Low</button>
+        <button class="fb2-acc-btn" data-v="slightly-low" onclick="setAcc('slightly-low')">Slightly Low</button>
+        <button class="fb2-acc-btn" data-v="about-right" onclick="setAcc('about-right')">About Right</button>
+        <button class="fb2-acc-btn" data-v="slightly-high" onclick="setAcc('slightly-high')">Slightly High</button>
+        <button class="fb2-acc-btn" data-v="too-high" onclick="setAcc('too-high')">Too High</button>
+      </div>
+      <textarea class="fb-ta" id="fbCorrection" placeholder="Which tasks did we get right? Which did we get wrong? What's missing?"></textarea>
+      <p style="font-size:.65rem;color:var(--t4);margin:-4px 0 8px">Corrections from practitioners directly adjust future scores.</p>
+      <div class="fb-row">
+        <input class="fb-inp" id="fbName" placeholder="Name (optional)">
+        <input class="fb-inp" id="fbRole" placeholder="Role / company (optional)">
+        <input class="fb-inp" id="fbEmail" placeholder="Email (optional)">
+      </div>
+      <div class="fb-row">
+        <input class="fb-inp" id="fbVendor" placeholder="If you represent a vendor mentioned here, which one?">
+      </div>
+      <div class="fb2-consent">
+        <input type="checkbox" id="fbConsent">
+        <label for="fbConsent">I consent to Replaceable.ai storing this feedback and contacting me for follow-up. <a href="/privacy" style="color:var(--c);text-decoration:none">Privacy Policy</a></label>
+      </div>
+      <div class="fb-row">
+        <input class="fb-inp" id="fbInvite" placeholder="Invite a colleague (email) to review this case study">
+      </div>
+      <button class="fb-sub" onclick="subFb2()">Submit Feedback →</button>
+      <div class="fb-ok" id="fbOk">✓ Thank you. Your perspective will directly inform our next scoring iteration.</div>
+      <div class="fb2-pn">
+        <div class="fb2-pn-t">Join the Practitioner Network</div>
+        <div class="fb2-pn-d">Get early access to new case studies, challenge scores before publication, and shape the methodology.</div>
+        <a href="/practitioner-network" class="fb2-pn-btn">Apply →</a>
+      </div>
+    </div>

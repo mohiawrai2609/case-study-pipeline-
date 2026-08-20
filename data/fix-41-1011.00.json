@@ -1,0 +1,951 @@
+{
+ "issue": 6,
+ "role": {
+  "title": "First-Line Supervisors of Retail Sales Workers",
+  "soc": "41-1011.00",
+  "band": "Low",
+  "emp_k": 1432.6,
+  "wage": 47320,
+  "growth": -5,
+  "rank": 489,
+  "timeline": "10+ years",
+  "group": "Sales"
+ },
+ "scores": {
+  "rpi": 12.2,
+  "aps": 38,
+  "hrf": 68,
+  "untouched": 62,
+  "ajci": 10,
+  "cognitive": 32,
+  "physical": 6
+ },
+ "cover": {
+  "title": "The <em>Override</em> Shift",
+  "subtitle": "Retail's floor supervisors have handed their forecasting and rostering to software and kept everything the software cannot be trusted to decide alone.",
+  "published": "August 2026"
+ },
+ "matrix": {
+  "breadthThreshold": 0.16,
+  "depthThreshold": 0.68
+ },
+ "econ": {
+  "labourBase": 40222,
+  "techFixed": 14196,
+  "baseVolume": 500
+ },
+ "tasks": [
+  {
+   "name": "Provide customer service by greeting and",
+   "type": "h",
+   "desc": "Provide customer service by greeting and assisting shoppers, resolving escalated complaints that AI chatbots and frontline staff cannot handle, using empathetic listening and situational judgment to preserve customer loyalty.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Direct and supervise sales floor activit",
+   "type": "a",
+   "desc": "Direct and supervise sales floor activities using AI-generated task prioritization dashboards, reallocating staff to high-traffic areas and monitoring real-time performance metrics to meet sales targets.",
+   "vendor": "Legion Technologies"
+  },
+  {
+   "name": "Inspect merchandise",
+   "type": "a",
+   "desc": "Inspect merchandise using mobile pricing tools that flag discrepancies, physically verifying that items are correctly displayed and priced, and escalating pricing errors flagged by AI systems.",
+   "vendor": "Autodesk / WakeCap partners"
+  },
+  {
+   "name": "Monitor sales activities",
+   "type": "a",
+   "desc": "Monitor sales activities through AI-powered analytics dashboards that track conversion rates and service quality, intervening in real-time when customer satisfaction scores drop or sales stall.",
+   "vendor": "Legion Technologies"
+  },
+  {
+   "name": "Coach staff on complex sales scenarios b",
+   "type": "h",
+   "desc": "Coach staff on complex sales scenarios by demonstrating product knowledge and negotiation techniques, using role-play and real-time feedback to develop skills that AI training modules cannot replicate.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Assign employees to departments and task",
+   "type": "a",
+   "desc": "Assign employees to departments and tasks using AI-optimized scheduling software, adjusting assignments in real-time based on customer flow patterns and staff availability that algorithms cannot fully anticipate.",
+   "vendor": "UKG"
+  },
+  {
+   "name": "Review AI-generated sales reports and in",
+   "type": "a",
+   "desc": "Review AI-generated sales reports and inventory analytics to prepare management summaries, reconciling system data with observations of store conditions and staff performance to identify operational issues.",
+   "vendor": "Blue Yonder"
+  },
+  {
+   "name": "Perform frontline work such as stocking",
+   "type": "h",
+   "desc": "Perform frontline work such as stocking shelves, organizing displays, and assisting customers during peak periods or staff shortages, applying hands-on knowledge of store operations.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Manage work schedules",
+   "type": "a",
+   "desc": "Manage work schedules using AI-powered labor optimization platforms that balance coverage needs with wage budgets, manually overriding algorithmic suggestions when employee availability or customer traffic patterns change unexpectedly.",
+   "vendor": "Legion Technologies"
+  },
+  {
+   "name": "Manage inventory",
+   "type": "a",
+   "desc": "Manage inventory using automated replenishment systems that trigger reorders at preset thresholds, physically verifying stock levels and overriding AI-generated orders when vendor delays or promotional events alter demand.",
+   "vendor": "Blue Yonder"
+  },
+  {
+   "name": "Establish and implement departmental pol",
+   "type": "h",
+   "desc": "Establish and implement departmental policies by translating corporate directives into actionable procedures, using face-to-face meetings and coaching sessions to ensure staff compliance and engagement.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Inspect products received for resale",
+   "type": "a",
+   "desc": "Inspect products received for resale using barcode scanners integrated with quality control systems, physically examining items for damage and discrepancies that RFID tracking cannot detect.",
+   "vendor": "Autodesk / generic barcode QC tools"
+  },
+  {
+   "name": "Enforce safety",
+   "type": "r",
+   "desc": "Enforce safety, health, and security protocols by conducting walkthroughs and responding to AI-powered theft detection alerts, physically intervening in loss prevention incidents and coaching staff on compliance.",
+   "vendor": "Everseen"
+  },
+  {
+   "name": "Forecast consumer demand by analyzing AI",
+   "type": "a",
+   "desc": "Forecast consumer demand by analyzing AI-generated sales trends and market data, applying local knowledge of customer preferences and seasonal patterns to adjust inventory and staffing plans.",
+   "vendor": "Blue Yonder"
+  },
+  {
+   "name": "Collaborate with management to develop p",
+   "type": "a",
+   "desc": "Collaborate with management to develop pricing strategies and promotional campaigns using AI market analysis tools, balancing profitability algorithms with competitive positioning and customer loyalty considerations.",
+   "vendor": "Blue Yonder"
+  },
+  {
+   "name": "Hire",
+   "type": "a",
+   "desc": "Hire, train, and evaluate staff using AI-assisted applicant tracking and performance monitoring systems, conducting in-person interviews and coaching sessions that assess cultural fit and interpersonal skills algorithms cannot measure.",
+   "vendor": "Legion Technologies"
+  },
+  {
+   "name": "Coordinate advertising campaigns and mer",
+   "type": "a",
+   "desc": "Coordinate advertising campaigns and merchandise displays by implementing AI-generated planograms, physically arranging products and signage to maximize visual impact in ways that algorithmic optimization cannot fully specify.",
+   "vendor": "Blue Yonder"
+  },
+  {
+   "name": "Validate AI sales forecasting and labor",
+   "type": "h",
+   "desc": "Validate AI sales forecasting and labor scheduling algorithms by comparing predicted demand to actual store traffic, flagging systemic errors caused by local events or customer behavior shifts the models miss.",
+   "vendor": "Legion Technologies",
+   "origin": "ai-created"
+  },
+  {
+   "name": "Investigate AI-generated theft detection",
+   "type": "h",
+   "desc": "Investigate AI-generated theft detection alerts and shrinkage anomalies, reviewing surveillance footage and interviewing staff to confirm whether flagged incidents represent genuine loss prevention issues.",
+   "vendor": "Everseen",
+   "origin": "ai-created"
+  }
+ ],
+ "vendors": [
+  {
+   "id": "blueyo",
+   "name": "Blue Yonder",
+   "initials": "BL",
+   "stage": "Private under Panasonic/PE",
+   "reach": 68,
+   "products": 5,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Blue Yonder Demand Planning, Blue Yonder Demand Planning & Retail Analytics, Blue Yonder Luminate Replenishment & Inventory Optimization, Blue Yonder Pricing & Promotion Optimization, Blue Yonder Space & Category Management",
+   "note": "Used by major global retailers for forecasting, replenishment, and space planning.",
+   "tasks": [
+    {
+     "name": "Collaborate with management to develop prici",
+     "aps": 55,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Forecast consumer demand by analyzing AI-gen",
+     "aps": 60,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Review AI-generated sales reports and invent",
+     "aps": 65,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Coordinate advertising campaigns and merchan",
+     "aps": 70,
+     "vec": "Hybrid"
+    },
+    {
+     "name": "Manage inventory",
+     "aps": 70,
+     "vec": "Hybrid"
+    }
+   ]
+  },
+  {
+   "id": "legion",
+   "name": "Legion Technologies",
+   "initials": "LE",
+   "stage": "Venture-backed",
+   "reach": 80,
+   "products": 5,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Legion WFM Analytics, Legion WFM Hiring & Onboarding Integrations, Legion Workforce Management (Labor Optimization), Legion Workforce Management (Retail), Legion Workforce Management Analytics",
+   "note": "Used by large retail and foodservice brands for AI-driven scheduling and tasking.",
+   "tasks": [
+    {
+     "name": "Hire",
+     "aps": 50,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Validate AI sales forecasting and labor sche",
+     "aps": 55,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Monitor sales activities",
+     "aps": 65,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Direct and supervise sales floor activities",
+     "aps": 70,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Manage work schedules",
+     "aps": 75,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "everse",
+   "name": "Everseen",
+   "initials": "EV",
+   "stage": "Well-funded private computer-vision startup focused on retai",
+   "reach": 65,
+   "products": 2,
+   "evidence": "Production",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Everseen Evercheck & Evershelf, Everseen Evercheck Loss Prevention Analytics",
+   "note": "Installed at more than 140,000 checkouts across major retailers in the US and Europe, capturing about 15 million interactions per day.",
+   "tasks": [
+    {
+     "name": "Investigate AI-generated theft detection ale",
+     "aps": 70,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Enforce safety",
+     "aps": 75,
+     "vec": "Hybrid"
+    }
+   ]
+  },
+  {
+   "id": "ukg",
+   "name": "UKG",
+   "initials": "UK",
+   "stage": "Private, created by the merger of Kronos and Ultimate Softwa",
+   "reach": 63,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "UKG Pro Workforce Management",
+   "note": "Widely used by mid-size and large retailers and grocers globally.",
+   "tasks": [
+    {
+     "name": "Assign employees to departments and tasks",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "autode",
+   "name": "Autodesk / generic barcode QC tools",
+   "initials": "AU",
+   "stage": "Mix of OEMs (e.g., Zebra) and retailer-specific implementati",
+   "reach": 59,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Barcode-Integrated QC Systems",
+   "note": "Common across large retailers using RF scanners and WMS integrations.",
+   "tasks": [
+    {
+     "name": "Inspect products received for resale",
+     "aps": 50,
+     "vec": "Hybrid"
+    }
+   ]
+  },
+  {
+   "id": "autode",
+   "name": "Autodesk / WakeCap partners",
+   "initials": "AU",
+   "stage": "Venture-backed IoT startup",
+   "reach": 40,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Smart Hard Hat & Store Ops Analytics (adapted)",
+   "note": "Early pilots; most large-scale price-audit automation instead uses store inventory and POS analytics rather than hard-hat sensors.",
+   "tasks": [
+    {
+     "name": "Inspect merchandise",
+     "aps": 35,
+     "vec": "Hybrid"
+    }
+   ]
+  }
+ ],
+ "shift": [
+  {
+   "time": "05:45",
+   "task": "Overnight replenishment run fires",
+   "type": "automated",
+   "desc": "Blue Yonder's demand model triggers reorders against preset thresholds while the store is dark. Nobody approves them; they are simply there in the morning, along with the forecast that produced them."
+  },
+  {
+   "time": "06:10",
+   "task": "Read the published labour plan",
+   "type": "augmented",
+   "desc": "Legion's optimisation platform has already balanced coverage against the wage budget and published the roster. UKG's time and attendance feed shows who clocked what last week. The supervisor's task begins as reading, not building."
+  },
+  {
+   "time": "06:35",
+   "task": "Rebuild the morning around a sick call",
+   "type": "human",
+   "desc": "One of two people rostered for the opening shift has a sick child. Availability, statutory breaks, who can cover the till and who cannot be left alone in electricals — the override is manual and takes twenty minutes."
+  },
+  {
+   "time": "07:00",
+   "task": "Doors open; first floor walk",
+   "type": "human",
+   "desc": "Presence as a tool. Which bays look wrong, where the queue will form, what got missed by the night team. No system generates this and none consumes it."
+  },
+  {
+   "time": "08:30",
+   "task": "Work the pricing discrepancy queue",
+   "type": "augmented",
+   "desc": "A mobile pricing tool integrated with barcode QC flags mismatches between shelf-edge labels and the system price. Each flag resolves into a walk to the aisle, a physical check and, where the system is wrong, an escalation upward."
+  },
+  {
+   "time": "09:45",
+   "task": "Goods-in inspection against the manifest",
+   "type": "augmented",
+   "desc": "Scanners tied to quality-control systems reconcile the delivery. RFID confirms what arrived; it says nothing about the crushed carton at the back of the cage, which is found by opening it."
+  },
+  {
+   "time": "10:30",
+   "task": "Adjudicate overnight theft-detection alerts",
+   "type": "augmented",
+   "desc": "Everseen's computer-vision queue has accumulated flags from the checkout lanes. Footage is pulled, staff are asked, and each flag is closed as a genuine loss event, a false positive or an ambiguity. This task did not exist before the cameras learned to accuse."
+  },
+  {
+   "time": "12:15",
+   "task": "Cover the floor through the lunch peak",
+   "type": "human",
+   "desc": "Frontline work as the flexible capacity of last resort — stocking, facing up, running a till. The most junior task in the inventory, performed by the most senior person present, because nobody else is free."
+  },
+  {
+   "time": "13:20",
+   "task": "Take an escalated customer complaint",
+   "type": "human",
+   "desc": "The chatbot could not settle it and the associate could not either, which is precisely why it has arrived here. Empathetic listening, a judgement call on a goodwill gesture, and a loyalty outcome nobody will ever attribute to this conversation."
+  },
+  {
+   "time": "14:40",
+   "task": "Reset the seasonal end-cap to the generated planogram",
+   "type": "augmented",
+   "desc": "An AI-generated planogram specifies facings to the centimetre. The fixture is a different depth from the one head office holds on file, so the display is rebuilt to the spirit of the plan rather than the letter, and the discrepancy is noted."
+  },
+  {
+   "time": "16:15",
+   "task": "Reconcile the weekend forecast against local knowledge",
+   "type": "augmented",
+   "desc": "Blue Yonder's trend output meets the school holiday, the roadworks on the approach and the competitor's refit. Staffing and order quantities are adjusted, and the variance is logged — which is also, quietly, an audit of the model."
+  },
+  {
+   "time": "18:00",
+   "task": "Coach a new starter through a difficult sale",
+   "type": "human",
+   "desc": "Role-play, product knowledge, negotiation, and immediate feedback on the floor where it happened. Twenty minutes, no dashboard, no vendor selling against it."
+  }
+ ],
+ "sections": [
+  {
+   "blocks": [
+    {
+     "t": "p",
+     "drop": true,
+     "text": "At ten past six on a Tuesday morning, before the doors open, a woman in a fleece gilet stands in the back office of a suburban department store reading a screen that has already decided most of her day. The roster is built. The replenishment orders went out overnight. The planogram for the seasonal end-cap arrived as a file with every facing specified to the centimetre. A dashboard ranks her aisles by expected footfall and colours two of them amber. None of this existed when she started; all of it was assembled while she slept. She reads it, and then she begins crossing things out. One of the two people rostered for the morning has a sick child. The end-cap will not fit the fixture head office believes is there. The amber aisle is amber because a school holiday began yesterday, which the model does not know. By seven she has rebuilt the day. Then she unlocks the doors."
+    }
+   ]
+  },
+  {
+   "id": "s-score",
+   "label": "The Score",
+   "title": "Thirty-eight per cent capable, sixty-eight per cent held back",
+   "blocks": [
+    {
+     "t": "component",
+     "name": "gauge"
+    },
+    {
+     "t": "p",
+     "text": "The Replaceable Potential Index for first-line supervisors of retail sales workers is 12.2 per cent. It is a Low band score with a timeline measured in more than ten years, and it is arrived at by a deliberately unforgiving piece of arithmetic. The Automation Potential Score — the share of the role's task-time that commercially available systems can plausibly perform today — is 38 per cent. The Human Requirement Floor, the share of the role that must remain with a named human being for legal, physical, relational or accountability reasons, is 68 per cent. Multiply the first by what the second leaves behind and you get 12.2. Most of what the machine can do in this job, it is not permitted to do alone."
+    },
+    {
+     "t": "p",
+     "text": "An APS of 38 per cent is not a trivial number. It means that better than a third of a supervisor's working week is, in principle, addressable by software that exists and can be bought. The interesting part is where that third sits. Split by nature of work, the cognitive automation potential is 32 per cent and the physical automation potential is 6 per cent. That is close to an inversion of the popular intuition about retail. This is a job people describe as physical — walking, lifting, standing, being visible on a floor for eight hours — and the physical component is very nearly untouched. What the vendors have taken is the desk work: the demand forecast, the labour roster, the replenishment maths, the report that goes up the line on a Monday morning."
+    },
+    {
+     "t": "ins",
+     "label": "Empirical anchor",
+     "text": "SMCP North America — the operator of Sandro, Maje, Claudie Pierlot and Fursac, with more than 100 stores across the United States and Canada and over 500 hourly associates — deployed Legion Technologies' AI-powered workforce management platform and reported cutting scheduling time from seven hours to three hours per month while increasing manager-driven sales by 22 per cent. The figures are vendor-reported, from a Legion customer case study. Read them carefully: the headline benefit is not four hours of a manager's month. It is what the vendor claims the manager did with the rest of it."
+    },
+    {
+     "t": "p",
+     "text": "The Human Requirement Floor is doing the heavy lifting in this score, and it is worth being precise about what it is not. It is not a sentiment about the irreplaceable warmth of shopkeepers. It is a structural constraint assembled from four things this role cannot shed: legal accountability for employment decisions and safety enforcement; physical presence in a specific building at a specific hour; a relationship of trust with staff and repeat customers that has commercial value; and residual judgement over precisely those conditions the models are blind to. Sixty-eight per cent is high by the standards of the wider index. It is the reason a respectable APS resolves into a Low band."
+    },
+    {
+     "t": "img",
+     "slot": "back_office_dawn",
+     "full": true,
+     "caption": "Before opening: the labour plan arrives already built, and the first act of the day is amendment.",
+     "prompt": "Pre-dawn back office of a large chain retail store, cluttered with cardboard totes and a wall-mounted rugged touchscreen terminal displaying a colour-coded staff roster grid and a demand forecast curve. A woman in her forties in a store-branded fleece gilet stands with a rugged handheld barcode scanner in one hand, marking a printed shift sheet with a biro. Fluorescent strip lighting, a shrink-wrapped pallet visible through an open stockroom door, security monitor grid glowing in the corner. Documentary photography, natural available light, muted palette."
+    },
+    {
+     "t": "p",
+     "text": "Sixty-two per cent of the role is recorded as untouched — not merely un-automated but outside the addressable market, work no vendor is currently selling into. The AI Job Creation Index sits at 10 per cent, and it corresponds to something concrete rather than notional. Two of the nineteen tasks that make up this role as it is now performed did not exist before the systems arrived, and exist only because they did. One is the validation of the forecasting and rostering models themselves, comparing what the algorithm predicted against what actually walked through the door. The other is the adjudication of machine-generated theft flags — reviewing footage, interviewing staff, and deciding whether a computer-vision alert describes a real loss event or a false positive with a person's employment record attached to it."
+    },
+    {
+     "t": "p",
+     "text": "There is a tension in the data that has to be confronted rather than smoothed over. Some 1.43 million Americans hold this job at a median wage of $47,320, and the Bureau of Labor Statistics projects employment to fall by 5 per cent. A Low replaceability score sitting alongside a declining occupation looks contradictory only if you assume the two measure the same thing. They do not. The index is a statement about tasks: what fraction of the work can be handed over. The projection is a statement about headcount, and headcount in retail supervision falls for reasons that have little to do with whether a model can write a roster — store closures, format consolidation, and above all the widening of span of control. One supervisor covering two departments instead of one is not a supervisor whose job has been automated. It is a supervisor whose job has been made just survivable enough at twice the area, partly by the same software."
+    },
+    {
+     "t": "p",
+     "text": "That is the shape of the finding, and it is unglamorous. The work is not disappearing. The people doing it are, slowly, and the tools are part of why the remaining ones can be stretched. An index that measured only the second effect would tell you retail supervision is being automated away. An index that measured only the first would tell you nothing is happening. Both would be wrong."
+    },
+    {
+     "t": "component",
+     "name": "chartEx"
+    }
+   ]
+  },
+  {
+   "id": "s-shift",
+   "label": "The Shift",
+   "title": "Two clocks, one shift, and the gap between them",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "A shift in this job now runs on two clocks. The first belongs to the systems, and it starts before anyone arrives: replenishment engines firing reorders against preset thresholds, labour optimisation platforms publishing a roster that balances forecast coverage against a wage budget, computer-vision models queuing overnight alerts from the checkout lanes. The second clock belongs to the supervisor, and almost every entry on it is a response to the first."
+    },
+    {
+     "t": "p",
+     "text": "Follow the sequence below and a pattern emerges that the task inventory only hints at. The automated entries cluster at the edges of the day — before opening, after closing, in the background — and they are all forecasts, plans and flags. The human entries cluster where something has gone wrong in a way that requires a person to be standing there: a sick call at seven, a complaint at one, a coaching conversation at six. And the augmented entries, which are the majority, are all the same transaction repeated in different costumes. The system asserts something about the store. The supervisor checks it against the store."
+    },
+    {
+     "t": "component",
+     "name": "shift"
+    },
+    {
+     "t": "p",
+     "text": "Notice what the day does not contain. There is no hour in which the supervisor sits down and does the forecasting from scratch, and no hour in which she builds a roster from a blank grid. Those hours have gone, and by the vendor's own accounting they were not many hours to begin with — the SMCP deployment moved scheduling from seven hours a month to three. Four hours is not a redundancy. It is a Tuesday afternoon."
+    },
+    {
+     "t": "p",
+     "text": "What the day does contain, in unusual density, is verification. The pricing tool flags a discrepancy and someone walks to the shelf edge. The replenishment system orders against a threshold and someone counts what is actually in the back. The theft-detection model raises an alert and someone pulls the footage. The planogram specifies a facing and someone discovers the fixture is the wrong depth. Each of these is a small act of adjudication between a model's picture of the store and the store. Individually they look like overhead. Collectively they are the job."
+    }
+   ]
+  },
+  {
+   "id": "s-tasks",
+   "label": "The Anatomy",
+   "title": "Nineteen tasks, and the exposure is unevenly spread",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Decompose the role into its constituent tasks and you get nineteen. Four remain traditional — performed essentially as they were before any of this arrived. Thirteen are augmented, meaning a system now does part of the work and a human does the rest. Two exist only because the systems do. That ratio, thirteen out of nineteen, is the single most informative statistic in this profile, and it is why the through-line here is augmentation rather than displacement."
+    },
+    {
+     "t": "component",
+     "name": "taskGrid"
+    },
+    {
+     "t": "p",
+     "text": "Read the thirteen augmented tasks closely and their grammar is startlingly consistent. A system produces an output; the supervisor's task is described in terms of what she does to that output. She reallocates staff using a dashboard's prioritisation. She reconciles system data with observed store conditions. She manually overrides algorithmic scheduling suggestions when availability shifts. She physically verifies stock and overrides generated orders when a vendor is late or a promotion distorts demand. She escalates pricing errors the system flagged. She applies local knowledge to a generated forecast. She balances a profitability algorithm against competitive positioning. The verbs that survive automation in this occupation are override, reconcile, verify, adjust, escalate and intervene. Not one of them is a verb you can perform without the original output existing — and not one is a verb you can perform without knowing something the output does not contain."
+    },
+    {
+     "t": "p",
+     "text": "Six of the nineteen tasks are classified as hybrid rather than purely cognitive, and every single one of them involves a body in a building. Inspecting merchandise with a mobile pricing tool means walking the aisle. Managing inventory against automated replenishment means physically confirming what is on the shelf. Inspecting goods received means examining a carton for damage that RFID tracking cannot register. Enforcing safety and security means conducting a walkthrough and, when a theft-detection alert fires, physically intervening. Implementing a generated planogram means arranging the products. This is why the physical automation potential is 6 per cent and shows no sign of moving: the physical component of retail supervision is not heavy lifting, which robots handle, but presence-plus-judgement, which they do not."
+    },
+    {
+     "t": "img",
+     "slot": "handheld_price_scan",
+     "caption": "A mobile pricing tool flags a discrepancy; the verification still requires walking to the shelf edge.",
+     "prompt": "Close crop of a retail supervisor's hands holding a rugged handheld barcode scanner with a small colour screen showing a red price-mismatch flag, held up against a shelf-edge label on a densely stocked grocery aisle. Store-branded polo sleeve visible, lanyard with a name badge. Shallow depth of field, overhead retail lighting, realistic supermarket shelving with promotional shelf-talkers. Documentary photography, natural colour."
+    },
+    {
+     "t": "p",
+     "text": "The four traditional tasks are the ones nobody has built a product against, and they cohere around a single theme: they are all situations in which the supervisor's authority or presence is itself the deliverable. Greeting and assisting shoppers, and specifically resolving the escalated complaints that chatbots and frontline staff could not settle — the escalation exists precisely because automated handling failed, which makes this task structurally immune to the thing that created it. Coaching staff on complex sales scenarios through role-play and real-time feedback. Performing frontline work during peak periods and staff shortages, which is to say being the flexible capacity of last resort. And translating corporate directives into departmental procedure through face-to-face meetings, which is the part of management that is really persuasion."
+    },
+    {
+     "t": "p",
+     "text": "Then there are the two tasks the systems created. Both are, in a sense, the same task: someone has to be responsible for what the machine got wrong. In the first, the supervisor compares predicted demand to actual store traffic and flags systemic model error caused by local events or shifts in customer behaviour — she is a field auditor of the forecasting stack, and the only one the vendor has. In the second, she investigates theft-detection alerts and shrinkage anomalies, reviews surveillance footage and interviews staff to establish whether a flagged incident was genuine. That second task is the one worth pausing on, because it is where an efficiency gain turns into a matter of somebody's employment record. The system does not accuse anyone. It generates a flag. The supervisor decides what the flag means."
+    },
+    {
+     "t": "p",
+     "text": "Taken together the anatomy explains the arithmetic. Thirty-eight per cent of the task-time is addressable because the desk work genuinely is. Sixty-eight per cent of the role is floored because the addressable work overlaps heavily with decisions that carry consequence — employment, discipline, safety, loss — and with conditions that only exist in the building. The overlap is where the index collapses to 12.2 per cent."
+    }
+   ]
+  },
+  {
+   "id": "s-vendors",
+   "label": "The Innovators",
+   "title": "Where six vendors cluster, and where none of them go",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Six vendors have credible evidence of deployment against tasks in this role, and their distribution across the job is itself a map of where the money believes the opportunity lies. Blue Yonder is present on five tasks with an average automation potential of 64 per cent, at pilot stage, owned privately under Panasonic with private-equity involvement. Legion Technologies is also on five tasks, averaging 63 per cent, at pilot stage, venture-backed. Everseen covers two tasks at an average of 73 per cent and is the only vendor in this set operating at production maturity — a well-funded private computer-vision company focused on retail. UKG, the product of the Kronos and Ultimate Software merger, appears on one task at 70 per cent, at pilot. Generic barcode quality-control tooling, delivered by a mix of hardware OEMs and retailer-specific implementations, covers one task at 50 per cent. A partner ecosystem around IoT site-monitoring covers one task at 35 per cent, and is the weakest showing in the set."
+    },
+    {
+     "t": "component",
+     "name": "matrix"
+    },
+    {
+     "t": "p",
+     "text": "The concentration is obvious once laid out. Ten of the fourteen vendor-task pairs belong to two companies, and both of those companies sell into the same two functions: demand and labour. Blue Yonder's five tasks run through forecasting, replenishment and the planning of what goes where. Legion's five run through rostering, scheduling, assignment and labour optimisation. This is not an accident of the evidence base. It is the commercial reality that retail's two largest controllable variables are inventory and hours, and both are amenable to optimisation in a way that a difficult customer at a returns desk is not."
+    },
+    {
+     "t": "p",
+     "text": "Legion's own account of its direction is the most useful primary document in this file. On 12 January 2026 the company announced more than ninety new product features, described in its own words as \"more than 90 new innovations that extend the capabilities of Legion AI\", including a new generation of AI assistants intended to move beyond insights and recommendations towards autonomous workforce decision automation across forecasting, scheduling, time and attendance, and labour optimisation for hourly and frontline workforces. Retail was named as a primary target industry. Strip away the register and the strategic claim is precise and consequential: the product is attempting to graduate from advising the supervisor to deciding without her."
+    },
+    {
+     "t": "img",
+     "slot": "wfm_dashboard_wall",
+     "caption": "The labour optimisation stack: coverage against wage budget, published before anyone arrives.",
+     "prompt": "A wall-mounted widescreen monitor in a retail stockroom office showing a dense workforce-management interface — weekly shift grid with colour-coded coverage bars, a forecast-versus-actual traffic line chart, and a panel of flagged scheduling conflicts. A supervisor in a store-branded polo stands with arms folded, reading it, back partly to camera. Metal shelving with returns crates in the foreground, cool screen light against warm overhead fluorescents. Documentary photography, realistic, no legible brand logos."
+    },
+    {
+     "t": "p",
+     "text": "Everseen's position deserves separate attention because it is the only production-grade deployment here and it carries the highest average automation potential of the six at 73 per cent. Its territory is loss prevention: computer vision watching the checkout and the floor, generating alerts. It is the vendor whose output most directly touches a human being other than the supervisor, and the vendor whose false positives are most expensive in a currency that does not appear on a profit-and-loss statement. It is also, not coincidentally, the vendor whose function generated one of the two new human tasks in this role. Production maturity in alerting has produced an adjudication requirement, and the adjudicator is the supervisor."
+    },
+    {
+     "t": "component",
+     "name": "vendorCards"
+    },
+    {
+     "t": "p",
+     "text": "The maturity distribution across this vendor set is the part a procurement director should read twice. Five of six are at pilot. One is at production. That is a market in which the demonstrations have outrun the deployments, and it is a strong independent corroboration of the ten-year-plus timeline attached to this score. Pilots are where enthusiasm is measured; production is where exceptions are. The gap between a workforce-management platform that produces an excellent roster in a demonstration environment and one that survives contact with a hundred stores' worth of availability changes, local events, statutory break rules and a manager who does not trust it is the entire distance this occupation has left to travel."
+    },
+    {
+     "t": "p",
+     "text": "It is also worth naming what none of these six vendors sell. Nobody in this set has a product for the escalated complaint, the coaching conversation, the policy meeting or the peak-period shift on the till. Those four tasks account for a substantial share of the 62 per cent recorded as untouched, and they are untouched not because they are technically impossible to attempt but because no plausible buyer has been identified for attempting them. A store director will pay for a better forecast. It is much less obvious who writes the cheque for an automated apology."
+    }
+   ]
+  },
+  {
+   "id": "s-wrong",
+   "label": "Cautionary Tales",
+   "title": "The most instructive evidence is not a deployment at all",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The most instructive evidence about automation in retail supervision is not a deployment. It is a retreat. In May 2024, Dollar General announced it had pulled self-checkout from roughly 12,000 stores — out of more than 20,000 in total, and out of the 14,000-plus that had been equipped with it. On the company's first-quarter earnings call on 30 May 2024, chief executive Todd Vasos told investors that self-checkout would be eliminated from \"the vast majority of stores\", remaining only at \"a limited number of stores, most of which are higher volume and low shrink locations\"."
+    },
+    {
+     "t": "p",
+     "text": "The detail of how the rollback was executed matters more than the headline. This was largely a conversion rather than a teardown. About 9,000 stores had their self-checkout registers converted back into staffed \"assisted checkout\" lanes. Where the self-service option survived at all, transactions were capped at five items or fewer. The kiosks were fully removed at roughly 300 of the highest-shrink locations. Vasos called shrink \"the most significant headwind in our business\", and framed the reversal of the company's own earlier expansion as one component of an end-to-end shrink-reduction effort spanning supply chain, merchandising and stores, projecting improvement in the second half of 2024 and a more material impact in 2025."
+    },
+    {
+     "t": "p",
+     "text": "Read that as an automation case study and it is unusually clean. A retailer replaced a supervised human function with a machine at scale, measured the consequences on a line item it cared about, and reversed course across most of its estate — not by removing the hardware, which would have been expensive, but by putting a person back in front of it. The automation was technically successful and commercially wrong. Nothing about the kiosks stopped working. What changed was the accounting."
+    },
+    {
+     "t": "img",
+     "slot": "assisted_checkout_conversion",
+     "caption": "A self-checkout bank converted back to staffed assisted checkout — the automation left standing, the human returned to the front of it.",
+     "prompt": "A bank of self-checkout kiosks in a discount retail store, partly converted: two units have been fitted with a staffed position, a folding stool and a small counter, with a store associate in a branded vest standing at one, scanning a customer's basket. Overhead signage reads generically 'ASSISTED CHECKOUT'. Worn tile floor, queue rail, security camera dome visible on the ceiling. Documentary photography, flat retail lighting, slightly desaturated."
+    },
+    {
+     "t": "p",
+     "text": "Walmart has made the same move more selectively and more quietly. Since 2023 the company has removed self-checkout kiosks at individual stores and converted them back to staffed cashier lanes. Its South Philadelphia Supercenter on Christopher Columbus Boulevard dropped self-checkout in March 2026 — the only one of the city's five Walmart stores to do so — following earlier conversions at a Shrewsbury, Missouri Supercenter and at stores in Cleveland, Ohio and New Mexico across 2023 and 2024. Walmart's own public explanation is about improving the checkout experience and enabling more personalised customer service. Retail trade coverage and local police data tell a blunter story: calls for service to Shrewsbury police fell from 509 to 183 year on year after the removal. Walmart itself has not cited theft as the reason, and that distinction should be preserved rather than collapsed."
+    },
+    {
+     "t": "p",
+     "text": "The third cautionary tale runs in the opposite direction and is about what happens when the automation stays. On 1 August 2025, a Chicago resident named Benjamin Jankowski filed a class action against Home Depot under the Illinois Biometric Information Privacy Act, alleging the retailer secretly used facial recognition scanning on cameras above its self-checkout kiosks without obtaining the written consent the statute requires and without disclosing a data retention policy. The claim seeks up to $5,000 in statutory damages per violation. Whatever its merits, the case illustrates a cost structure that does not appear in any vendor's return-on-investment model: in a per-violation statutory regime, the liability from a camera scales with the number of faces it sees."
+    },
+    {
+     "t": "p",
+     "text": "Put the three together and a pattern emerges that is directly relevant to this occupation's score. Automation in a retail store is not a closed system. It sits inside a loss ledger, a legal jurisdiction and a customer relationship, and it can be technically excellent while being net-negative on all three. Every one of these reversals restored a supervised human function rather than a supervisor's function — none of them was a decision about first-line management as such. But each one is evidence about the same underlying variable: how much unsupervised machine authority a retail floor can actually carry before something breaks. Dollar General's answer was less than it had installed. Walmart's answer varies store by store, which is arguably the more sophisticated position. The Illinois courts are still working on theirs."
+    },
+    {
+     "t": "p",
+     "text": "The relevance to the Human Requirement Floor is direct. A floor of 68 per cent looks conservative until you ask what the alternative estate looks like — and the honest answer, from the largest operators in the market, is that they have recently been buying back human presence at scale in an adjacent function. That is not a prediction. It is a purchase order."
+    }
+   ]
+  },
+  {
+   "id": "s-global",
+   "label": "Around the World",
+   "title": "A floor built in one jurisdiction does not travel",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The 12.2 per cent figure is calculated against a United States occupation, and the Human Requirement Floor that suppresses it is a legal artefact as much as a technical one. Change the jurisdiction and you change the floor. The clearest evidence of that divergence in this file comes from Brussels."
+    },
+    {
+     "t": "p",
+     "text": "The European Trade Union Confederation argues that the EU AI Act's risk-based approach is insufficient on its own to protect retail and other workers from the harms of algorithmic management, and is pushing for a dedicated EU directive on algorithmic management alongside sectoral collective bargaining. It is a demand for codified worker protections around exactly the class of tools described in this profile — AI scheduling and monitoring systems — and it has no parallel in current United States federal policy. That asymmetry is the single most important international fact about this occupation, and it cuts in a direction that is not intuitive."
+    },
+    {
+     "t": "p",
+     "text": "The instinct is to read stronger European rules as protective of the worker and therefore as lowering replaceability. The mechanism is subtler. What a directive on algorithmic management would principally do is convert an informal practice into a legal requirement: that a human being makes, and can be identified as having made, decisions about scheduling, monitoring and discipline. In index terms, it would harden the Human Requirement Floor by statute. A supervisor whose override authority is a matter of custom can lose it when the software gets better. A supervisor whose override authority is a matter of law cannot, and the vendor building autonomous workforce decision automation must design around her."
+    },
+    {
+     "t": "p",
+     "text": "This is why the same underlying technology can produce different replaceability outcomes in different markets without any difference in capability. The Automation Potential Score is close to jurisdiction-neutral: a demand-forecasting model that works in Ohio works in Nord-Pas-de-Calais. The Human Requirement Floor is anything but. It is assembled out of employment law, data-protection law, works-council rights, collective agreements and the enforceable expectations of the courts. A single index number papers over a variable that differs enormously across the markets in which these vendors are simultaneously selling."
+    },
+    {
+     "t": "img",
+     "slot": "night_shift_terminal",
+     "caption": "The same scheduling stack, different legal furniture: what an override means depends on where the store is.",
+     "prompt": "Interior of a closed retail store at night, lit only by security lighting and a single glowing back-office doorway. Through the doorway, a supervisor in a store fleece is visible at a terminal, one hand on a mouse, the screen throwing blue light across stacked stock crates. Long empty aisle in the foreground receding into darkness, shelf-edge labels catching faint light. Documentary photography, high dynamic range, cool and warm light mixed."
+    },
+    {
+     "t": "p",
+     "text": "The United States is not without constraint; its constraint is simply shaped differently. Where Europe is attempting to legislate a general standard in advance, the American mechanism has been state-level statute enforced through private litigation after the fact — the Illinois Biometric Information Privacy Act being the sharpest instrument in the drawer, and the Home Depot facial-recognition class action the current demonstration of its reach. A regime of statutory damages assessed per violation is a strange kind of regulator: it is silent until it is expensive, it applies unevenly across state lines, and it disciplines the sensing layer rather than the decision layer. It constrains what the camera may record. It says considerably less about what the roster may decide."
+    },
+    {
+     "t": "p",
+     "text": "For a multinational retailer running the same workforce-management platform across both markets, this produces an awkward operating reality. The software is one product. The permissible degree of autonomy is not. In practice, the sensible engineering response to a fragmented compliance surface is to build the strictest version once and deploy it everywhere, which means the market with the tightest constraint on algorithmic authority sets the design ceiling for the product — and, indirectly, protects the override authority of supervisors in markets that never legislated for it. Whether that convergence actually happens is an open commercial question, and this file does not contain the evidence to settle it."
+    },
+    {
+     "t": "p",
+     "text": "One caution is owed to the reader. The verified evidence base underlying this section is narrow: a European trade union federation's stated regulatory position, and one American state statute being tested in one live case. That is sufficient to establish that the legal environment around algorithmic management is diverging, and insufficient to support confident claims about how any particular national retail market will settle. The honest summary is that replaceability in this occupation is partly a function of law, that the law is currently being written in at least two incompatible dialects, and that the supervisor's override is the specific thing being argued about."
+    }
+   ]
+  },
+  {
+   "id": "s-fortress",
+   "label": "The Human Fortress",
+   "title": "Taking apart the sixty-eight per cent, claim by claim",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "A Human Requirement Floor of 68 per cent is high enough that it deserves to be taken apart rather than asserted. What exactly is holding it up? Four walls, of unequal strength."
+    },
+    {
+     "t": "p",
+     "text": "The first is the body in the space. A retail store is a physical environment in a permanent state of low-grade disorder — stock in the wrong place, a fixture that does not match the plan, a spill, a queue forming at the wrong end of the floor, a carton with crush damage that no scanner recorded. Six of this role's tasks are hybrid precisely because they require someone to walk over and look. This wall is the most durable of the four and the least glamorous. Its strength does not come from the sophistication of the human judgement involved; it comes from the fact that the alternative is instrumenting every square metre of a shop floor to a fidelity nobody has yet found a business case for."
+    },
+    {
+     "t": "p",
+     "text": "The second wall is accountability. Hiring, evaluating, disciplining, enforcing safety and health protocols, deciding whether a theft alert describes a thief — these are decisions with legal weight, and legal weight requires a legal person. AI-assisted applicant tracking can rank candidates; a named human conducts the interview and owns the decision. A computer-vision system can flag an incident; a named human decides whether an employee's record is marked. This wall is not technical at all. It is entirely a matter of where liability is permitted to rest, which is why the section on regulation above bears directly on this score."
+    },
+    {
+     "t": "p",
+     "text": "The third wall is the relationship. Coaching through role-play and real-time feedback, resolving the complaint that the chatbot escalated, translating a corporate directive into something a team will actually do — these are the tasks where the supervisor's standing with specific people is the mechanism, not a nicety around it. There is a structural elegance to the escalated-complaint task in particular: it is defined by the failure of automated handling. The better the front-line automation gets, the more concentrated and more difficult the residue that reaches the supervisor becomes. Automation upstream does not shrink this task; it enriches it."
+    },
+    {
+     "t": "p",
+     "text": "The fourth wall is the exception — the local knowledge the model does not have. The school holiday, the roadworks, the competitor's closure, the vendor who is late every February, the employee whose availability just changed. This is the wall the vendors themselves invoke most often when describing their products, and it is the weakest of the four, because it is the one that erodes automatically as data coverage improves. Every exception a supervisor handles today is a training example for the system that will handle it tomorrow. A defence built on the machine's ignorance has a maturity date."
+    },
+    {
+     "t": "pq",
+     "text": "The power of the worker's discretion is eroded when management trusts the AI signals more than the workers.",
+     "cite": "Pegah Moradi, PhD candidate in information science, Cornell University, researcher on workplace AI surveillance — The American Prospect, 6 June 2025"
+    },
+    {
+     "t": "p",
+     "text": "Moradi's observation identifies the fortress's real structural weakness, and it is not any of the four walls individually. It is that the whole edifice depends on the override being genuine. Every augmented task in this role is scored on the assumption that when the supervisor disagrees with the system, her disagreement prevails and is acted upon. If in practice the override becomes nominal — if the manager who countermands the roster has to justify the variance, if the supervisor who dismisses a theft flag is asked afterwards why she did, if the deviation from the forecast is itself logged as a performance metric — then the human in the loop is performing compliance rather than judgement. The Human Requirement Floor would still be 68 per cent on paper and would mean considerably less in the building."
+    },
+    {
+     "t": "p",
+     "text": "This is the sense in which the score can be simultaneously correct and optimistic. It measures the presence of human decision authority, which is observable. It cannot easily measure the quality of that authority, which is not. An occupation can retain every one of its decisions and lose the discretion inside them, and no index built on task inventories will register the difference. The signal to watch is not whether supervisors still approve rosters and adjudicate alerts. It is whether approving and adjudicating still carry a real option to say no."
+    },
+    {
+     "t": "p",
+     "text": "For now, the four walls hold, and the evidence that they hold is commercial rather than rhetorical. Nobody is selling a product against the escalated complaint. Nobody is selling a product against the coaching conversation. Five of six vendors with evidence in this role are still at pilot. And the largest operators in American retail spent the last two years buying supervised human presence back into a function they had previously automated. That is a fortress with a moat and a recent restocking of the armoury — not an impregnable one, but not one under active siege either."
+    }
+   ]
+  },
+  {
+   "id": "s-voices",
+   "label": "Industry Voices",
+   "title": "Three constituencies talking past each other about one job",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Three constituencies are talking about this occupation's technology, and they are describing different objects. The vendors describe a productivity instrument. The workers describe a surveillance instrument. The researchers and unions describe an authority instrument. All three descriptions can be accurate simultaneously, which is precisely the difficulty."
+    },
+    {
+     "t": "p",
+     "text": "Start with the vendor, because the vendor is the clearest. Legion Technologies' January 2026 announcement of more than ninety new product features described them as innovations extending the capabilities of Legion AI, and framed a new generation of AI assistants as moving beyond insights and recommendations to deliver autonomous workforce decision automation across forecasting, scheduling, time and attendance, and labour optimisation for hourly and frontline workforces. Retail was named a primary target. The phrase to hold onto is the movement beyond recommendation. A recommendation engine requires a supervisor to act; a decision engine requires a supervisor to intervene. Those are opposite defaults, and the difference between them is the difference between augmentation and something else."
+    },
+    {
+     "t": "p",
+     "text": "The customer-side account of the same product is about released time and converted attention. SMCP North America, running more than a hundred stores and over five hundred hourly associates, reported cutting scheduling from seven hours to three hours a month and increasing manager-driven sales by 22 per cent. The figures are the vendor's, in a vendor case study, and should be weighted accordingly. But note that even taken at face value they are not a headcount argument. Nobody is claiming the store needs fewer managers. The claim is that the manager sold more, which is an argument for keeping her on the floor."
+    },
+    {
+     "t": "img",
+     "slot": "loss_prevention_review",
+     "caption": "Adjudicating the alert queue: a flag becomes an incident only when a person decides it has.",
+     "prompt": "A cramped retail loss-prevention room with a grid of CCTV feeds on two stacked monitors, several feeds showing checkout lanes with faint rectangular computer-vision detection overlays. A supervisor in a store-branded shirt sits leaning forward, scrubbing a timeline with a mouse, a paper incident log and a coffee cup beside the keyboard. Cables, a filing shelf, no windows. Documentary photography, dim room lit by monitors, realistic and unglamorous."
+    },
+    {
+     "t": "p",
+     "text": "The worker's account comes from a different building and a different vantage. TaNeka Hightower is a Walmart associate at a Nashville location, working in grocery delivery and vision centre roles, and was described in reporting by The American Prospect as a test subject for the company's plan to have workers wear body cameras."
+    },
+    {
+     "t": "pq",
+     "text": "We're always under surveillance. People have been fired for eating, drinking, or taking too long a break.",
+     "cite": "TaNeka Hightower, Walmart associate at a Nashville location and body-camera pilot participant — The American Prospect, 6 June 2025"
+    },
+    {
+     "t": "p",
+     "text": "It is important to be precise about whose experience this is. Hightower is an associate, not a first-line supervisor, and the distinction matters to the analysis rather than diminishing it. In the architecture described throughout this piece, the supervisor is the person who receives the flag and decides what it means. The associate is the person the flag is about. The same monitoring system that appears in the supervisor's task inventory as an augmentation appears in the associate's working life as a condition of employment. Those are the two ends of one wire, and a profile of the supervisory role that quoted only the supervisory end would be describing half a machine."
+    },
+    {
+     "t": "pq",
+     "text": "My file says I'm a troublemaker because they want people who are sheep, and I'm a goat.",
+     "cite": "TaNeka Hightower, Walmart retail employee and subject of AI and body-camera loss-prevention monitoring — The American Prospect, 6 June 2025"
+    },
+    {
+     "t": "p",
+     "text": "The word that carries the weight there is file. A file is an accumulation, and accumulation is what these systems are unusually good at. A supervisor's memory of an employee decays, softens and forgives; a record does none of those things. When a role's new task is investigating machine-generated flags, and the investigation's output is written into a durable record, the supervisor becomes the point at which an ambient stream of detections is converted into permanent statements about specific people. That is a materially different kind of authority from the one the job carried a decade ago, and nothing in the task inventory flags it as new."
+    },
+    {
+     "t": "p",
+     "text": "The third voice is institutional. The European Trade Union Confederation's position — that the EU AI Act's risk-based approach is not sufficient on its own to protect retail and other workers from algorithmic management, and that a dedicated directive plus sectoral collective bargaining is required — is a demand to move this whole question out of the operational domain and into the legal one. Whatever one thinks of the remedy, the diagnosis is congruent with the researcher's. Both are describing a shift in where authority sits, and both identify the same pivot: not what the system can compute, but how much the organisation defers to what it computes."
+    },
+    {
+     "t": "p",
+     "text": "There is a gap in the record worth naming. Absent from the verified evidence in this file is the voice of a first-line retail supervisor describing her own experience of these tools — the person who receives the roster, overrides it, works the alert queue and has the coaching conversation afterwards. She is the subject of this profile and she is the one constituency not quoted in it. Anyone with a serious interest in how this occupation is changing should treat that absence as the most obvious thing to go and fix."
+    }
+   ]
+  },
+  {
+   "id": "s-economics",
+   "label": "The Economics",
+   "title": "One-point-four-three million supervisors on a $47,320 median",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Some 1.43 million people hold this job in the United States at a median wage of $47,320. That combination is the beginning of the economic case and, read correctly, most of the end of it too. Retail supervision is a large occupation paid at a level that makes labour substitution a poor business in isolation. The wage is not the prize."
+    },
+    {
+     "t": "component",
+     "name": "econ"
+    },
+    {
+     "t": "p",
+     "text": "Consider what the vendors are actually selling against. Blue Yonder and Legion, between them accounting for ten of the fourteen vendor-task pairs in this profile, sell into demand and labour. The return on a demand-forecasting deployment is measured in inventory carried, markdowns avoided and sales not lost to an empty shelf — quantities that in a mid-sized chain dwarf the salary line of the supervisors who use the tool. The return on a labour-optimisation deployment is measured in hours scheduled against a forecast curve, which is to say in the wages of the associates being rostered, not the wage of the manager doing the rostering. In both cases the supervisor is the interface to the saving, not the saving itself. That is a structurally different proposition from automating a job in order to eliminate it, and it explains why an occupation with a 38 per cent automation potential is projected to shed staff for reasons largely unrelated to that potential."
+    },
+    {
+     "t": "p",
+     "text": "The SMCP figures make the logic explicit. Scheduling fell from seven hours a month to three. Four hours of a salaried manager's month, across a hundred stores, is a real number but not a transformational one — and crucially it is not presented as a saving. It is presented alongside a 22 per cent increase in manager-driven sales. The implicit business case is conversion, not subtraction: take the administrative hours the software absorbed, move them to the floor, and book the difference as revenue. Whether that conversion reliably happens across chains with weaker management cultures is exactly the question a pilot is supposed to answer, and five of the six vendors here are still at pilot."
+    },
+    {
+     "t": "p",
+     "text": "Then there is shrink, which in the current cycle is the loudest economic argument in the sector. Dollar General's chief executive called it \"the most significant headwind in our business\" — and the company's response was to remove self-checkout from roughly 12,000 stores, convert about 9,000 of them to staffed assisted checkout, cap surviving self-service transactions at five items or fewer, and fully strip the kiosks at around 300 of its highest-shrink sites. That is a very large capital and operating decision taken in the direction of more supervised human presence, not less. Everseen's presence in this profile — the only production-maturity vendor, at the highest average automation potential — sits inside the same economics from the other side: computer vision is being bought to attack the same headwind. Both bets are live simultaneously, in the same industry, sometimes in the same chain."
+    },
+    {
+     "t": "p",
+     "text": "Against this sits the cost line that no vendor model contains. The Home Depot class action under the Illinois biometric statute seeks up to $5,000 in statutory damages per violation for allegedly scanning faces above self-checkout kiosks without written consent or a disclosed retention policy. In a per-violation regime, the exposure created by a sensing system is proportional to how many people it senses, which is a cost curve that runs in the opposite direction to every efficiency argument for deploying it. A loss-prevention system that pays for itself against shrink can still be underwater against a class certification. Any honest total-cost-of-ownership calculation for retail computer vision has to carry a legal-exposure term, and most do not."
+    },
+    {
+     "t": "p",
+     "text": "Now put the projected 5 per cent employment decline back into the picture. If the automation available today is not principally a labour-substitution play in this role, where does the decline come from? Three places, none of them a robot. Store closures and format shrinkage remove supervisory posts wholesale. Consolidation of departments removes them one at a time. And span of control widens — the same supervisor covering more floor, more staff and more categories, which is where the software genuinely does bite, because a roster you no longer have to build by hand and a forecast you no longer have to assemble are precisely what make a doubled remit tolerable. The tools are not replacing the supervisor. They are making it possible to ask fewer supervisors to do it."
+    },
+    {
+     "t": "p",
+     "text": "That is a considerably less dramatic story than automation-driven displacement, and a considerably more uncomfortable one for the people in the job. Replaceability of 12.2 per cent means the work is safe. It does not mean the post is. An occupation can hold nearly all of its task content and still lose one supervisor in twenty over a decade, and the person who leaves will not experience the distinction as a technicality."
+    }
+   ]
+  },
+  {
+   "id": "s-2030",
+   "label": "Looking Ahead",
+   "title": "Ten years or more is a claim about confidence",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The timeline attached to this score is ten years or more, and it is worth being explicit about what that horizon is a statement of confidence in. It is not a claim that the technology will stall. It is a claim that the binding constraint on this occupation is not technical, and that constraints of the kind that bind it — legal, physical, relational — move on a decade clock rather than a release-cycle one."
+    },
+    {
+     "t": "p",
+     "text": "Three developments would compress that horizon, and all three are visible in the evidence already. The first is the graduation of workforce-management software from recommendation to decision. Legion has stated the intent plainly: a generation of AI assistants moving beyond insights and recommendations towards autonomous workforce decision automation across forecasting, scheduling, time and attendance and labour optimisation. If a roster is published rather than proposed, and the supervisor's role becomes exception-handling on a system that is right most of the time, then several of the thirteen augmented tasks in this profile change character. They do not disappear; they thin. Reviewing a plan you did not make and would rarely change is a different job from making it."
+    },
+    {
+     "t": "p",
+     "text": "The second is computer vision moving from alerting to adjudicating. Everseen is the only production-grade vendor in this set and it operates in loss prevention, the one function where the machine's output already implicates a person. At present a flag is an input to a human investigation — one of the two tasks the technology created. The compression scenario is a system confident enough that the investigation becomes confirmatory. That would be a genuine reduction in the Human Requirement Floor, and it is the single change in this profile most likely to be resisted, litigated and reversed, for reasons the Illinois biometric case makes visible."
+    },
+    {
+     "t": "p",
+     "text": "The third is the legal settlement, and it is the only one of the three that can push the horizon out rather than in. A dedicated European directive on algorithmic management of the kind the ETUC is pushing for, backed by sectoral bargaining, would write the supervisor's override into statute. It would not stop the software from improving. It would fix the point past which improvement cannot be cashed in as removed human authority — and, given that vendors build one product for multiple markets, it could hold the line in jurisdictions that never passed anything comparable."
+    },
+    {
+     "t": "img",
+     "slot": "evening_floor_walk",
+     "caption": "The last hour: a floor walk no dashboard has yet found a way to schedule out of existence.",
+     "prompt": "A retail supervisor in a store-branded fleece walking a wide aisle near closing time, glancing sideways at a half-empty shelf bay, a rugged handheld device clipped to her belt and a stack of shelf-edge labels in her hand. Two associates in the background collapsing a promotional end-cap display. Long perspective down the aisle, overhead lighting partly dimmed, worn floor. Documentary photography, warm ambient light, unposed."
+    },
+    {
+     "t": "p",
+     "text": "There is a fourth possibility that the recent record makes hard to dismiss: partial reversal. Two of the largest retailers in America have spent the past two years converting automated checkout back to staffed lanes — roughly 12,000 stores in one case, store by store in the other. Neither reversal was about supervisory work, but both demonstrate a mechanism that applies to it. Retail automation is evaluated continuously against shrink, throughput and customer experience, and when the ledger turns, retailers unwind it without much ceremony. Any forecast for this occupation that assumes monotonic adoption is ignoring the only large-scale natural experiment the sector has recently run."
+    },
+    {
+     "t": "p",
+     "text": "The most probable path is therefore neither collapse nor stasis. It is continued thinning of the administrative core alongside intensification of everything else. The forecast arrives more complete. The roster arrives more nearly correct. The alert queue gets longer and its false-positive rate falls without reaching zero. The supervisor spends less of her week assembling plans and more of it walking, verifying, coaching, absorbing complaints that automation upstream has already filtered for difficulty, and adjudicating machine claims about her own staff. The AI Job Creation Index of 10 per cent grows, because every additional autonomous system generates its own audit requirement, and the audit requirement lands on the person standing in the building."
+    },
+    {
+     "t": "p",
+     "text": "Meanwhile the headcount trend continues on its own track. A 5 per cent projected decline against 1.43 million posts is a slow attrition driven by closures, consolidation and widening span of control, and the software is complicit in the third without being the author of any of them. Ten years from now the job will likely still be 68 per cent human by requirement and will be held by fewer people, each covering more ground with better instruments and less slack. Whether that reads as augmentation or intensification depends almost entirely on whether the override at the centre of it stays real."
+    }
+   ]
+  },
+  {
+   "id": "s-feedback",
+   "label": "Challenge This",
+   "title": "Twelve point two per cent is an argument, so attack it",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "A score of 12.2 per cent is an argument, not a measurement, and the most useful thing a reader inside this occupation can do is attack the parts of it that are weakest. Here is where we think the weight is least well supported."
+    },
+    {
+     "t": "p",
+     "text": "The vendor evidence is pilot-heavy. Five of the six vendors with documented deployment against tasks in this role are at pilot stage; only one is at production. Pilots systematically overstate what a technology does at scale, because pilots are run in cooperative sites with vendor support and motivated managers. If you have operated any of these platforms across a full estate for more than two years, your experience is better evidence than anything in this file, and it could move the automation potential in either direction."
+    },
+    {
+     "t": "p",
+     "text": "The strongest deployment figures here are vendor-reported. The reduction of scheduling from seven hours a month to three, and the 22 per cent increase in manager-driven sales, come from a customer case study published by the vendor whose product is being assessed. We have used them because they are specific, sourced and attributable, and we have flagged their provenance every time. They should not be treated as independent verification of anything."
+    },
+    {
+     "t": "p",
+     "text": "The worker testimony in this profile comes from an associate rather than a first-line supervisor. That is a real gap. The person this piece is about — the one who receives the roster, overrides it, adjudicates the alerts and has the difficult conversation afterwards — is not quoted anywhere in the verified evidence. If you hold this job, your account of whether the override is genuine is the single most valuable input anyone could give us, because it addresses the assumption the entire Human Requirement Floor rests on."
+    },
+    {
+     "t": "p",
+     "text": "Finally, the floor itself. Sixty-eight per cent is the number most responsible for the low band, and it is partly a judgement about legal and organisational constraint rather than technical capability. If your chain has already made rostering decisions genuinely autonomous, if your loss-prevention flags are confirmed rather than investigated, or if your override requires written justification, then the floor as we have modelled it is too high and this score is too low. Tell us. The methodology, the task decomposition and the vendor mapping are all open to challenge, and every score in this series is versioned so that it can be moved when the evidence says it should be."
+    },
+    {
+     "t": "component",
+     "name": "feedback"
+    }
+   ]
+  }
+ ],
+ "anchors": [
+  {
+   "title": "Bookkeeping, Accounting, and Auditing Clerks",
+   "label": "Bookkeeping",
+   "rpi": 61.6
+  },
+  {
+   "title": "Shipping, Receiving, and Inventory Clerks",
+   "label": "Warehouse",
+   "rpi": 49.0
+  },
+  {
+   "title": "Customer Service Representatives",
+   "label": "Customer Service",
+   "rpi": 39.0
+  },
+  {
+   "title": "Paralegals and Legal Assistants",
+   "label": "Paralegal",
+   "rpi": 27.8
+  },
+  {
+   "title": "Retail Salespersons",
+   "label": "Retail",
+   "rpi": 21.3
+  },
+  {
+   "title": "Accountants and Auditors",
+   "label": "Accountant",
+   "rpi": 15.5
+  },
+  {
+   "title": "Software Developers",
+   "label": "Software Dev",
+   "rpi": 13.4
+  },
+  {
+   "title": "First-Line Supervisors of Retail Sales Workers",
+   "label": "First-Line Supervisors",
+   "rpi": 12.2
+  },
+  {
+   "title": "Registered Nurses",
+   "label": "Nurse",
+   "rpi": 2.2
+  }
+ ],
+ "sources": [
+  {
+   "name": "BusinessWire",
+   "url": "https://www.businesswire.com/news/home/20260112371338/en/Legion-Elevates-Hourly-Workforce-Management-with-90-New-Product-Features-That-Maximize-Employee-Value",
+   "date": "2026-01-12"
+  },
+  {
+   "name": "ETUC circular, \"The EU needs a Dedicated Directive on Algorithmic Management and AI at work\"",
+   "url": "https://www.etuc.org/en/circular/eu-needs-dedicated-directive-algorithmic-management-and-ai-work",
+   "date": "2025"
+  },
+  {
+   "name": "The American Prospect",
+   "url": "https://prospect.org/2025/06/06/2025-06-06-ai-surveillance-wont-stop-theft-might-stop-unions/",
+   "date": "2025-06-06"
+  },
+  {
+   "name": "The American Prospect",
+   "url": "https://prospect.org/2025/06/06/2025-06-06-ai-surveillance-wont-stop-theft-might-stop-unions/",
+   "date": "2025-06-06"
+  },
+  {
+   "name": "The American Prospect",
+   "url": "https://prospect.org/2025/06/06/2025-06-06-ai-surveillance-wont-stop-theft-might-stop-unions/",
+   "date": "2025-06-06"
+  },
+  {
+   "name": "Legion Technologies customer case study",
+   "url": "https://legion.co/resources/case-studies/smcp-case-study/",
+   "date": "2025"
+  },
+  {
+   "name": "Grocery Dive / Payments Dive / Retail Dive coverage of Dollar General shrink announcement",
+   "url": "https://www.grocerydive.com/news/dollar-general-pull-back-self-checkout-shrink/717769/",
+   "date": "2026 (reported through Retail Dive/Payments Dive network)"
+  },
+  {
+   "name": "Aggregated 2025-2026 retail trade coverage (RetailWire / Men's Journal / NBC News reporting on the Walmart self-checkout rollback)",
+   "url": "https://retailwire.com/discussion/ai-security-halt-selective-rollback-self-checkouts/",
+   "date": "2026"
+  },
+  {
+   "name": "PetaPixel",
+   "url": "https://petapixel.com/2025/08/20/home-depot-sued-for-secretly-using-facial-recognition-technology-on-self-checkout-cameras/",
+   "date": "2025-08-20"
+  }
+ ]
+}

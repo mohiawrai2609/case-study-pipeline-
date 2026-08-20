@@ -1,0 +1,41 @@
+# Build outputs — regenerable from data/ + shell/, and large.
+output/
+
+# Workflow transcripts — the 008 run alone was 39 MB. Kept locally for
+# resumeFromRunId, never shared: they contain full model transcripts.
+runs/
+*.workflow.json
+*.recovered.json
+*.final.json
+
+# Source images before optimisation. media.py writes web-sized WebP into the
+# data file, so the originals are inputs, not deliverables.
+media/**/*.png
+media/**/*.jpg
+media/**/*.jpeg
+media/**/_optimised/
+media/**/_web/
+media/**/*.mp4
+
+# Keep the media contract itself — prompts and provenance are worth sharing.
+!media/**/PROMPTS.md
+!media/**/MEDIA_BRIEF.md
+!media/**/_credits.json
+!media/**/_accepted.json
+
+# Secrets. generate.py reads FAL_KEY / REPLICATE_API_TOKEN from the environment.
+.env
+*.key
+
+# Local scratch
+__pycache__/
+*.pyc
+*.bak
+_*.html
+
+# ...but the shell's provenance is not scratch. _skeleton.html is the extracted
+# chrome the shell was cut from; _article_original.html is the hand-built article
+# it was cut out of. Nothing reads them at build time, but without them there is
+# no way to prove the shell still matches what was signed off.
+!shell/_skeleton.html
+!shell/_article_original.html

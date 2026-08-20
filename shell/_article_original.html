@@ -1,0 +1,497 @@
+
+
+  <!-- LEDE -->
+  <div class="sec">
+    <p class="bt drop">As Mike Bell, CEO of Miso Robotics, put it in an interview with Yahoo Finance: "Right now, there's about a quarter of a million human beings moving fries through a fry station left to right. And they'll do it all day and be back again tomorrow." In a McDonald's in central Tokyo, a self-service kiosk handles roughly four hundred transactions on a busy Saturday before a human being touches one. In Los Angeles, Bell's own Flippy robot autonomously fries chicken tenders at 99 per cent uptime. In São Paulo, a Burger King drive-through takes orders via an AI voice agent in three languages. In London, computer vision monitors sandwich assembly speed at a Pret A Manger.</p>
+    <p class="bt">Self-order kiosks are now deployed at over 90 per cent of US McDonald's locations — 130,000+ kiosks worldwide. AI voice ordering is cutting drive-through times by 11.5 seconds on average. Kitchen automation is growing at nearly 14 per cent annually, on track to reach a $9.8 billion market by 2033. The global QSR market, valued at $323 billion in 2025, is projected to reach $451 billion by 2030. Half a per cent of US GDP now flows through Toast's systems alone. And customers spend 20–30 per cent more when ordering from a kiosk than from a cashier — a dynamic that is increasing kitchen workload, not reducing it.</p>
+    <p class="bt">And yet: roughly 3.78 million Americans work fast food counters — and that number is forecast to <em>grow</em> 5 per cent over the next decade, slightly faster than the average for all occupations. How? Because this is not a replacement story. It is an augmentation story. Workers are not being marched out the door. They are being <em>promoted in place</em> — freed from the repetitive parts of their job and redirected toward work that is harder, more varied, and more human.</p>
+    <p class="bt">Our Replaceability Potential Index places this occupation at <strong>32.2 per cent replaceability</strong>. That means nearly 70 per cent of what a fast food worker does is either untouchable by machines or actively enhanced by working alongside them. Here is how we arrived at that number — and why, by the time you finish reading, you'll agree with it.</p>
+  </div>
+
+  <div class="ed-img ed-img-full reveal"><img src="{{MEDIA_1}}" alt="The augmented counter: a systems coordinator manages kiosks,"><div class="ed-img-cap">The augmented counter: a systems coordinator manages kiosks, kitchen displays, and drive-through AI simultaneously.</div></div>
+
+  <!-- SCORE -->
+  <div class="sec" id="s-score">
+    <span class="cl">The Score</span>
+    <h2 class="ct">32.2% — And Here's Why You Already Knew That</h2>
+    <div class="dv"></div>
+
+    <p class="bt">If you read the opening and thought "obviously a kiosk can take orders — but obviously no machine handles a furious customer at midnight" — you've already arrived at the score. The Replaceability Potential Index makes that intuition precise.</p>
+
+    <p class="bt">Consider what a fast food counter worker actually does across a shift. We'll walk through it — hour by hour — and you'll feel the score before you see it.</p>
+
+    <!-- INTERACTIVE: SHIFT TIMELINE -->
+    <div class="shift-wrap" id="shiftTimeline">
+      <div class="shift-title">Interactive: A Day on the Augmented Counter</div>
+      <div class="shift-h">Click any hour to see what's automated, augmented, or human</div>
+      <div class="shift-hours" id="shiftHours"></div>
+      <div class="shift-detail" id="shiftDetail">
+        <div class="shift-detail-time" id="sdTime">6:00 AM — Opening</div>
+        <div class="shift-detail-task" id="sdTask">Equipment checks and kitchen prep</div>
+        <div class="shift-detail-desc" id="sdDesc">AI sensors run automated diagnostics on fryers, grills, and refrigeration units. Zenput IoT monitors confirm overnight temperature compliance. The worker reviews the AI-generated prep forecast, verifies perishable quality by hand, and signs the digital compliance log. The machine detects; the human decides and certifies.</div>
+      </div>
+      <div class="shift-legend">
+        <div class="shift-legend-item"><div class="shift-legend-dot" style="background:var(--c)"></div> Automated</div>
+        <div class="shift-legend-item"><div class="shift-legend-dot" style="background:var(--am)"></div> Augmented</div>
+        <div class="shift-legend-item"><div class="shift-legend-dot" style="background:var(--em)"></div> Human Only</div>
+      </div>
+    </div>
+
+    <p class="bt">Walk through that shift and you've just felt the 52/38 split: 52 per cent automation potential in the transactional tasks (kiosk orders, cash reconciliation, inventory alerts, temperature monitoring), 38 per cent human resilience in the emotional, physical, and regulatory tasks (complaints, cleaning, compliance). The RPI formula produces 32.2 per cent. Not a guess. A calculation that matches what any shift manager would tell you over coffee.</p>
+
+    <div class="formula-box reveal">
+      <div class="f"><span class="cr">RPI</span> = <span class="cr">APS</span> × (1 − <span class="em">HRF</span>)<br><span style="font-size:.7rem;color:var(--t4);font-weight:400">Automation Potential × (1 − Human Resilience) = Replaceability</span></div>
+    </div>
+
+    <!-- INTERACTIVE: RPI GAUGE -->
+    <div class="gauge-wrap reveal">
+      <div>
+        <div class="gauge">
+          <svg viewBox="0 0 220 130">
+            <path d="M 20 120 A 90 90 0 0 1 200 120" fill="none" stroke="#E8E8E8" stroke-width="14" stroke-linecap="round"/>
+            <path d="M 20 120 A 90 90 0 0 1 200 120" fill="none" stroke="#C41E3A" stroke-width="14" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="283" id="gaugeArc"/>
+          </svg>
+          <div class="gauge-val" id="gaugeVal">0%</div>
+        </div>
+        <div class="gauge-label">Replaceability Potential Index</div>
+      </div>
+      <div class="gauge-breakdown">
+        <div class="gauge-item"><div class="gauge-item-label" style="color:var(--c)">Automation Potential</div><div class="gauge-item-bar"><div class="gauge-item-fill" style="background:var(--c);width:0" id="apsBar"></div></div><div class="gauge-item-val" style="color:var(--c)" id="apsVal">0%</div></div>
+        <div class="gauge-item"><div class="gauge-item-label" style="color:var(--em)">Human Resilience</div><div class="gauge-item-bar"><div class="gauge-item-fill" style="background:var(--em);width:0" id="hrfBar"></div></div><div class="gauge-item-val" style="color:var(--em)" id="hrfVal">0%</div></div>
+        <div class="gauge-item"><div class="gauge-item-label" style="color:var(--t4)">Work Untouched</div><div class="gauge-item-bar"><div class="gauge-item-fill" style="background:var(--t3);width:0" id="untBar"></div></div><div class="gauge-item-val" style="color:var(--t4)" id="untVal">0%</div></div>
+        <div class="gauge-item"><div class="gauge-item-label" style="color:var(--el)">Jobs Created (AJCI)</div><div class="gauge-item-bar"><div class="gauge-item-fill" style="background:var(--el);width:0" id="ajcBar"></div></div><div class="gauge-item-val" style="color:var(--el)" id="ajcVal">0%</div></div>
+      </div>
+    </div>
+
+    <div class="ed-img reveal"><img src="{{MEDIA_2}}" alt="Behind the data wall: real-time analytics dashboards have re"><div class="ed-img-cap">Behind the data wall: real-time analytics dashboards have replaced clipboards and guesswork.</div></div>
+
+    <p class="bt">Where does 32.2 per cent sit? More automatable than a registered nurse (11 per cent) or a software developer (24 per cent). Less exposed than a warehouse picker (47 per cent) or a data entry clerk (67 per cent). Firmly in the middle — a role in transformation, not in decline.</p>
+
+    <div class="chart-ex reveal">
+      <div class="chart-ex-n">Exhibit 1</div>
+      <div class="chart-ex-t">Where Fast Food Sits: RPI Across Occupations</div>
+      <div class="cb"><div class="cb-l">Data Entry</div><div class="cb-tr"><div class="cb-f" style="width:67%;background:var(--c)"></div></div><div class="cb-v" style="color:var(--c)">67.2%</div></div>
+      <div class="cb"><div class="cb-l">Warehouse</div><div class="cb-tr"><div class="cb-f" style="width:47%;background:var(--c);opacity:.7"></div></div><div class="cb-v" style="color:var(--c);opacity:.7">47.0%</div></div>
+      <div class="cb"><div class="cb-l">Retail Sales</div><div class="cb-tr"><div class="cb-f" style="width:34%;background:var(--am)"></div></div><div class="cb-v" style="color:var(--am)">34.3%</div></div>
+      <div class="cb active"><div class="cb-l">Fast Food ◄</div><div class="cb-tr"><div class="cb-f" style="width:32%;background:var(--c)"></div></div><div class="cb-v" style="color:var(--c);font-weight:700">32.2%</div></div>
+      <div class="cb"><div class="cb-l">Software Dev</div><div class="cb-tr"><div class="cb-f" style="width:24%;background:var(--am);opacity:.6"></div></div><div class="cb-v" style="color:var(--am);opacity:.7">24.0%</div></div>
+      <div class="cb"><div class="cb-l">Nurse (RN)</div><div class="cb-tr"><div class="cb-f" style="width:11%;background:var(--em)"></div></div><div class="cb-v" style="color:var(--em)">11.0%</div></div>
+    </div>
+
+    <div class="ins reveal">
+      <div class="ins-l">The Empirical Anchor</div>
+      <p>This score is verified against market reality. Twelve of fifteen tasks have at least one production-ready vendor. Three have <strong>zero vendor coverage, zero prototypes, zero funding rounds</strong>. The score is anchored to what companies are building and selling — not what we think machines might do someday.</p>
+    </div>
+  </div>
+
+  <!-- THE SPLIT -->
+  <div class="sec" id="s-split">
+    <span class="cl">The Big Picture</span>
+    <h2 class="ct">Same Uniform, Two Completely Different Jobs</h2>
+    <div class="dv"></div>
+
+    <p class="bt">In high-volume chains, the transactional layer has been automated at striking speed. Kiosks handle 80 per cent or more of orders. AI parses complex customisations. Cash drawers balance themselves. Inventory systems predict shortages and auto-order. The human has become the <strong>exception handler</strong> — intervening when the kiosk crashes, the robot jams, or someone is angry.</p>
+
+    <p class="bt">Meanwhile, roughly 40 per cent of fast food outlets worldwide — campus cafeterias, local restaurants, food trucks, small-town diners — retain the full human stack. They can't afford a fry robot at $3,000 a month. The economics don't work at low volume. For their workers, automation happens to other people. This bifurcation matters enormously for workforce policy: training programmes that treat "fast food worker" as one occupation will fail both tiers. The chain worker becoming an exception handler needs completely different skills from the independent worker performing the full traditional role.</p>
+
+    <div class="pq reveal">
+      <p>AI-powered solutions must boost — not burden — the customer experience. AI's greatest potential is not in trimming costs but in unlocking growth by streamlining operations, boosting productivity, and enabling scalability.</p>
+      <cite>Cliff Hudson &amp; Craig Miller, former CEO &amp; CIO of Sonic Drive-In — QSR Magazine, November 2025</cite>
+    </div>
+
+    <p class="bt">Hudson and Miller's framing is telling — and it reflects the dominant view among QSR leaders who have actually lived through the transition. The technology is not a cost-cutting instrument. It is a growth engine. The workers don't shrink in number; they shift in function. A CNN Business investigation in September 2024 confirmed this pattern at scale: kiosks at McDonald's "have added extra work for kitchen staff and pushed customers to order more food." Instead of replacing workers, kiosks transferred labour to new tasks like handing off pickup orders, managing delivery logistics, and assisting customers with the technology itself.</p>
+
+    <p class="bt">McDonald's formalised this shift by creating an entirely new role: the Guest Experience Leader. As the company's official statement put it, self-order kiosks "provide an opportunity to transition back-of-the-house positions to more customer service roles such as concierges and table service where they are able to truly engage with guests." In Canada alone, McDonald's added over 7,000 Guest Experience Leader positions after deploying kiosks — a net increase in headcount, not a reduction.</p>
+
+    <div class="pq reveal">
+      <p>The exception to this has been in a few stores where the introduction of kiosks has resulted in the need to increase the number of crew to cope with the increase in sales.</p>
+      <cite>James Wehner, Director of Global Digital Experience, McDonald's — Kiosk Marketplace</cite>
+    </div>
+
+    <p class="bt">Wehner's admission is striking: in some locations, automation created <em>more</em> jobs, not fewer. The mechanism is counterintuitive but empirically consistent. Kiosks increase average order value (customers spend 20-30 per cent more when they're not facing a cashier), which increases kitchen throughput demand, which requires more hands in the back of house. Christopher Andrews, a sociologist at Drew University who studies the effects of technology on work, provided the historical parallel in an interview with CNN Business:</p>
+
+    <div class="pq reveal">
+      <p>The introduction of ATMs did not result in massive technological unemployment for bank tellers. Instead, it freed them up from low-value tasks such as depositing and cashing checks to perform other tasks that created value.</p>
+      <cite>Christopher Andrews, Sociologist, Drew University — CNN Business, September 2024</cite>
+    </div>
+
+    <p class="bt">The ATM parallel is the most useful framework for understanding what is happening in fast food. ATMs didn't eliminate tellers — they changed tellers into relationship managers. Kiosks aren't eliminating counter workers — they're changing counter workers into experience coordinators, exception handlers, and hospitality specialists. The job title may stay the same. The job itself is being fundamentally upgraded. Toast's 2025 Voice of the Restaurant Industry Survey, which polled 712 operators, confirmed the pattern: operators are "embracing new technology not to replace their people, but to give them human-boosting tech that makes every shift run smarter." One in four plan to expand in the next year — even amid cost pressures.</p>
+  </div>
+
+  <!-- TASK GRID -->
+  <div class="sec" id="s-tasks">
+    <span class="cl">The Anatomy</span>
+    <h2 class="ct">Fifteen Tasks. Click Any One.</h2>
+    <div class="dv"></div>
+
+    <p class="bt">Every occupation is a bundle of tasks. The RPI unbundles them. Below are the fifteen tasks that make up the fast food counter role — colour-coded by automation mode. Click any block to see what's happening to that task and who's building the technology.</p>
+
+    <!-- INTERACTIVE: TASK GRID -->
+    <div class="task-grid" id="taskGrid"></div>
+    <div class="task-detail-panel" id="taskDetail">
+      <div class="task-detail-name" id="tdName"></div>
+      <div class="task-detail-desc" id="tdDesc"></div>
+      <div class="task-detail-vendor" id="tdVendor"></div>
+    </div>
+  </div>
+
+  <!-- VENDORS -->
+  <div class="sec" id="s-vendors">
+    <span class="cl">The Innovators</span>
+    <h2 class="ct">The Companies Building the Augmented Kitchen</h2>
+    <div class="dv"></div>
+
+    <p class="bt">Behind this transformation is a remarkable ecosystem of technology companies. Together, they are building the infrastructure of augmented food service — and their innovations are creating new categories of work even as they streamline existing ones.</p>
+
+    <!-- INTERACTIVE: AUTOMATION INTELLIGENCE MATRIX -->
+    <div class="bubble-wrap">
+      <div class="bubble-title">Exhibit 3</div>
+      <div class="bubble-h">The Automation Vendor Landscape</div>
+      <div class="matrix-sub">Vendors mapped by task coverage breadth and automation depth within this role. Bubble size represents estimated workers reached. Hover for full intelligence dossier.</div>
+      <div class="matrix-area" id="matrixArea">
+        <svg class="matrix-svg" id="matrixSvg" viewBox="0 0 600 420"></svg>
+        <div class="mx-card" id="mxCard"></div>
+      </div>
+      <div class="matrix-note">Automation Intelligence Matrix™ — Replaceable.ai proprietary methodology. Vendors positioned independently; inclusion does not imply endorsement.</div>
+      <div class="matrix-legend">
+        <div class="matrix-legend-item"><div class="matrix-legend-dot" style="background:#C41E3A"></div> Leader</div>
+        <div class="matrix-legend-item"><div class="matrix-legend-dot" style="background:#2563EB"></div> Deep Specialist</div>
+        <div class="matrix-legend-item"><div class="matrix-legend-dot" style="background:#B45309"></div> Wide but Shallow</div>
+        <div class="matrix-legend-item"><div class="matrix-legend-dot" style="background:#A8A29E"></div> Emerging</div>
+        <div class="matrix-legend-sep"></div>
+        <div class="matrix-legend-item" style="color:#D6D3D1">Bubble size = workers reached</div>
+      </div>
+      <div class="vx-groups" id="vxGroups"></div>
+    </div>
+
+    <div class="vc reveal">
+      <div class="vc-h"><div class="vc-n">Toast</div><div class="vc-tag">NYSE: TOST · ~$16.5B</div> <span class="tier-badge tier-gold">Gold Partner</span></div>
+      <p>Toast has arguably done more to modernise the QSR counter than any other single company. Its integrated platform — kiosks, POS, and the recently launched Toast IQ AI assistant — actively manages the interface between automation and human workers, routing exceptions with full context. Toast IQ goes further: executing menu updates, adjusting shift schedules, and triggering upsell strategies in real-time. Having the data of 15 per cent of US restaurants means Toast's AI learns faster than any competitor — every menu change, every staffing pattern, every order anomaly feeds the model.</p>
+      <div class="vc-stats"><div class="vc-stat"><b>164,000</b> locations</div><div class="vc-stat"><b>$195B</b> GPV</div><div class="vc-stat"><b>G2:</b> 4.2/5</div><div class="vc-stat"><b>15%</b> of US restaurants</div></div>
+      <div class="vc-footprint">Footprint™: <b>4 of 15 tasks</b> (Payment Processing, Order Recording, Cash Reconciliation, Kiosk Assistance)</div>
+      <div class="vc-testimonial">"Toast IQ has completely changed how we run shifts. We went from guessing to knowing." <cite>Multi-unit operator, Toast 2025 Survey</cite></div>
+      <a href="javascript:void(0)" onclick="openVendorProfile('toast')" class="vc-mp-link">View Full Profile on Marketplace →</a>
+      <a href="javascript:void(0)" onclick="openVendorProfile('toast')" class="vc-gold-cta">Request Toast Demo →</a>
+    </div>
+
+    <div class="pq reveal">
+      <p>This marks the beginning of a new stage of innovation where software evolves beyond a tool restaurant professionals use, into a partner that helps them elevate their craft.</p>
+      <cite>Steve Fredette, President &amp; Co-founder, Toast — on the launch of ToastIQ, May 2025</cite>
+    </div>
+
+    <div class="vc reveal">
+      <div class="vc-h"><div class="vc-n">Crunchtime (incl. Zenput &amp; QSR Automations)</div><div class="vc-tag">$164M Raised</div> <span class="tier-badge tier-gold">Gold Partner</span></div>
+      <p>The June 2025 merger created the first end-to-end food lifecycle platform — connecting AI prep forecasting, real-time kitchen routing, and food safety compliance in a single data model. The result is transformative: 99 per cent forecast accuracy on prep quantities eliminates the guesswork that has traditionally driven food waste and labour misallocation. Five-plus hours per week of manual temperature logging eliminated per location through Zenput's IoT sensors — time redirected to customer service and quality control. For workers, this means less clipboard bureaucracy and more time doing work that matters.</p>
+      <div class="vc-stats"><div class="vc-stat"><b>850+</b> brands</div><div class="vc-stat"><b>150,000+</b> locations</div><div class="vc-stat"><b>G2:</b> 4.7/5</div><div class="vc-stat"><b>90%</b> top-50 chains</div></div>
+      <div class="vc-footprint">Footprint™: <b>4 of 15 tasks</b> (Counter Coordination, Beverage Prep, Frozen Drinks, Temp Monitoring)</div>
+      <a href="javascript:void(0)" onclick="openVendorProfile('crunchtime')" class="vc-mp-link">View Full Profile on Marketplace →</a>
+      <a href="javascript:void(0)" onclick="openVendorProfile('crunchtime')" class="vc-gold-cta">Request Crunchtime Demo →</a>
+    </div>
+
+    <div class="vc reveal">
+      <div class="vc-h"><div class="vc-n">Miso Robotics — Flippy</div><div class="vc-tag">$133M Raised</div> <span class="tier-badge tier-silver">Silver Partner</span></div>
+      <p>The most commercially deployed kitchen robot in the world — and the company that may have done more than any other to demonstrate that robotics in food service is <em>augmentation</em>, not replacement. The January 2025 next-generation model is half the size, twice the speed, and 75 per cent faster to install. The NVIDIA AI vision collaboration enables real-time food quality scoring — catching undercooked items before they reach the customer. Workers work alongside Flippy: loading ingredients, checking output, handling the assembly that requires human dexterity and aesthetic judgement. The robot does the dangerous, repetitive frying. The human does everything else — and does it better because they're not standing over a 175°C oil vat.</p>
+      <div class="vc-stats"><div class="vc-stat"><b>NVIDIA</b> AI vision</div><div class="vc-stat"><b>99%</b> uptime</div><div class="vc-stat"><b>&lt;$3K/mo</b> RaaS</div><div class="vc-stat"><b>Roboworx</b> maintenance</div></div>
+      <div class="vc-footprint">Footprint™: <b>2 of 15 tasks</b> (Food Serving, Food Preparation)</div>
+      <a href="javascript:void(0)" onclick="openVendorProfile('miso-robotics')" class="vc-mp-link">View Full Profile on Marketplace →</a>
+    </div>
+
+    <p class="bt">The operational reality of working alongside Flippy is best described by the people who manage it daily. Diana Williams, a White Castle district supervisor responsible for fourteen stores, described the fry station — the role Flippy was designed to take over — in an interview with The Takeout:</p>
+
+    <div class="pq reveal">
+      <p>That station is our most complex station. During our peak hours, at times we needed two team members to keep up. We have a large menu when it comes to our fryer products. Working around hot oil is always a risk. That is one thing we're able to eliminate.</p>
+      <cite>Diana Williams, District Supervisor (14 stores), White Castle — The Takeout, 2022</cite>
+    </div>
+
+    <p class="bt">Williams's perspective matters because it comes from direct operational management — not from a boardroom or a press release. She is describing what the fry station actually feels like for the workers who stand in front of it: complex, relentless, physically dangerous. Mike Guinan, White Castle's VP of Operations, reinforced this: "The one that's always managing baskets and dropping frozen product is really just always in front of that fryer. A very, very challenging work environment." When Flippy takes over that station, the worker doesn't disappear — they move to what White Castle calls the "hospitality door," greeting drive-through customers and carrying food to cars. The job doesn't shrink. It shifts from dangerous repetition to human interaction.</p>
+
+    <div class="pq reveal">
+      <p>It's been amazing to see the warmth with which Flippy has been welcomed to the team. Team members say, 'Hey, this is like any other investment you make. It makes our jobs and our life easier.'</p>
+      <cite>Jamie Richardson, VP, White Castle — Luckbox Magazine, 2023</cite>
+    </div>
+
+    <p class="bt">Richardson's observation — that workers welcomed the robot rather than fearing it — directly contradicts the dominant media narrative. And the data supports him: White Castle saw 15–25 per cent faster drive-through times after Flippy deployment, according to Miso Robotics' chief strategy officer Jacob Brewer. Not because workers were cut, but because the bottleneck (the fry station) was resolved, and the freed worker could support the drive-through window. The augmentation dividend is measurable, immediate, and felt by the workers themselves.</p>
+
+    <div class="ed-img ed-img-full reveal"><img src="{{MEDIA_3}}" alt="The robot handles the fryer. The human handles everything el"><div class="ed-img-cap">The robot handles the fryer. The human handles everything else — and does it better because they are not standing over a 175°C oil vat.</div></div>
+
+    <div class="vc reveal">
+      <div class="vc-h"><div class="vc-n">Restaurant365</div><div class="vc-tag">$175M Raised</div></div>
+      <p>Ranked #1 on G2 across twelve restaurant software categories — a dominance that reflects how comprehensively R365 has replaced the three-tool stack (QuickBooks + inventory app + scheduling) most operators previously maintained. Its AI-driven inventory tracks real-time consumption against POS sales, auto-generates purchase orders at par levels, and flags waste or theft variances. The platform is building toward predictive purchasing based on demand signals rather than static thresholds — ordering what you'll need tomorrow, not what you ran out of yesterday.</p>
+      <div class="vc-stats"><div class="vc-stat"><b>40,000+</b> restaurants</div><div class="vc-stat"><b>G2:</b> 4.7/5</div><div class="vc-stat"><b>#1</b> 12 categories</div><div class="vc-stat"><b>ICONIQ</b> Growth led</div></div>
+    </div>
+
+    <div class="vc reveal">
+      <div class="vc-h"><div class="vc-n">Brightpick — Autopicker</div><div class="vc-tag">$47M Raised</div></div>
+      <p>The frontier of physical automation in food packaging — and a company whose deployment speed is rewriting assumptions about how quickly robotic systems can enter food service environments. 70,000 items per day. Lights-out overnight operations confirmed November 2025. Sub-four-week deployment eliminates the six-to-twelve month retrofit barrier that has historically blocked food service robotics adoption. The March 2026 NAPA partnership (100 robots) signals expansion beyond QSR into automotive and retail fulfilment.</p>
+      <div class="vc-stats"><div class="vc-stat"><b>70,000</b> items/day</div><div class="vc-stat"><b>300+</b> robots</div><div class="vc-stat"><b>&lt;4 weeks</b> deploy</div><div class="vc-stat"><b>NAPA</b> 100-robot deal</div></div>
+    </div>
+
+    <p class="bt">Other innovators shaping this ecosystem include <strong>Oracle MICROS</strong> (the only enterprise kiosk with native compliance across 180+ countries — irreplaceable for stadiums, airports, and global chains), <strong>Intercom</strong> (whose Fin AI detects kiosk abandonment patterns and auto-escalates to human workers with full context, trained on 2.3 million events from Klarna alone), and an emerging ecosystem of IoT sensor companies connecting food safety compliance to kitchen intelligence platforms in real time.</p>
+
+    <p class="bt">And then there is <strong>Kernel</strong>, a vegan fast-food restaurant in New York that may represent the most advanced augmentation model in the industry. Three staff members work alongside a robotic arm. Starting wage: $25 per hour, with paid vacation, sick leave, and a developing stock-option plan. Employee retention in the first month: 100 per cent — compared to an industry average of 144 per cent annual turnover. As Kernel's president Stephen Goldstein told Fortune: "Team members are enjoying the experience, and automation is creating a better working environment for them and not a worse one." Kernel is what the augmented QSR kitchen looks like when the investment matches the ambition.</p>
+  </div>
+
+  <!-- WHEN IT GOES WRONG -->
+  <div class="sec" id="s-wrong">
+    <span class="cl">The Cautionary Tales</span>
+    <h2 class="ct">Death by a Thousand Paper Cuts</h2>
+    <div class="dv"></div>
+
+    <p class="bt">Not every automation story is a success story. The most honest assessment of what happens when augmentation is done badly came from Paul Carbone, CEO of Panera Bread, in November 2025. Speaking to CNBC, Carbone — a self-described "reformed CFO" — described his company's prior strategy with startling candour:</p>
+
+    <div class="pq reveal">
+      <p>We reduced food expenses. We reduced labor costs. In some cases, we reduced portion sizes, leading guests to enter our cafes to purchase sandwiches that were not only more expensive but also contained lower-quality ingredients and were smaller in size.</p>
+      <cite>Paul Carbone, CEO, Panera Bread — CNBC, November 2025</cite>
+    </div>
+
+    <p class="bt">Carbone called the strategy "death by a thousand paper cuts." Panera had scheduled fewer employees and relied increasingly on self-service kiosks — kiosks that hadn't been updated in a decade. Customers walked into cafes with no staff visible. The result: sales dropped 5 per cent, totalling $6.1 billion — ceding the leading fast-casual position to Chipotle and Panda Express. Carbone's reversal — the "Panera RISE" plan — involves reinvesting in labour, upgrading kiosks, adding more staff, and reversing portion cuts. The lesson is editorial gold: <em>automation without service co-investment is commercially self-defeating, not just ethically problematic</em>.</p>
+
+    <p class="bt">Taco Bell's voice AI rollout tells a parallel story. After two years of fine-tuning and expansion to 500+ drive-through locations, the system processed over 2 million orders. But a Wall Street Journal investigation in August 2025 found customers experiencing glitches, AI misunderstandings, and deliberate trolling — including a viral incident where a customer ordered 18,000 cups of water. Taco Bell's Chief Digital Officer Dane Mathews maintained that a full ban was not the answer, but conceded the system was being reassessed. His earlier optimism — that Voice AI would "ease team members' workloads, freeing them to focus on front-of-house hospitality" — had met the messy reality of language, accents, and human behaviour that algorithms cannot fully anticipate.</p>
+
+    <p class="bt">Both stories reinforce the same conclusion: the technology works. The question is whether the humans around it are invested in, trained, and empowered — or whether they're quietly removed in the name of efficiency. When they're removed, the brand suffers. When they're reinvested in, the brand grows. That is the operational proof behind the 32.2 per cent score: the human-resilient tasks aren't just ethically important. They are <em>commercially essential</em>.</p>
+  </div>
+
+  <!-- GLOBAL -->
+  <div class="sec" id="s-global">
+    <span class="cl">Around the World</span>
+    <h2 class="ct">From Tokyo to São Paulo: One Pattern, Every Kitchen</h2>
+    <div class="dv"></div>
+
+    <p class="bt"><strong>United States.</strong> The US leads adoption, driven by tight labour markets and $15+ minimum wages in most metro areas. Toast reports over 70 per cent of transactions at deployed locations flow through self-service interfaces. Miso's Flippy units concentrate in California and Texas where labour shortages are most acute. The National Restaurant Association's 2025 report found 62 per cent of QSR operators plan to increase technology investment, with kiosks and kitchen automation ranked as the top two priorities. Roughly 68 per cent of the fast food workforce is aged 16-24 — a demographic that adapts to new technology faster than any other, which accelerates the transition.</p>
+
+    <p class="bt"><strong>Europe.</strong> The UK is the most aggressive European adopter, with McDonald's UK rolling kiosks to virtually all locations and Pret A Manger testing computer vision. France and Germany present a more complex landscape: Works Councils and stronger labour protections create negotiation layers that slow deployment but produce more worker-centric implementations — retraining guarantees, phased rollouts, and augmentation-first procurement requirements that force vendors to demonstrate workforce benefit, not just cost reduction. Scandinavia is exploring a "social partnership" model where unions co-design automation strategies — potentially creating the most balanced approach globally.</p>
+
+    <p class="bt"><strong>Asia-Pacific.</strong> Japan leads — and the scale is staggering. Skylark Holdings, Japan's largest family restaurant operator, has deployed over 3,000 BellaBot robot waiters across more than 2,000 locations, investing ¥43 billion (approximately $380 million) — by far the largest restaurant robot deployment in the world. A trial at Tokyo locations found that robot waiters cut the number of steps human staff took in half during peak hours. But Japan's driver is fundamentally different from the US: an aging population reduced the restaurant workforce from 4.05 million in 2020 to 3.82 million in 2021. Japanese automation fills a vacancy left by demographics, not displaces workers who are available. China's cloud kitchen explosion — an estimated 15,000+ ghost kitchens in Tier 1 cities — represents a parallel automation path. India presents a unique trajectory: low labour costs weaken the economic case, but the sheer scale (7+ million food service workers) means even modest augmentation is significant. Indian QSR chains like Rebel Foods are pioneering AI-driven kitchen management at unprecedented scale, while McDonald's India has focused on digital delivery partnerships with Zomato rather than in-store automation — reflecting a fundamentally different economic calculation.</p>
+
+    <p class="bt"><strong>Middle East &amp; Latin America.</strong> Saudi Arabia is moving fastest. In July 2025, the Transport General Authority licensed the country's first autonomous food delivery service at ROSHN Business Front in Riyadh — a partnership between Jahez International and ROSHN Group deploying five autonomous robots equipped with 20+ sensors and six cameras. As Mohammed Al-Barrak, CTO of Jahez International, told Arab News: "We're happy that we officially launched autonomous delivery with ROSHN, as the first company to get the license from the sandbox." The pilot is explicitly framed within Saudi Vision 2030, positioning automation as economic development strategy. In Latin America, São Paulo and Mexico City lead, driven by AI voice-ordering in Spanish and Portuguese — multilingual capability accelerating deployment where English-only solutions couldn't scale.</p>
+
+    <div class="pq reveal">
+      <p>In 2026, brands will shift from simply collecting feedback to operationalising it — using AI and automation to turn guest sentiment into real-time action.</p>
+      <cite>Zack Oates, Founder &amp; CEO, Ovation — QSR Web, December 2025</cite>
+    </div>
+
+    <p class="bt">Oates's observation applies globally: the transformation is not just about automating tasks, but about creating feedback loops between customers, workers, and systems that make the entire operation more responsive. The QSR kitchen of 2028 won't just cook faster — it will <em>learn</em> faster, adapting to local demand patterns, customer preferences, and workforce capabilities in real time.</p>
+  </div>
+
+  <!-- HUMAN FORTRESS -->
+  <div class="sec" id="s-fortress">
+    <span class="cl">The Human Fortress</span>
+    <h2 class="ct">Anger, Grease, and the Health Inspector</h2>
+    <div class="dv"></div>
+
+    <p class="bt">Twelve of fifteen tasks have at least one technology partner. The three that don't are the most valuable — because they are the tasks where human capability <em>becomes more important</em> as automation handles everything else.</p>
+
+    <div class="ed-img ed-img-full reveal"><img src="{{MEDIA_4}}" alt="The empathy moment: when the kiosk fails the customer, the h"><div class="ed-img-cap">The empathy moment: when the kiosk fails the customer, the human recovers the relationship. No algorithm handles this.</div></div>
+
+    <p class="bt"><strong>Empathy under pressure.</strong> A customer whose order has been botched at 11pm is not presenting a problem that can be parsed by an algorithm. They are presenting an emotional state — frustration compounded by hunger, tiredness, and the specific indignity of being failed by a system that was supposed to be frictionless. The resolution requires improvised empathy, delivered under time pressure, calibrated to a specific human being in a specific moment. In an automated environment where the kiosk handles the easy interactions, this skill is exercised <em>more frequently, not less</em>. The augmented fast food worker becomes a specialist in human recovery — and that specialism is what turns a one-star review into a returning customer.</p>
+
+    <div class="ed-img reveal"><img src="{{MEDIA_5}}" alt="Every burn pattern is different. Every grease splatter is un"><div class="ed-img-cap">Every burn pattern is different. Every grease splatter is unique. Entropy defeats automation.</div></div>
+
+    <p class="bt"><strong>Physical adaptability.</strong> Burnt grease on a grill plate does not accumulate in predictable patterns. Spilled cooking oil creates a unique topology of mess every time. A clogged drain presents differently on each occurrence. As the restaurant industry has discovered, the kitchen is one of the most challenging environments for robotics precisely because of its physical variability. Every mess is different. Every surface has a different history. The humans who navigate this chaos exercise a form of embodied intelligence — continuous physical judgement under variable conditions — that AI researchers are decades from replicating in any commercially viable way.</p>
+
+    <p class="bt"><strong>Regulatory accountability.</strong> Food safety law across virtually every jurisdiction globally requires human sign-off on sanitation compliance. Even as IoT sensors automate the <em>detection</em> of issues — Zenput eliminates five hours per week of manual logging — a human being must verify, certify, and bear personal accountability for the result. This is by regulatory design, not by technological limitation. It ensures that the human role in food safety is not just protected but codified in law. And critically, as automation increases the volume and speed of food production, the regulatory accountability role becomes <em>more important</em>, not less — because the consequences of a food safety failure at scale are proportionally greater.</p>
+
+    <div class="pq reveal">
+      <p>Emotion. Entropy. Regulation. Three forces that define the floor below which automation cannot go — not just in fast food, but potentially across every service occupation we have scored. We call it the automation trilemma.</p>
+      <cite>Replaceable.ai — The Automation Trilemma</cite>
+    </div>
+
+    <p class="bt">Together, these three tasks account for roughly 20 per cent of the role's importance-weighted workload. They are why the replaceability score is 32 per cent, not 55. They are the floor — and they share a characteristic that should reassure anyone anxious about service-sector automation: the skills involved (empathy, adaptability, accountability) are not just hard to automate. They are hard to <em>define</em>, which makes them hard to specify in a vendor brief, hard to fund, and hard to build. The market failure is self-reinforcing. No venture capital firm is writing a cheque for "a robot that can tell when a grill surface is clean enough." And for workers, that's the best news in this entire analysis.</p>
+  </div>
+
+  <!-- VOICES -->
+  <div class="sec" id="s-voices">
+    <span class="cl">Industry Voices</span>
+    <h2 class="ct">What the People Building This Transformation Actually Think</h2>
+    <div class="dv"></div>
+
+    <p class="bt">The perspective of executives is one thing. The perspective of operational leaders — the people who manage stores, supervise districts, and watch workers adapt in real time — is another. Both tell the same story, but the operational voices carry a weight that no analyst projection can match.</p>
+
+    <div class="pq reveal">
+      <p>This is not about replacing team members. This is about really partnering with team members, and giving them the opportunity to focus on other parts of our business, which is what we really want to do — create memorable moments.</p>
+      <cite>Jeff Carper, Chief Operations Officer, White Castle — 10tv.com</cite>
+    </div>
+
+    <p class="bt">Carper's language is precise — "partnering with," not "substituting for." As White Castle's COO, he is responsible for the operational reality across more than 350 locations. His assessment is not aspirational. It reflects what he has observed in stores where Flippy is deployed: workers reassigned from dangerous fry stations to customer-facing roles, drive-through times reduced by 15-25 per cent, and team member satisfaction measurably improved. RJ Hottovy, an analyst at Placer.ai, captured the broader dynamic in an interview with CNN Business: kiosks "have created a restaurant within a restaurant" — meaning the technology hasn't simplified the operation. It has made it more complex, more capable, and more dependent on skilled human coordination.</p>
+
+    <div class="ed-img reveal"><img src="{{MEDIA_6}}" alt="The human interface: when technology meets confusion, a real"><div class="ed-img-cap">The human interface: when technology meets confusion, a real person bridges the gap.</div></div>
+
+    <div class="pq reveal">
+      <p>I want to believe that hospitality will still make a comeback. People will figure out the balance between technology and hospitality.</p>
+      <cite>Robbie Soskin, restaurant operator — Toast 2025 Voice of the Restaurant Industry</cite>
+    </div>
+
+    <p class="bt">Soskin's optimism is not naive. It reflects an emerging consensus among operators who have lived through the automation transition. The restaurants that have deployed kiosks and kitchen intelligence at scale report not a diminishment of hospitality but a <em>refocusing</em> of it. When the machine handles the transaction, the human handles the relationship. When the sensor monitors the temperature, the worker monitors the customer. The technology doesn't replace the human touch — it creates the operational space for it to flourish.</p>
+
+    <div class="pq reveal">
+      <p>Restaurants have a wealth of data available to help them optimise their business, but often don't have the time or training to interpret and act on it. Our vision is to transform every role in the restaurant ecosystem with intelligent features — all driving toward outsized business outcomes.</p>
+      <cite>Steve Fredette, President &amp; Co-founder, Toast — on the launch of ToastIQ, May 2025</cite>
+    </div>
+
+    <p class="bt">Fredette's framing is critical: "transform every role," not "eliminate every role." This is the augmentation thesis in a single sentence — technology that makes existing workers more capable, not technology that makes them unnecessary. Toast's survey of 712 operators confirmed this: restaurants are "choosing to fight for guest traffic by investing in marketing and customer incentives rather than cutting staff or hours."</p>
+
+    <p class="bt">From the operator floor, the same pattern holds:</p>
+
+    <div class="pq reveal">
+      <p>We've been able to lower labour costs and increase profit margins and reward the employees. These systems are in place and they're incredible. We're really able to see things we couldn't see before.</p>
+      <cite>Ungaro, multi-unit restaurant operator — Toast 2025 State of the Restaurant Industry</cite>
+    </div>
+
+    <p class="bt">The emphasis on "reward the employees" is notable. The operators succeeding with automation are not pocketing the savings — they are reinvesting them in the people who manage the augmented systems. Higher-skilled work commands higher compensation. The augmentation dividend flows to workers, not just shareholders, when the transition is managed well.</p>
+
+    <div class="pq reveal">
+      <p>We're pulling in people from all different industries because the robot industry is growing at such a fast rate. There simply aren't a lot of robot experts sitting around looking for a job. We're seeing a real shift in the workforce — just more technical jobs being created by industries like ours.</p>
+      <cite>Mike Bell, CEO, Miso Robotics — Yahoo Finance</cite>
+    </div>
+
+    <p class="bt">Bell's observation is borne out by deployment data: Miso Robotics alone has created roles — robot installation specialists, computer vision trainers, field maintenance engineers — that did not exist five years ago. The pattern mirrors what happened in manufacturing automation: every wave of robotic deployment creates a parallel wave of human roles to install, maintain, supervise, and improve the machines. The net employment effect is more nuanced than "robots take jobs." It is "robots change jobs — and create new ones in the process."</p>
+
+    <p class="bt">Sara Senatore, Senior Restaurant Analyst at Bank of America Securities, framed the thesis precisely in a March 2024 research note:</p>
+
+    <div class="pq reveal">
+      <p>It's not that they are necessarily reducing the number of people. It's more that they're making those people more productive and happier.</p>
+      <cite>Sara Senatore, Senior Restaurant Analyst, Bank of America Securities — Fortune, March 2024</cite>
+    </div>
+
+    <p class="bt">Senatore described back-of-house restaurant robots as the "vanguard of automation" — arguing they have the potential not only to increase profitability but to make jobs more enjoyable. Her assessment, grounded in financial analysis of the major QSR chains, is that the automation thesis is about labour redeployment, not headcount reduction.</p>
+
+    <p class="bt" style="margin-top:40px"><strong>But the workers themselves are not uniformly optimistic.</strong> Any honest assessment of this transformation must confront the gap between the executive narrative and the lived experience of the people on the floor.</p>
+
+    <p class="bt">New America's <em>Worker Voices: Technology and the Future for Workers</em> study, published in February 2026, canvassed food, retail, and grocery workers directly. The findings are sobering. Workers described "sharply negative views about technology like self-checkout, which they view as displacing jobs." Nearly every worker interviewed "predicted a significant increase in technology and a decline in the number of people working in their stores." Most felt they "lack a voice in these changes" and viewed their employers as seeing them as "a cost they will cut through automation."</p>
+
+    <p class="bt">In California, the tension is sharpest. Edgar Recinos, a cook at Wingstop in Los Angeles, was profiled by CNN in May 2025. After California's AB 1228 raised the fast food minimum wage to $20, Recinos received a pay increase — but his regular hours were cut. When he couldn't pick up extra shifts, he found himself, in his words, "in the same situation before the increase." His experience is not anecdotal: data from the Employment Policies Institute shows that non-tipped California restaurant workers lost up to 250 hours of scheduled work annually after AB 1228 — the equivalent of seven weeks of work and up to $4,000 in lost income. The worker is still counted as employed. Their economic position has deteriorated.</p>
+
+    <div class="pq reveal">
+      <p>There's a fair likelihood that if we don't do a course correction, we're going to have a truly two-tier system. A small number of people are going to be on top — they're going to design and use those technologies — and a very large number of people will only have marginal jobs, or not very meaningful jobs.</p>
+      <cite>Daron Acemoglu, Institute Professor, MIT; Nobel Prize in Economics 2024 — Business Insider, October 2024</cite>
+    </div>
+
+    <p class="bt">Acemoglu's warning is the sharpest counterpoint in the academic literature. His empirical research with Pascual Restrepo found that since 1990, each additional industrial robot reduced employment by approximately six humans while measurably lowering wages. He argues that AI is not yet creating enough new tasks to offset the ones being automated — and that the combination of record-low unionisation, weakened worker power, and concentration of technology ownership means the gains from automation are not being distributed to the people who need them most.</p>
+
+    <p class="bt">Zeynep Ton, Professor at MIT Sloan and author of <em>The Case for Good Jobs</em>, offers a structural explanation for why the augmentation narrative often fails in practice:</p>
+
+    <div class="pq reveal">
+      <p>Business leaders have a choice. They can either see employees as a cost to be minimised, invest very little in them and operate with high turnover. Or they can see their employees as drivers of growth, invest heavily in them with good wages and strong benefits, and operate with low turnover.</p>
+      <cite>Zeynep Ton, Professor, MIT Sloan School of Management — World Economic Forum, October 2023</cite>
+    </div>
+
+    <p class="bt">Ton's argument targets the structural barrier to augmentation: the QSR sector's 144 per cent average annual turnover rate means most workers leave before any upskilling can take effect. Cross-training — the mechanism by which automation should enrich jobs — fails when workers expect to leave within a year. The industry's labour model makes augmentation theoretically possible but practically difficult for all but the most intentional operators.</p>
+
+    <p class="bt">This is the honest picture. The augmentation story and the displacement story are both true — simultaneously, and for different workers within the same industry. McDonald's Guest Experience Leader creation (7,000 new roles in Canada) coexists with California losing 18,000 fast food jobs. White Castle's Flippy redeployment model coexists with Taco Bell's Voice AI failure. Kernel's $25/hour, 100 per cent retention model coexists with workers who feel they are "a cost to be cut." The 32.2 per cent RPI captures this complexity: it is neither a reassurance nor a warning. It is a measurement — and what happens next depends on the choices made by the people deploying the technology.</p>
+
+    <p class="bt" style="font-size:.78rem;color:var(--t4);font-style:italic;border-top:1px solid var(--t1);padding-top:12px;margin-top:24px">Editorial Quotation Disclosure: All quotes in this article are sourced from published interviews, press releases, earnings calls, and publicly available industry surveys (Tier 2 and Tier 3 sources under the Replaceable.ai Editorial Quotation Policy). Individuals and organisations quoted have not been approached for comment on this case study and their inclusion does not imply endorsement of Replaceable.ai or the Replaceability Potential Index. If you are quoted and would like to provide additional context, amend your remarks, contribute further perspective, or request removal, please contact <a href="/cdn-cgi/l/email-protection#0a63647e6f6666636d6f64696f4a786f7a666b696f6b68666f246b63" style="color:var(--c);text-decoration:none"><span class="__cf_email__" data-cfemail="026b6c76676e6e6b65676c6167427067726e63616763606e672c636b">[email&#160;protected]</span></a>. We are committed to accuracy and welcome corrections.</p>
+  </div>
+
+  <!-- ECONOMICS -->
+  <div class="sec" id="s-economics">
+    <span class="cl">The Economics</span>
+    <h2 class="ct">Show Me the Money (Drag the Slider)</h2>
+    <div class="dv"></div>
+
+    <p class="bt">The business case for augmentation is real — but it depends entirely on transaction volume. Drag the slider below to see how the economics change at different volumes.</p>
+
+    <!-- INTERACTIVE: ECONOMICS SLIDER -->
+    <div class="econ-wrap">
+      <div class="econ-title">Interactive: Augmentation ROI Calculator</div>
+      <div class="econ-slider-row">
+        <div class="econ-slider-label">Daily Transactions</div>
+        <input type="range" class="econ-slider" id="econSlider" min="100" max="1000" value="500" step="50">
+        <div class="econ-slider-val" id="econSliderVal">500</div>
+      </div>
+      <div class="econ-results">
+        <div class="econ-result"><div class="econ-result-val" id="econLabour" style="color:var(--em)">$34,500</div><div class="econ-result-label">Labour Redeployed</div></div>
+        <div class="econ-result"><div class="econ-result-val" id="econTech" style="color:var(--c)">−$17,600</div><div class="econ-result-label">Technology Cost</div></div>
+        <div class="econ-result"><div class="econ-result-val" id="econNet" style="color:var(--am)">$16,900</div><div class="econ-result-label">Net Annual Impact</div></div>
+      </div>
+    </div>
+
+    <p class="bt">Above five hundred daily transactions, the investment is compelling — roughly $16,900 per location per year. But the savings come not primarily from headcount reduction. They come from <strong>redeploying human time from low-value to high-value work</strong>: fewer hours counting cash, more hours resolving customer issues and maintaining quality. Below three hundred, the economics collapse — SaaS subscriptions are fixed costs, labour savings are variable. This is why the bifurcation is structural: automation flows to volume. Independent operators don't automate because it doesn't pay — not because they lack ambition.</p>
+  </div>
+
+  <!-- 2030 -->
+  <div class="sec" id="s-2030">
+    <span class="cl">Looking Ahead</span>
+    <h2 class="ct">What the Counter Looks Like in 2030</h2>
+    <div class="dv"></div>
+
+    <p class="bt"><strong>New job titles will formalise.</strong> By 2028, major QSR chains will likely create distinct classifications — "QSR Systems Coordinator," "Customer Recovery Specialist" — acknowledging that managing five automated systems simultaneously is more complex and more valuable than taking orders. Training programmes will shift to equipment troubleshooting, AI alert triage, and advanced complaint resolution. Compensation will follow: complexity demands it.</p>
+
+    <p class="bt"><strong>Robotics-as-a-Service will democratise.</strong> As next-generation units shrink and deployment accelerates, the volume threshold for profitable augmentation will drop from 500 to an estimated 300 daily transactions by 2030 — bringing 15–20 per cent more locations into the augmented tier. Mid-market operators will access technology previously reserved for global chains.</p>
+
+    <p class="bt"><strong>The vendor ecosystem will mature and compete.</strong> New entrants from logistics robotics, retail AI, and cloud kitchen platforms will create competitive pressure — lowering costs, accelerating innovation, and giving operators more choice. The companies that frame their value around worker augmentation rather than cost reduction will win.</p>
+
+    <p class="bt"><strong>The automation trilemma will hold.</strong> Despite extraordinary advances in NLP, robotic dexterity, and sensor technology, complaint de-escalation, equipment sanitation, and area cleaning show no credible automation path through 2035. The trilemma is structural, not technological — meaning incremental AI improvements do not linearly erode these tasks. They are the employment floor, representing roughly 20 per cent of the role's workload in perpetuity.</p>
+
+    <div class="ins reveal">
+      <div class="ins-l">The 2030 Fast Food Worker</div>
+      <p>A systems coordinator managing five to eight automated tools. An empathy specialist for customer recovery. A food safety authority with IoT-assisted monitoring. An equipment troubleshooter for robotic systems. <strong>More skilled, more varied, more valuable — and working alongside the most sophisticated automation ecosystem in the service economy.</strong></p>
+    </div>
+  </div>
+
+  <!-- CAREERS -->
+  <div class="sec" id="s-careers">
+    <span class="cl">New Careers</span>
+    <h2 class="ct">Six Roles That Didn't Exist Two Years Ago</h2>
+    <div class="dv"></div>
+
+    <p class="bt">Our analysis identifies an 11 per cent AI Job Creation Index — roughly eleven new roles for every hundred positions affected by automation. These are not hypothetical; they are being hired for now.</p>
+
+    <p class="bt"><strong>Kiosk systems technicians</strong> maintain and troubleshoot the hardware and software handling the majority of customer transactions — a role that combines IT skills with hospitality awareness. <strong>AI kitchen coordinators</strong> manage the interface between automated prep systems and human assembly workers, optimising throughput during peak hours. <strong>Robotic equipment supervisors</strong> oversee Flippy units and other physical AI systems, handling edge cases and maintenance. <strong>QSR data analysts</strong> interpret the enormous data streams generated by connected kitchen ecosystems — from waste patterns to demand forecasting. <strong>Customer recovery specialists</strong> handle the interactions automated systems cannot: complaints, accessibility needs, emotional escalation. And <strong>robot installation specialists</strong> — the fastest-growing new category, as Bell noted — deploy, calibrate, and train automated systems across locations.</p>
+
+    <p class="bt">In an industry that has historically undervalued interpersonal and technical skills, these roles represent genuine elevation. The augmentation dividend is not just economic. It is human.</p>
+  </div>
+
+  <!-- FEEDBACK -->
+  <div class="sec" id="s-feedback">
+    <span class="cl">Challenge This Score</span>
+    <h2 class="ct">Think 32.2% Is Wrong? Prove It.</h2>
+    <div class="dv"></div>
+
+    <p class="bt">Every challenge improves the model. If you work in QSR, build food service technology, or manage restaurant operations — your perspective is data we can't get any other way.</p>
+
+    <div class="fb" id="fbForm">
+      <div class="fb-t">Rate This Scoring</div>
+      <p style="font-size:.82rem;color:var(--t5);margin-bottom:12px">How accurate does 32.2% replaceability feel for fast food workers?</p>
+      <div class="fb2-acc" id="accBtns">
+        <button class="fb2-acc-btn" data-v="too-low" onclick="setAcc('too-low')">Too Low</button>
+        <button class="fb2-acc-btn" data-v="slightly-low" onclick="setAcc('slightly-low')">Slightly Low</button>
+        <button class="fb2-acc-btn" data-v="about-right" onclick="setAcc('about-right')">About Right</button>
+        <button class="fb2-acc-btn" data-v="slightly-high" onclick="setAcc('slightly-high')">Slightly High</button>
+        <button class="fb2-acc-btn" data-v="too-high" onclick="setAcc('too-high')">Too High</button>
+      </div>
+      <textarea class="fb-ta" id="fbCorrection" placeholder="Which tasks did we get right? Which did we get wrong? What's missing?"></textarea>
+      <p style="font-size:.65rem;color:var(--t4);margin:-4px 0 8px">Corrections from practitioners directly adjust future scores.</p>
+      <div class="fb-row">
+        <input class="fb-inp" id="fbName" placeholder="Name (optional)">
+        <input class="fb-inp" id="fbRole" placeholder="Role / company (optional)">
+        <input class="fb-inp" id="fbEmail" placeholder="Email (optional)">
+      </div>
+      <div class="fb-row">
+        <input class="fb-inp" id="fbVendor" placeholder="If you represent a vendor mentioned here, which one?">
+      </div>
+      <div class="fb2-consent">
+        <input type="checkbox" id="fbConsent">
+        <label for="fbConsent">I consent to Replaceable.ai storing this feedback and contacting me for follow-up. <a href="/privacy" style="color:var(--c);text-decoration:none">Privacy Policy</a></label>
+      </div>
+      <div class="fb-row">
+        <input class="fb-inp" id="fbInvite" placeholder="Invite a colleague (email) to review this case study">
+      </div>
+      <button class="fb-sub" onclick="subFb2()">Submit Feedback →</button>
+      <div class="fb-ok" id="fbOk">✓ Thank you. Your perspective will directly inform our next scoring iteration.</div>
+      <div class="fb2-pn">
+        <div class="fb2-pn-t">Join the Practitioner Network</div>
+        <div class="fb2-pn-d">Get early access to new case studies, challenge scores before publication, and shape the methodology.</div>
+        <a href="/practitioner-network" class="fb2-pn-btn">Apply →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="sec">
+    <div class="ed-img ed-img-full reveal"><img src="{{MEDIA_7}}" alt="The 2030 fast food worker: more skilled, more varied, more v"><div class="ed-img-cap">The 2030 fast food worker: more skilled, more varied, more valuable.</div></div>
+    <p class="bt" style="font-size:1.05rem">The fast food counter is not going dark. It is being <em>upgraded</em>. The humans standing behind it are being upgraded with it. And the companies building the technology are not replacing a workforce — they are partnering with it to create something that neither humans nor machines could achieve alone.</p>
+    <p class="bt" style="font-size:1.05rem">The kiosk takes the order. The robot fries the chips. The sensor monitors the temperature. But when a mother walks in at midnight with a tired child and a wrong order and a bad day — the human handles that. And in an augmented kitchen, that human has more time, better tools, and more support than any fast food worker in history.</p>
+    <p class="bt" style="font-size:1.15rem"><strong>That is the future of this job. Not less human. <em>More.</em></strong></p>
+    <p class="bt" style="font-size:1.02rem">This is the first in our <em>Automation Anatomy</em> series — scoring the augmentation story for every major occupation in the global economy. Your industry may be next.</p>
+  </div>
+

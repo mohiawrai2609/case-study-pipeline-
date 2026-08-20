@@ -1,0 +1,537 @@
+{
+ "issue": 1,
+ "role": {
+  "title": "Fast Food and Counter Workers",
+  "soc": "35-3023.00",
+  "group": "Food Preparation",
+  "rank": 136,
+  "emp_k": 3796,
+  "wage": 30480,
+  "growth": 6.1,
+  "timeline": "2-5 years",
+  "band": "Moderate"
+ },
+ "scores": {
+  "rpi": 35.8,
+  "aps": 55,
+  "hrf": 35,
+  "untouched": 45,
+  "ajci": 8,
+  "cognitive": 38,
+  "physical": 18
+ },
+ "cover": {
+  "title": "Would You Like <em>Automation</em> With That?",
+  "subtitle": "Inside the job that is splitting in two, and the three human skills no machine can buy.",
+  "published": "August 2026"
+ },
+ "matrix": {
+  "breadthThreshold": 0.16,
+  "depthThreshold": 0.7
+ },
+ "econ": {
+  "labourBase": 34500,
+  "techFixed": 17600,
+  "baseVolume": 500
+ },
+ "tasks": [
+  {
+   "name": "Process customer payments through AI kio",
+   "type": "r",
+   "desc": "Process customer payments through AI kiosk systems or mobile apps.",
+   "vendor": "Toast, Olo"
+  },
+  {
+   "name": "Serve customers at counter for pickup of",
+   "type": "a",
+   "desc": "Serve customers at counter for pickup of AI-routed orders.",
+   "vendor": "Kiosk platforms"
+  },
+  {
+   "name": "Reconcile daily receipts with automated ",
+   "type": "a",
+   "desc": "Reconcile daily receipts with automated POS reports.",
+   "vendor": "Restaurant365"
+  },
+  {
+   "name": "Respond to customer complaints beyond ch",
+   "type": "h",
+   "desc": "Respond to customer complaints beyond chatbot capability.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Deliver food orders to tables and drive-",
+   "type": "h",
+   "desc": "Deliver food orders to tables and drive-through windows.",
+   "vendor": "Bear Robotics, Pudu"
+  },
+  {
+   "name": "Monitor inventory levels flagged by auto",
+   "type": "a",
+   "desc": "Monitor inventory levels flagged by automated par-level systems.",
+   "vendor": "Toast, Restaurant365"
+  },
+  {
+   "name": "Perform cleaning and sanitation followin",
+   "type": "h",
+   "desc": "Perform cleaning and sanitation following digital checklists.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Brew coffee and beverages",
+   "type": "h",
+   "desc": "Brew coffee and beverages, monitor machine alerts.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Assemble sandwiches and menu items on ki",
+   "type": "h",
+   "desc": "Assemble sandwiches and menu items on kitchen display screens.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Operate frozen beverage and soft-serve m",
+   "type": "h",
+   "desc": "Operate frozen beverage and soft-serve machines.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Package completed orders with barcode ac",
+   "type": "h",
+   "desc": "Package completed orders with barcode accuracy verification.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Clear and reset dining areas",
+   "type": "h",
+   "desc": "Clear and reset dining areas, bus tables.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Deep-clean cooking equipment and sanitiz",
+   "type": "h",
+   "desc": "Deep-clean cooking equipment and sanitize food contact areas.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Coordinate order flow when AI routing is",
+   "type": "h",
+   "desc": "Coordinate order flow when AI routing is overloaded.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Train new employees on equipment and AI ",
+   "type": "h",
+   "desc": "Train new employees on equipment and AI system interfaces.",
+   "vendor": "No vendor - human only"
+  },
+  {
+   "name": "Validate automated food temperature aler",
+   "type": "r",
+   "desc": "Validate automated food temperature alerts from IoT sensors.",
+   "vendor": "SmartSense, Jolt, Zenput"
+  },
+  {
+   "name": "Provide technical support for kiosk erro",
+   "type": "h",
+   "desc": "Provide technical support for kiosk errors.",
+   "vendor": "No vendor - human only"
+  }
+ ],
+ "vendors": [
+  {
+   "id": "toast",
+   "name": "Toast",
+   "initials": "TO",
+   "stage": "Public (NYSE: TOST)",
+   "workers": 164000,
+   "products": 2,
+   "evidence": "Production",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Toast Kiosk & Toast for Quick Service, Toast Inventory",
+   "note": "About 164,000 locations on the platform as of 2025, across QSR and full-service brands.",
+   "tasks": [
+    {
+     "name": "Process customer payments via AI kiosk",
+     "aps": 85,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Monitor inventory par-levels",
+     "aps": 60,
+     "vec": "Physical"
+    }
+   ]
+  },
+  {
+   "id": "restau",
+   "name": "Restaurant365",
+   "initials": "R3",
+   "stage": "Growth-stage, ~$437.5M raised",
+   "workers": 40000,
+   "products": 2,
+   "evidence": "Production",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Accounting & Ops Platform, Inventory Management",
+   "note": "Used by multi-unit restaurant groups; G2-recognised for restaurant BI and inventory.",
+   "tasks": [
+    {
+     "name": "Reconcile daily receipts with POS",
+     "aps": 70,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Monitor inventory par-levels",
+     "aps": 65,
+     "vec": "Physical"
+    }
+   ]
+  },
+  {
+   "id": "zenput",
+   "name": "Zenput (CrunchTime)",
+   "initials": "ZC",
+   "stage": "Acquired by CrunchTime, 2022",
+   "workers": 60000,
+   "products": 1,
+   "evidence": "Production",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Zenput Operations Execution Platform",
+   "note": "60,000+ locations across 100+ countries, including Chipotle, Five Guys and 7-Eleven.",
+   "tasks": [
+    {
+     "name": "Validate automated temperature alerts",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "olo",
+   "name": "Olo",
+   "initials": "OL",
+   "stage": "Public (NYSE: OLO)",
+   "workers": 75000,
+   "products": 1,
+   "evidence": "Production",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "Olo Pay (card-present and kiosks)",
+   "note": "750+ restaurant brands; Olo Pay extends to self-service kiosks via NCR Voyix, Qu and TRAY.",
+   "tasks": [
+    {
+     "name": "Process customer payments via AI kiosk",
+     "aps": 80,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "smarts",
+   "name": "SmartSense by Digi",
+   "initials": "SD",
+   "stage": "Unit of Digi International (NASDAQ: DGII)",
+   "workers": 500,
+   "products": 1,
+   "evidence": "Production",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "SmartSense Food Service Monitoring",
+   "note": "500+ locations of a major chain, reporting near-perfect temperature-monitoring compliance.",
+   "tasks": [
+    {
+     "name": "Validate automated temperature alerts",
+     "aps": 80,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "puduro",
+   "name": "Pudu Robotics",
+   "initials": "PR",
+   "stage": "Series C3, ~$170M total",
+   "workers": 6000,
+   "products": 1,
+   "evidence": "Production",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "PuduBot",
+   "note": "60+ restaurants have deployed 100+ Pudu service robots, according to regional partners.",
+   "tasks": [
+    {
+     "name": "Deliver food orders to tables",
+     "aps": 70,
+     "vec": "Physical"
+    }
+   ]
+  },
+  {
+   "id": "bearro",
+   "name": "Bear Robotics",
+   "initials": "BR",
+   "stage": "Series C, ~$60M at $500M valuation",
+   "workers": 2000,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Servi / Servi Plus",
+   "note": "Servi Plus is positioned as a server assistant for food running and table bussing.",
+   "tasks": [
+    {
+     "name": "Deliver food orders to tables",
+     "aps": 75,
+     "vec": "Physical"
+    }
+   ]
+  },
+  {
+   "id": "jolt",
+   "name": "Jolt",
+   "initials": "JO",
+   "stage": "Acquired by Digi for ~$145.5M, 2025",
+   "workers": 5000,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "Jolt Operations Management & Temperature Probes",
+   "note": "Small and mid-size food businesses; being folded into SmartSense post-acquisition.",
+   "tasks": [
+    {
+     "name": "Validate automated temperature alerts",
+     "aps": 75,
+     "vec": "Cognitive"
+    }
+   ]
+  }
+ ],
+ "shift": [
+  {
+   "time": "6:00 AM",
+   "task": "Equipment diagnostics and kitchen prep",
+   "type": "augmented",
+   "desc": "IoT sensors run overnight temperature validation. The worker reviews the automated exception log and signs off on the HACCP record."
+  },
+  {
+   "time": "7:00 AM",
+   "task": "Opening, first kiosk orders",
+   "type": "automated",
+   "desc": "Kiosks and Olo Pay handle early transactions end to end. Payment capture requires no human touch."
+  },
+  {
+   "time": "9:00 AM",
+   "task": "Breakfast rush, coordinating systems",
+   "type": "augmented",
+   "desc": "The worker moves between kiosk queue, kitchen display and drive-through, troubleshooting a frozen terminal mid-rush."
+  },
+  {
+   "time": "10:00 AM",
+   "task": "Inventory alerts and restocking",
+   "type": "automated",
+   "desc": "Restaurant365 flags stock trending below par from sales velocity and drafts the purchase order. The worker physically restocks."
+  },
+  {
+   "time": "12:00 PM",
+   "task": "Peak rush, exception handling",
+   "type": "augmented",
+   "desc": "Maximum volume. The worker's primary role is managing everything the automation cannot route."
+  },
+  {
+   "time": "1:00 PM",
+   "task": "Angry customer, wrong order",
+   "type": "human",
+   "desc": "Wrong meal, twenty-minute wait, a crying child. No algorithm handles this. The worker reads the room and improvises."
+  },
+  {
+   "time": "2:00 PM",
+   "task": "Food safety compliance walk",
+   "type": "human",
+   "desc": "Health protocols require human sign-off: fryer oil clarity, grill cleanliness, drain covers."
+  },
+  {
+   "time": "3:00 PM",
+   "task": "Deep clean, grill and fryer",
+   "type": "human",
+   "desc": "Burnt grease, splattered oil, a clogged drain. Every surface is different. Nothing ships for this."
+  },
+  {
+   "time": "4:00 PM",
+   "task": "Afternoon kiosk monitoring",
+   "type": "automated",
+   "desc": "Volume drops. Kiosks take nearly all orders. Cash reconciliation runs itself and flags a $12 variance."
+  },
+  {
+   "time": "5:00 PM",
+   "task": "Shift handover and close",
+   "type": "augmented",
+   "desc": "The system generates the shift summary; the outgoing worker adds the context it could not see."
+  }
+ ],
+ "sections": [
+  {
+   "blocks": [
+    {
+     "t": "p",
+     "drop": true,
+     "text": "Fast food workers now operate in AI-augmented kitchens where kiosks handle most order entry, automated inventory systems manage stock levels, and digital temperature monitors enforce food safety compliance. The human role has shifted toward quality control, handling the exceptions that fall outside automated workflows, and providing the face-to-face service layer that builds customer loyalty in an increasingly automated environment."
+    }
+   ]
+  },
+  {
+   "id": "s-score",
+   "label": "The Score",
+   "title": "35.8% - And Why the Number Moved",
+   "blocks": [
+    {
+     "t": "component",
+     "name": "gauge"
+    },
+    {
+     "t": "img",
+     "slot": "kiosk_terminal",
+     "caption": "A self-order kiosk mid-transaction.",
+     "full": true,
+     "prompt": "A self-order kiosk screen glowing in an otherwise dark quick-service restaurant after close, one human hand hovering at the edge of frame without touching it, order confirmation reflected in the black glass"
+    },
+    {
+     "t": "p",
+     "text": "Fast Food and Counter Workers score an RPI of **35.8 per cent**, an APS of 0.55 against an HRF of 0.35. That places the role in the *Moderate* band, ranked 136th of 995 scored occupations."
+    },
+    {
+     "t": "ins",
+     "label": "A Note on This Revision",
+     "text": "This edition supersedes the original No. 001, which published at 32.2 per cent. That figure came from an APS/HRF pair of 0.52/0.38 which does not appear anywhere in the scoring database's audit history. Every number here is derived directly from the scoring engine."
+    },
+    {
+     "t": "component",
+     "name": "chartEx"
+    },
+    {
+     "t": "p",
+     "text": "The cognitive automation layer is fully deployed. Kiosks handle 70 per cent or more of order entry at major chains, POS systems auto-reconcile receipts, and inventory platforms flag restock needs without human monitoring. That drives Cognitive APS to 0.38. Physical APS reaches only 0.18, because cooking robots and cleaning bots remain in pilot stages: assembling sandwiches, operating fryers and bussing tables still demand a manual dexterity that current robotics cannot match at quick-service speed and cost."
+    }
+   ]
+  },
+  {
+   "id": "s-shift",
+   "label": "The Shift",
+   "title": "One Day Behind the Counter",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Scores are abstractions. A shift is not. Here is where automation actually touches the work, hour by hour."
+    },
+    {
+     "t": "component",
+     "name": "shift"
+    },
+    {
+     "t": "img",
+     "slot": "counter_at_peak",
+     "caption": "The lunch rush, where exception handling is the job.",
+     "full": false,
+     "prompt": "A quick-service counter during peak rush seen from behind the line, motion-blurred hands assembling orders, kitchen display screens throwing pale light across steel surfaces"
+    }
+   ]
+  },
+  {
+   "id": "s-tasks",
+   "label": "The Anatomy",
+   "title": "Seventeen Tasks. Click Any One.",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "O*NET's task inventory, re-decomposed for the AI era. Eleven remain traditional, four are augmented, and two did not exist before automation created them."
+    },
+    {
+     "t": "component",
+     "name": "taskGrid"
+    }
+   ]
+  },
+  {
+   "id": "s-vendors",
+   "label": "The Innovators",
+   "title": "The Companies Building the Augmented Counter",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Eight vendors hold production or pilot evidence against this role's tasks. **None qualifies as a Leader.** The broadest covers two tasks out of seventeen, a breadth of 0.12, below the 0.16 threshold. This is a market of specialists, not platforms."
+    },
+    {
+     "t": "img",
+     "slot": "kitchen_display",
+     "caption": "Kitchen display systems replaced paper tickets.",
+     "full": true,
+     "prompt": "A kitchen display system mounted above a stainless prep station, order tickets queued on screen, steam drifting across the lens, the paper ticket spike beside it empty and unused"
+    },
+    {
+     "t": "component",
+     "name": "matrix"
+    },
+    {
+     "t": "component",
+     "name": "vendorCards"
+    }
+   ]
+  },
+  {
+   "id": "s-fortress",
+   "label": "The Human Fortress",
+   "title": "Anger, Grease, and the Health Inspector",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Human defensibility here comes from physical work context and real-time problem-solving rather than deep expertise. O*NET confirms that workers spend most of their time standing and handling objects in fast-paced environments. The Job Zone 2 classification and the low consequence of any individual error, since a wrong order can simply be remade, cap HRF at 0.35. But face-to-face contact scores near the top of the scale, and that service layer is where the defensibility actually lives."
+    },
+    {
+     "t": "img",
+     "slot": "service_recovery",
+     "caption": "The task no vendor covers.",
+     "full": false,
+     "prompt": "Two people at a service counter mid-conversation, the worker leaning in and listening, body language carrying the entire exchange, shot from a respectful distance at shoulder height"
+    },
+    {
+     "t": "pq",
+     "text": "PLACEHOLDER - no quote in this build has passed verification. The pipeline's verify stage must confirm speaker, role, publication and date before any quote ships.",
+     "cite": "Unverified - blocked from publication"
+    }
+   ]
+  },
+  {
+   "id": "s-economics",
+   "label": "The Economics",
+   "title": "Show Me the Money",
+   "blocks": [
+    {
+     "t": "component",
+     "name": "econ"
+    }
+   ]
+  },
+  {
+   "id": "s-2030",
+   "label": "Looking Ahead",
+   "title": "What the Counter Looks Like in 2030",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "An AJCI of 0.08 reflects AI creating supervisory tasks, such as kiosk troubleshooting and IoT temperature validation, rather than eliminating the role. The next decade brings continued bifurcation: transactional work migrates fully to self-service while humans concentrate on exception handling and the emotional labour of service recovery. Physical automation will penetrate cooking, but remains five to ten years from economic viability at scale."
+    }
+   ]
+  },
+  {
+   "id": "s-feedback",
+   "label": "Challenge This Score",
+   "title": "Think 35.8% Is Wrong? Prove It.",
+   "blocks": [
+    {
+     "t": "component",
+     "name": "feedback"
+    }
+   ]
+  }
+ ],
+ "hero": {
+  "video": "https://qpibugnhpuoxlsmyuksz.supabase.co/storage/v1/object/public/anatomy/_shared/hero-loop.mp4",
+  "poster": "https://qpibugnhpuoxlsmyuksz.supabase.co/storage/v1/object/public/anatomy/_shared/hero-poster.webp",
+  "shared": true
+ }
+}

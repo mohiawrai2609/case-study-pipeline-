@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{OG_DESC}}">
+<meta property="og:title" content="{{OG_TITLE}}">
+<meta property="og:description" content="{{OG_DESC}}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Replaceable.ai">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23C41E3A' rx='14' width='100' height='100'/><text x='50' y='72' font-size='62' font-family='serif' font-weight='bold' fill='white' text-anchor='middle'>R</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+{{MAIN_CSS}}
+</head>
+<body>
+<div id="prog"></div>
+
+<!-- COVER -->
+<section class="cover">
+  <div class="cover-vw">
+    {{COVER_MEDIA}}
+    <div class="cover-vo"></div>
+  </div>
+  <div class="cover-c"><div class="wrap">
+    <div class="cover-logo"><div class="logo-r">R</div><div class="logo-w">Replace<b>able</b><i>.ai</i></div></div>
+    <div class="cover-badge">{{ISSUE_BADGE}}</div>
+    <h1>{{COVER_TITLE}}</h1>
+    <p class="cover-sub">{{COVER_SUB}}</p>
+    <div class="cover-meta">
+      <div><div class="cover-ml">Published</div><div class="cover-mv">{{PUB_DATE}}</div></div>
+      <div><div class="cover-ml">Series</div><div class="cover-mv">Automation Anatomy</div></div>
+      <div><div class="cover-ml">Occupation</div><div class="cover-mv">{{OCCUPATION}}</div></div>
+      <div><div class="cover-ml">Reading Time</div><div class="cover-mv">{{READ_TIME}}</div></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- INVITE BAR -->
+<div class="invite-bar" id="inviteBar">You've been invited by <b id="inviteVendor"></b> to explore this case study. <a href="#s-vendors" style="color:var(--c);text-decoration:none">Jump to Vendor Ecosystem →</a></div>
+
+<!-- MAIN -->
+<div class="main-layout">
+<div class="content">
+{{ARTICLE}}
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="sb-block sb-toc">
+    <div class="sb-toc-l">Navigate</div>
+{{TOC}}
+</div>
+  {{SIDEBAR_BLOCKS}}
+</div>
+</div>
+
+<!-- RPI TOOL -->
+<div class="rpi-tool"><div class="rpi-tool-i"><div><h3>How Replaceable <em>Am I?</em></h3><p>Search 1,016 occupations scored by the RPI. Find out where your role sits.</p></div><div class="rpi-search"><input type="text" class="rpi-input" placeholder="Enter your job title..."><button class="rpi-btn" onclick="alert('Full RPI search launching Q2 2026. Sign up at replaceable.ai for early access.')">Score My Role →</button></div></div></div>
+
+<!-- VENDOR BANNER -->
+{{VENDOR_BAR}}
+
+<!-- PREMIUM -->
+<section style="background:var(--o);padding:56px 0">
+  <div style="max-width:1200px;margin:0 auto;padding:0 40px">
+    <span class="cl" style="color:var(--cl)">Premium Content</span>
+    <h2 style="font-family:var(--fd);font-size:1.6rem;font-weight:700;color:#fff;margin-bottom:8px">Go Deeper on This Role</h2>
+    <p style="font-size:.88rem;color:var(--t3);margin-bottom:24px;max-width:480px">Exclusive resources for Replaceable.ai members — full datasets, presentation-ready materials, and the complete intelligence briefing.</p>
+    {{PREMIUM}}
+  </div>
+</section>
+
+<!-- VENDOR BANNER 2 -->
+{{VENDOR_BAR2}}
+
+<!-- CTA -->
+<section class="cta-s"><div style="max-width:1200px;margin:0 auto;padding:0 40px;position:relative"><h2 class="cta-t">Score Your <em>Workforce</em></h2><p class="cta-st">Task decomposition. Vendor intelligence. Augmentation mapping. Financial modelling. Any role. Any industry.</p><div><a href="/cdn-cgi/l/email-protection#e980879d8c8585808e8c878a8ca99b8c9985888a8c888b858cc78880d69a9c8b838c8a9dd4bbb9a0ccdbd9ba8a869b80878e" class="cta-btn">Request a Scoring →</a><a href="/cdn-cgi/l/email-protection#c1a8afb5a4adada8a6a4afa2a481b3a4b1ada0a2a4a0a3ada4efa0a8feb2b4a3aba4a2b5fc97a4afa5aeb3e4f3f191a0b3b5afa4b3b2a9a8b1" class="cta-sec">Vendor Partnership</a><a href="/cdn-cgi/l/email-protection#4d242339282121242a28232e280d3f283d212c2e282c2f2128632c24723e382f27282e3970082339283f3d3f243e28" class="cta-sec">Enterprise</a></div></div></section>
+
+<!-- REFS -->
+{{REFERENCES}}
+
+<!-- FOOTER -->
+<footer class="foot"><div class="foot-i"><div style="display:flex;align-items:center;gap:8px"><div class="logo-r" style="width:24px;height:24px;font-size:14px;border-radius:3px">R</div><span style="font-family:var(--fd);font-size:13px;font-weight:600;color:var(--t3)">Replace<span style="color:var(--c)">able</span>.ai</span></div><p>© 2026 Replaceable.ai. All rights reserved. Proprietary RPI™ methodology. <a href="/cdn-cgi/l/email-protection#660f0812030a0a0f0103080503261403160a07050307040a0348070f"><span class="__cf_email__" data-cfemail="b8d1d6ccddd4d4d1dfddd6dbddf8caddc8d4d9dbddd9dad4dd96d9d1">[email&#160;protected]</span></a></p></div></footer>
+
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+{{RUNTIME}}
+
+<!-- ═══════════════════════════════════════════════════════════
+     VENDOR PROFILE OVERLAY
+     ═══════════════════════════════════════════════════════════ -->
+{{OVERLAY_CSS}}
+
+{{VENDOR_OVERLAY}}
+
+
+</body>
+</html>

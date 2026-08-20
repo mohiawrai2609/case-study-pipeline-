@@ -1,0 +1,1087 @@
+{
+ "issue": 7,
+ "role": {
+  "title": "Elementary School Teachers, Except Special Education",
+  "soc": "25-2021.00",
+  "band": "Low",
+  "rank": 857,
+  "wage": 62340,
+  "emp_k": 1422.7,
+  "growth": -2,
+  "timeline": "10+ years",
+  "group": "Education & Library"
+ },
+ "scores": {
+  "rpi": 3.5,
+  "aps": 29,
+  "hrf": 88,
+  "untouched": 71,
+  "ajci": 12,
+  "cognitive": 29,
+  "physical": 8
+ },
+ "cover": {
+  "title": "What the Machine <em>Cannot</em> Teach",
+  "subtitle": "Artificial intelligence has taken the paperwork of primary teaching and left the hardest part of the job exactly where it found it.",
+  "published": "August 2026"
+ },
+ "matrix": {
+  "breadthThreshold": 0.16,
+  "depthThreshold": 0.68
+ },
+ "econ": {
+  "labourBase": 52989,
+  "techFixed": 18702,
+  "baseVolume": 500
+ },
+ "tasks": [
+  {
+   "name": "Design and deliver instruction",
+   "type": "a",
+   "desc": "Design and deliver instruction using AI-generated lesson plans and adaptive learning platforms that adjust difficulty in real-time, while maintaining in-person classroom presence to manage group dynamics, answer spontaneous questions, and provide immediate behavioral redirection.",
+   "vendor": "Magic School, Inc."
+  },
+  {
+   "name": "Establish and enforce behavioral norms a",
+   "type": "h",
+   "desc": "Establish and enforce behavioral norms and classroom procedures through direct presence, using voice modulation, body language, and split-second de-escalation judgment that responds to developmental cues AI monitoring systems cannot interpret.",
+   "vendor": "ClassDojo"
+  },
+  {
+   "name": "Provide individualized guidance and coun",
+   "type": "a",
+   "desc": "Provide individualized guidance and counseling for students with adjustment or academic challenges, synthesizing AI-flagged at-risk indicators with face-to-face conversations that build trust and uncover unspoken stressors.",
+   "vendor": "Panorama Education"
+  },
+  {
+   "name": "Adapt teaching methods and materials to",
+   "type": "a",
+   "desc": "Adapt teaching methods and materials to meet diverse learner needs, using AI-recommended differentiation strategies while applying in-the-moment judgment about a child's fatigue, confusion, or readiness that no algorithm detects.",
+   "vendor": "Diffit"
+  },
+  {
+   "name": "Plan and conduct balanced instructional",
+   "type": "a",
+   "desc": "Plan and conduct balanced instructional activities that integrate AI-curated content with hands-on exploration, managing the physical classroom environment and facilitating student-to-student interaction that builds social skills.",
+   "vendor": "SchoolAI"
+  },
+  {
+   "name": "Prepare physical classroom materials and",
+   "type": "h",
+   "desc": "Prepare physical classroom materials and arrange learning stations, selecting and organizing manipulatives, art supplies, and technology devices that support the day's lesson.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Read books aloud to entire classes or sm",
+   "type": "h",
+   "desc": "Read books aloud to entire classes or small groups, using vocal expression, pacing, and interactive questioning to build literacy skills and emotional engagement in ways audiobook narration cannot replicate.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Observe and evaluate students' academic",
+   "type": "a",
+   "desc": "Observe and evaluate students' academic performance, behavior, social development, and physical health through continuous in-person monitoring, interpreting subtle changes in energy, peer interaction, or emotional state that AI attendance and assessment systems miss.",
+   "vendor": "Panorama Education"
+  },
+  {
+   "name": "Confer with parents",
+   "type": "h",
+   "desc": "Confer with parents, guardians, administrators, and specialists to resolve behavioral and academic challenges, using face-to-face or video meetings where trust-building and collaborative problem-solving require human empathy and judgment.",
+   "vendor": "Magic School, Inc."
+  },
+  {
+   "name": "Meet with parents and guardians to discu",
+   "type": "a",
+   "desc": "Meet with parents and guardians to discuss student progress, review AI-generated performance dashboards, and collaboratively set priorities and resource needs through conversations that build partnership and shared accountability.",
+   "vendor": "Seesaw Learning"
+  },
+  {
+   "name": "Integrate technology and multimedia into",
+   "type": "h",
+   "desc": "Integrate technology and multimedia into lessons, selecting and troubleshooting devices, projectors, and educational apps while managing the physical classroom to ensure equitable access and on-task behavior.",
+   "vendor": "SMART Technologies"
+  },
+  {
+   "name": "Collaborate with special education teach",
+   "type": "h",
+   "desc": "Collaborate with special education teachers, counselors, and intervention specialists in face-to-face meetings to discuss individual students' needs, coordinate services, and align support strategies.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Establish and communicate clear learning",
+   "type": "a",
+   "desc": "Establish and communicate clear learning objectives for lessons and units, using AI curriculum alignment tools to ensure standards coverage while articulating goals in developmentally appropriate language during whole-class instruction.",
+   "vendor": "Magic School, Inc."
+  },
+  {
+   "name": "Design and implement remedial interventi",
+   "type": "a",
+   "desc": "Design and implement remedial interventions for struggling students, using AI diagnostic data to target skill gaps while delivering one-on-one or small-group instruction that provides immediate feedback and emotional encouragement.",
+   "vendor": "Curriculum Associates"
+  },
+  {
+   "name": "Review and provide formative feedback on",
+   "type": "a",
+   "desc": "Review and provide formative feedback on student work, using AI auto-grading for objective assessments while personally evaluating open-ended responses, providing handwritten comments, and adjusting instruction based on patterns AI scoring misses.",
+   "vendor": "Renaissance (Nearpod)"
+  },
+  {
+   "name": "Foster growth mindset and perseverance i",
+   "type": "h",
+   "desc": "Foster growth mindset and perseverance in students through direct coaching, modeling problem-solving resilience, and providing personalized encouragement that responds to individual children's learning histories and emotional needs.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Maintain accurate student records",
+   "type": "a",
+   "desc": "Maintain accurate student records using AI-integrated learning management systems that auto-populate attendance, grades, and behavioral incidents, while manually documenting nuanced observations required for IEP compliance and parent communication.",
+   "vendor": "PowerSchool"
+  },
+  {
+   "name": "Enforce school policies and rules",
+   "type": "h",
+   "desc": "Enforce school policies and rules through direct supervision, using physical presence and interpersonal authority to manage hallway transitions, cafeteria behavior, and playground safety.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Organize and lead developmental activiti",
+   "type": "h",
+   "desc": "Organize and lead developmental activities such as games, arts and crafts, music, and storytelling, managing physical materials and facilitating peer interaction that builds social-emotional skills.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Review and validate AI-generated individ",
+   "type": "h",
+   "desc": "Review and validate AI-generated individualized education plans and accommodation recommendations, cross-referencing algorithmic outputs with direct classroom observations and professional judgment about student needs.",
+   "vendor": "Playground IEP",
+   "origin": "ai-created"
+  },
+  {
+   "name": "Monitor adaptive learning platform data",
+   "type": "h",
+   "desc": "Monitor adaptive learning platform data for algorithm bias and unintended tracking errors, intervening when AI misclassifies a student's proficiency or recommended pathway based on incomplete behavioral data.",
+   "vendor": "Turnitin",
+   "origin": "ai-created"
+  }
+ ],
+ "vendors": [
+  {
+   "id": "magics",
+   "name": "Magic School, Inc.",
+   "initials": "MA",
+   "stage": "Series B, ~$80M total raised (Series B $45M March 2025)",
+   "reach": 47,
+   "products": 5,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "MagicSchool AI – Differentiation Tools, MagicSchool AI – IEP Goal Writer, MagicSchool AI – Lesson Plan Generator, MagicSchool AI – Objectives Writer & Curriculum Alignment, MagicSchool AI – Parent Communication Tools",
+   "note": "57% of licensed special education teachers used AI for IEPs in 2024-25 (PowerSchool/RAND survey, up from 39% prior year); MagicSchool is the most commonly cited tool; 10,000+ schools",
+   "tasks": [
+    {
+     "name": "Adapt teaching methods and materials to meet",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Confer with parents",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Design and deliver instruction",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Establish and communicate clear learning obj",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Review and validate AI-generated individuali",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "panora",
+   "name": "Panorama Education",
+   "initials": "PA",
+   "stage": "Series C, $92-105M total raised (Series C $60M led by Genera",
+   "reach": 55,
+   "products": 4,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Panorama Parent Reports & Progress Dashboards, Panorama Student Success, Panorama Student Success – Disaggregated Analytics, Panorama Student Success + Behavior Logging & Analytics",
+   "note": "~1,500+ district clients; large urban Title I district deployments for MTSS compliance; 2024 study: schools using Panorama showed significantly higher math and reading scores",
+   "tasks": [
+    {
+     "name": "Meet with parents and guardians to discuss s",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Monitor adaptive learning platform data for",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Observe and evaluate students' academic perf",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Provide individualized guidance and counseli",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "diffit",
+   "name": "Diffit",
+   "initials": "DI",
+   "stage": "Bootstrapped/private. No disclosed VC funding",
+   "reach": 32,
+   "products": 2,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Diffit for Differentiation, Diffit Leveled Materials for Intervention",
+   "note": "Undisclosed exact customer count; cited by Edutopia (Nov 2024) as top differentiation tool; widely referenced across r/Teachers and r/SpecialEd for ELL support and IEP accommodation materials; 96%",
+   "tasks": [
+    {
+     "name": "Adapt teaching methods and materials to meet",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Design and implement remedial interventions",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "classd",
+   "name": "ClassDojo",
+   "initials": "CL",
+   "stage": "Series D, $221M total raised (Series D $125M, Tencent, July",
+   "reach": 68,
+   "products": 2,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "ClassDojo Behavior Tracking, ClassDojo Behavior Tracking & Insights",
+   "note": "95+ countries; estimated 35M+ users; majority of US elementary schools; 17M monthly website visits",
+   "tasks": [
+    {
+     "name": "Establish and enforce behavioral norms and c",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Observe and evaluate students' academic perf",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "curric",
+   "name": "Curriculum Associates",
+   "initials": "CU",
+   "stage": "Bootstrapped/private. Estimated >$150M ARR",
+   "reach": 55,
+   "products": 2,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "i-Ready Personalized Instruction, i-Ready Personalized Instruction (Targeted Intervention)",
+   "note": "14M students; 170+ Super Stretch Schools in 30 states recognized for exceptional remediation growth in 2024-25",
+   "tasks": [
+    {
+     "name": "Design and deliver instruction",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Design and implement remedial interventions",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "renais",
+   "name": "Renaissance (Nearpod)",
+   "initials": "RE",
+   "stage": "Acquired by Renaissance Learning (Feb 2021, undisclosed pric",
+   "reach": 48,
+   "products": 2,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Nearpod AI Create & Auto-Grading, Nearpod Interactive Lessons",
+   "note": "Part of Renaissance ecosystem (18M+ students served); widely deployed across K-12 US districts; integrated with Google Classroom, Canvas, Schoology, Microsoft Teams",
+   "tasks": [
+    {
+     "name": "Review and provide formative feedback on stu",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Plan and conduct balanced instructional acti",
+     "aps": 0,
+     "vec": "Hybrid"
+    }
+   ]
+  },
+  {
+   "id": "school",
+   "name": "SchoolAI",
+   "initials": "SC",
+   "stage": "Series A, $32M total raised (Insight Partners, April 2025)",
+   "reach": 47,
+   "products": 2,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "SchoolAI Spaces & PowerUps, SchoolAI Spaces + Teacher Dashboard",
+   "note": "1M+ classrooms across all 50 US states and 80+ countries; 400+ school districts with embedded implementation",
+   "tasks": [
+    {
+     "name": "Provide individualized guidance and counseli",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Plan and conduct balanced instructional acti",
+     "aps": 0,
+     "vec": "Hybrid"
+    }
+   ]
+  },
+  {
+   "id": "seesaw",
+   "name": "Seesaw Learning",
+   "initials": "SE",
+   "stage": "Providence Equity Partners-backed (Oct 2021). ~$13M total VC",
+   "reach": 55,
+   "products": 2,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "Seesaw Family Communication & Student Portfolios, Seesaw Learning Portfolio & AI Reading Records",
+   "note": "1/3 of US elementary schools; 50%+ of Australian elementary schools; ~$60M revenue 2025; VUSD (10 elementary schools) and other named district deployments",
+   "tasks": [
+    {
+     "name": "Maintain accurate student records",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Meet with parents and guardians to discuss s",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "turnit",
+   "name": "Turnitin",
+   "initials": "TU",
+   "stage": "Private, PE-backed (Advance Publications). ~$203M revenue 20",
+   "reach": 55,
+   "products": 2,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Turnitin AI Detection + Clarity, Turnitin Feedback Studio + AI Detection",
+   "note": "17,000 institutions; 71M students globally; ~$203M revenue 2024; 100 secondary schools piloting Clarity within 60 days of 2025 launch",
+   "tasks": [
+    {
+     "name": "Monitor adaptive learning platform data for",
+     "aps": 0,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Review and provide formative feedback on stu",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "khanac",
+   "name": "Khan Academy",
+   "initials": "KH",
+   "stage": "Nonprofit (Khan Academy is a 501(c)(3)). Khanmigo receives p",
+   "reach": 55,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Khanmigo for Teachers",
+   "note": "700,000 K-12 students in 2024-25 school year (projected 1M+ in 2025-26); hundreds of US school districts; expanding to India, Brazil, Philippines",
+   "tasks": [
+    {
+     "name": "Design and deliver instruction",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "playgr",
+   "name": "Playground IEP",
+   "initials": "PL",
+   "stage": "Bootstrapped/private – no disclosed VC funding found. Free S",
+   "reach": 25,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Playground IEP CoPilot",
+   "note": "Undisclosed; growing adoption in special education practitioner communities; free Starter tier available to all schools; custom School Implementation pricing for full district rollout",
+   "tasks": [
+    {
+     "name": "Review and validate AI-generated individuali",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "powers",
+   "name": "PowerSchool",
+   "initials": "PO",
+   "stage": "Taken private by Bain Capital (Aug 2024, ~$5.6B deal). Previ",
+   "reach": 55,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "PowerSchool SIS + PowerBuddy for Data Analysis",
+   "note": "100M+ students globally; 2,000+ US school districts; PowerBuddy piloted with 1.5M+ students across districts before GA launch June 2024; taken private by Bain Capital at ~$5.6B (Aug 2024)",
+   "tasks": [
+    {
+     "name": "Maintain accurate student records",
+     "aps": 0,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "smartt",
+   "name": "SMART Technologies",
+   "initials": "SM",
+   "stage": "Public parent company: SMART Technologies (TSX: SMA). Lumio",
+   "reach": 80,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Lumio by SMART",
+   "note": "SMART Technologies serves 40M+ students in 190+ countries via hardware and software ecosystem; Lumio embedded in districts using SMART Boards (widespread in US, UK, CA, AU)",
+   "tasks": [
+    {
+     "name": "Integrate technology and multimedia into les",
+     "aps": 0,
+     "vec": "Hybrid"
+    }
+   ]
+  }
+ ],
+ "shift": [
+  {
+   "time": "06:50",
+   "task": "Overnight lesson drafts waiting",
+   "type": "automated",
+   "desc": "A lesson planning tool has generated tomorrow's literacy sequence against the standards map, with three reading levels of the same passage produced by Diffit and a first-pass rubric attached. No human touched it. It will be substantially rewritten in twelve minutes."
+  },
+  {
+   "time": "07:10",
+   "task": "Reviewing and rewriting the plan",
+   "type": "augmented",
+   "desc": "The teacher reads the MagicSchool draft, discards the warm-up, swaps a word problem that will land badly for one child, and re-pairs the group task on the basis of a playground incident nothing in the system recorded. The draft saved forty minutes and made none of the four decisions that mattered."
+  },
+  {
+   "time": "07:45",
+   "task": "Preparing the room and the stations",
+   "type": "human",
+   "desc": "Counting cubes, art trays, four learning stations laid out in sequence, the charging cart checked and the SMART display woken and tested. Wholly physical, wholly unautomated, and the reason the physical automation potential in this role sits at 8%."
+  },
+  {
+   "time": "08:20",
+   "task": "Arrival, greeting and the first read of the room",
+   "type": "human",
+   "desc": "Twenty-five children through the door in nine minutes. Who is quiet who is usually loud, who did not eat, who is holding a permission slip they have forgotten to hand over. This is the observational task the anatomy classifies as augmented and which in practice runs entirely on a human before any dashboard opens."
+  },
+  {
+   "time": "09:00",
+   "task": "Literacy block and read-aloud",
+   "type": "human",
+   "desc": "A picture book held outward, vocal expression, deliberate pacing and interactive questioning. Technically an audiobook could narrate it. The instructional value is in the interruptions, which is why nothing on the market performs this task."
+  },
+  {
+   "time": "10:15",
+   "task": "Adaptive maths practice",
+   "type": "augmented",
+   "desc": "Children work through i-Ready and Khanmigo pathways on tablets while the teacher circulates. The platform sets difficulty in real time; the teacher decides which two children are stuck on the maths and which one is stuck on something else entirely."
+  },
+  {
+   "time": "11:05",
+   "task": "Small-group remedial intervention",
+   "type": "augmented",
+   "desc": "Diagnostic data from the platform identifies the skill gap; the intervention itself is delivered face to face to four children, with immediate feedback and the kind of encouragement that determines whether they try the next question."
+  },
+  {
+   "time": "12:05",
+   "task": "Lunch and playground supervision",
+   "type": "human",
+   "desc": "Custodial duty of care over children in an unstructured environment, enforcing policy through physical presence and interpersonal authority. Cognitively trivial, legally irreducible, and entirely absent from every vendor roadmap in this cohort."
+  },
+  {
+   "time": "13:00",
+   "task": "Planning period: marking and records",
+   "type": "augmented",
+   "desc": "Objective quizzes auto-score in Nearpod and the results push into PowerSchool alongside attendance and behavioural incidents. Open-ended work is read by hand, because that is how the teacher discovers four children share one misconception."
+  },
+  {
+   "time": "14:00",
+   "task": "Hands-on science and craft activity",
+   "type": "human",
+   "desc": "Materials distributed, groups managed, peer conflict mediated in real time. The social-emotional learning is a by-product of the friction, which is the part no platform reproduces."
+  },
+  {
+   "time": "15:30",
+   "task": "Parent communication and progress dashboards",
+   "type": "augmented",
+   "desc": "ClassDojo and Seesaw assemble the week's evidence and Panorama flags two students on early-warning indicators. The teacher writes the messages that carry consequence herself, and books the two conversations that need to happen in person."
+  },
+  {
+   "time": "16:15",
+   "task": "Validating machine-drafted education plans",
+   "type": "augmented",
+   "desc": "A Playground IEP draft and a set of accommodation recommendations are checked line by line against what she has actually observed this term, with one proficiency classification overturned as wrong. Work that did not exist five years ago, in no contract and on no timetable."
+  }
+ ],
+ "sections": [
+  {
+   "blocks": [
+    {
+     "t": "p",
+     "drop": true,
+     "text": "At twenty to eight on a Tuesday morning, before the buses arrive, a primary school teacher stands in an empty room and reads it like a weather map. The cushions in the reading corner are where she left them. The trays of counting cubes are short, again. On the interactive display, a lesson plan she did not write waits patiently, generated overnight, aligned to standards, differentiated three ways, complete with a warm-up question and an exit ticket. It took ninety seconds to produce. She reads it in forty and changes two things: the word problem about aeroplanes, because one child's father flew out last week and will not be back for a long time; and the pairing on the group task, because two boys fell out on the playground on Friday in a way that no system recorded. Then the door opens, and the part of the job no machine has touched begins."
+    }
+   ]
+  },
+  {
+   "id": "s-score",
+   "label": "Score",
+   "title": "Three and a half per cent, one of the index's smallest",
+   "blocks": [
+    {
+     "t": "component",
+     "name": "gauge"
+    },
+    {
+     "t": "p",
+     "text": "Start with the number, because it is among the smallest this index has produced. The Replaceable Potential Index for elementary school teachers is 3.5%, which places the role in the Low band: the category reserved for work whose core cannot be lifted out of the room in which it happens. That is the headline, and it is the least interesting thing about the score. What matters is how the 3.5% is assembled, because the components disagree with each other in ways that explain almost everything about how artificial intelligence has actually entered the primary classroom."
+    },
+    {
+     "t": "p",
+     "text": "The index is a product, not an opinion, and two measurements go into it. The first is the Automation Potential Score, which asks a deliberately narrow question: of everything this job does in a working week, what proportion could in principle be performed by systems that exist and ship today, ignoring entirely whether anyone is permitted to buy them, whether a school board would approve them, or whether parents would tolerate them? For elementary teaching, that figure is 29%. Nearly three-tenths of the working day is, on a purely technical reading, already machine-performable. Readers who expect teaching to be an automation-proof monolith should sit with that number for a moment. It is not small."
+    },
+    {
+     "t": "p",
+     "text": "The asymmetry inside it is starker still. Cognitive automation potential is 29%. Physical automation potential is 8%. The machines have arrived almost entirely on one side of the job. Drafting a lesson sequence, generating three reading levels of the same passage, writing a first-pass rubric, summarising a term's assessment data into a parent-facing dashboard, producing the boilerplate scaffolding of an individualised education plan, marking a multiple-choice quiz, composing a newsletter home: this is the cognitive substrate of teaching, and it is precisely where the tooling is strongest. The physical substrate has barely moved. Nothing on the market arranges learning stations, restocks the manipulatives tray, supervises a cafeteria, walks a line of six-year-olds to the playground, or kneels beside a desk to redirect a child who has stopped writing and started crying. The robot that could do those things does not exist in any deployable form, and the 8% reflects it."
+    },
+    {
+     "t": "ins",
+     "label": "The arithmetic of the score",
+     "text": "Automation Potential (29%) multiplied by the inverse of the Human Requirement Factor (1 − 88%) yields a Replaceable Potential Index of 3.5%. The Human Requirement Factor is not a measure of sentiment. It is a friction coefficient built from licensure statutes, statutory duty of care, physical custody of minors, safeguarding and child-privacy law, parental consent regimes, collective bargaining agreements, liability and insurance exposure, and district procurement cycles. At 88%, it is one of the highest frictions in the index — high enough to compress a genuinely substantial 29% technical exposure into a displacement figure of almost nothing."
+    },
+    {
+     "t": "p",
+     "text": "Two further figures complete the picture, and both cut against the simple story. Untouched sits at 71%: the share of the role that no shipping system currently addresses at any level, augmentation included. That is the fortress, and it is the majority of the job. Meanwhile the AI-Job Creation Index reads 12%, meaning roughly an eighth of the emerging work in this occupation did not exist before the tooling did. Two tasks in the anatomy that follows are of exactly this kind: validating machine-drafted education plans against direct classroom observation, and auditing an adaptive platform for the moments when it has quietly misclassified a child. Neither was a job description five years ago. Both are now real work, performed by the same person, usually unpaid and untimetabled."
+    },
+    {
+     "t": "img",
+     "slot": "empty_classroom_dawn",
+     "full": true,
+     "caption": "The room before the children: manipulatives, laminated word walls and a lesson plan that generated itself overnight.",
+     "prompt": "A primary school classroom at 7.30am, low winter sun through half-open blinds, four-seat pods of small desks with chairs still stacked, clear plastic tubs of counting cubes and pattern blocks on a low shelf, a rolling cart of charging Chromebooks by the door, a laminated alphabet frieze above an interactive whiteboard glowing with a half-loaded lesson slide, a carpet reading corner with cushions. Documentary photography, natural light, no people, muted colour."
+    },
+    {
+     "t": "p",
+     "text": "The projected timeline for material change is ten years or more. That is not a hedge; it is a statement about which clock governs. Model capability improves on an eighteen-month cycle. Teacher certification, safeguarding statute, curriculum adoption and district capital budgets run on cycles measured in state legislative sessions and five-year textbook contracts. When a technology clock and an institutional clock disagree this sharply, the institutional clock wins for as long as the institution retains legitimacy — and few institutions in public life retain as much protective legitimacy as the person a parent hands their six-year-old to at eight in the morning."
+    },
+    {
+     "t": "p",
+     "text": "Set against the labour market, the score reads stranger still. Roughly 1,422.7 thousand people hold this job in the United States, at a median wage of $62,340. Federal projections put employment growth at −2%. A profession with a replacement index of 3.5% is not shrinking because software is taking the work; the negative projection is a demand-side signal about how many children there are to teach, and the automation data has nothing to say about it. This is a point worth holding onto through everything that follows. The jobs may well decline. The tasks are not being taken."
+    },
+    {
+     "t": "component",
+     "name": "chartEx"
+    }
+   ]
+  },
+  {
+   "id": "s-shift",
+   "label": "Shift",
+   "title": "A day in which the automatable minutes never touch the children",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "What does a 29% automation potential and an 88% human requirement actually look like across a working day? Not, it turns out, like a teacher supervising machines. It looks like a teacher whose preparation has been compressed and whose contact time has not moved at all. The augmentation is real and it is concentrated in the hours at either end of the day — before the children arrive and after they leave — plus the small interstitial gaps that teachers have always used for marking and administration."
+    },
+    {
+     "t": "p",
+     "text": "The Gallup survey conducted with the Walton Family Foundation, fielded across 2,232 American public K-12 teachers through the RAND American Teacher Panel between 18 March and 11 April 2025, found that six in ten teachers used an AI tool for their work during the 2024-25 school year, with 32% using one at least weekly. Those weekly users reported saving an estimated 5.9 hours a week — the equivalent of about six weeks across a 37.4-week school year. Note carefully what that figure is and is not. It is not six weeks of classroom time returned to anybody. Contact hours are fixed by statute and timetable. It is six weeks of evenings, Sunday afternoons and lunch breaks, which is a different and in some ways more consequential thing."
+    },
+    {
+     "t": "p",
+     "text": "The day below is a composite drawn from the task anatomy and the deployment evidence: an American elementary classroom in a district that has adopted the current generation of tooling reasonably enthusiastically. The pattern to watch is the alternation. Automated blocks are short, bounded and almost entirely non-contact. Augmented blocks are where a system produces a draft and a human decides whether it survives. Human blocks are long, unbroken and comprise the middle of the day — the hours when twenty-five children are physically present and the entire apparatus of artificial intelligence has nothing useful to offer beyond a screen that occasionally needs restarting."
+    },
+    {
+     "t": "component",
+     "name": "shift"
+    },
+    {
+     "t": "p",
+     "text": "Read the timeline and the score stops being abstract. Roughly three hours of that day touch a machine in any meaningful way, and almost none of them are hours in which a child is looking at the teacher. The 40% of teachers who told Gallup they used no AI at all during the school year are not, on this evidence, doing a fundamentally different job. They are doing the same job with a longer evening."
+    }
+   ]
+  },
+  {
+   "id": "s-tasks",
+   "label": "Anatomy",
+   "title": "Nine tasks unchanged, ten with a machine in the loop",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The index decomposes this role into twenty-one tasks: nine that remain essentially traditional, ten that are now performed in an augmented mode, and two that artificial intelligence brought into existence. That distribution is the argument of this piece in miniature. The augmented column is the largest, which is why the headline number is not zero. The traditional column is the load-bearing one, which is why the headline number is 3.5%."
+    },
+    {
+     "t": "component",
+     "name": "taskGrid"
+    },
+    {
+     "t": "p",
+     "text": "Look first at what has genuinely changed. Instruction is now frequently designed against a machine-generated plan and delivered through adaptive platforms that adjust difficulty in real time — but delivered in person, by someone managing group dynamics, fielding the questions no plan anticipated, and redirecting behaviour on a two-second latency that no monitoring system approaches. Differentiation is recommended by software and then overridden by a judgment about whether a particular child is confused or simply tired, a distinction that determines whether you reteach or send them for a drink of water. Remedial intervention is targeted by diagnostic data and then delivered face to face, because the intervention that works on a struggling eight-year-old is composed in roughly equal parts of skill instruction and emotional encouragement, and only one of those halves has been automated."
+    },
+    {
+     "t": "p",
+     "text": "Marking has split cleanly down the middle. Objective assessment is auto-scored; open-ended work is not, and the reason is not that machines cannot produce a grade for it. They can. The reason is that the act of reading thirty pieces of children's writing is how a teacher discovers that four of them have the same misconception, which is information about the teaching rather than about the children, and which is destroyed the moment the reading is delegated. Record-keeping has been similarly bisected: attendance, grades and behavioural incidents auto-populate into the learning management system, while the nuanced observational notes required for compliance and for honest parent conversation are still typed by hand, late, by someone who was present."
+    },
+    {
+     "t": "img",
+     "slot": "read_aloud_circle",
+     "caption": "Reading aloud remains stubbornly, expensively human: pacing, vocal expression and the interruption you did not plan for.",
+     "prompt": "A primary school teacher sitting on a low chair holding an open picture book outward, a semicircle of six and seven year olds cross-legged on a patterned carpet in front of her, hands raised, a felt story-sequence board on an easel behind, cubbies with named trays along the wall, soft classroom lighting. Candid documentary photograph, warm tones, faces of children not clearly identifiable."
+    },
+    {
+     "t": "p",
+     "text": "Now look at what has not moved. The traditional nine cluster around three things: physical presence, behavioural authority, and trust that has to be earned in a room. Establishing and enforcing classroom norms through voice modulation, body language and split-second de-escalation. Reading aloud with expression, pacing and interactive questioning — a task an audiobook could technically perform and demonstrably does not, because the point of the read-aloud is the interruption. Preparing materials and arranging stations. Supervising hallways, cafeterias and playgrounds through interpersonal authority. Running games, crafts, music and storytelling that build social-emotional skill through peer friction. Conferring with parents and specialists when something has gone wrong. Coaching perseverance in a specific child whose learning history you happen to carry in your head."
+    },
+    {
+     "t": "p",
+     "text": "And then the two tasks that did not exist. The first is reviewing and validating machine-drafted individualised education plans and accommodation recommendations, cross-referencing algorithmic output against what the teacher has actually seen. The second is monitoring the adaptive platform itself for bias and tracking errors — intervening when the system misclassifies a child's proficiency or routes them down a pathway on the strength of incomplete behavioural data. Both are supervisory. Both carry real consequence for the child. Neither, in most districts, appears anywhere in a contract, a timetable or a pay scale. The AI-Job Creation Index reads 12%, and this is what that number looks like on the ground: new duties arriving faster than the institutions that are supposed to recognise them."
+    }
+   ]
+  },
+  {
+   "id": "s-vendors",
+   "label": "Innovators",
+   "title": "Thirteen vendors, three camps, and none of them selling replacement",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Thirteen vendors have evidence of deployment against the tasks in this role, and their strategies fall into three recognisable camps. The first camp gives the product away to the individual teacher and sells the district later. The second embeds inside the systems of record a district already cannot leave. The third has been assembled by private capital into platforms that treat the classroom as a distribution channel."
+    },
+    {
+     "t": "component",
+     "name": "matrix"
+    },
+    {
+     "t": "p",
+     "text": "MagicSchool, which touches more tasks in this anatomy than any other vendor, is the clearest expression of the first strategy. It ships more than eighty pre-built teacher tools and over fifty student tools, spanning lesson planning, assessment creation, education-plan drafting, rubric generation and parent communication, with a free-forever tier for individual teachers — no credit card, no trial expiry, generation limits unless a teacher upgrades to the paid plan. Understand what this is. It is not charity and it is not quite marketing. It is a bet that adoption inside a school is a bottom-up phenomenon: one teacher finds the tool, three colleagues see the lesson plans, a head of year asks about it, and by the time procurement is involved the product is already load-bearing. The company reached a Series B in March 2025 on $45m, taking roughly $80m raised in total, which is a modest sum against the number of classrooms it claims."
+    },
+    {
+     "t": "p",
+     "text": "The vendor's own published case study on Dublin City Schools in Ohio, a district of around 16,000 students, reports that by spring 2025 more than 90% of the district's educators — paraprofessionals and administrators included — were actively using the product, with the 2025-26 focus shifting towards student AI literacy: helping children understand when to use these systems, when not to, and how to disclose that they did. The caveat matters and should be stated plainly: that is a vendor-published figure about a vendor's own customer, and it measures activation rather than dependence. It is nonetheless the most detailed public account of what saturation looks like in an American elementary district, and the shape it describes — near-universal staff adoption within roughly two years, followed by a pivot to teaching children about the tool rather than teaching children with it — is the shape worth watching."
+    },
+    {
+     "t": "p",
+     "text": "SchoolAI, which raised a $32m Series A from Insight Partners in April 2025, shows the same motion at district scale. Weber School District in Utah piloted with 65 K-12 teachers before expanding; by a board study session on 4 December 2024 the early rollout was reporting roughly 1,347 active users, about 87% of possible staff. Sixty-five to thirteen hundred is a pilot-to-saturation curve of a kind that district technology has rarely produced, and it happened without a procurement fight, because the thing being adopted is a teacher productivity tool rather than an instructional replacement. That distinction is the entire commercial insight of this cohort."
+    },
+    {
+     "t": "component",
+     "name": "vendorCards"
+    },
+    {
+     "t": "p",
+     "text": "The second camp sells to the institution. Panorama Education, at a Series C of $60m led by General Atlantic and $92-105m raised in total, sits in the surveying and early-warning layer, flagging students at risk. PowerSchool, taken private by Bain Capital in August 2024 in a deal valued around $5.6bn, owns the student information system that the auto-populated attendance and grade records flow into. Curriculum Associates, bootstrapped and privately held with estimated revenue above $150m a year, and Renaissance, which acquired Nearpod in February 2021, own the assessment and adaptive-practice layers. ClassDojo, which raised a $125m Series D from investors including Tencent and $221m in total, owns the parent communication channel. Seesaw, backed by Providence Equity Partners since October 2021, owns the portfolio. Together these companies constitute something close to the operating system of an American elementary school, and every AI feature they ship arrives pre-installed inside a contract that already exists."
+    },
+    {
+     "t": "p",
+     "text": "The remainder are specialists and outliers. Diffit and Playground IEP are effectively bootstrapped, solving one task extremely well. Khan Academy is a non-profit whose Khanmigo assistant reaches classrooms through philanthropy rather than venture return. SMART Technologies, whose parent trades on the Toronto exchange, sells the display on the wall and the software that runs on it. And Turnitin, private and PE-backed under Advance Publications with revenue around $203m, occupies the least comfortable position in the entire cohort — a detection business in an era when detection has begun to fail in public. The next section is about what happened when it did."
+    }
+   ]
+  },
+  {
+   "id": "s-wrong",
+   "label": "Cautionary Tales",
+   "title": "Each of these three failures broke at a different point",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Three episodes from the past three years illustrate the ways this technology has gone wrong in and around classrooms, and they fail in three different registers: the detection failure, the procurement failure, and the productivity failure. Taken together they explain why the Human Requirement Factor sits at 88% rather than somewhere more comfortable for vendors."
+    },
+    {
+     "t": "p",
+     "text": "Begin with detection, because it is the most instructive. Australian Catholic University registered nearly 6,000 cases of alleged academic misconduct across its nine campuses in 2024, roughly 90% of them related to AI use. Around a quarter of all referrals were dismissed after investigation, and any case resting solely on Turnitin's AI detector was dismissed immediately. The university abandoned the tool in March 2025 after finding it ineffective — having been aware of problems with it for more than a year. The detail that should trouble anyone building an accountability system on top of a classifier is the sequencing: the institution knew the instrument was unreliable, and continued running students through a disciplinary process that used it, for over twelve months."
+    },
+    {
+     "t": "p",
+     "text": "The technical finding underneath was available considerably earlier. In the summer of 2023 a team at Temple University led by associate vice provost Stephanie Laggini Fiore tested Turnitin's detector and found it, in their assessment, incredibly inaccurate: reasonably good at confirming that human work was human, spotty on chatbot-generated text, and least reliable of all on hybrid writing where a person and a model had both contributed. That last category is not an edge case. It is the modal way anyone now writes with these tools, and it is precisely what a primary school will be looking at when it eventually asks whether a piece of homework was the child's own. The lesson for elementary teaching, where the stakes attach to a nine-year-old rather than an undergraduate, is that a false positive is not a statistical event. It is a conversation with a parent that cannot be unheld."
+    },
+    {
+     "t": "p",
+     "text": "The second failure is procurement, and it happened in a small district in upstate New York. Salamanca City Central School District paused a plan costing nearly $60,000 to buy a humanlike AI robot named Sally, made by Realbotix, for its high school robotics and technology classes, after sustained backlash from the state teachers union, state education officials and the community. The objections came in two layers. The surface layer was student data privacy and the vendor's corporate ties to RealDoll, a sex-doll manufacturer — a due-diligence question that ought to have been answered before a board vote. The deeper layer was articulated by unionised teachers, who read the purchase as a first step towards replacing, in their phrase, flesh-and-bone educators. The district maintained throughout that the robot would deliver no direct instruction and replace nobody, and said it was working through enhanced student data privacy agreements with state officials while continuing community outreach."
+    },
+    {
+     "t": "img",
+     "slot": "district_board_meeting",
+     "caption": "The real gate on classroom AI is not model capability. It is a room with a public comment period.",
+     "prompt": "A school district board meeting in a small-town American school library after dark, five board members at a folding table with name placards and microphones, a projector screen showing a procurement slide, forty residents on stacking chairs with one person standing at a comment microphone, fluorescent lighting, bookshelves and student artwork on the walls. Photojournalistic, available light, slightly desaturated."
+    },
+    {
+     "t": "p",
+     "text": "Whatever one makes of the merits, the episode is a precise demonstration of why the Human Requirement Factor is what it is. The technology was purchasable, the budget existed, the board was willing. The purchase still did not happen, because in public education the acquisition decision is subject to a legitimacy test administered in a room with a public comment period, and that test is failed easily. No comparable gate stands between a hospital and a scheduling algorithm, or between a law firm and a document review model. It stands here because the customers are children and the shareholders are voters."
+    },
+    {
+     "t": "p",
+     "text": "The third failure is quieter and, for vendors, the most dangerous. In the Royal Society of Chemistry's 2024 Science Teaching Survey, 44% of science teachers reported having ever used AI in their teaching role — a substantial adoption figure by any measure — yet the RSC found that workload remained largely unchanged, with only 3% saying AI had greatly reduced their workload. Hold that against the Gallup finding of 5.9 hours saved weekly among American teachers using these tools regularly, and the two results do not so much contradict each other as describe different questions. Gallup asked users of the tools how much time the tools saved. The RSC asked teachers whether their workload had fallen. Time can be saved and workload can remain constant if the saved time is immediately reabsorbed — by cover duties, by new documentation requirements, by the two supervisory tasks the technology itself created. That is not a technology failure. It is an institutional one, and no vendor can fix it."
+    }
+   ]
+  },
+  {
+   "id": "s-global",
+   "label": "Around the World",
+   "title": "Regulators reached the classroom before the market did",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Educational AI is one of the few applications regulators identified as consequential before the market matured, and the regulatory picture now diverges sharply by jurisdiction. In Europe the divergence has become a matter of dates; in the United States it is a matter of contracts and bargaining; in the United Kingdom and Australia it has surfaced as a question of whether the tools deliver what they promised at all."
+    },
+    {
+     "t": "p",
+     "text": "The European Union took the strongest formal position. Under the AI Act, most consequential educational systems — those that evaluate learning outcomes or assess appropriate education levels — are classified as high-risk, which brings a substantial compliance regime: risk management, data governance, technical documentation, human oversight requirements, logging, accuracy and robustness obligations. That classification remains in force. What changed is when it bites. A Digital Omnibus amendment that entered into force on 27 July 2026 pushed most Annex III high-risk obligations for education AI from the original deadline of 2 August 2026 back to 2 December 2027, giving schools and the edtech vendors serving them roughly sixteen additional months to comply."
+    },
+    {
+     "t": "p",
+     "text": "Deferral is not repeal, and the distinction matters more than the headlines suggested. Transparency duties under Article 50 — the requirement to disclose when a student or a teacher is interacting with an AI system such as a chatbot — took effect as originally scheduled on 2 August 2026, untouched by the delay. Europe has therefore arrived at an unusual intermediate settlement: you must tell a child they are talking to a machine, but the machine that decides what that child should read next has until the end of 2027 before its documentation is inspected. For a primary teacher, the practical consequence is that disclosure has become part of the classroom script well ahead of any assurance about what is being disclosed."
+    },
+    {
+     "t": "p",
+     "text": "The sixteen-month extension will be read by vendors as breathing room and by their critics as capture. Both readings miss the operational point. High-risk compliance is not primarily a burden on model builders; it is a burden on the deploying institution, which in this sector means an under-resourced school with no compliance function, whose data protection officer is a deputy head with three free periods a week. Sixteen months does not obviously change that arithmetic. It changes who is holding the liability when the deadline arrives, and it means the first generation of European primary school children taught alongside adaptive platforms will have completed several school years before the regime governing those platforms is fully enforceable."
+    },
+    {
+     "t": "p",
+     "text": "The United States has no equivalent federal instrument, and the constraint has arrived instead through organised labour and district governance. In May 2026 the American Federation of Teachers used a National Press Club appearance to launch a ten-point plan — Devices Down, Eyes Up, Hands-On — demanding an immediate end to student-facing AI in elementary schools, a screen ban including online assessments for children from pre-kindergarten through second grade, and a total prohibition on social companion chatbots for under-sixteens. The Salamanca robot procurement, paused after union and state pressure, shows the same machinery working case by case. Where Europe regulates the product, America regulates the purchase — through contracts, board votes and public comment. The endpoints are not identical, but the friction they generate lands in the same column of the model."
+    },
+    {
+     "t": "p",
+     "text": "The United Kingdom has produced the most sobering evidence, and it is evaluative rather than regulatory. The Royal Society of Chemistry's 2024 survey of science teachers found 44% had used AI in their teaching role while workload remained largely unchanged, only 3% reporting that it had greatly reduced their workload. That is a British institution asking a British question — did the promised relief materialise? — and getting an uncomfortable answer from its own members. Australia's contribution is the Australian Catholic University misconduct data, which is really a story about what happens when a jurisdiction adopts an enforcement technology faster than it validates it. Neither country legislated. Both generated evidence that will be cited in legislatures for years."
+    },
+    {
+     "t": "p",
+     "text": "The pattern across all four is worth naming. Nowhere in the developed world has a regulator, a union or a district seriously proposed removing the adult from the primary classroom. The entire global argument concerns the tools that adult may use, the disclosures they must make, and the data that may leave the room. That is an argument about augmentation conducted at very high volume, and it is one of the more reliable indicators that the replacement figure is 3.5% rather than something larger."
+    }
+   ]
+  },
+  {
+   "id": "s-fortress",
+   "label": "Fortress",
+   "title": "Seventy-one per cent of the job the machines never enter",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Untouched sits at 71%. That is the largest single component of this analysis and the least discussed, because it consists of things that are difficult to photograph and impossible to demonstrate at a conference. It is worth walking the walls of the fortress deliberately, because each section is held up by a different material, and they will not all hold for the same length of time."
+    },
+    {
+     "t": "p",
+     "text": "The first wall is physical custody. For six or seven hours a day, a teacher is legally responsible for the bodies of roughly twenty-five children who cannot reliably manage their own safety. This is not instruction; it is a custodial duty of care with statutory force behind it, and it accounts for a large share of why the physical automation potential reads 8% against a cognitive 29%. Hallway transitions, cafeteria supervision, playground safety, the head count before and after every movement between rooms — these tasks are cognitively trivial and physically irreducible. They require a body in the space, capable of moving quickly towards a specific child. No system on any vendor's roadmap addresses them, and the roadmap is not the constraint. Liability is."
+    },
+    {
+     "t": "p",
+     "text": "The second wall is behavioural authority, and it is subtler. Establishing and enforcing classroom norms through voice modulation, body language and split-second de-escalation is a genuine skill, acquired slowly, and it operates on cues that are developmental rather than semantic. A seven-year-old who has stopped working because the task is too hard looks almost identical to one who has stopped because they are hungry, and different again from one who has stopped because something happened at home last night. The response to each is different, must be delivered within seconds, and depends on a longitudinal model of that specific child that lives in a teacher's head and is not written down anywhere. Attendance and assessment systems capture the outcome of these states. They do not observe the states themselves."
+    },
+    {
+     "t": "img",
+     "slot": "kneeling_beside_desk",
+     "caption": "The task with the lowest automation potential in the anatomy: deciding, in three seconds, which kind of stuck this child is.",
+     "prompt": "A primary school teacher crouched at eye level beside a child's desk in a busy classroom, pointing at a half-finished maths worksheet with a pencil, the child looking up mid-explanation, a tub of coloured counters and a small whiteboard on the desk, other children working in pods in a soft-focus background, an adaptive-learning app open on a tablet propped nearby. Warm natural light from windows, candid documentary photography."
+    },
+    {
+     "t": "p",
+     "text": "The third wall is trust, and it is the one vendors most consistently underestimate. Conferring with parents about a child who is struggling, running an intervention meeting with a counsellor and a special education colleague, having the conversation in which a family is told something they do not want to hear — these tasks are classified as human not because the language is hard to generate but because the authority to conduct them is not transferable. A parent will accept a difficult assessment of their child from a person who has spent 180 days in a room with that child. The same words on a dashboard produce a complaint. The evidence bears this out from the other direction: the task the anatomy classifies as augmented is reviewing a machine-generated progress dashboard together with a parent, which is to say the machine may prepare the material for the conversation but may not have the conversation."
+    },
+    {
+     "t": "p",
+     "text": "The fourth wall is developmental fitness, and this is where the argument has become explicitly political. The union campaign launched in Washington in May 2026 demanded an end to student-facing AI in elementary schools and a screen ban for the youngest year groups, including for online assessments. It is easy to dismiss this as protectionism, and the campaign's own framing resists that reading: its architect was careful to say it was not a total ban on AI or a Chromebook bonfire, and the ten-point plan is aimed squarely at student-facing deployment rather than at the teacher-facing tools that six in ten American teachers were already using. That is a coherent position — automate the adult's paperwork, keep the machine away from the six-year-old — and it happens to align almost exactly with where the market has actually gone."
+    },
+    {
+     "t": "pq",
+     "text": "The work of teaching and learning in the earliest grades should be done without AI.",
+     "cite": "Randi Weingarten, President, American Federation of Teachers, quoted in Futurism, 31 May 2026"
+    },
+    {
+     "t": "p",
+     "text": "The fifth wall is the one likeliest to fall, and honesty requires naming it: professional licensure and collective agreement. These are enormously effective barriers and they are also the most contingent, because they are policy rather than physics. A legislature can amend certification requirements. A district under fiscal pressure can renegotiate class-size language. Nothing about a statute is permanent in the way that a seven-year-old's need for a responsive adult is permanent. If the Human Requirement Factor of 88% ever falls materially, it will not be because a model learned to teach. It will be because a state decided that a larger room supervised by fewer adults with better software was an acceptable trade. That is the scenario the ten-plus-year timeline is really tracking, and it is a political forecast dressed as a technological one."
+    }
+   ]
+  },
+  {
+   "id": "s-voices",
+   "label": "Voices",
+   "title": "The loudest disagreement in primary AI is not about facts",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The public argument about AI in primary classrooms is conducted by four constituencies who are, for the most part, not disagreeing about the facts. They are disagreeing about which facts are load-bearing, and the disagreement is unusually legible."
+    },
+    {
+     "t": "p",
+     "text": "The organised profession has been the loudest and the most specific. At the National Press Club in Washington on 27 May 2026, the president of the American Federation of Teachers, Randi Weingarten, unveiled a ten-point plan titled Devices Down, Eyes Up, Hands-On: 10 Points to Boost Teaching and Learning in the AI Era, built around human-led, active instruction. Its demands were concrete: an immediate end to student-facing AI in elementary schools; a screen ban, including for online assessments, for children from pre-kindergarten through second grade; and a total ban for under-sixteens on social companion chatbots. What is striking about the plan, read closely, is how little of it touches the tools this anatomy actually measures. Almost every demand concerns what a child interacts with. Almost nothing concerns what a teacher uses to prepare."
+    },
+    {
+     "t": "pq",
+     "text": "If we don't find a way to call this out from an education perspective, I fear that we will lose a generation of kids.",
+     "cite": "Randi Weingarten, President, American Federation of Teachers, quoted in Futurism, 31 May 2026"
+    },
+    {
+     "t": "p",
+     "text": "That is the sharpest sentence any of the constituencies has produced, and it is worth taking seriously rather than filing under rhetoric. The claim is not that teachers will be made redundant. It is that a cohort of children will be shaped by an instructional environment nobody has evaluated at population scale, and that by the time the evaluation exists the cohort will have passed through. Whether or not one accepts the premise, it is a coherent argument about irreversibility, and the same speaker's insistence that this was not a call for a total ban on AI or a Chromebook bonfire indicates a position with more internal structure than its critics allow."
+    },
+    {
+     "t": "p",
+     "text": "The vendors, meanwhile, have chosen their ground carefully and it is not the ground the unions are defending. The dominant product strategy in this cohort is explicitly teacher-facing: eighty-plus tools for lesson planning, assessment creation, education-plan drafting and parent communication, given away free to individual teachers with no expiry, monetised at the district. Read that alongside the union's ten points and the two positions are nearly compatible. Where they collide is on student-facing deployment, and the most interesting signal in the vendor evidence is a district — Dublin City Schools, with roughly 16,000 students and over 90% of its educators reportedly active on the platform by spring 2025 — pivoting its 2025-26 focus to student AI literacy: teaching children when to use these systems, when not to, and how to disclose that they did. That is a district that has fully adopted the teacher-facing case and is now treating the student-facing case as a curriculum problem rather than a product one."
+    },
+    {
+     "t": "p",
+     "text": "The third voice is the survey evidence, which is less quotable and more useful. Gallup's work with the Walton Family Foundation put the adoption question to 2,232 public K-12 teachers through the RAND American Teacher Panel and found the profession split roughly into thirds: 32% using AI tools at least weekly, 28% monthly or less, and 40% not at all. That is not a technology in early adoption and it is not a technology that has won. It is a technology that has divided a workforce almost evenly, in the space of about two school years, without any central mandate. The weekly users' reported saving of 5.9 hours a week — about six weeks across a 37.4-week year — is the number that will be quoted in every procurement deck for the next three years, and it deserves the scrutiny the following section gives it."
+    },
+    {
+     "t": "p",
+     "text": "The fourth voice is the one that gets least airtime: the evaluators who checked. The Temple University team that tested AI detection in 2023 and reported it incredibly inaccurate, particularly on hybrid human-and-machine writing. The Australian university that ran nearly 6,000 misconduct cases in a year, dismissed around a quarter, and abandoned the detector in March 2025. The Royal Society of Chemistry, whose members reported 44% adoption alongside workload that had not moved, only 3% describing a large reduction. None of these are anti-technology institutions. All of them measured something, found it wanting, and published. In a debate conducted largely between people with a commercial interest and people with an occupational one, that third category is the only one whose findings have consistently survived contact with the following year."
+    }
+   ]
+  },
+  {
+   "id": "s-economics",
+   "label": "Economics",
+   "title": "Nobody has worked out who banks the hours saved",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The economics of AI in primary education are peculiar, because the most valuable thing being produced is not a cost saving that anyone can bank. Roughly 1,422.7 thousand people do this job in the United States at a median wage of $62,340, and federal projections put employment growth at −2%. Against a replacement index of 3.5%, the arithmetic of headcount reduction simply does not close. A district that automated every automatable task in this anatomy would still need essentially the same number of adults in essentially the same number of rooms, because the binding constraint is supervision ratio, not throughput."
+    },
+    {
+     "t": "component",
+     "name": "econ"
+    },
+    {
+     "t": "p",
+     "text": "So where does the value go? The Gallup figure — 5.9 hours a week for regular users, about six weeks across a 37.4-week school year — is real, and it is almost entirely a transfer to the teacher's personal time rather than to the employer's budget. Teaching has long been an occupation in which a substantial share of the work is performed outside contracted hours and is therefore invisible in wage data. Automating that share does not reduce a payroll line. It reduces unpaid labour, which shows up, if it shows up anywhere, as retention. For a profession with chronic attrition, that may be a considerably more valuable outcome than a cost saving — but it is one no procurement model is designed to capture, and no vendor can put it on an invoice."
+    },
+    {
+     "t": "p",
+     "text": "The Royal Society of Chemistry data explains what happens when the transfer fails. Adoption at 44%, workload largely unchanged, only 3% reporting a large reduction. The mechanism is straightforward and familiar from every previous wave of workplace automation: recovered time is not protected, so it is reabsorbed. It goes to cover duties, to expanded documentation requirements, to the meetings that expand to fill the diary, and — specifically in this role — to the two new supervisory tasks the technology created. Validating machine-drafted education plans and auditing an adaptive platform for misclassification are genuine work with genuine consequences, and in most districts they are performed in exactly the hours the tools were supposed to give back."
+    },
+    {
+     "t": "p",
+     "text": "The vendor economics are structured around this ambiguity rather than resolved by it. A free-forever individual tier with generation limits costs the vendor very little and buys something no sales team can: a teacher who has already rebuilt their planning routine around the product before any contract exists. From there the district conversion is a negotiation about seats rather than about value, which is why a company can reach eighty-plus tools and district-wide saturation on roughly $80m of total capital, while the incumbent systems of record command valuations an order of magnitude larger. Bain Capital's take-private of PowerSchool in August 2024, valued around $5.6bn, was not a bet on AI features. It was a bet on the switching costs of the system that attendance and grades already live in — into which AI features can be shipped at near-zero customer acquisition cost."
+    },
+    {
+     "t": "p",
+     "text": "That is the structural asymmetry worth understanding. The AI-native tools are cheap, fast-spreading and easy to displace. The systems of record are expensive, slow and nearly impossible to displace. Over a ten-year horizon the value in this market accrues disproportionately to whoever owns the record, not to whoever owns the model, because the model is a feature and the record is a contract. Panorama's $60m Series C led by General Atlantic, ClassDojo's $221m raised across to a Series D, Providence Equity's position in Seesaw and Advance Publications' ownership of Turnitin all describe the same thesis from different angles: buy the channel to the school, and the intelligence layer becomes an upsell."
+    },
+    {
+     "t": "p",
+     "text": "There is one more economic actor and it is the one most likely to determine the outcome. Public education budgets are set politically, and the pressure they face is enrolment-driven — which is precisely what the −2% projection encodes. A district losing pupils loses funding, and the temptation, in that circumstance, is to ask whether a larger class supervised by fewer adults with better software is survivable. That question has nothing to do with whether the software can teach, and everything to do with whether a school board can defend the ratio at a public meeting. It is the only mechanism in this analysis by which a 3.5% index could translate into meaningfully fewer jobs, and it operates entirely through the budget rather than through the technology."
+    }
+   ]
+  },
+  {
+   "id": "s-2030",
+   "label": "Looking Ahead",
+   "title": "A decade away, and the sequence matters more than the technology",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The index puts material change at ten years or more, which invites the obvious question: what would actually have to happen, and in what order? Three plausible trajectories emerge from the evidence, and they differ less in their technology than in their politics."
+    },
+    {
+     "t": "p",
+     "text": "The first and most likely is consolidation without displacement. The augmented column of the anatomy — currently ten of twenty-one tasks — absorbs two or three more. Formative feedback on open-ended writing moves from human to augmented as models improve at reading children's handwriting and identifying misconception patterns across a class set. Behavioural incident logging becomes fully ambient. Parent communication drafts arrive pre-written in the tone the family has responded to before. Under this trajectory the automation potential drifts upwards from 29%, the human requirement factor stays roughly where it is, and the replacement index moves by perhaps a point. Nobody loses a job; everybody's evening gets shorter, or does not, depending on whether their district protects the recovered time. This is the RSC scenario and the Gallup scenario coexisting, district by district."
+    },
+    {
+     "t": "p",
+     "text": "The second trajectory is regulatory hardening, and Europe is running the experiment. Transparency obligations under Article 50 are already live as of 2 August 2026; the substantive high-risk regime for education AI arrives on 2 December 2027 after the sixteen-month deferral. If that regime is enforced with any vigour, the practical consequence for vendors is a documentation and human-oversight burden that favours large incumbents over small specialists — which would push the market towards the systems of record and away from the free-tier insurgents. For teachers the consequence is more paradoxical: high-risk classification mandates meaningful human oversight, which is to say it legislates the two AI-created tasks in this anatomy into existence as formal duties. A rule intended to protect children ends up creating a job description. That is the most concrete near-term route by which the AI-Job Creation Index of 12% becomes contractual rather than merely observed."
+    },
+    {
+     "t": "img",
+     "slot": "adaptive_platform_review",
+     "caption": "The work the technology created: checking whether the platform has quietly put the right child on the wrong pathway.",
+     "prompt": "A primary teacher at a classroom desk after school, laptop open showing an adaptive learning dashboard with student proficiency bands and coloured pathway charts, a printed class list annotated in biro beside it, a stack of exercise books and a mug, empty child-sized chairs on desks in the background, late afternoon light. Documentary photography, muted palette, quiet mood."
+    },
+    {
+     "t": "p",
+     "text": "The third trajectory is the fiscal one, and it is the only one in which the score materially moves. It begins not with a model release but with a budget cycle: falling enrolment, a funding formula, a board asked to choose between closing a school and raising the pupil-teacher ratio. Better software becomes the argument for the larger class, and the argument is not obviously wrong — an adaptive platform genuinely does help one adult manage a wider spread of ability. If ratios move, the −2% employment projection becomes a floor rather than a ceiling, and the mechanism will be recorded, accurately, as a budget decision rather than an automation event. This is why the Human Requirement Factor's most fragile component is the one built from statute and collective agreement rather than from the physical facts of supervising children."
+    },
+    {
+     "t": "p",
+     "text": "Against these, the scenario that dominates public discussion — the machine that teaches — remains the least supported by anything in the evidence. The most enthusiastic districts on record are not moving that way. Dublin City Schools reached over 90% educator adoption and then made its next-year priority student AI literacy: teaching children when not to use the tools. Weber School District went from 65 pilot teachers to roughly 1,347 active users, about 87% of possible staff, on a teacher productivity proposition. When a district did attempt something student-facing and embodied, in Salamanca, a nearly $60,000 purchase collapsed under community and union pressure before delivery. The market has repeatedly tested the frontier and repeatedly retreated to the same side of it."
+    },
+    {
+     "t": "p",
+     "text": "One development would change the analysis genuinely, and it is not a model capability. It is a shift in what parents will accept. Every barrier in the fortress — licensure, ratio, custody, disclosure, procurement — ultimately rests on a public consensus that small children require a specific responsible adult. That consensus is not eternal and has already been renegotiated once, quietly, for screen time. If it moves for supervision, the arithmetic in this piece is rewritten from the friction side rather than the capability side. Nothing in the current evidence suggests it is moving. Everything in the current evidence — the ten-point plan, the paused robot, the transparency mandate that arrived on schedule while the rest of the regime slipped — suggests the opposite. But it is the variable to watch, and it will not appear in a product announcement."
+    },
+    {
+     "t": "p",
+     "text": "The forecast, then, is unglamorous. A decade from now, on the balance of the evidence, elementary teaching will still be a job performed by roughly the same number of people, doing roughly the same twenty-one things, with rather more of the preparation drafted by machine, one or two formal new duties attached to supervising those machines, and an argument about class size that will have very little to do with technology and everything to do with how many children walk through the door in September."
+    }
+   ]
+  },
+  {
+   "id": "s-feedback",
+   "label": "Challenge",
+   "title": "The case against this score, if you can make it",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "This index is a model, and models are arguments that can be lost. The score for elementary teaching rests on two contestable measurements and one contestable interpretation, and it is worth stating plainly where each could be wrong."
+    },
+    {
+     "t": "p",
+     "text": "The automation potential of 29% may be too low. It counts what current systems demonstrably do across this task set; a reader who believes formative assessment of children's open-ended writing is closer to solved than the anatomy allows would push that number up, and the replacement index with it. Equally it may be too high: several augmented classifications assume that a machine-drafted plan meaningfully reduces the cognitive work of planning, and the RSC workload finding is precisely the kind of evidence that would argue it does not."
+    },
+    {
+     "t": "p",
+     "text": "The Human Requirement Factor of 88% is the softer figure and the more consequential one. It aggregates licensure, custody, safeguarding, consent, bargaining and procurement into a single coefficient, and reasonable people will weight those differently — particularly the components that are statutory rather than physical, and could therefore change in a single legislative session. If you think the political barrier is thinner than modelled, the score should be higher. If you think the custodial barrier alone is dispositive, it should be lower."
+    },
+    {
+     "t": "p",
+     "text": "And the interpretation: this piece reads the −2% employment projection as a demand-side, enrolment-driven fact with no automation content. That is a judgment, not a measurement. If you believe class sizes will rise because software makes them survivable, you are describing a route to job loss that this model, which measures task replacement rather than headcount, would not detect until after it happened. Tell us where the model is wrong, and what evidence would settle it."
+    },
+    {
+     "t": "component",
+     "name": "feedback"
+    }
+   ]
+  }
+ ],
+ "anchors": [
+  {
+   "title": "Bookkeeping, Accounting, and Auditing Clerks",
+   "label": "Bookkeeping",
+   "rpi": 61.6
+  },
+  {
+   "title": "Shipping, Receiving, and Inventory Clerks",
+   "label": "Warehouse",
+   "rpi": 49.0
+  },
+  {
+   "title": "Customer Service Representatives",
+   "label": "Customer Service",
+   "rpi": 39.0
+  },
+  {
+   "title": "Paralegals and Legal Assistants",
+   "label": "Paralegal",
+   "rpi": 27.8
+  },
+  {
+   "title": "Retail Salespersons",
+   "label": "Retail",
+   "rpi": 21.3
+  },
+  {
+   "title": "Accountants and Auditors",
+   "label": "Accountant",
+   "rpi": 15.5
+  },
+  {
+   "title": "Software Developers",
+   "label": "Software Dev",
+   "rpi": 13.4
+  },
+  {
+   "title": "Elementary School Teachers, Except Special Education",
+   "label": "Elementary School Teac",
+   "rpi": 3.5
+  },
+  {
+   "title": "Registered Nurses",
+   "label": "Nurse",
+   "rpi": 2.2
+  }
+ ],
+ "sources": [
+  {
+   "name": "Fastio (MagicSchool AI Review 2026)",
+   "url": "https://fast.io/resources/magic-ai-review-2026/",
+   "date": "2026"
+  },
+  {
+   "name": "Gallup News",
+   "url": "https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx",
+   "date": "2025"
+  },
+  {
+   "name": "WINS Solutions",
+   "url": "https://www.winssolutions.org/eu-ai-act-education-deadline-deferred/",
+   "date": "2026"
+  },
+  {
+   "name": "WINS Solutions",
+   "url": "https://www.winssolutions.org/eu-ai-act-education-deadline-deferred/",
+   "date": "2026"
+  },
+  {
+   "name": "Futurism",
+   "url": "https://futurism.com/artificial-intelligence/teachers-union-schools-kids-ai",
+   "date": "2026-05-31"
+  },
+  {
+   "name": "Futurism",
+   "url": "https://futurism.com/artificial-intelligence/teachers-union-schools-kids-ai",
+   "date": "2026-05-31"
+  },
+  {
+   "name": "Futurism",
+   "url": "https://futurism.com/artificial-intelligence/teachers-union-schools-kids-ai",
+   "date": "2026-05-31"
+  },
+  {
+   "name": "MagicSchool AI — Dublin City Schools Case Study",
+   "url": "https://www.magicschool.ai/case-studies/dublin-city-schools",
+   "date": "2025"
+  },
+  {
+   "name": "CitizenPortal.ai — Weber School District rolls out SchoolAI",
+   "url": "https://citizenportal.ai/articles/6401598/Utah/Weber-School-District-rolls-out-SchoolAI-for-teachers-and-students-district-emphasizes-privacy-and-training",
+   "date": "2025"
+  },
+  {
+   "name": "NPR / Houston Public Media",
+   "url": "https://www.houstonpublicmedia.org/npr/2026/07/29/g-s1-136072/new-york-school-pauses-plan-to-deploy-humanlike-ai-robot-teacher-after-backlash/",
+   "date": "2026-07-29"
+  },
+  {
+   "name": "Royal Society of Chemistry, Science Teaching Survey",
+   "url": "https://www.rsc.org/policy-and-campaigning/education/the-science-teaching-survey/2024/44-of-teachers-have-used-ai-but-workload-remains-unchanged",
+   "date": "2024"
+  },
+  {
+   "name": "popularai.org",
+   "url": "https://www.popularai.org/p/these-turnitin-false-positives-in",
+   "date": "2025-2026"
+  }
+ ]
+}

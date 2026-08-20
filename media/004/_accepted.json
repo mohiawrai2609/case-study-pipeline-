@@ -1,0 +1,29 @@
+{
+ "fifth_wheel_coupling": {
+  "index": 1,
+  "file": "media/004\\fifth_wheel_coupling.jpg",
+  "credit": "Photo: Asurnipal, CC BY SA, via wikimedia",
+  "source": "wikimedia",
+  "licence": "by-sa",
+  "px": "3468x4624",
+  "status": "accepted"
+ },
+ "sunbelt_corridor_dusk": {
+  "index": 0,
+  "file": "media/004\\sunbelt_corridor_dusk.jpg",
+  "credit": "View road windscreen (public domain, via rawpixel)",
+  "source": "rawpixel",
+  "licence": "cc0",
+  "px": "5760x3840",
+  "status": "accepted"
+ },
+ "cab_telematics_interior": {
+  "status": "rejected"
+ },
+ "roadside_tyre_change": {
+  "status": "rejected"
+ },
+ "predawn_yard_inspection": {
+  "status": "rejected"
+ }
+}

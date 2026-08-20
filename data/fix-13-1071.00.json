@@ -1,0 +1,921 @@
+{
+ "issue": 5,
+ "role": {
+  "title": "Human Resources Specialists",
+  "soc": "13-1071.00",
+  "band": "Low",
+  "group": "Business & Financial",
+  "rank": 377,
+  "emp_k": 944.3,
+  "wage": 72910,
+  "timeline": "10+ years",
+  "growth": 6.2
+ },
+ "scores": {
+  "rpi": 14.7,
+  "aps": 42,
+  "hrf": 65,
+  "untouched": 58,
+  "ajci": 14,
+  "cognitive": 42,
+  "physical": 0
+ },
+ "cover": {
+  "title": "The Last <em>Human</em> in the Room",
+  "subtitle": "Artificial intelligence has taken the queue, the form and the follow-up out of human resources and left behind the conversations nobody wants a machine to have.",
+  "published": "August 2026"
+ },
+ "matrix": {
+  "breadthThreshold": 0.16,
+  "depthThreshold": 0.68
+ },
+ "econ": {
+  "labourBase": 61974,
+  "techFixed": 21873,
+  "baseVolume": 500
+ },
+ "tasks": [
+  {
+   "name": "Interpret and explain human resources po",
+   "type": "h",
+   "desc": "Interpret and explain human resources policies, procedures, laws, and regulations to employees and managers in nuanced conversations that address specific situations and organizational context.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Make final hiring decisions and process",
+   "type": "h",
+   "desc": "Make final hiring decisions and process hiring-related paperwork using AI-assisted applicant tracking systems that automate offer letter generation and onboarding workflows.",
+   "vendor": "Paradox"
+  },
+  {
+   "name": "Maintain current knowledge of EEO",
+   "type": "h",
+   "desc": "Maintain current knowledge of EEO, ADA, and affirmative action laws through AI-curated legal update alerts, but applying regulatory interpretation to specific organizational decisions through professional judgment.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Review and validate AI-populated HRIS re",
+   "type": "h",
+   "desc": "Review and validate AI-populated HRIS records related to hiring, termination, leaves, transfers, and promotions, ensuring data accuracy and compliance with retention policies.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Address sensitive employee relations iss",
+   "type": "h",
+   "desc": "Address sensitive employee relations issues including harassment allegations, work complaints, and conflicts through confidential face-to-face conversations requiring empathy, discretion, and legal awareness.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Review AI-screened employment applicatio",
+   "type": "h",
+   "desc": "Review AI-screened employment applications and job orders to validate algorithmic matching against nuanced job requirements and organizational culture fit.",
+   "vendor": "Pymetrics (Harver)"
+  },
+  {
+   "name": "Inform job applicants of role details in",
+   "type": "h",
+   "desc": "Inform job applicants of role details including duties, compensation, benefits, and career progression through personalized conversations that build candidate engagement and employer brand.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Select qualified job applicants or refer",
+   "type": "h",
+   "desc": "Select qualified job applicants or refer them to managers after synthesizing AI-generated candidate assessments with interview insights and cultural fit judgment.",
+   "vendor": "Greenhouse Software"
+  },
+  {
+   "name": "Conduct new employee orientations",
+   "type": "h",
+   "desc": "Conduct new employee orientations through in-person or virtual sessions that blend AI-delivered training modules with live Q&A, relationship-building, and organizational culture transmission.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Maintain and update HR documents",
+   "type": "h",
+   "desc": "Maintain and update HR documents using AI-assisted document management systems that auto-populate templates, but requiring professional review for accuracy and compliance.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Confer with management to develop or imp",
+   "type": "h",
+   "desc": "Confer with management to develop or implement personnel policies or procedures, translating business objectives and AI workforce analytics into actionable HR strategies.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Contact job applicants to inform them of",
+   "type": "h",
+   "desc": "Contact job applicants to inform them of application status using AI-automated email systems for high-volume updates, but handling sensitive rejections and negotiations through personalized communication.",
+   "vendor": "Paradox"
+  },
+  {
+   "name": "Conduct confidential exit interviews to",
+   "type": "h",
+   "desc": "Conduct confidential exit interviews to gather candid feedback about organizational issues, synthesizing themes that AI text analysis may miss due to emotional subtext and power dynamics.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Interview job applicants to assess work",
+   "type": "h",
+   "desc": "Interview job applicants to assess work history, skills, and cultural fit through structured conversations that probe beyond resume content and algorithmic screening.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Source qualified candidates",
+   "type": "h",
+   "desc": "Source qualified candidates using AI-powered recruiting platforms that automate resume parsing and skill matching, but requiring human outreach to passive candidates and relationship-building.",
+   "vendor": "Paradox"
+  },
+  {
+   "name": "Provide management with training on inte",
+   "type": "h",
+   "desc": "Provide management with training on interviewing, performance appraisals, and counseling techniques through workshops and coaching that adapt to individual learning needs and organizational culture.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Analyze employment-related data",
+   "type": "h",
+   "desc": "Analyze employment-related data using AI analytics dashboards that surface turnover trends, DEI metrics, and compensation disparities, translating insights into strategic recommendations.",
+   "vendor": "Qualtrics"
+  },
+  {
+   "name": "Develop and advise on recruiting and ret",
+   "type": "h",
+   "desc": "Develop and advise on recruiting and retention strategies informed by AI predictive analytics about candidate sourcing effectiveness and turnover risk factors.",
+   "vendor": "Qualtrics"
+  },
+  {
+   "name": "Administer employee benefit plans by ans",
+   "type": "h",
+   "desc": "Administer employee benefit plans by answering questions, processing enrollments, and resolving issues, with AI chatbots handling tier-1 queries and routing complex cases to specialists.",
+   "vendor": "Paradox"
+  },
+  {
+   "name": "Audit AI recruiting algorithms for bias",
+   "type": "h",
+   "desc": "Audit AI recruiting algorithms for bias by reviewing flagged candidate rejections, testing for adverse impact across protected classes, and adjusting screening criteria to ensure compliance.",
+   "vendor": "Holistic AI",
+   "origin": "ai-created"
+  },
+  {
+   "name": "Validate AI-generated turnover risk pred",
+   "type": "h",
+   "desc": "Validate AI-generated turnover risk predictions against qualitative employee sentiment, correcting algorithmic errors that miss contextual factors like team dynamics or life events.",
+   "vendor": "Qualtrics",
+   "origin": "ai-created"
+  },
+  {
+   "name": "Synthesize AI-generated employee sentime",
+   "type": "h",
+   "desc": "Synthesize AI-generated employee sentiment analysis from surveys and communication tools with direct conversations to identify genuine organizational issues versus algorithmic noise.",
+   "vendor": "Qualtrics",
+   "origin": "ai-created"
+  }
+ ],
+ "vendors": [
+  {
+   "id": "qualtr",
+   "name": "Qualtrics",
+   "initials": "QT",
+   "stage": "Production",
+   "reach": 67,
+   "products": 4,
+   "evidence": "Public (Nasdaq: XM) at time of the referenced reports.",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Qualtrics Employee Experience (EX), Qualtrics Employee Experience (EX) & Analytics, Qualtrics Employee Experience & Retention Analytics, Qualtrics Employee Retention & Attrition Analytics",
+   "note": "Used by thousands of organizations as a core employee-listening and sentiment-analysis platform.",
+   "tasks": [
+    {
+     "name": "Develop and advise on recruiting and retenti",
+     "aps": 75,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Validate AI-generated turnover risk predicti",
+     "aps": 75,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Analyze employment-related data",
+     "aps": 80,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Synthesize AI-generated employee sentiment a",
+     "aps": 80,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "parado",
+   "name": "Paradox",
+   "initials": "PX",
+   "stage": "Production",
+   "reach": 65,
+   "products": 2,
+   "evidence": "Series C, at least $240M total funding to date.",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Olivia Conversational Hiring Assistant, Olivia Employee & Candidate Assistant",
+   "note": "Used by 500+ global clients including high-volume employers like CVS Health and McDonald's to source and pre-qualify large candidate pools.",
+   "tasks": [
+    {
+     "name": "Administer employee benefit plans by answeri",
+     "aps": 70,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Source qualified candidates",
+     "aps": 70,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Make final hiring decisions and process hiri",
+     "aps": 75,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Contact job applicants to inform them of app",
+     "aps": 80,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "holist",
+   "name": "Holistic AI",
+   "initials": "HA",
+   "stage": "Production",
+   "reach": 65,
+   "products": 1,
+   "evidence": "Private AI governance platform; total funding not disclosed",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Holistic AI Bias Audit Platform (NYC Bias Audit Solution)",
+   "note": "Used by employers and employment agencies needing independent bias audits for AI hiring tools in jurisdictions such as New York City; specific customer names are often confidential but include vendors",
+   "tasks": [
+    {
+     "name": "Audit AI recruiting algorithms for bias by r",
+     "aps": 80,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "greenh",
+   "name": "Greenhouse Software",
+   "initials": "GH",
+   "stage": "Pilot",
+   "reach": 48,
+   "products": 1,
+   "evidence": "Private, venture-backed HR tech company; specific funding am",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "Greenhouse Recruiting",
+   "note": "Used by thousands of mid-market and enterprise customers globally; ranked #1 ATS in multiple G2 Winter 2026 and Spring 2026 reports across enterprise, mid-market and EMEA.",
+   "tasks": [
+    {
+     "name": "Select qualified job applicants or refer the",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "pymetr",
+   "name": "Pymetrics (Harver)",
+   "initials": "PH",
+   "stage": "Pilot",
+   "reach": 55,
+   "products": 1,
+   "evidence": "Acquired by Harver; current funding details not disclosed in",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Pymetrics Soft Skills Assessment Platform",
+   "note": "Used by 100+ global enterprise organizations to improve early-career hiring and diversity by focusing on potential rather than pedigree.",
+   "tasks": [
+    {
+     "name": "Review AI-screened employment applications a",
+     "aps": 70,
+     "vec": "Cognitive"
+    }
+   ]
+  }
+ ],
+ "shift": [
+  {
+   "time": "07:40",
+   "task": "Overnight applicant queue clears itself",
+   "type": "automated",
+   "desc": "Paradox's conversational assistant has screened, qualified and scheduled through the night against live calendars. The specialist arrives to an exception list rather than an inbox: the applications the agent could not resolve and the interview slots nobody confirmed."
+  },
+  {
+   "time": "08:15",
+   "task": "Requisition stand-up with the hiring manager",
+   "type": "human",
+   "desc": "Fifteen minutes to establish what the job actually requires, as distinct from what the posting says. The output of this conversation becomes the screening criteria, which means an imprecise conversation here produces an imprecise filter downstream."
+  },
+  {
+   "time": "09:00",
+   "task": "Shortlist review in the applicant tracking system",
+   "type": "augmented",
+   "desc": "Greenhouse presents a ranked shortlist with match reasoning. The specialist reads past the ranking for the non-linear career, the qualification earned abroad, the two-year gap with an explanation. Every override is written down, because overrides are the record of human review."
+  },
+  {
+   "time": "09:45",
+   "task": "Adverse-impact check on a rejected cohort",
+   "type": "augmented",
+   "desc": "Holistic AI flags a drift in selection rates for a requisition family. The specialist pulls the flagged rejections, tests whether a screening criterion is acting as a proxy for something it should not, and decides whether to reopen the cohort."
+  },
+  {
+   "time": "10:30",
+   "task": "Structured interview, senior analyst role",
+   "type": "human",
+   "desc": "Fifty minutes with no system in the room. The value is in the follow-up question the script did not anticipate, and in noticing which answer the candidate had prepared and which one they had not."
+  },
+  {
+   "time": "11:30",
+   "task": "Assessment calibration",
+   "type": "augmented",
+   "desc": "Behavioural assessment results from Pymetrics, now part of Harver, are reconciled against interview notes. Where the assessment and the interviewer disagree, the specialist has to decide which instrument was measuring the job and which was measuring the candidate's comfort with being measured."
+  },
+  {
+   "time": "12:30",
+   "task": "Benefits escalation queue",
+   "type": "augmented",
+   "desc": "The chatbot has closed the deductible and enrolment-window questions overnight. Three cases were routed up: a leave request that is really a diagnosis disclosure, a dependent eligibility dispute, and a coverage gap caused by a mid-month transfer."
+  },
+  {
+   "time": "13:30",
+   "task": "Employee relations meeting",
+   "type": "human",
+   "desc": "A complaint raised last week, discussed in a room with a closed door and a legal pad. No recording, no transcription, no case-management prompt until afterwards. What is learned here depends entirely on whether the person opposite believes the discretion is real."
+  },
+  {
+   "time": "14:30",
+   "task": "Engagement survey read-out",
+   "type": "augmented",
+   "desc": "Qualtrics surfaces themes across open-text responses and clusters the sentiment by function and tenure. The specialist's job is to work out which cluster is an organisational problem and which is an artefact of how the question was asked."
+  },
+  {
+   "time": "15:30",
+   "task": "HRIS records auto-populate",
+   "type": "automated",
+   "desc": "Hires, terminations, leaves, transfers and promotions written into the system of record from the workflow, with retention flags applied automatically. The specialist validates a sample rather than typing entries, checking the classifications that carry compliance consequences."
+  },
+  {
+   "time": "16:15",
+   "task": "Offer conversation and negotiation",
+   "type": "human",
+   "desc": "The offer letter was generated in seconds and is entirely beside the point. Twenty minutes of two-sided negotiation over base, start date and a relocation question, conducted in the knowledge that the relationship begins the moment it ends."
+  },
+  {
+   "time": "17:00",
+   "task": "Exit interview",
+   "type": "human",
+   "desc": "An eleven-year employee leaving for a competitor. The transcript will be fed to text analysis tomorrow. The thing worth knowing is what she started to say about her manager and then declined to finish, which will not appear in the transcript at all."
+  }
+ ],
+ "sections": [
+  {
+   "blocks": [
+    {
+     "t": "p",
+     "drop": true,
+     "text": "The room is not designed for what happens in it. Four chairs, a laminate table, a box of tissues that somebody remembers to replace, and a door that closes but does not lock. Downstairs, in a server rack nobody in this building has seen, the applicant tracking system is working through the night: parsing, ranking, scheduling, sending. Up here, a woman who has worked for the company for eleven years is explaining, slowly and out of order, what happened at the off-site. The human resources specialist opposite her has a legal pad, not a laptop. She was trained to write down what is said and not what she thinks it means. Later she will type it into a case management system that will propose a category, a severity and a next step. None of that is happening yet. What is happening is a pause, and a decision about whether to fill it."
+    }
+   ]
+  },
+  {
+   "id": "s-score",
+   "label": "Scorecard",
+   "title": "Fourteen point seven, and the reasons are unglamorous",
+   "blocks": [
+    {
+     "t": "component",
+     "name": "gauge"
+    },
+    {
+     "t": "p",
+     "text": "Fourteen point seven. On the Replaceable Potential Index, which runs from zero to one hundred, human resources specialists sit in the Low band, nearer the floor than the middle. The number is not a forecast of unemployment, and it is not a verdict on anybody's competence. It is the product of two separate measurements multiplied together, and the multiplication is where the argument lives. The Automation Potential Score — the share of the role's task surface that commercially available systems can plausibly perform today — is 42%. The Human Requirement Factor — the share of that surface insulated by something a model cannot supply, whether legal accountability, confidentiality under adversarial conditions, or the simple presence of a person who can be named in a filing — is 65%. Multiply 42 by the 35% left unprotected and the result is 14.7."
+    },
+    {
+     "t": "p",
+     "text": "The composition of that 42% matters more than its size. The physical component is zero. There is nothing in this occupation that a robot arm could take: no lifting, no driving, no manipulation of the world. Every automatable minute of the job is cognitive, which means the entire exposure runs through language models, ranking systems and workflow engines rather than through machinery. That is unusual, and it cuts both ways. Language is precisely what the current generation of systems is best at, so the ceiling on automation should in principle be high. Yet the Human Requirement Factor of 65% is one of the sturdiest recorded in this series, and it is sturdy for reasons that have very little to do with technical capability."
+    },
+    {
+     "t": "p",
+     "text": "Fifty-eight per cent of the role's task surface is classified as untouched — not automated, not augmented, not meaningfully reshaped by any deployed system this analysis could evidence. That is the majority of the working week. It is a striking figure in an occupation that sits at the centre of the most heavily marketed category in enterprise software. Recruiting technology has been sold aggressively for two decades; human capital management suites are among the largest line items in corporate IT. And still, when the tasks are enumerated one by one and matched against systems that demonstrably run in production, most of the job is where it was."
+    },
+    {
+     "t": "p",
+     "text": "Against that, the AI-Created Job Index registers 14%. Roughly one task in seven now performed by human resources specialists did not exist in the occupation's description before automated screening arrived. These are not glamorous additions. They are inspection duties: checking whether a recruiting algorithm is rejecting people it should not, testing whether a turnover-risk prediction survives contact with what the manager actually knows, reconciling machine-read sentiment against what employees say when a machine is not listening. The machine created work by needing supervision."
+    },
+    {
+     "t": "p",
+     "text": "The timeline attached to the score is ten years or more. That is the horizon over which the Automation Potential Score would need to climb, or the Human Requirement Factor to erode, for the role's exposure to change band. Neither movement looks imminent. The capability curve is steep, but the protective factor here is not made of capability — it is made of statute, liability and the awkward institutional need for somebody who can be deposed."
+    },
+    {
+     "t": "p",
+     "text": "The labour market data does not argue with any of this. Some 944,300 people hold the job in the United States, at a median wage of $72,910. The Bureau of Labor Statistics projects 6.2% growth. An occupation being hollowed out by software does not usually grow. What the projection suggests instead is an occupation absorbing software: more requisitions processed per specialist, more systems to oversee, more compliance surface to patrol, and a headcount that expands modestly rather than contracting."
+    },
+    {
+     "t": "ins",
+     "label": "Empirical anchor",
+     "text": "The clearest verified evidence of automation delivering measurable value in this occupation comes from Chipotle. In October 2024 the company launched a conversational AI hiring assistant built with Paradox, branded 'Ava Cado', in a phased rollout across more than 3,500 restaurant locations. Workday's customer story reports that time to hire fell by 75%, application completion rose from 50% to 85%, and the interval from application to start date dropped from twelve days to four. Note carefully what is measured: speed and completion, not headcount."
+    },
+    {
+     "t": "p",
+     "text": "That anchor deserves scepticism proportionate to its source. It is a vendor-published customer story, produced by the company that now owns the technology, and it reports throughput metrics rather than staffing ones. Nothing in it says how many recruiters Chipotle employs, before or after. But the direction is real and the mechanism is legible: the assistant removed waiting from the process. Applications that used to die in a queue now complete. That is a genuine improvement, and it is precisely the kind of improvement that raises volume without reducing the number of people needed to handle the exceptions volume produces."
+    },
+    {
+     "t": "img",
+     "slot": "hr_analytics_workstation",
+     "full": true,
+     "caption": "The augmented workstation: a pipeline board on one screen, a turnover-risk dashboard on the other, and a legal pad that never gets digitised.",
+     "prompt": "A human resources specialist's dual-monitor desk in a corporate HR suite, shot as documentary photography with no people in frame: the left screen shows an applicant tracking pipeline board with candidate cards arranged in stages, the right screen shows a turnover-risk dashboard with cohort charts and a diversity metrics panel. On the desk, a printed offer letter marked with tracked redlines, a benefits open-enrolment guide, a lanyard badge, a yellow legal pad covered in handwritten interview shorthand, and a locked filing drawer with a confidentiality label. Cool office daylight, shallow depth of field."
+    },
+    {
+     "t": "component",
+     "name": "chartEx"
+    },
+    {
+     "t": "p",
+     "text": "The gap between the 42% capability figure and the 14.7% exposure figure is the single most important quantity in this report. It represents work that machines can technically do and are nonetheless not doing, because doing it would transfer risk from a vendor to a defendant. Most occupations in this series have a Human Requirement Factor built from dexterity, judgement under uncertainty, or physical presence. This one has a Human Requirement Factor built substantially from the American law of employment discrimination — which makes it, uniquely, a protective factor that a court can amend."
+    }
+   ]
+  },
+  {
+   "id": "s-shift",
+   "label": "A Working Day",
+   "title": "A day in which the software never once decides",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "To understand a score of 14.7 it helps to walk a day. What follows is a composite shift assembled from the task inventory and from the systems evidenced in production or pilot at the vendors covered later in this report. It is not a transcript of any individual's day. It is a plausible reconstruction of how the automated, the augmented and the stubbornly human interleave across a single Tuesday in a mid-sized company that has bought most of the available tooling and is still working out what to do with it."
+    },
+    {
+     "t": "component",
+     "name": "shift"
+    },
+    {
+     "t": "p",
+     "text": "Three features of that day are worth drawing out. The first is that the machine works the night shift. The conversational assistant does not wait for office hours; it screens, schedules and confirms while the building is empty, which is why the specialist's morning begins with an exception list rather than an inbox. This is the most under-appreciated form of automation in the occupation. It does not remove a task from a human. It removes the delay between a candidate's interest and the organisation's response, and in doing so changes who applies. Chipotle's completion rate moving from half to over four-fifths is a measurement of exactly that: people who would have abandoned a form finished a conversation instead."
+    },
+    {
+     "t": "p",
+     "text": "The second feature is that the augmented hours are the busiest and the most cognitively awkward. In an automated task the human is absent. In a traditional task the human is unaided and knows it. In an augmented task the human is holding a machine's output at arm's length, deciding how much of it to believe. Reviewing an algorithmically ranked shortlist is not faster than reading twenty CVs unless you trust the ranking; if you do not trust it, you have added a verification step to a job that previously had none. The specialist who overrides a ranking has to be able to say why, in writing, in a record that may be read years later by somebody unsympathetic."
+    },
+    {
+     "t": "p",
+     "text": "The third feature is the shape of the human hours. They cluster at the two ends of the employment relationship and at its points of rupture: the offer conversation, the employee relations meeting, the exit interview. These are the moments where the organisation's interests and the individual's diverge, where what is said is guarded, and where the information that matters most is the information the speaker has decided not to volunteer. No system in the evidence base operates in that space. Several operate adjacent to it — analysing survey text, transcribing interviews, summarising themes — but the encounter itself remains a room with two people in it and a door that closes."
+    },
+    {
+     "t": "img",
+     "slot": "overnight_candidate_queue",
+     "caption": "Where the automation actually bites: a conversational hiring assistant working a restaurant back office at dawn, screening and scheduling before anyone arrives.",
+     "prompt": "A quick-service restaurant back office photographed at dawn with no people present: a wall-mounted tablet running a conversational hiring assistant thread, showing text-message-style screening questions and an automatically offered interview slot. Beside it a printed shift roster, a stack of laminated onboarding checklists, an employment eligibility verification folder, and a manager's phone face-up showing a scheduling confirmation. Stainless steel prep shelving and service-line lighting visible through the open doorway. Documentary realism, cool morning light."
+    }
+   ]
+  },
+  {
+   "id": "s-tasks",
+   "label": "Task Surface",
+   "title": "Twenty-two tasks, and the database concedes what it omits",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Twenty-two tasks constitute the working definition of this occupation in the scoring database. Five remain traditional — performed substantially as they were before automated tooling existed. Fourteen are augmented, meaning a system now does a meaningful share of the work while a human retains the decision, the signature or the exception. Three are newly created by the arrival of automation itself. Not one of the twenty-two is classified as fully automated. That absence is the anatomy's defining feature and the reason the exposure score sits where it does."
+    },
+    {
+     "t": "component",
+     "name": "taskGrid"
+    },
+    {
+     "t": "p",
+     "text": "The five traditional tasks are worth naming in plain terms. Interpreting policy, law and procedure for employees and managers in conversations where the general rule meets a specific and awkward situation. Handling employee relations matters — harassment allegations, complaints, conflicts — through confidential face-to-face discussion. Telling applicants what a job actually involves, in a way that builds engagement rather than merely conveying facts. Interviewing candidates to probe past the résumé and past the screening algorithm. And training managers to interview, appraise and counsel, in workshops that adapt to who is in the room."
+    },
+    {
+     "t": "p",
+     "text": "What binds those five is not their difficulty. It is their legal and emotional jeopardy. Each is a conversation in which the organisation is exposed, the individual is exposed, and the record of what was said may later be contested. The interpretive task is the purest example: a policy is a general instrument, an employee's circumstance is a particular one, and the act of joining them is an act of judgement that creates liability the moment it is performed. Automating it would mean an employer accepting a vendor's interpretation of its own obligations. No general counsel has yet been persuaded to do that at scale, and the vendors are not asking them to."
+    },
+    {
+     "t": "p",
+     "text": "The fourteen augmented tasks cluster into four honest categories. First, the requisition-to-offer pipeline: sourcing, screening, status communication, selection support, offer generation, onboarding workflow. This is where automation is densest and where the verified deployment evidence is strongest. Second, records and documents: the human resources information system entries for hires, terminations, leaves, transfers and promotions, now auto-populated and validated rather than typed; and the document library, auto-templated and professionally reviewed. Third, service delivery: benefits administration, where chatbots absorb the tier-one traffic and escalate what they cannot resolve; and orientation, where recorded modules carry the content and a human carries the culture. Fourth, analysis and advice: turnover, pay and representation dashboards, retention strategy informed by predictive models, and policy development with management."
+    },
+    {
+     "t": "p",
+     "text": "A consistent pattern runs through all fourteen. The machine takes the first pass and the volume; the human takes the exception and the accountability. Automated status emails handle the hundreds; the specialist handles the rejection that needs to be delivered carefully and the negotiation that needs to be won. The chatbot answers the deductible question; the specialist handles the employee whose leave request is really about a diagnosis they have not disclosed. Algorithmic parsing surfaces a hundred plausible candidates; the specialist writes to the four who are not looking. In every case the automated portion is high-frequency and low-consequence, and the retained portion is the inverse. That is a stable division of labour, not a transitional one, and it is the single strongest argument for reading this occupation as augmented rather than endangered."
+    },
+    {
+     "t": "p",
+     "text": "The exit interview is the most instructive augmented task in the list, because it shows where text analysis stops. Software can transcribe an exit conversation, cluster themes across hundreds of them, and surface the words that recur. What it cannot reliably do is register the thing an exit interview exists to capture: that the departing employee is choosing, in real time, how much to say, and calibrating that choice against whether they will need a reference, whether the manager will hear about it, and whether candour has ever been rewarded here before. The signal is in the hesitation, the reformulation, the complaint that is raised and then withdrawn. Sentiment scoring reads the words that survived that filter and treats them as the data. The specialist's job is to know what did not survive."
+    },
+    {
+     "t": "img",
+     "slot": "exit_interview_room",
+     "caption": "The room where the score is decided. Nothing in the verified evidence base operates inside it.",
+     "prompt": "A small internal corporate meeting room used for exit interviews and employee relations conversations, empty of people: two chairs set at right angles, a laminate table, a closed laptop pushed to one side, an open legal pad with handwritten shorthand notes, a box of tissues, a plain wall clock, and a door with a frosted glass panel and a brass 'in use' slider. A printed separation checklist and a benefits continuation form lie on the table. Flat overcast light through a narrow window. Restrained documentary photography."
+    },
+    {
+     "t": "p",
+     "text": "The three created tasks are the report's most interesting finding, because none of them is a productivity gain. Auditing recruiting algorithms for bias — reviewing flagged rejections, testing selection rates across protected classes, adjusting screening criteria. Validating turnover-risk predictions against what is actually known about a team, correcting the model when it has mistaken a life event for disengagement. Synthesising machine-generated sentiment analysis with real conversations to separate organisational problems from statistical noise. Each of these is a supervision duty. Each exists because a system was installed. Each consumes hours that, before the system, did not need to be spent."
+    },
+    {
+     "t": "p",
+     "text": "This is the tax that the augmentation story usually omits. Automation in this occupation does not simply subtract work; it substitutes cheaper work for dearer and then adds a new category of expensive oversight on top. The oversight is not optional, and the reason it is not optional occupies the next section of this report. An organisation that deploys automated screening and does not staff the audit function has not saved money. It has converted a labour cost into a legal exposure and moved it off the payroll line, which is a different thing entirely."
+    }
+   ]
+  },
+  {
+   "id": "s-vendors",
+   "label": "Vendors",
+   "title": "Five vendors, and the evidence pools around two",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Five vendors carry evidence in this assessment, and the evidence is unevenly distributed. Two of them account for eight of the mapped task-vendor pairings between them; the other three carry one apiece. Two are in pilot rather than production. That thinness is itself a finding: for an occupation this large, sitting inside a software category this well capitalised, the verifiable production footprint is narrower than the marketing would suggest."
+    },
+    {
+     "t": "component",
+     "name": "matrix"
+    },
+    {
+     "t": "p",
+     "text": "Qualtrics carries four tasks at an average Automation Potential Score of 78% — the broadest footprint in the set and the second highest average capability. Its territory is the listening layer: engagement and exit survey instrumentation, text analysis across open responses, the dashboards that turn qualitative feedback into something a leadership team will look at. It was a public company on Nasdaq under the ticker XM at the time of the reports referenced here, and its systems are assessed as in production rather than trialled. The capability score is credible. The caveat is one already made: the strength of automated text analysis is coverage, and its weakness is the assumption that what people wrote is what they meant."
+    },
+    {
+     "t": "p",
+     "text": "Paradox also carries four tasks, at an average of 74%, in production. Its product is the conversational hiring assistant — the agent that answers a candidate at eleven at night, asks the screening questions, offers an interview slot against a live calendar, and carries the process through to offer and onboarding steps. The vendor record in the scoring database lists it as Series C with at least $240 million raised to date, and that record is now out of date in an informative way. Workday signed a definitive agreement to acquire Paradox on 21 August 2025; the deal closed on 1 October 2025 for a reported $1 billion in cash, and Olivia has been folded into Workday's talent acquisition suite as the Workday Paradox Candidate Experience Agent. A venture-stage point solution became a module inside the system of record."
+    },
+    {
+     "t": "p",
+     "text": "That transition is the most consequential structural event in the evidence base. A standalone conversational assistant is something an organisation buys deliberately and can rip out. A feature inside the human capital management suite is something an organisation acquires by upgrading. Distribution of this kind does more to raise real-world automation than any capability improvement, because it removes the procurement decision. It also concentrates risk: when the screening layer and the system of record belong to the same vendor, the questions raised in the next section attach to a single defendant."
+    },
+    {
+     "t": "p",
+     "text": "Holistic AI carries a single task at an Automation Potential Score of 80% — the highest capability figure in the set — and it is in production. Its domain is AI governance: bias testing, adverse impact measurement, model documentation. The irony is precise and worth stating plainly. The vendor with the highest measured capability in this occupation is automating a task that did not exist until other vendors automated hiring. The created-work category has already begun to attract its own tooling, which means the audit function may in time follow the same augmentation curve as everything else — the machine performing the test, the human signing the conclusion."
+    },
+    {
+     "t": "p",
+     "text": "Greenhouse Software carries one task at 70%, at pilot stage, and Pymetrics — now part of Harver — carries one task at 70%, also at pilot. Greenhouse is applicant tracking and structured hiring workflow; Pymetrics built behavioural and game-based candidate assessment. The pilot classification matters and is routinely glossed over in industry commentary. A pilot is a system running in a bounded population with a human comparison still in place. It is evidence of intent and of technical viability. It is not evidence that an organisation has accepted the outcome as authoritative, and the gap between those two states is where most enterprise AI initiatives quietly expire."
+    },
+    {
+     "t": "component",
+     "name": "vendorCards"
+    },
+    {
+     "t": "p",
+     "text": "Read across the matrix and the distribution tells the story better than any individual score. Vendor coverage is dense at the front of the funnel — sourcing, screening, scheduling, assessment, status communication — and thins to nothing at the back end of the employment relationship. There is no vendor in this evidence base mapped to harassment investigation. None mapped to policy interpretation for an individual employee. None mapped to management coaching. The market has gone where the volume is, because volume is where conversational automation pays. The consequential, low-frequency, high-jeopardy work has attracted no production tooling at all, and there is no sign that it is about to."
+    }
+   ]
+  },
+  {
+   "id": "s-wrong",
+   "label": "Failure Modes",
+   "title": "Where the record shows the cost of getting it wrong",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Three matters in the public record explain, better than any capability assessment, why the Human Requirement Factor for this occupation stands at 65%. Two are live disputes in which the allegations remain unproven. One is settled. Taken together they describe the mechanism by which automated screening converts an efficiency into a liability, and the reason organisations keep a named human between the algorithm and the applicant."
+    },
+    {
+     "t": "p",
+     "text": "Begin with the settled matter, because it is the one most often misdescribed. In August 2023 the Equal Employment Opportunity Commission resolved what is widely characterised as its first hiring discrimination lawsuit involving automated applicant-screening software. The tutoring company iTutorGroup agreed to pay $365,000 after programming its tutor application software to reject automatically female applicants aged 55 or older and male applicants aged 60 or older, screening out more than two hundred qualified United States applicants in March and April 2020. The joint notice of settlement and proposed consent decree were filed in the Eastern District of New York on 9 August 2023; the decree was entered on 8 September before Judge Pamela K. Chen, and the Commission announced the settlement in a press release dated 11 September."
+    },
+    {
+     "t": "p",
+     "text": "The honest reading of that case is narrower than its reputation. The Commission's own release never uses the words 'artificial intelligence' or 'algorithmic bias'. The screen was a hard-coded date-of-birth rule, pleaded as intentional disparate treatment. Somebody wrote the cutoff; the software simply executed it faithfully, at scale and without hesitation, which is what software does. It is not a case about a model learning a proxy for age from training data. It is a case about a discriminatory instruction being embedded in a system where nobody was required to look at it again. That distinction matters enormously to lawyers and hardly at all to the two hundred people who were rejected, and it is the reason the created audit task in this occupation is framed around reviewing flagged rejections and testing selection rates rather than around inspecting model internals."
+    },
+    {
+     "t": "img",
+     "slot": "adverse_impact_audit",
+     "full": true,
+     "caption": "The task the machine created: selection-rate testing across protected classes, with flagged automated rejections queued for a human to reopen.",
+     "prompt": "A bias-audit review workspace on screen inside an HR compliance function, tightly cropped with no people in frame: a selection-rate comparison chart broken out by protected class against a four-fifths threshold line, a queue of flagged automated candidate rejections awaiting human reopening, a model version history panel, and an accessibility accommodation request open in a side pane. On the desk beside the keyboard, a marked-up printout of a job posting with screening criteria circled in red pen, and a printed applicant record retention schedule. Screen glow against a dim office, documentary realism."
+    },
+    {
+     "t": "p",
+     "text": "The second matter is unresolved and considerably larger. On 16 May 2025, Judge Rita Lin of the United States District Court for the Northern District of California granted preliminary, conditional certification of a nationwide collective action under the Age Discrimination in Employment Act in Mobley v. Workday, Inc. The order allows job applicants aged forty and over who were denied employment recommendations through Workday's AI-driven applicant screening platform since 24 September 2020 to opt in. Nothing has been proven. Conditional certification is a procedural threshold, not a finding of discrimination, and the defendant disputes the claims."
+    },
+    {
+     "t": "p",
+     "text": "The significance lies in the architecture of the claim rather than its eventual outcome. Employment discrimination law has traditionally been litigated employer by employer, because each employer makes its own decisions. A screening platform used across thousands of employers creates the possibility of a single decision rule applied to millions of applications, which is precisely the structure that collective actions were designed to address. It also raises the question of who is answerable when the screening is done by a vendor and the hiring by a client. For a human resources specialist, the practical implication is unambiguous: any organisation whose screening layer sits inside a widely deployed platform now has a reason to document human review of adverse outcomes, and documentation of human review requires a human doing reviewing."
+    },
+    {
+     "t": "p",
+     "text": "The third matter concerns accessibility rather than ranking. On 19 March 2025 the American Civil Liberties Union of Colorado filed an administrative charge of discrimination — not a lawsuit — with the Equal Employment Opportunity Commission and the Colorado Civil Rights Division against Intuit and its third-party AI interviewing vendor HireVue. The complaint was brought on behalf of a deaf, Indigenous customer-service employee who had applied in spring 2024 for an internal promotion to Seasonal Manager. It alleges that the AI video-interview platform was inaccessible to deaf candidates, that some audible portions lacked subtitles, and that her request for human-generated CART captioning as a disability accommodation was refused on the grounds that the platform's built-in subtitles were adequate. It further alleges that the platform's automated speech recognition performs worse when evaluating non-white and deaf or hard-of-hearing speakers. She was denied the promotion and received automated feedback criticising her communication and recommending that she practise active listening. The complaint alleges violations of Title VII, the Americans with Disabilities Act, and the Colorado Anti-Discrimination Act. HireVue called the complaint entirely without merit; Intuit said the allegations are baseless and that the company provides reasonable accommodations. None of the allegations has been adjudicated."
+    },
+    {
+     "t": "p",
+     "text": "That last detail — the automated feedback advising a deaf applicant to practise active listening — is the sharpest illustration available of the specific failure mode that keeps humans in this occupation. It is not that the system produced a biased ranking. It is that the system produced an output which, in the particular circumstance of the particular person receiving it, was unanswerable. A model cannot know what it does not have in its features. The accommodation request itself was the signal, and the accommodation request was handled as a ticket. Somewhere in that chain there was a decision to treat platform captioning as equivalent to human captioning, and that decision was made by people, which is the point. The machine did not fail on its own; it failed where the human oversight had been thinned out."
+    },
+    {
+     "t": "p",
+     "text": "Read as a set, these three matters explain the created tasks with unusual precision. The audit task exists because iTutorGroup showed that a rule nobody re-reads will run for as long as the system does. The validation task exists because Mobley raises the question of what human review actually took place. The accommodation and accessibility dimension of screening exists because a complaint has now been filed alleging that automated evaluation was not neutral with respect to disability. None of these is a technology problem that better models solve. Each is an accountability problem, and accountability is the one input that cannot be sourced from a vendor."
+    }
+   ]
+  },
+  {
+   "id": "s-global",
+   "label": "Jurisdiction",
+   "title": "Candour first, because the jurisdiction claims are thinner than they look",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "A word of candour is required before this section proceeds. The verified evidence underpinning this assessment is almost entirely American. The employment base, the median wage and the growth projection are United States figures. The enforcement actions cited were brought before a federal agency, a federal district court in California, another in New York, and a state civil rights division in Colorado. The vendors are American or American-headquartered. This is therefore a United States score, and any reader outside that jurisdiction should treat it as an instrument calibrated for one legal system that happens to export its software everywhere."
+    },
+    {
+     "t": "p",
+     "text": "That caveat is not a formality, because the Human Requirement Factor of 65% is the input most sensitive to jurisdiction. Very little of that protection derives from what the technology cannot do. Most of it derives from the fact that in the American system, an adverse employment outcome can be challenged by an individual, converted into a collective action across a vendor's entire client base, and litigated to a certification decision within eighteen months of filing. The Mobley certification is exactly that mechanism in operation. Change the litigation architecture and you change the score, without changing a single line of model code."
+    },
+    {
+     "t": "p",
+     "text": "Consider what travels and what does not. The technology travels perfectly. A conversational hiring assistant embedded in a global human capital management suite arrives in every market that suite is sold into, on the vendor's release schedule rather than the buyer's. When Paradox became a module inside Workday's talent acquisition suite following the completion of the acquisition on 1 October 2025, its potential deployment surface became the suite's footprint, which is not a national footprint. Capability, in other words, is globally uniform almost immediately."
+    },
+    {
+     "t": "p",
+     "text": "What does not travel is the friction. Every element of the protective factor described in the preceding section is jurisdictionally specific: which characteristics are protected, whether disparate impact is actionable at all or only intentional discrimination, whether a rejected applicant has standing, whether claims can be aggregated, what a regulator can compel a vendor to disclose, and whether an employee representative body has a right to be consulted before a screening system is introduced. Those variables differ enormously between legal systems, and none of them is a function of how good the model is."
+    },
+    {
+     "t": "p",
+     "text": "The consequence is a prediction this report will make explicitly while flagging that it is an inference rather than an evidenced finding: the same occupation, running the same software, should show materially different automation exposure in different countries. In systems where the introduction of an automated screening tool requires negotiation with a formal employee representative structure, the deployment is slower, narrower and more heavily documented, and the human oversight layer is thicker by design. In systems where enforcement capacity is limited and individual claims are expensive or slow to bring, the check on automated screening is commercial and reputational rather than legal — which means it binds large consumer-facing employers and barely touches everybody else. In the first case the exposure score would fall; in the second it would rise. The technology is the constant. The score is not."
+    },
+    {
+     "t": "p",
+     "text": "There is a second dimension of variation that has nothing to do with law and everything to do with language. Conversational screening assistants and automated interview evaluation are systems that judge people through speech and text. The allegation in the Colorado complaint — that automated speech recognition performs worse for deaf and non-white speakers — is an allegation about a technical property of such systems, and it has an obvious multiplier in any market where candidates are being assessed in a language that is not their first, or in an accent underrepresented in whatever the system learned from. Nothing in the evidence base measures that effect outside the United States. Its plausibility is high and its documentation is absent, which is a combination that ought to make any multinational deploying a single screening stack across a dozen countries uncomfortable."
+    },
+    {
+     "t": "p",
+     "text": "For the practitioner, the operational lesson is that global human resources functions cannot run a single automation policy. A screening configuration that is defensible in one jurisdiction may be unlawful, unnegotiated or simply unexplainable in another, and the specialist who owns the requisition is the person who discovers this. That is itself a form of the created work described earlier: somebody has to hold the map of where the system may be used, on whom, with what disclosure, and with what human review attached. It is not a task any of the five vendors in this evidence base is mapped to. It is, increasingly, a task."
+    },
+    {
+     "t": "p",
+     "text": "The honest summary is this. The exposure figure of 14.7% should be read as a United States measurement with wide international error bars, and the direction of the error is unknown without evidence this report does not have. Anyone extending it to another market is making an assumption about that market's legal friction, not about its technology."
+    }
+   ]
+  },
+  {
+   "id": "s-fortress",
+   "label": "What Holds",
+   "title": "Sixty-five per cent that no vendor is trying to reach",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Sixty-five per cent of this occupation's task surface is protected. That is the Human Requirement Factor, and it is the largest single number in the assessment. It is worth taking apart carefully, because 'human skills' is the laziest phrase in the automation literature and this occupation deserves better than it. The protection here is not sentimental. It is structural, and it rests on four distinct foundations that happen to reinforce one another."
+    },
+    {
+     "t": "p",
+     "text": "The first is accountability that must attach to a person. Employment decisions generate legal consequences, and legal systems require somebody who can be identified, questioned under oath and held to what they said. A model cannot be deposed. A vendor can be sued, as the Mobley matter demonstrates, but a vendor cannot testify to why this candidate was not advanced, because it does not know what the hiring manager knew. Organisations therefore keep a named human in the decision path not because the human adds accuracy but because the human adds answerability. This is the least romantic and most durable component of the fortress: the specialist is, among other things, the institution's designated witness."
+    },
+    {
+     "t": "p",
+     "text": "The second is the interpretive act. Policies are written in general terms and encountered in particular ones. An attendance policy meets an employee whose father is dying. A performance policy meets somebody who has just disclosed a diagnosis. A code of conduct meets a complaint about a manager who is also the complainant's route to promotion. The work is not looking up the rule — a model does that faster and with better recall. The work is deciding what the rule is for, in this case, and being prepared to defend that decision to somebody who will read it uncharitably. Automating retrieval leaves the interpretation entirely intact, which is why the policy interpretation task remains classified as traditional despite being, on its face, a document-lookup problem."
+    },
+    {
+     "t": "p",
+     "text": "The third is disclosure under adverse conditions. This is the component that automated systems most consistently underestimate, and the exit interview is its cleanest demonstration. The information an organisation most needs is information somebody has a reason not to give. A harassment allegation is disclosed by a person who is calculating whether disclosure will cost them their job. An exit interview is given by someone weighing candour against a future reference. A benefits conversation turns, halfway through, into a disclosure about a family member's illness. In every case the quantity of information available is a function of whom the speaker is speaking to and what they believe will happen next. This is not a transcription problem or a sentiment problem. It is a trust problem, and trust is constituted by the specific properties of the listener: discretion demonstrated over time, a face that has been seen before, and the knowledge that a person is bearing the weight of what has been said."
+    },
+    {
+     "t": "img",
+     "slot": "employee_relations_casefile",
+     "caption": "Discretion as infrastructure. The employee relations file is the part of the job that has attracted no production tooling at all.",
+     "prompt": "An employee relations investigation file open on a desk in a private HR office, no people in frame: a tabbed manila folder containing a typed interview summary, a witness list with names covered by black redaction tape, an employee handbook opened to the anti-harassment section with pencil annotations in the margin, and a hand-drawn chronology worksheet. A locked steel cabinet behind, a desk telephone with the handset off its cradle, and a rubber 'confidential' stamp beside an ink pad. Warm late-afternoon light through blinds, documentary photography."
+    },
+    {
+     "t": "p",
+     "text": "The fourth foundation is negotiation, which is a genuinely adversarial activity. An offer conversation is a two-sided exchange in which each party holds information the other wants and both are managing an ongoing relationship that begins the moment the negotiation ends. Automating the generation of the offer letter, as the applicant tracking systems now do routinely, does nothing to the negotiation itself. If anything it sharpens the human portion: when the paperwork is instant, the only remaining variable is the conversation."
+    },
+    {
+     "t": "p",
+     "text": "Against those four, it is worth naming honestly what is not protected, because the fortress has walls in some places and none in others. Volume communication is not protected; automated status updates to hundreds of applicants are a straightforward improvement on a task nobody enjoyed. Record accuracy is not protected; validating auto-populated entries is less skilled than typing them was. Tier-one benefits questions are not protected. Scheduling is not protected, and has not been for some time. First-pass résumé matching is protected only by the audit obligation described earlier, not by any inherent human advantage — a model reads more consistently than a tired person at four in the afternoon, and pretending otherwise does the profession no favours."
+    },
+    {
+     "t": "p",
+     "text": "This yields an uncomfortable but useful conclusion. The defensible core of this occupation is smaller than the occupation, and it is concentrated in the parts of the work that are least visible, least measurable and least celebrated. The specialist who is fastest at closing requisitions is doing the automatable job well. The specialist who is trusted with the thing nobody wants to write down is doing the protected one. Organisations that measure the first and reward it accordingly are, without intending to, hollowing out the second — which is a management failure rather than a technological one, and considerably more likely to occur."
+    },
+    {
+     "t": "p",
+     "text": "One further caution. Three of the four foundations rest on legal architecture rather than human capability, and legal architecture is amendable. If a regulatory safe harbour were to emerge that permitted employers to rely on a certified screening system without individual human review, a substantial portion of this fortress would become optional overnight. That is not a prediction; there is nothing in the evidence base pointing to it. It is a statement about what kind of wall this is. It is made of statute and litigation risk, not stone, and it should be read accordingly."
+    }
+   ]
+  },
+  {
+   "id": "s-voices",
+   "label": "Positions",
+   "title": "No pull quotes, and the silence is the argument",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "This report contains no pull quotes, and the omission is deliberate. The evidence base assembled for this assessment contains almost no attributed first-person testimony from the people who do this job, and inventing plausible-sounding practitioner quotations is precisely the practice that makes automation journalism untrustworthy. What the record does contain is a set of positions, taken publicly, by parties with clearly divergent interests. Those positions can be characterised faithfully, and the disagreement between them is more informative than any individual sentence would be."
+    },
+    {
+     "t": "p",
+     "text": "The vendor position, in its strongest verified form, is Chipotle's. The company announced its conversational hiring assistant on 22 October 2024, built with Paradox and branded Ava Cado, rolling out in phases across more than 3,500 restaurant locations. The customer story published by Workday reports a 75% reduction in time to hire, application completion rising from 50% to 85%, and the interval from application to start date falling from twelve days to four. That is a serious operational claim, made on the record, with named metrics. It says: the automation removed waiting, and removing waiting brought in candidates who were otherwise lost."
+    },
+    {
+     "t": "p",
+     "text": "Read that position carefully and note what it does not claim. It does not claim fewer recruiters. It does not claim better hires. It does not claim reduced turnover among those hired, or improved fairness, or lower cost per hire. It claims speed and completion. In high-volume hourly hiring, speed and completion are genuinely the binding constraints — the candidate who takes four days to start is the candidate who has not accepted a competing offer in the meantime — and it would be churlish to dismiss the achievement. But a throughput claim is not an employment claim, and the frequency with which the two are conflated in commentary about this technology is the main reason exposure scores in this category get overstated.",
+     "cite": ""
+    },
+    {
+     "t": "p",
+     "text": "The acquirer's position is expressed in capital rather than words. Workday signed a definitive agreement to acquire Paradox on 21 August 2025 and closed on 1 October 2025 for a reported $1 billion in cash, folding Olivia into its talent acquisition suite. Nobody pays that for a chatbot. What was bought was the candidate-facing conversational layer of the hiring process and, with it, the position between the applicant and the system of record. The strategic reading is that the front of the funnel is now considered core infrastructure rather than a bolt-on, and that the buyer expects it to be present in every deployment rather than sold separately."
+    },
+    {
+     "t": "p",
+     "text": "The regulator's position is the iTutorGroup consent decree, and its most instructive feature is linguistic. The Commission's release describes software programmed to reject applicants over specified ages by sex, more than two hundred qualified applicants screened out, and a $365,000 settlement — and it never uses the terms 'artificial intelligence' or 'algorithmic bias'. That restraint is a position in itself. The agency's framing is that existing discrimination law applies to whatever mechanism produced the decision, and that a hard-coded rule is a straightforward case of intentional disparate treatment requiring no new doctrine. The implication for practitioners is that the question a regulator will ask is not whether the system was AI, but who was accountable for its output."
+    },
+    {
+     "t": "p",
+     "text": "The plaintiff and advocacy positions are the sharpest and the least resolved. The Mobley collective action advances the proposition that a screening platform used across many employers can produce a common pattern of adverse outcomes that ought to be litigated collectively; a federal court has permitted applicants aged forty and over to opt in, without deciding the merits. The ACLU of Colorado charge advances a narrower and in some ways more troubling proposition: that automated interview evaluation can be inaccessible in ways that a disability accommodation process, itself administered as a routine ticket, failed to catch. The defendants reject both characterisations. HireVue called the complaint entirely without merit; Intuit said the allegations are baseless and that it provides reasonable accommodations. Nothing has been adjudicated in either matter, and this report takes no view on the merits."
+    },
+    {
+     "t": "p",
+     "text": "The position that is missing from the record is the practitioner's. There is no verified testimony in this evidence base from a human resources specialist describing what the screening dashboard actually changed about their week, whether they override the rankings, how often, or what happens when they do. This is a substantial gap and it should be stated as one rather than filled with plausible invention. The people best placed to say whether the augmentation is real are the ones the coverage does not quote, and the whole enterprise of scoring this occupation would be improved by hearing from them — which is the substance of the invitation at the end of this report."
+    },
+    {
+     "t": "p",
+     "text": "Set the positions side by side and the disagreement is not really about capability. Everybody agrees the systems work in the sense of doing what they were built to do. The disagreement is about what the output means and who owns it. The vendor says the process got faster. The regulator says the process still has to be defensible. The plaintiff says defensibility has not been established. The employer says its accommodations are adequate. Sitting in the middle of all four positions, holding the requisition and the record and the eventual deposition, is the specialist. That position is not going to be automated by anybody in this list."
+    }
+   ]
+  },
+  {
+   "id": "s-economics",
+   "label": "Money",
+   "title": "The money moves through litigation, not through headcount",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The financial logic of automation in this occupation is not the one usually described. The standard story is substitution: software costs less than salary, so software replaces salary. The evidence here supports a different mechanism, in which automation buys throughput and speed rather than headcount reduction, and in which the savings and the costs land on different parts of the balance sheet entirely."
+    },
+    {
+     "t": "component",
+     "name": "econ"
+    },
+    {
+     "t": "p",
+     "text": "Start with the payroll base. Some 944,300 human resources specialists work in the United States at a median wage of $72,910, and the Bureau of Labor Statistics projects 6.2% growth. That growth projection is the most economically significant number in this report. It is not the profile of an occupation being displaced; it is the profile of one absorbing tooling and expanding modestly alongside it. If automated screening were substituting for specialists at any material rate, the projection would be flat at best."
+    },
+    {
+     "t": "p",
+     "text": "Now set the acquisition against the wage base, because the comparison is instructive. Workday paid a reported $1 billion in cash for Paradox. Divide that by the median wage of $72,910 and the acquisition price is equivalent to roughly one year's median wages for just under fourteen thousand specialists — around one and a half per cent of the American workforce in this occupation. That arithmetic is offered as a sense of scale rather than as a valuation argument, but it frames the question correctly. A billion dollars was paid to own the conversational front end of hiring, not to eliminate the profession that sits behind it. If the goal had been substitution at scale, the price would be a bargain and the employment projection would be negative. It is not."
+    },
+    {
+     "t": "p",
+     "text": "Where does the money actually come from, then? Chipotle's reported figures point at the answer. Time from application to start date fell from twelve days to four, and application completion rose from 50% to 85%. In high-volume hourly hiring, both of those translate directly into filled shifts. An unfilled position in a restaurant is not a saved salary; it is lost revenue, overtime paid to whoever covers, and a manager doing recruitment instead of running a service. Compressing the hiring cycle by eight days across thousands of locations is worth money in operations, not in the human resources budget. The efficiency accrues to the business unit, while the software cost and the new oversight burden accrue to the function that bought it."
+    },
+    {
+     "t": "p",
+     "text": "That asymmetry deserves attention from anybody building a business case. The measurable savings show up somewhere the human resources director does not control, and the new costs — licence fees, integration, and the audit and validation work that the created tasks describe — show up somewhere they do. Add the second-order costs that appear only when something goes wrong: the $365,000 iTutorGroup settlement is small as enforcement outcomes go, but a nationwide collective action of the kind conditionally certified in Mobley carries defence costs and exposure of an entirely different magnitude, and neither figure sits in any vendor's return-on-investment model."
+    },
+    {
+     "t": "p",
+     "text": "This yields the report's central economic proposition. Automation in this occupation is a volume technology, not a substitution technology. It pays where applications are numerous, roles are standardised, and speed determines whether a candidate is captured or lost — hourly, high-turnover, multi-site hiring, which is exactly where the verified deployment evidence sits. It pays much less where hiring is low-volume and consequential, where the screening judgement is the value rather than the bottleneck. And it never pays in the employee relations function, where the frequency is low, the stakes are high and the cost of a wrong output is measured in litigation rather than in delay."
+    },
+    {
+     "t": "p",
+     "text": "For individual specialists, the wage implication follows from that split. The parts of the job that automation touches most heavily are the parts that were already the least well compensated and the most likely to be outsourced or centralised into a shared service. The parts it does not touch — investigation, interpretation, negotiation, coaching managers who do not want to be coached — are the parts that already commanded a premium. On current evidence, automation in this occupation widens the gap between those two halves rather than lowering the whole distribution. That is a different kind of disruption from the one the headlines describe, and for the people at the bottom of that distribution it is not obviously gentler."
+    }
+   ]
+  },
+  {
+   "id": "s-2030",
+   "label": "Horizon",
+   "title": "Ten years or more, the framework's longest and least confident band",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The assessment attaches a timeline of ten years or more to this occupation, which is the longest band in the framework and should be read as a statement about mechanism rather than a bet on model capability. The question is not whether systems will become able to conduct a harassment investigation. It is whether any organisation will let one. Three things would have to change for the exposure figure to move meaningfully, and they are worth setting out separately because they have very different probabilities."
+    },
+    {
+     "t": "p",
+     "text": "The first is erosion of the protective factor. The Human Requirement Factor of 65% is the score's dominant term, and a large share of it is legal rather than technical. Halve it and the exposure figure nearly doubles without a single capability improvement. The realistic path to that erosion is a certification or safe-harbour regime: some standard under which an employer using an audited screening system is deemed to have discharged its obligations, removing the requirement for individualised human review of adverse outcomes. Nothing in the current evidence base points that way — the direction of travel visible in the record runs the other way, towards more scrutiny of automated screening rather than less. But this is the variable to watch, because it is the only one that could move the score quickly."
+    },
+    {
+     "t": "p",
+     "text": "The second is capability moving into the protected zone. For this to matter, systems would have to become credible at the tasks currently classified as traditional: interpreting policy against an individual's circumstance, conducting employee relations conversations, coaching managers. Partial encroachment is already plausible — drafting an investigation chronology, proposing interview questions, summarising a policy's application to a fact pattern for a specialist to check. Full displacement is a different proposition, and the barrier is not comprehension. It is that these tasks require the participant to be a party to the organisation's obligations. A model can produce an interpretation; it cannot be the entity that stands behind one. Until that changes — and it is a legal change, not a technical one — augmentation of these tasks makes the specialist faster rather than redundant."
+    },
+    {
+     "t": "p",
+     "text": "The third is expansion of the created layer, and this is the most likely of the three. The AI-Created Job Index stands at 14%, meaning about one task in seven exists because of automation. Every additional screening system deployed adds audit surface, validation surface and explanation surface. If that index climbs while the automation score holds, the occupation does not shrink — it changes composition, from a function that runs hiring into a function that supervises the systems that run hiring and can account for their outputs. There is already tooling aimed at that work: the vendor with the highest measured capability in this evidence base, at 80%, is a governance platform working on precisely that single task. Which raises the recursive question of who audits the auditor, and the answer, for the foreseeable future, is a person with a title in human resources."
+    },
+    {
+     "t": "p",
+     "text": "The structural forces pushing in the automation direction are real and should not be minimised. Distribution is the strongest of them: a conversational hiring agent that arrives as a module inside the human capital management suite reaches organisations that would never have run a procurement for it. Consolidation is the second — when the screening layer and the system of record share an owner, the integration friction that used to slow deployment disappears. And demonstrated operational value in high-volume hiring is the third; results of the kind Chipotle reports do not stay confined to one industry."
+    },
+    {
+     "t": "p",
+     "text": "The forces pushing the other way are equally structural. Every deployment expands the population of people who received an automated adverse decision, and some fraction of that population will contest it. Collective mechanisms of the kind conditionally certified in the Northern District of California turn individual grievances into platform-scale exposure. Accessibility obligations, as the Colorado charge alleges, bite hardest precisely where evaluation is automated and standardised. Each of these makes the human review step more valuable to an employer, not less — and it makes the documentation of that review valuable independently of whether it changed the outcome, which is a curious and slightly uncomfortable incentive to have created."
+    },
+    {
+     "t": "p",
+     "text": "The most probable ten-year picture, then, is not fewer human resources specialists. It is the same number or slightly more, doing a job whose centre of gravity has shifted. Less time spent moving candidates through a pipeline, because the pipeline moves itself. More time spent on the exceptions the pipeline throws out, the audits the pipeline requires, and the conversations the pipeline was never going to have. More of the working week concentrated in the two or three hours a day where the stakes are real. That is a harder job in some respects and a better one in others, and it is emphatically not the job that was advertised."
+    },
+    {
+     "t": "p",
+     "text": "The risk that deserves naming is not displacement but hollowing. If organisations automate the volume work and do not staff the oversight work — treating the audit obligation as something a vendor certificate discharges — they will have removed the human layer that made the automation defensible while keeping all of the automation. The failures described earlier in this report all share that shape. Nobody chose to discriminate. Somebody chose not to look. On current evidence that is the most likely way this occupation's exposure score turns out to have been optimistic."
+    }
+   ]
+  },
+  {
+   "id": "s-feedback",
+   "label": "Dissent",
+   "title": "Where this argument is weakest, named before anyone else names it",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "A score of 14.7 is an argument, not a measurement, and this one has identifiable weak points that a well-informed reader may be able to correct. Four are worth naming explicitly. The Human Requirement Factor of 65% is the most contestable input and the one doing the most work; anybody who believes the legal shield is thinner or thicker than that should say so and say why. The vendor evidence is thin — five vendors, three of them carrying a single mapped task each, two of those at pilot rather than production stage — and additional documented deployments would move the capability figure in either direction. The evidence base is almost entirely American, which makes the score a poor guide to the same occupation in any other legal system. And two of the three cautionary matters cited remain unadjudicated, which means the assessment is partly built on allegations that a court may reject."
+    },
+    {
+     "t": "p",
+     "text": "The gap this report would most like closed is practitioner testimony. There is no verified first-person account in the evidence base from somebody who reviews an algorithmically ranked shortlist as part of their working week. How often is the ranking overridden? What happens when it is? Does the audit work described here actually get staffed, or does it sit in a policy document? If you do this job, your week is better evidence than anything cited above."
+    },
+    {
+     "t": "component",
+     "name": "feedback"
+    }
+   ]
+  }
+ ],
+ "anchors": [
+  {
+   "title": "Bookkeeping, Accounting, and Auditing Clerks",
+   "label": "Bookkeeping",
+   "rpi": 61.6
+  },
+  {
+   "title": "Shipping, Receiving, and Inventory Clerks",
+   "label": "Warehouse",
+   "rpi": 49.0
+  },
+  {
+   "title": "Customer Service Representatives",
+   "label": "Customer Service",
+   "rpi": 39.0
+  },
+  {
+   "title": "Paralegals and Legal Assistants",
+   "label": "Paralegal",
+   "rpi": 27.8
+  },
+  {
+   "title": "Retail Salespersons",
+   "label": "Retail",
+   "rpi": 21.3
+  },
+  {
+   "title": "Accountants and Auditors",
+   "label": "Accountant",
+   "rpi": 15.5
+  },
+  {
+   "title": "Human Resources Specialists",
+   "label": "Human Resources Specia",
+   "rpi": 14.7
+  },
+  {
+   "title": "Software Developers",
+   "label": "Software Dev",
+   "rpi": 13.4
+  },
+  {
+   "title": "Registered Nurses",
+   "label": "Nurse",
+   "rpi": 2.2
+  }
+ ],
+ "sources": [
+  {
+   "name": "HireTruffle / Index.dev (Paradox AI pricing and review coverage)",
+   "url": "https://www.hiretruffle.com/blog/paradox-ai-pricing",
+   "date": "2026"
+  },
+  {
+   "name": "Chipotle Newsroom",
+   "url": "https://newsroom.chipotle.com/2024-10-22-CHIPOTLE-INTRODUCES-NEW-AI-HIRING-PLATFORM-TO-SUPPORT-ITS-ACCELERATED-GROWTH",
+   "date": "2024-10-22"
+  },
+  {
+   "name": "Workday Customer Stories",
+   "url": "https://www.workday.com/en-us/customer-stories/a-h/chipotle-leverages-conversational-ai-scales-hiring.html",
+   "date": "2025"
+  },
+  {
+   "name": "Holland & Knight",
+   "url": "https://www.hklaw.com/en/insights/publications/2025/05/federal-court-allows-collective-action-lawsuit-over-alleged",
+   "date": "2025-05-16"
+  },
+  {
+   "name": "U.S. Equal Employment Opportunity Commission",
+   "url": "https://www.eeoc.gov/newsroom/itutorgroup-pay-365000-settle-eeoc-discriminatory-hiring-suit",
+   "date": "2023-08-09"
+  },
+  {
+   "name": "HR Dive",
+   "url": "https://www.hrdive.com/news/ai-intuit-hirevue-deaf-indigenous-employee-discrimination-aclu/743273/",
+   "date": "2025-03"
+  },
+  {
+   "name": "U.S. Equal Employment Opportunity Commission",
+   "url": "https://www.eeoc.gov/newsroom/itutorgroup-pay-365000-settle-eeoc-discriminatory-hiring-suit",
+   "date": "2023-09-08"
+  }
+ ]
+}

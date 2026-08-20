@@ -1,0 +1,949 @@
+{
+ "issue": 901,
+ "role": {
+  "title": "Heavy and Tractor-Trailer Truck Driver",
+  "soc": "53-3032.00",
+  "band": "Emerging",
+  "rank": 273,
+  "emp_k": 2235.1,
+  "wage": 57440,
+  "growth": 4,
+  "timeline": "10+ years"
+ },
+ "scores": {
+  "rpi": 18.2,
+  "aps": 38,
+  "hrf": 52,
+  "untouched": 62,
+  "ajci": 6,
+  "cognitive": 28,
+  "physical": 42
+ },
+ "cover": {
+  "title": "The Driver Who <em>Supervises</em>",
+  "subtitle": "Autonomy has finally reached the American long-haul lane, and the strangest thing about it is how much of the job it has left behind.",
+  "published": "August 2026"
+ },
+ "matrix": {
+  "breadthThreshold": 0.16,
+  "depthThreshold": 0.68
+ },
+ "econ": {
+  "labourBase": 48824,
+  "techFixed": 17232,
+  "baseVolume": 500
+ },
+ "tasks": [
+  {
+   "name": "Perform pre-trip and post-trip vehicle i",
+   "type": "h",
+   "desc": "Perform pre-trip and post-trip vehicle inspections using digital checklists, examining brakes, tires, lights, and emergency equipment.",
+   "vendor": "Samsara"
+  },
+  {
+   "name": "Inspect cargo securement and verify load",
+   "type": "h",
+   "desc": "Inspect cargo securement and verify load documentation for completeness using digital manifest systems.",
+   "vendor": "Motive"
+  },
+  {
+   "name": "Maintain electronic logging device",
+   "type": "h",
+   "desc": "Maintain electronic logging device (ELD) records of driving hours, rest periods, and vehicle maintenance per FMCSA regulations.",
+   "vendor": "Motive"
+  },
+  {
+   "name": "Couple and uncouple trailers by manually",
+   "type": "h",
+   "desc": "Couple and uncouple trailers by manually adjusting fifth-wheel locks, landing gear, and connecting air/electrical lines.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Obtain delivery signatures",
+   "type": "h",
+   "desc": "Obtain delivery signatures through handheld electronic devices, process payment when required, and photograph delivered cargo.",
+   "vendor": "Samsara"
+  },
+  {
+   "name": "Review bills of lading and delivery inst",
+   "type": "h",
+   "desc": "Review bills of lading and delivery instructions through fleet management apps.",
+   "vendor": "Motive"
+  },
+  {
+   "name": "Report vehicle defects",
+   "type": "h",
+   "desc": "Report vehicle defects, accidents, or traffic violations through mobile apps with photo documentation.",
+   "vendor": "Samsara"
+  },
+  {
+   "name": "Perform roadside maintenance and emergen",
+   "type": "h",
+   "desc": "Perform roadside maintenance and emergency repairs including tire changes, light bulb replacement, adding fluids, installing chains.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Maneuver trucks into loading docks by in",
+   "type": "h",
+   "desc": "Maneuver trucks into loading docks by interpreting hand signals from dock workers and aligning vehicle with precision.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Operate tractor-trailer combinations",
+   "type": "h",
+   "desc": "Operate tractor-trailer combinations through highway, urban, and rural environments, navigating traffic and weather hazards.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Navigate routes",
+   "type": "h",
+   "desc": "Navigate routes using GPS and fleet management software that optimizes for fuel efficiency, traffic avoidance, and delivery windows.",
+   "vendor": "Samsara"
+  },
+  {
+   "name": "Communicate with dispatch and other driv",
+   "type": "h",
+   "desc": "Communicate with dispatch and other drivers via in-cab telematics systems, CB radio, and mobile apps.",
+   "vendor": "Motive"
+  },
+  {
+   "name": "Stop at weigh stations with automated by",
+   "type": "h",
+   "desc": "Stop at weigh stations with automated bypass systems (PrePass, Drivewyze) that pre-screen trucks.",
+   "vendor": "PrePass"
+  },
+  {
+   "name": "Inspect trailer interiors after unloadin",
+   "type": "h",
+   "desc": "Inspect trailer interiors after unloading to document any cargo damage and photograph evidence for insurance claims.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Load or unload cargo",
+   "type": "h",
+   "desc": "Load or unload cargo using forklifts, pallet jacks, or manual handling, securing freight with straps and dunnage.",
+   "vendor": "No vendor — human only"
+  },
+  {
+   "name": "Monitor and override autonomous driving",
+   "type": "h",
+   "desc": "Monitor and override autonomous driving system alerts during highway pilot segments, taking manual control when system confidence drops.",
+   "vendor": "Aurora Innovation",
+   "origin": "ai-created"
+  },
+  {
+   "name": "Review AI-generated predictive maintenan",
+   "type": "h",
+   "desc": "Review AI-generated predictive maintenance alerts from onboard diagnostics, prioritizing repairs and communicating findings.",
+   "vendor": "Samsara",
+   "origin": "ai-created"
+  }
+ ],
+ "vendors": [
+  {
+   "id": "samsar",
+   "name": "Samsara",
+   "initials": "SM",
+   "stage": "Production",
+   "reach": 63,
+   "products": 5,
+   "evidence": "Public company (NYSE: IOT)",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Samsara Driver App & Proof of Delivery, Samsara DVIR & Equipment Monitoring, Samsara Predictive Maintenance & Diagnostics, Samsara Routing & Dispatch, Samsara Safety & Incident Reporting",
+   "note": "Used by thousands of fleets globally; ranked No. 1 in Fleet Management on G2 across all segments in 2025–2026.",
+   "tasks": [
+    {
+     "name": "Review AI-generated predictive maintenance a",
+     "aps": 70,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Perform pre-trip and post-trip vehicle inspe",
+     "aps": 75,
+     "vec": "Hybrid"
+    },
+    {
+     "name": "Navigate routes",
+     "aps": 80,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Report vehicle defects",
+     "aps": 80,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Obtain delivery signatures",
+     "aps": 85,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "motive",
+   "name": "Motive",
+   "initials": "MO",
+   "stage": "Production",
+   "reach": 71,
+   "products": 4,
+   "evidence": "Series F, $150M; $567M total",
+   "logo": "linear-gradient(135deg,#B45309,#92400E)",
+   "desc": "Motive ELD & Hours of Service, Motive Fleet Management App, Motive Fleet Management Platform, Motive Messaging & Telematics",
+   "note": "Trucking fleets using Motive as their primary dispatch-to-driver communication tool.",
+   "tasks": [
+    {
+     "name": "Communicate with dispatch and other drivers",
+     "aps": 65,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Inspect cargo securement and verify load doc",
+     "aps": 70,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Review bills of lading and delivery instruct",
+     "aps": 70,
+     "vec": "Cognitive"
+    },
+    {
+     "name": "Maintain electronic logging device",
+     "aps": 90,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "drivew",
+   "name": "Drivewyze",
+   "initials": "DW",
+   "stage": "Production",
+   "reach": 70,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#2563EB,#1D4ED8)",
+   "desc": "Drivewyze PreClear",
+   "note": "Largest transponder-free bypass network in North America, available at 900+ sites across 47 U.S. states and Canadian provinces.",
+   "tasks": [
+    {
+     "name": "Stop at weigh stations with automated bypass",
+     "aps": 85,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "prepas",
+   "name": "PrePass",
+   "initials": "PP",
+   "stage": "Pilot",
+   "reach": 65,
+   "products": 1,
+   "evidence": "Pilot",
+   "logo": "linear-gradient(135deg,#059669,#047857)",
+   "desc": "PrePass Weigh Station Bypass",
+   "note": "Largest RFID-based bypass network in North America, used by thousands of fleets.",
+   "tasks": [
+    {
+     "name": "Stop at weigh stations with automated bypass",
+     "aps": 85,
+     "vec": "Cognitive"
+    }
+   ]
+  },
+  {
+   "id": "aurora",
+   "name": "Aurora Innovation",
+   "initials": "AU",
+   "stage": "Production",
+   "reach": 58,
+   "products": 1,
+   "evidence": "Public (NASDAQ: AUR) after SPAC; backed by Uber",
+   "logo": "linear-gradient(135deg,#C41E3A,#9A1830)",
+   "desc": "Aurora Driver for Trucks",
+   "note": "Pilot program with Uber Freight hauling loads autonomously between Dallas and Houston, with human drivers handling terminal and last-mile legs.",
+   "tasks": [
+    {
+     "name": "Monitor and override autonomous driving syst",
+     "aps": 60,
+     "vec": "Hybrid"
+    }
+   ]
+  }
+ ],
+ "shift": [
+  {
+   "time": "04:40",
+   "task": "Pre-trip inspection on a digital checklist",
+   "type": "augmented",
+   "desc": "Walks the tractor and trailer with a torch, thumping tyres and checking brake slack, while a Samsara-style tablet workflow demands a timestamped photograph of every flagged item before it will let the truck depart."
+  },
+  {
+   "time": "05:15",
+   "task": "Coupling the trailer",
+   "type": "human",
+   "desc": "Reverses under the kingpin, tugs against the fifth-wheel lock to confirm engagement, cranks the landing gear up and connects the air lines and electrical umbilical by hand. No vendor in the evidence base touches this task."
+  },
+  {
+   "time": "05:40",
+   "task": "Bills of lading and load documentation",
+   "type": "augmented",
+   "desc": "Reviews delivery instructions and verifies cargo securement against a digital manifest in the fleet management app rather than a paper packet, with Motive and Samsara both competing for the workflow."
+  },
+  {
+   "time": "06:00",
+   "task": "Duty status opens on the electronic logging device",
+   "type": "automated",
+   "desc": "The ELD records the start of the driving clock to federal specification with no driver action. From this moment the end of the working day is decided by software, not by the driver or the dispatcher."
+  },
+  {
+   "time": "06:20",
+   "task": "Route loaded and optimised",
+   "type": "augmented",
+   "desc": "Fleet management software proposes a lane optimised simultaneously for fuel burn, traffic avoidance and delivery window. The driver accepts it, amends it for a bridge he knows is closed, and departs."
+  },
+  {
+   "time": "08:55",
+   "task": "Weigh station bypass",
+   "type": "automated",
+   "desc": "A Drivewyze or PrePass transponder pre-screens the truck at highway speed and returns a green signal. The driver does not slow, does not queue and does not interact. This is the most automatable task in the entire role."
+  },
+  {
+   "time": "10:30",
+   "task": "Highway pilot supervision",
+   "type": "augmented",
+   "desc": "On a validated corridor the autonomous system takes the driving and the driver becomes a monitor, watching for confidence drops and preparing to resume manual control. One of two tasks that did not exist a decade ago."
+  },
+  {
+   "time": "12:15",
+   "task": "Dock manoeuvre on hand signals",
+   "type": "human",
+   "desc": "Reverses into a tight bay reading the improvised hand signals of a dock worker he has never met, at distance, in poor light, with centimetre tolerances and a queue building behind him."
+  },
+  {
+   "time": "13:00",
+   "task": "Unloading and freight securement",
+   "type": "human",
+   "desc": "Moves pallets with a jack, restacks a shifted load, and straps and dunnages the remaining freight for the next leg. Physical judgement under time pressure with whatever materials are aboard."
+  },
+  {
+   "time": "14:20",
+   "task": "Predictive maintenance triage",
+   "type": "augmented",
+   "desc": "Reviews AI-generated alerts from onboard diagnostics, decides which fault warrants a shop visit and which can wait, and communicates the finding to the maintenance desk. The second of the role's two created tasks."
+  },
+  {
+   "time": "16:45",
+   "task": "Roadside tyre change",
+   "type": "human",
+   "desc": "A trailer tyre fails on the hard shoulder. Warning triangles out, jack under a cambered axle, torque wrench by torchlight in passing traffic. No structured environment, no assistance, no automation."
+  },
+  {
+   "time": "18:30",
+   "task": "Post-trip inspection and event review",
+   "type": "augmented",
+   "desc": "Closes the digital post-trip checklist, photographs the damaged pallet for the insurance claim, and reviews the dash-camera events the system has flagged during the day before the ELD closes the clock."
+  }
+ ],
+ "sections": [
+  {
+   "label": "Prologue",
+   "blocks": [
+    {
+     "t": "p",
+     "drop": true,
+     "text": "The yard is awake before the city is. Sodium light pools on wet tarmac; somewhere a reefer unit cycles on with a cough. A driver walks the length of a trailer with a torch in one hand and a phone in the other, and the phone is the newer of the two habits. He thumps a tyre with a mallet, listens, moves on. He photographs a scuffed mudflap because the app asks him to. He tugs at a strap, kneels to look along the underside of the trailer at nothing in particular, and finds nothing, which is the point. Above the windscreen a small camera watches him work. Inside the cab, a screen has already chosen which lane he will take out of the state, and decided when he will be permitted to stop. None of this used to be true. Almost all of it still requires him."
+    }
+   ]
+  },
+  {
+   "id": "s-score",
+   "label": "The Score",
+   "title": "Eighteen point two per cent, against a decade of driverless headlines",
+   "blocks": [
+    {
+     "t": "component",
+     "name": "gauge"
+    },
+    {
+     "t": "p",
+     "text": "Begin with the number, because the number is smaller than the noise around it. Heavy and tractor-trailer truck driving carries a Replaceability Potential Index of 18.2%. It sits in the Emerging band, with a displacement timeline measured at ten years or more. That figure is not a prophecy about how many drivers will lose their jobs. It is a measurement of how much of the work, as the work is actually performed today, could plausibly be transferred to a machine and would in practice be permitted to transfer."
+    },
+    {
+     "t": "p",
+     "text": "The arithmetic is deliberately unglamorous. An Automation Potential Score of 38% describes the technical exposure of the role's tasks, weighted by the share of the working day each consumes. A Human Resistance Factor of 52% describes the friction standing between technical capability and operational reality: regulation, liability, insurance, union contract, customer preference, and the ordinary institutional reluctance to be first. Multiply the one by the inverse of the other and you arrive at 18.2%. The formula is blunt on purpose. It refuses to let a demonstration stand in for a deployment."
+    },
+    {
+     "t": "p",
+     "text": "What makes this role unusual is not the headline figure but the shape underneath it. Cognitive exposure sits at 28%. Physical exposure sits at 42%. In almost every other occupation this publication has scored, the ratio runs the other way: the thinking is the vulnerable part and the hands are the fortress. Here the machine has come for the road before it has come for the paperwork. A truck can be driven a thousand miles by software while a human still walks around the vehicle at either end, kneeling in the gravel to check an air line."
+    },
+    {
+     "t": "ins",
+     "label": "Empirical anchor",
+     "text": "The physical exposure score is anchored on a single verifiable deployment rather than on laboratory capability. Aurora Innovation has tripled its driverless freight network to ten routes across Texas and Arizona, including a newly validated Fort Worth-to-Phoenix lane of roughly 1,000 miles running via El Paso, which the company says makes it the first to autonomously haul freight on a route extending well beyond Hours of Service limitations. That claim is the empirical floor under the 42%: a driving task performed commercially, at length, without a human operating the vehicle."
+    },
+    {
+     "t": "p",
+     "text": "The resistance figure deserves as much attention as the capability figure, because it is doing more work. At 52%, the Human Resistance Factor is the single largest determinant of the final score. Cut it in half and the index would climb sharply without a line of new code being written. That resistance is not merely sentiment. It is codified in federal hours-of-service rules, in state vehicle codes, in the underwriting standards of freight insurers, in the terms of collective bargaining agreements, and in the willingness of a shipper's own legal department to put its cargo behind a machine. It is also, as later sections show, being contested in courtrooms and congressional hearing rooms rather than settled in them."
+    },
+    {
+     "t": "p",
+     "text": "Sixty-two per cent of the role is scored as untouched: work that no vendor in the evidence base has meaningfully instrumented, automated or even attempted. That is the largest single block in the anatomy, and it is not a residual. It is the coupling and uncoupling of trailers, the roadside tyre change in the rain, the dock manoeuvre performed on the hand signals of a stranger, the strapping and dunnaging of freight that will not sit still. It is the part of the job that has been photographed a thousand times as a symbol of obsolescence and has proved, so far, to be the least obsolete thing in the cab."
+    },
+    {
+     "t": "p",
+     "text": "Against that, the AI Job Creation Index registers 6%. Two genuinely new tasks have appeared in the role's anatomy, both of them supervisory: monitoring and overriding autonomous driving alerts during highway pilot segments, and triaging AI-generated predictive maintenance alerts from onboard diagnostics. Neither existed as a describable duty a decade ago. Both are small. The creation index is a modest number by design, because a job that adds two supervisory tasks while shedding none is not being transformed so much as thickened."
+    },
+    {
+     "t": "p",
+     "text": "The scale matters for what follows. This is not a boutique occupation. Some 2,235,100 people in the United States hold the role, at a median wage of $57,440, and the Bureau of Labor Statistics projects 4% employment growth. Those three numbers, taken together, describe an occupation that is large, moderately paid, and still expanding, at the precise moment its most photogenic task is being automated on public motorways. That tension is the subject of this report."
+    },
+    {
+     "t": "img",
+     "slot": "predawn_yard_inspection",
+     "full": true,
+     "caption": "The pre-trip inspection is now performed twice: once by a human with a torch, and once by the tablet recording that he did it.",
+     "prompt": "A truck driver in a high-visibility vest kneeling beside the front axle of a red tractor unit in a freight yard before dawn, sodium lamps overhead, wet tarmac reflecting light, holding a rugged handheld tablet displaying a digital inspection checklist in one hand and a torch in the other, fifty-three-foot dry van trailer receding into darkness behind, breath visible in cold air, documentary photojournalism, natural light",
+     "query": "truck driver walking around semi trailer"
+    },
+    {
+     "t": "component",
+     "name": "chartEx"
+    }
+   ]
+  },
+  {
+   "id": "s-shift",
+   "label": "The Shift",
+   "title": "One run, and everything the index cannot see from the cab",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "An index is an abstraction. A shift is not. What follows is a composite working day assembled from the seventeen tasks in the role's anatomy and the five vendors with production or pilot evidence behind them. It is not a portrait of an exceptional fleet. It is a portrait of an ordinary one, in which telematics hardware arrives already bolted to the truck and a weigh station is something you drive past rather than into."
+    },
+    {
+     "t": "p",
+     "text": "Read it for the rhythm rather than the technology. The automated moments are brief and administrative: a bypass signal, a duty-status change, a fuel-optimised reroute. The augmented moments dominate the middle of the day, and they share a common structure, in which a system proposes and a human disposes. The human-only moments cluster at the beginning and the end, around the trailer rather than the road, and they are the ones that put the driver on his knees on cold ground."
+    },
+    {
+     "t": "component",
+     "name": "shift"
+    },
+    {
+     "t": "p",
+     "text": "Three features of this day are worth naming before moving on. The first is that the driver's autonomy over time has narrowed even as his autonomy over technique has not. The electronic logging device does not tell him how to reverse onto a dock, but it does tell him, without appeal, that his day is over. The second is that most of the augmentation is documentary. Photographing cargo, photographing damage, photographing a defect, capturing a signature: the machine has largely been deployed to make the driver's account of events verifiable rather than to relieve him of the events themselves."
+    },
+    {
+     "t": "p",
+     "text": "The third feature is the newest. Somewhere in the middle of the day, on a validated lane, the driver's job changes character entirely. He stops steering and starts supervising, and his value to the operation becomes his willingness to remain alert while nothing happens. This is the least studied and most consequential shift in the role, and it is the reason the created-task count is not zero. It is also, as anyone who has read an aviation incident report will recognise, a demanding way to spend an afternoon."
+    }
+   ]
+  },
+  {
+   "id": "s-tasks",
+   "label": "The Anatomy",
+   "title": "Seventeen tasks, and only the driving part is in dispute",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Seventeen tasks make up the role as scored. Six remain traditional, performed by a human with tools that would be recognisable to a driver of the 1980s. Nine are augmented, meaning a system now sits between the driver and the task and neither can complete it alone. Two are created, invented by the presence of automation itself. The distribution is the whole argument of this report in a single line: the augmented block is the largest, and it is the one nobody writes about."
+    },
+    {
+     "t": "p",
+     "text": "Start with the augmented nine, because they are where the working day has actually changed. Pre-trip and post-trip inspections are now conducted against a digital checklist that records timestamps, requires photographs, and will not close until every item is answered. Cargo securement is verified against a digital manifest rather than a clipboard. Hours of driving and rest are logged electronically to federal specification rather than written in pencil. Bills of lading arrive through a fleet management app. Delivery signatures are captured on a handheld device, payment is processed there when required, and the delivered cargo is photographed on the same screen. Defects, accidents and violations are reported through mobile applications with photographic documentation attached."
+    },
+    {
+     "t": "p",
+     "text": "Then routing, communication and weighing. Navigation now runs through fleet management software that optimises simultaneously for fuel burn, traffic avoidance and delivery window, which is a harder problem than it sounds and one no human solves as well in his head. Communication with dispatch and other drivers runs through in-cab telematics alongside the radio that refuses to die. And weigh stations, which used to be a queue, are increasingly a transponder handshake: a pre-screening system decides at highway speed whether the truck needs to stop at all."
+    },
+    {
+     "t": "p",
+     "text": "Notice what these nine have in common. Every one of them is an information task. Not one of them is a driving task. The augmentation layer that has spread across this occupation over the past decade did not touch the steering wheel; it touched the paperwork, the clock, the map and the chain of custody. It made the driver legible to his employer, his insurer and his regulator in a way he had never previously been. That is a profound change to the job, and it is entirely invisible from the roadside."
+    },
+    {
+     "t": "img",
+     "slot": "cab_telematics_interior",
+     "caption": "Nine of the role's seventeen tasks are now performed through a screen. None of them is the driving.",
+     "prompt": "Interior of a modern tractor-trailer cab from the passenger side, showing a windscreen-mounted telematics display and a rugged handheld device in a dash cradle displaying a delivery manifest, a small forward-facing and driver-facing dual dash camera below the mirror, the driver's hands on a large steering wheel, motorway ahead in flat morning light, realistic documentary photography, shallow depth of field",
+     "query": "truck driver cab"
+    },
+    {
+     "t": "p",
+     "text": "The six traditional tasks are the counterweight, and they are almost entirely physical. Coupling and uncoupling trailers by manually adjusting fifth-wheel locks, landing gear and air and electrical lines. Roadside maintenance and emergency repair: tyre changes, bulb replacement, topping up fluids, fitting chains in weather that makes fitting chains necessary. Manoeuvring into loading docks by reading the hand signals of a dock worker and aligning the vehicle with precision. Operating the combination through highway, urban and rural environments amid traffic and weather hazards. Inspecting trailer interiors after unloading to document cargo damage and photograph evidence for insurance. Loading and unloading with forklifts, pallet jacks or bare hands, securing freight with straps and dunnage."
+    },
+    {
+     "t": "p",
+     "text": "Five of those six take place with the truck stationary. That is the most important structural fact in the entire anatomy. The industry's automation effort has been aimed with great precision at the one traditional task performed at speed, and the demonstrated result is that a machine can now cover a thousand miles of validated lane. The other five tasks are still waiting for a robot that can kneel."
+    },
+    {
+     "t": "p",
+     "text": "The two created tasks close the loop. The first is supervision of an autonomous system during highway pilot segments, with manual resumption when the system's confidence drops. The second is triage of AI-generated predictive maintenance alerts from onboard diagnostics, deciding what to prioritise and communicating it onward. Both are jobs of judgement about a machine's output rather than about the world directly. Both require the operator to hold a model of what the system knows and, more importantly, what it does not. They are small tasks with large consequences, and the industry has not yet decided what training or pay they warrant."
+    },
+    {
+     "t": "component",
+     "name": "taskGrid"
+    }
+   ]
+  },
+  {
+   "id": "s-vendors",
+   "label": "The Innovators",
+   "title": "Five vendors, two philosophies, and one argument about the driver's seat",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Five vendors carry documented evidence against the tasks in this role, and they divide cleanly into two philosophies. Four of them sell the driver better instruments. One of them proposes to remove him. The scoring treats both as legitimate, but it does not treat them as equivalent, and the gap between their evidence bases is instructive."
+    },
+    {
+     "t": "component",
+     "name": "matrix"
+    },
+    {
+     "t": "p",
+     "text": "Samsara is the broadest presence in the cab, with evidence against five of the seventeen tasks at an average automation potential of 78%, the highest task coverage of any vendor here. It is a public company, listed on the New York Stock Exchange, with production deployments rather than pilots. Its recent strategic move is quieter than a product launch and arguably more significant: a pre-delivery installation programme announced in August 2025 with Daimler Truck North America and Fontaine Modification, under which telematics and camera hardware arrives already fitted to the new truck. Southeastern Freight Lines took part in an early trial."
+    },
+    {
+     "t": "pq",
+     "text": "received new trucks with Samsara hardware pre-installed via Fontaine Modification, which helped us to integrate the vehicles into operations immediately upon delivery, saving time and money",
+     "cite": "Robbie McLain, computer operations manager, Southeastern Freight Lines, quoted by Daimler Truck North America, August 2025"
+    },
+    {
+     "t": "p",
+     "text": "That quotation is about logistics, not about artificial intelligence, and that is precisely why it matters. The decisive competitive move in fleet telematics was not a smarter algorithm. It was moving the installation upstream to the point of manufacture, so that the monitoring layer becomes a property of the vehicle rather than a decision by the carrier. Hardware that arrives pre-fitted is hardware that is never debated. It is the single most effective mechanism yet found for lowering the resistance factor, and it works by removing the moment at which resistance would have been expressed."
+    },
+    {
+     "t": "p",
+     "text": "Motive holds evidence against four tasks at an average automation potential of 74%, in production, backed by a Series F round of $150m and $567m raised in total. Its products occupy much the same territory as Samsara's: hours-of-service compliance, driver-facing cameras, workflow. It is also, as the cautionary section records, a defendant in a class action over what its cameras see beyond the truck."
+    },
+    {
+     "t": "p",
+     "text": "Drivewyze and PrePass each attach to exactly one task, weigh-station bypass, and each scores an average automation potential of 85%, the highest single-task figures in the entire evidence base. Drivewyze is in production; PrePass is scored at pilot. This is worth pausing on. The most thoroughly automatable task in an occupation of 2.2 million people is not driving. It is the decision about whether a truck needs to pull off the motorway to be weighed and inspected. It is a pure information problem with a clear regulatory owner, a clean data interface and no physical residue whatsoever, and it has been solved to a degree that autonomous driving has not approached."
+    },
+    {
+     "t": "p",
+     "text": "Aurora Innovation is the exception in every dimension. It attaches to a single task, the driving itself, at an average automation potential of 60%, which is markedly lower than the telematics vendors despite being immeasurably more ambitious. It is public on Nasdaq following a SPAC transaction and backed by Uber. It runs in production. And it is the only vendor here whose success would remove tasks rather than instrument them. The 60% is not scepticism about Aurora's engineering. It is an honest reading of a system that works superbly on ten validated lanes and has nothing to say about a snowy dock in Buffalo."
+    },
+    {
+     "t": "component",
+     "name": "vendorCards"
+    },
+    {
+     "t": "p",
+     "text": "Set the two philosophies side by side and the asymmetry is stark. The instrumentation vendors have production deployments across many tasks, arriving pre-installed from the factory, generating revenue today, and provoking litigation about privacy rather than about safety. The autonomy vendor has a smaller footprint, a larger claim, and a business model that requires regulatory permission the instrumentation vendors never needed. Both are automating this occupation. Only one of them is doing it quickly."
+    }
+   ]
+  },
+  {
+   "id": "s-wrong",
+   "label": "The Cautionary Tales",
+   "title": "Run the sequence backwards and the failure arrives before the technology",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Every automation story is told forwards, as a sequence of capabilities unlocked. It reads very differently told backwards, as a sequence of things that did not work. Four episodes in this occupation's recent record are worth examining not because they prove automation will fail, but because they show where the actual resistance lives. Only one of the four is about whether the technology works."
+    },
+    {
+     "t": "p",
+     "text": "Consider first the collapse of TuSimple's American business. The company announced in December 2023 that it was winding down its United States autonomous-trucking operations, cutting roughly 75% of its remaining American workforce, about 150 employees, or some 19% of global headcount, after failing to find a buyer for the business. It voluntarily delisted from Nasdaq in January 2024 and redirected its focus to the Asia-Pacific region, with the wind-down expected to be substantially complete by the end of that year. The exit was further clouded by a shareholder lawsuit alleging that executives, including co-founder Mo Chen, had improperly transferred the company's autonomous-vehicle trade secrets to Hydron, a China-based hydrogen-truck start-up Chen had founded, in alleged violation of a National Security Agreement with the United States government. A federal judge entered a temporary restraining order on 23 January 2024, finding that misappropriation of those trade secrets was likely to occur."
+    },
+    {
+     "t": "p",
+     "text": "The lesson is not that autonomous trucking is a fraud. It is that technical progress and corporate survival are different variables, and a displacement timeline of ten years or more must price in the second as well as the first. A carrier signing a multi-year agreement with an autonomy provider is making a bet about that provider's balance sheet, its cap table and its geopolitics, not merely about its perception stack. TuSimple's assets did not stop working. Its company stopped existing in the market where those assets were deployed."
+    },
+    {
+     "t": "p",
+     "text": "The second episode is subtler and concerns the meaning of the word driverless. Aurora launched commercial driverless trucking between Dallas and Houston on 1 May 2025, with no human in the driver's seat, claiming to be the first company to operate a commercial self-driving service with heavy-duty trucks on American public roads. Fifteen days later, on 16 May, it moved the in-cab observer from the rear of the cabin into the driver's seat, so that a human could intervene. The trucks continued to be operated by the autonomous system. The change was made at the request of the truck manufacturer, Paccar, which cited certain prototype parts in the vehicles."
+    },
+    {
+     "t": "pq",
+     "text": "We are confident this is not required to operate the truck safely based on the exhaustive testing (covering nearly 10,000 requirements and 2.7 million tests) and analysis that populates our safety case",
+     "cite": "Chris Urmson, chief executive, Aurora Innovation, quoted in Transport Topics, 16 May 2025"
+    },
+    {
+     "t": "p",
+     "text": "Aurora complied with the request while disputing its necessity, and resumed operating with nobody in the driver's seat in 2026 with second-generation International trucks. The company's subsequent agreement with McLane Company, a Berkshire Hathaway subsidiary, to run driverless routes in Texas under an SAE Level 4 system with no human safety driver able to take over the controls still places a non-operating human observer in the cab, per Aurora's agreement with Paccar. The point is not that Aurora was wrong about its safety case. The point is that the presence or absence of a human in the seat was settled by a commercial negotiation between a developer and a vehicle manufacturer, not by an engineering result. Autonomy is a status conferred by a chain of parties, any one of which can withhold it."
+    },
+    {
+     "t": "p",
+     "text": "The third and fourth episodes concern the instrumentation layer, and they are the ones that should most concern the telematics vendors. On 24 July 2026, truck drivers Adam Dean and Christian Erickson filed a class action against the AI dash-cam maker Motive Technologies in the United States District Court for the Northern District of California, alleging that its automatic licence plate readers identified and logged every vehicle entering the cameras' field of view, and that Motive gathered the plaintiffs' vehicle images, licence plate numbers, time-stamped locations and the identities of associates without informing them, in violation of California's licence plate reader law. The allegations are untested."
+    },
+    {
+     "t": "p",
+     "text": "Separately, a California driver, Rodrigo Garcia, sued Figueroa Tank Lines and the telematics vendor Samsara after his dismissal on 4 August 2025, alleging that the termination was retaliation for whistleblower reports of safety violations, specifically underinflated tyres and mechanical defects, and for complaints about pornographic calendars displayed in company trucks. He further alleges that the in-cab monitoring system violated his privacy rights by making driver's licence numbers, home addresses, telephone numbers and in-cab video accessible through a shared company portal. His counsel argue that the vendor is liable as the employer's agent under California law. The case is pending in California Superior Court in Contra Costa County. Again, these are allegations, not findings."
+    },
+    {
+     "t": "p",
+     "text": "Read the four together and a pattern emerges that the score already reflects. Three of the four have nothing to do with whether a machine can perform a task. They concern corporate solvency, contractual permission, and the legal exposure created by data the automation generates as a by-product. The resistance factor of 52% is not a measure of Luddism. It is a measure of how many parties must agree, and how many of them are currently in litigation."
+    }
+   ]
+  },
+  {
+   "id": "s-global",
+   "label": "Around the World",
+   "title": "Measured in American miles, and not portable beyond them",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "This score is an American measurement, and it is important to say so plainly before extending it anywhere else. Every vendor in the evidence base operates principally in the United States. The regulatory furniture that shapes half the augmented tasks, hours-of-service rules, federal logging mandates, weigh-station networks, is a national artefact. A reader in Rotterdam or Rajasthan should treat the automation potential figure as broadly portable and the resistance figure as almost entirely local."
+    },
+    {
+     "t": "p",
+     "text": "Even within the United States, the geography is uneven enough to function as a natural experiment. Aurora's ten driverless routes run across Texas and Arizona, and the company has said it is preparing to expand further across the Sun Belt and to serve new customer endpoints in 2026. That is not a random footprint. It is a map of where the permission is. The newly validated Fort Worth-to-Phoenix lane, roughly 1,000 miles via El Paso, is described by the company as the first autonomous freight route extending well beyond Hours of Service limitations, and that description contains the entire commercial logic of the enterprise: the value of an autonomous truck is greatest precisely where the regulation of human endurance binds hardest."
+    },
+    {
+     "t": "p",
+     "text": "California presents the opposing case. The Teamsters have sued the state's Department of Motor Vehicles over self-driving trucks, framing the matter in existential terms, and the union's western region leadership has been explicit that the fight is about jobs as much as about safety. Two states, one federal government, one identical task list, and a resistance factor that differs enormously depending on which side of a state line the trailer is sitting. Any national score is an average across that variance, which means it will understate exposure in the permissive corridors and overstate it in the contested ones."
+    },
+    {
+     "t": "p",
+     "text": "The international dimension enters through the back door of the TuSimple story. When the company wound down its American operations it shifted focus to the Asia-Pacific region, and the accompanying shareholder litigation, alleging improper transfer of autonomous-vehicle trade secrets to a China-based hydrogen-truck start-up in violation of a National Security Agreement, established something the industry has since had to absorb: autonomous freight is not merely a labour question or a safety question. It is a technology-transfer question, subject to the same national-security machinery that governs semiconductors and satellite components. That adds a category of resistance that has no analogue in, say, radiology or accountancy."
+    },
+    {
+     "t": "p",
+     "text": "For the tasks themselves, portability varies sharply and predictably. Coupling a trailer is coupling a trailer; the fifth-wheel lock does not care about jurisdiction, and the six traditional tasks in this anatomy would be recognisable to a driver anywhere in the world. So would the two created tasks, since supervising an autonomous system and triaging a diagnostic alert are functions of the technology rather than of the statute book."
+    },
+    {
+     "t": "p",
+     "text": "The augmented nine are a different matter. Electronic logging to a specific federal specification is a jurisdictional artefact; other regimes use different instruments to answer a similar question. Weigh-station bypass, the single most automatable task in the entire role, cannot exist at all in a country without a weigh-station regime to bypass. Digital manifest verification depends on what a customs or freight authority will accept as a document of record. Strip those out and the cognitive automation potential of 28% would look rather different, though not necessarily lower, since some jurisdictions impose heavier documentary burdens rather than lighter ones."
+    },
+    {
+     "t": "p",
+     "text": "There is a further asymmetry that no score captures well. Autonomy scales along corridors, not across territories. A validated lane is a linear asset: it must be surveyed, mapped, permitted and maintained, and it delivers value only along its length. This favours geographies with long, straight, high-volume, low-density freight arteries and a single permissive regulator, which is a fair description of parts of the American south-west and a poor description of most of Europe. Telematics, by contrast, scales the way software scales, which is why the instrumentation vendors have production evidence against thirteen task-instances between them while the autonomy vendor has one."
+    },
+    {
+     "t": "p",
+     "text": "The honest summary is this. The dataset behind this score sees the United States clearly and everywhere else through a window. Where a reader's own regime resembles the Sun Belt corridors, the exposure is probably higher than 18.2%. Where it resembles a dense, multi-jurisdictional, heavily unionised freight market with short hauls and frequent handling, it is probably lower. The task anatomy travels. The resistance does not."
+    }
+   ]
+  },
+  {
+   "id": "s-fortress",
+   "label": "The Human Fortress",
+   "title": "Sixty-two per cent of the job the vendors do not touch",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Sixty-two per cent of this occupation is untouched. That is the largest number in the score and the least discussed, and it deserves to be defended in detail rather than asserted, because the intuition of most readers runs the other way. If a machine can drive a thousand miles alone, surely the rest is trivial. The anatomy says otherwise, and the reason is a familiar and still unbeaten asymmetry: tasks that feel effortful to a human, such as sustained motorway driving, have turned out to be far more tractable than tasks that feel automatic, such as manipulating an unfamiliar object in an unstructured space."
+    },
+    {
+     "t": "p",
+     "text": "Consider coupling. The driver reverses under the trailer, feels the kingpin engage, tugs against the lock to confirm it has taken, cranks the landing gear, connects the air lines and the electrical umbilical, and checks the whole assembly by eye and by hand. Every step of that involves force feedback, tolerance for misalignment, and improvisation when a fitting is corroded, iced, or fitted the wrong way round by the previous operator. There is no single machine that does this in the general case, and there is no evidence in the vendor base of anyone attempting it. It is scored as traditional and physical, and the score is generous rather than harsh."
+    },
+    {
+     "t": "img",
+     "slot": "fifth_wheel_coupling",
+     "caption": "Coupling and uncoupling remains entirely manual. No vendor in the evidence base has attempted it.",
+     "prompt": "Close documentary photograph of a truck driver's gloved hands releasing the fifth-wheel locking jaw handle beneath a semi-trailer, coiled red and blue air lines and an electrical umbilical cord connected above, grease and road grime on the coupling plate, landing gear crank handle visible, low angle from ground level in a wet freight yard, overcast daylight, gritty realistic detail",
+     "query": "semi trailer coupling"
+    },
+    {
+     "t": "p",
+     "text": "Roadside repair is harder still, because it is defined by the absence of infrastructure. A blown tyre on a hard shoulder, a bulb replaced in the dark, chains fitted in weather severe enough to require chains, fluids topped up with a truck listing on a camber: these are tasks performed in a place chosen by the failure rather than by the operator, with whatever tools happen to be aboard. Automation strategies generally depend on structuring the environment. The defining property of roadside repair is that the environment cannot be structured."
+    },
+    {
+     "t": "p",
+     "text": "Dock manoeuvring is the most underrated entry in the whole anatomy. The task is described as interpreting hand signals from dock workers and aligning the vehicle with precision, and both halves are difficult. The alignment is a control problem in a cluttered space with centimetre tolerances and no margin for a second attempt when a queue is forming behind. The hand signals are a social problem: an improvised, unstandardised, context-dependent language exchanged between two people who have never met, in poor light, at distance, often across a language barrier, with the authority to override running in whichever direction the situation demands. Machine perception is improving at reading gestures. It has not begun to solve the negotiation underneath them."
+    },
+    {
+     "t": "p",
+     "text": "Loading and unloading sits in the same category, with the added complication of forklifts, pallet jacks and freight that has shifted in transit. Securing a load with straps and dunnage is a judgement about physics made under time pressure with imperfect materials. Inspecting a trailer interior after unloading to document damage and photograph evidence for insurance is nominally a documentation task, but the documentation is the easy half; noticing that a pallet has been crushed at the base and inferring what that implies about the whole shipment is the hard half, and it is the half that determines whether a claim succeeds."
+    },
+    {
+     "t": "p",
+     "text": "Which leaves the driving. Operating the combination through highway, urban and rural environments, navigating traffic and weather hazards, is scored as traditional and physical despite Aurora's ten validated routes, and that is not an oversight. The validated-lane model automates a defined corridor between defined endpoints under defined conditions. It does not automate the urban approach, the rural delivery, the construction zone that appeared last Tuesday, or the weather that closes a pass. The task as written covers all of those. Automating a heroic slice of it, at length, in Texas and Arizona, moves the physical exposure to 42%. It does not move it to 100%, and the distinction between the two is the difference between a corridor and a country."
+    },
+    {
+     "t": "p",
+     "text": "There is a deeper reason the fortress holds, and it is economic rather than technical. Five of the six traditional tasks occur while the vehicle is stationary, at the ends of the journey, where labour is already densest and margins thinnest. Automating the line-haul removes the cheapest hour of the driver's day, the one spent sitting still on a straight road, and leaves the expensive ones: the manoeuvring, the handling, the fixing, the arguing with a dock. An operator who replaces the middle of the journey and keeps the ends has not eliminated a role. He has reorganised it around its least automatable parts, which is another way of saying the residual job gets harder, not easier."
+    },
+    {
+     "t": "p",
+     "text": "That is the honest reading of the 62%. It is not a promise of safety. It is a description of where the difficulty has pooled, and a warning that the part of the job which survives will be the part that puts a person on the ground in the weather, doing work no camera has ever made easier."
+    }
+   ]
+  },
+  {
+   "id": "s-voices",
+   "label": "Industry Voices",
+   "title": "Both sides of the freight argument are already on the record",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The argument over autonomous freight is unusually well documented, because it has been conducted in public, under oath, and in filings. On 22 July 2025 the Senate Commerce Committee's Subcommittee on Surface Transportation, Freight, Pipelines, and Safety held a hearing titled Shifting Gears, examining issues affecting the trucking and commercial bus industries. Sean M. O'Brien, general president of the International Brotherhood of Teamsters, testified. His language was not diplomatic."
+    },
+    {
+     "t": "pq",
+     "text": "Allowing the unfettered and unregulated operation of autonomous vehicles - ultimately seeking to replace human drivers with robots - is unequivocally a threat to safety on our roadways and the existence of good jobs in the trucking industry.",
+     "cite": "Sean M. O'Brien, general president, International Brotherhood of Teamsters, testimony to the Senate Commerce Committee's Subcommittee on Surface Transportation, reported by Truckers News, 22 July 2025"
+    },
+    {
+     "t": "p",
+     "text": "The second half of that sentence is the one worth dwelling on, because it links two claims that are usually made separately. Safety and employment are being defended together, as a single interest, and that is a deliberate rhetorical construction rather than an accident. It is also the construction most likely to succeed politically, because a legislature that will not intervene to protect a wage will often intervene to protect a life. The resistance factor of 52% is in large part a measure of how effectively that linkage holds."
+    },
+    {
+     "t": "p",
+     "text": "O'Brien's written testimony to the same hearing made the regulatory asymmetry the centre of the case."
+    },
+    {
+     "t": "pq",
+     "text": "It is incomprehensible that in the same universe in which the federal government regulates the size of hazard material placards down to a millimeter, autonomous vehicles are permitted to freely roam the country without oversight.",
+     "cite": "Sean M. O'Brien, general president, International Brotherhood of Teamsters, written testimony before the Senate Commerce Committee, Subcommittee on Surface Transportation, reported by Overdrive, 22 July 2025"
+    },
+    {
+     "t": "p",
+     "text": "That is an argument about consistency rather than about technology, and it is harder to answer than a safety-record argument, because it does not depend on any particular incident. The trucking industry is regulated at extraordinary granularity in matters of signage, weight, hours, brakes and paperwork. A driver who logs his rest incorrectly faces consequences. The observation that a vehicle operating without a driver at all faces a thinner and more improvised regime is a point about the architecture of oversight, and it will be resolved by legislation rather than by demonstration."
+    },
+    {
+     "t": "p",
+     "text": "At state level the same coalition has used the courts. The Teamsters have sued the California Department of Motor Vehicles over self-driving trucks, and Peter Finn, the union's western region international vice-president and president of Joint Council 7, framed the campaign in terms that fuse the two claims even more tightly."
+    },
+    {
+     "t": "pq",
+     "text": "Driverless trucks are dangerous, and delivery drivers across the state are demanding elected officials fight with us to protect good middle class jobs.",
+     "cite": "Peter Finn, Teamsters western region international vice-president and president of Joint Council 7, quoted by the Daily Californian, March 2025"
+    },
+    {
+     "t": "p",
+     "text": "Against this, the industry's own most durable talking point has taken a serious blow from an unexpected direction. A study by the National Academies of Sciences, Engineering, and Medicine, commissioned by the Federal Motor Carrier Safety Administration at the direction of Congress under the 2021 Infrastructure Investment and Jobs Act, found that the data do not support the long-asserted claim of a persistent driver shortage in the long-distance truckload sector. On the trade association studies that underpin the claim, the report was direct: because those studies have been conducted using proprietary techniques and assumptions that are not publicly defined, it is not possible to evaluate the validity of their claims of driver shortages. The report further noted that trucking wages did not carry a premium over comparable sectors such as construction, and that freight rate increases were routinely followed by declines, patterns inconsistent with a genuine, sustained shortage of labour."
+    },
+    {
+     "t": "p",
+     "text": "This matters more than any single quotation in the debate, because the shortage narrative has been the principal justification for automation that does not displace anyone. If there are not enough drivers, a machine that drives fills a gap. If the shortage is instead a description of turnover, working conditions and pay in a particular segment, then a machine that drives is competing for work rather than filling a vacuum, and the political economy changes entirely. The scoring treats this as a resistance-side finding: it strengthens the labour case without weakening the technical case at all."
+    },
+    {
+     "t": "p",
+     "text": "The vendor voice in this record is notably quieter and more operational. Aurora's chief executive defended a safety case built on nearly 10,000 requirements and 2.7 million tests while nonetheless deferring to a manufacturer's request for a human in the seat. A fleet operations manager praised pre-installed telematics hardware for saving time and money on integration. Neither is a manifesto. That contrast, between testimony framed in existential terms and vendor commentary framed in terms of installation logistics, is itself a finding. One side is arguing about the future of work. The other is shipping."
+    }
+   ]
+  },
+  {
+   "id": "s-economics",
+   "label": "The Economics",
+   "title": "The wage arbitrage that isn't, once you price the whole trip",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "The economic case for automating this occupation is usually presented as a wage arbitrage, and that presentation is misleading. With 2,235,100 people employed at a median wage of $57,440, the aggregate labour bill is enormous, and it is easy to draw a line from that figure to an investor deck. But the median wage is not the unit of competition. The unit of competition is the cost of a mile moved under a specific set of constraints, and the constraints are where the money actually sits."
+    },
+    {
+     "t": "component",
+     "name": "econ"
+    },
+    {
+     "t": "p",
+     "text": "Start with the constraint the industry talks about least and monetises most. Aurora's description of its Fort Worth-to-Phoenix lane as the first autonomous freight route extending well beyond Hours of Service limitations is a statement about asset utilisation, not about labour cost. A tractor unit is capital that earns only while moving. A human operator is legally required to stop. The value created by removing the operator is therefore not principally the wage saved but the hours of utilisation unlocked on an expensive asset, on a lane long enough for the difference to compound. This is why the economics work on a thousand-mile corridor and do not work on a hundred-mile one, regardless of what either driver is paid."
+    },
+    {
+     "t": "p",
+     "text": "The instrumentation economics run on an entirely different logic, and this is the part the automation debate consistently misses. Telematics vendors are not selling labour substitution; they sell verification. A digital pre-trip inspection with timestamps and photographs, an electronic hours record to federal specification, a photographed delivery, a photographed defect, a photographed damaged pallet: each of these converts a driver's unverifiable account into an auditable record. The buyer of that record is not the operations department. It is the insurer, the compliance officer and the litigator. That is a durable revenue line that does not depend on any driver being removed, which is precisely why four of the five vendors here have production deployments and the fifth has ten routes."
+    },
+    {
+     "t": "p",
+     "text": "The Samsara pre-delivery installation programme with Daimler Truck North America and Fontaine Modification should be read as the economic move of the period. Shifting hardware fitment to the point of manufacture removes an installation cost, removes downtime, and removes a decision. The Southeastern Freight Lines trial was described in exactly those terms: integration immediately upon delivery, saving time and money. When the monitoring layer becomes a factory-fitted property of the vehicle, the marginal cost of instrumenting a fleet falls towards zero and the adoption curve stops being a procurement question."
+    },
+    {
+     "t": "p",
+     "text": "Set against this, the labour market is not behaving like an occupation under siege. The Bureau of Labor Statistics projects 4% employment growth. That is modest, but it is growth, and it is occurring after a decade in which nine of the role's seventeen tasks were augmented and one was demonstrated autonomously on public roads. The National Academies finding complicates the standard reading of that figure further, since it found no wage premium against comparable sectors such as construction and freight rate increases routinely followed by declines, both inconsistent with a genuine sustained shortage. An occupation that is growing, unpremiumed and heavily instrumented is not one where automation is clearing a market. It is one where automation is changing the composition of the work."
+    },
+    {
+     "t": "img",
+     "slot": "roadside_tyre_change",
+     "caption": "The stationary tasks are the expensive ones, and they are the ones the technology has not reached.",
+     "prompt": "A truck driver crouched on a motorway hard shoulder at dusk changing a trailer tyre, torque wrench in hand, spare tyre leaning against the trailer, orange warning triangles set out behind, headlights of passing traffic streaking in the background, wet asphalt, high-visibility jacket, realistic photojournalistic documentary style, available light",
+     "query": "truck tyre repair roadside"
+    },
+    {
+     "t": "p",
+     "text": "The AI Job Creation Index of 6% quantifies the other side of the ledger, and it is small for a reason. Two created tasks, both supervisory, both unpriced. Nobody in the evidence base has published what a driver is paid to monitor and override an autonomous system during a highway pilot segment, or to triage predictive maintenance alerts and communicate findings onward. Historically, tasks that appear as monitoring duties inside an existing role are absorbed without renegotiation, and the score should be read as an early measurement of a bargaining problem rather than as a headcount forecast."
+    },
+    {
+     "t": "p",
+     "text": "There is one further economic asymmetry worth naming. The autonomy business requires permission; the instrumentation business does not. A telematics vendor needs a purchase order, and increasingly not even that if the hardware ships pre-installed. An autonomy vendor needs a state regulator, a federal posture, a vehicle manufacturer's blessing, an insurer's underwriting, a shipper's legal department, and no adverse litigation. Every one of those is a party who can say no, and the record of the past two years contains examples of several of them doing so. That is the 52% expressed as a supply chain of consent, and it is why an occupation with 38% technical exposure scores 18.2% overall."
+    }
+   ]
+  },
+  {
+   "id": "s-2030",
+   "label": "Looking Ahead",
+   "title": "Ten years is not a reprieve, it is a schedule",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "A displacement timeline of ten years or more, in the Emerging band, is a statement about pace rather than direction. It says the direction is established and the pace is governed by things other than engineering. It is worth setting out, as precisely as the evidence allows, what would have to happen for that figure to move, in either direction, and what would leave it exactly where it is."
+    },
+    {
+     "t": "p",
+     "text": "The clearest accelerant is already visible in the record. Aurora has tripled its driverless network to ten routes across Texas and Arizona and has said it is preparing to expand further across the Sun Belt and to serve new customer endpoints in 2026. Two words in that sentence matter more than the rest. Routes tells you the model is corridor-based: each lane must be validated, and validation does not generalise for free. Endpoints tells you where the frontier actually is, because an endpoint is where the trailer must be manoeuvred, coupled, uncoupled, inspected and unloaded. An autonomy programme that begins serving new customer endpoints is a programme meeting the six traditional tasks head on, and how it handles them will tell us more about the next decade than another thousand miles of validated motorway."
+    },
+    {
+     "t": "p",
+     "text": "The second accelerant is structural and quieter. Factory-fitted telematics, arriving pre-installed through arrangements with truck manufacturers and modification specialists, means the sensing and connectivity substrate on which any future autonomy depends is being deployed across the fleet for reasons that have nothing to do with autonomy. Compliance and insurance are paying for the plumbing. Whoever eventually wants to automate a task will find a vehicle already wired, already connected, already generating a data record, and already accepted by its driver as a condition of employment. That is a lower barrier than any single technical breakthrough."
+    },
+    {
+     "t": "p",
+     "text": "The clearest brake is legal, and it is currently in motion. The class action against Motive over automatic licence plate readers, the pending California suit naming Samsara alongside an employer on an agency theory, and the Teamsters' litigation against the California Department of Motor Vehicles are three distinct legal attacks on three distinct layers: what the cameras capture beyond the vehicle, whether the vendor bears responsibility for how an employer uses the data, and whether a state may permit driverless operation at all. None has been resolved. Any of them, decided broadly, would reprice the whole augmentation layer."
+    },
+    {
+     "t": "p",
+     "text": "The second brake is commercial fragility, and TuSimple is its case study. An operator contemplating a multi-year commitment to autonomous line-haul must now underwrite not only the technology but the counterparty: its funding, its listing, its ownership and, in a technology touched by national-security agreements, its geopolitics. The wind-down of a well-capitalised American programme, followed by delisting and a pivot to another region amid trade-secret litigation, is a fresh memory in every procurement department in the sector."
+    },
+    {
+     "t": "p",
+     "text": "There is a third possibility, less dramatic than either, and on the evidence it is the most likely. Nothing decisive happens. The corridors expand slowly along the Sun Belt while the dense, short-haul, multi-stop, high-handling segment remains entirely human. The augmentation layer thickens until every task with an information component is mediated by a screen. The two created tasks grow into a recognised specialism, perhaps with its own training requirement and eventually its own pay grade. The driver's day loses its longest, dullest stretch and retains its hardest hours. Employment continues its modest growth, because freight volume grows too, and the composition shifts beneath a stable headline number."
+    },
+    {
+     "t": "p",
+     "text": "In that scenario the score barely moves, and the lived experience of the job changes enormously. This is the central insight of an index built on tasks rather than occupations. A role can be extensively transformed without being replaced, and the transformation can be worse or better for the person doing it in ways no single percentage will ever capture. The measurable thing is exposure. The important thing is what a Tuesday feels like."
+    },
+    {
+     "t": "p",
+     "text": "What would genuinely surprise us, and would force a rescoring, is a demonstrated general solution to a stationary physical task: a system that couples a trailer it has not seen before, or manoeuvres onto a dock by reading a stranger's hand signals, or changes a tyre on a camber in the rain. There is no evidence of any vendor pursuing this at production scale. Until that appears, the 62% untouched is not a temporary condition awaiting the inevitable. It is the shape of the job."
+    },
+    {
+     "t": "img",
+     "slot": "sunbelt_corridor_dusk",
+     "full": true,
+     "caption": "Ten validated routes across Texas and Arizona, and an expansion planned across the Sun Belt in 2026. The corridor is the unit of autonomy, not the country.",
+     "prompt": "Wide landscape photograph of a long straight desert interstate at dusk in the American south-west, a single white tractor-trailer combination with roof and bumper mounted sensor arrays travelling away from camera, scrub and distant mesas either side, warm low sun and long shadows across the asphalt, telegraph poles receding, cinematic documentary realism",
+     "query": "highway freight trucks"
+    }
+   ]
+  },
+  {
+   "id": "s-feedback",
+   "label": "Challenge This Score",
+   "title": "Where this report is most likely to be wrong",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Every figure in this report is contestable, and the ones most worth contesting are the ones that look most solid. The physical automation potential of 42% rests substantially on ten validated routes operated by a single company in two states. Argue that this overstates the general case and you would have a point. Argue that it understates it, because corridor validation compounds faster than the score assumes, and you would also have a point. We publish the anchor precisely so the argument can be had about evidence rather than about intuition."
+    },
+    {
+     "t": "p",
+     "text": "The resistance factor of 52% is the most volatile input in the model and the one most likely to be wrong. It aggregates federal regulation, state variance, union strength, insurer appetite, manufacturer consent and pending litigation into a single number, and at least three of those components are currently before a court. A driver in a permissive Sun Belt corridor and a driver in California are living under materially different resistance regimes while sharing one national score."
+    },
+    {
+     "t": "p",
+     "text": "The task anatomy is the most useful thing to argue with, because it is the most falsifiable. If you drive for a living and the six traditional tasks do not describe your stationary hours, or the nine augmented ones understate how much of your day is now spent photographing things, we would rather know. If you build these systems and believe a task marked traditional is closer than we have credited, tell us what you have deployed and where. If you buy them, tell us what the installation actually cost and what it actually changed."
+    },
+    {
+     "t": "p",
+     "text": "Scores that are never challenged decay into folklore. This one is meant to be pushed on."
+    },
+    {
+     "t": "component",
+     "name": "feedback"
+    }
+   ]
+  }
+ ],
+ "anchors": [
+  {
+   "title": "Bookkeeping, Accounting, and Auditing Clerks",
+   "label": "Bookkeeping",
+   "rpi": 61.6
+  },
+  {
+   "title": "Shipping, Receiving, and Inventory Clerks",
+   "label": "Warehouse",
+   "rpi": 49.0
+  },
+  {
+   "title": "Customer Service Representatives",
+   "label": "Customer Service",
+   "rpi": 39.0
+  },
+  {
+   "title": "Paralegals and Legal Assistants",
+   "label": "Paralegal",
+   "rpi": 27.8
+  },
+  {
+   "title": "Retail Salespersons",
+   "label": "Retail",
+   "rpi": 21.3
+  },
+  {
+   "title": "Heavy and Tractor-Trailer Truck Driver",
+   "label": "Heavy and Tractor-Trai",
+   "rpi": 18.2
+  },
+  {
+   "title": "Accountants and Auditors",
+   "label": "Accountant",
+   "rpi": 15.5
+  },
+  {
+   "title": "Software Developers",
+   "label": "Software Dev",
+   "rpi": 13.4
+  },
+  {
+   "title": "Registered Nurses",
+   "label": "Nurse",
+   "rpi": 2.2
+  }
+ ],
+ "sources": [
+  {
+   "name": "Aurora Innovation Investor Relations",
+   "url": "https://ir.aurora.tech/news-events/press-releases/detail/132/aurora-triples-driverless-network-to-10-routes-and-prepares-to-expand-across-u-s-sun-belt",
+   "date": "2026"
+  },
+  {
+   "name": "TechCrunch",
+   "url": "https://techcrunch.com/2026/05/06/aurora-lands-mclane-deal-to-run-driverless-truck-routes-in-texas/",
+   "date": "2026-05-06"
+  },
+  {
+   "name": "Aurora Innovation Investor Relations",
+   "url": "https://ir.aurora.tech/news-events/press-releases/detail/119/aurora-begins-commercial-driverless-trucking-in-texas-ushering-in-a-new-era-of-freight",
+   "date": "2025-05"
+  },
+  {
+   "name": "Truckers News",
+   "url": "https://www.truckersnews.com/news/article/15634342/teamsters-weigh-in-on-federal-regulations-for-autonomous-trucks",
+   "date": "2025-07-22"
+  },
+  {
+   "name": "Overdrive",
+   "url": "https://www.overdriveonline.com/regulations/article/15751214/truckings-tech-divide-safety-work-automation-clash-in-congress",
+   "date": "2025-07-22"
+  },
+  {
+   "name": "Daily Cal / IBT Teamsters",
+   "url": "https://www.dailycal.org/news/state/teamsters-sue-california-dmv-over-self-driving-trucks-claiming-existential-threat/article_2078c8af-cb07-42aa-bdd6-836a33171b89.html",
+   "date": "2025-03"
+  },
+  {
+   "name": "Daimler Truck North America",
+   "url": "https://northamerica.daimlertruck.com/samsara-launches-pre-delivery-installation-program-to-streamline-fleet-technology-deployment",
+   "date": "2025-08"
+  },
+  {
+   "name": "Transport Topics",
+   "url": "https://www.ttnews.com/articles/aurora-driver-back-in-seat",
+   "date": "2025-05-16"
+  },
+  {
+   "name": "FreightWaves",
+   "url": "https://www.freightwaves.com/news/nasem-study-disputes-driver-shortage-claims",
+   "date": "2024-10-31"
+  },
+  {
+   "name": "Trucking Info (Heavy Duty Trucking)",
+   "url": "https://www.truckinginfo.com/news/tusimple-winding-down-u-s-autonomous-truck-operations",
+   "date": "2024"
+  },
+  {
+   "name": "CDLLife",
+   "url": "https://cdllife.com/2026/truckers-sue-ai-dash-cam-company-over-mass-surveillance-on-a-massive-scale/",
+   "date": "2026-07-24"
+  },
+  {
+   "name": "CDLLife / Bloomberg Law",
+   "url": "https://cdllife.com/2026/fired-fuel-truck-driver-sues-over-whistleblower-retaliation-in-cab-monitoring-and-racy-calendars-in-company-trucks/",
+   "date": "2026-01-01"
+  }
+ ]
+}
