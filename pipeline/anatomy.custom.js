@@ -17,17 +17,26 @@ if (!D?.role?.soc) throw new Error('pass the extracted data-file object as args'
 // research fan-out at the shape that worked; the second verifier vote is bought back
 // because this role's vendor layer is explicitly unverified upstream -- 29 of 44
 // vendors are company-unconfirmed, so claims about them need more than one sceptic.
-const CLAIMS_PER_LENS = D._claimsPerLens ?? 3
-const VERIFIER_VOTES = D._votes ?? 2
+// Deep defaults: 7 lenses x 5 claims = 35 candidate claims, each refuted by 3
+// independent verifiers (4 for quotes). ~119 agents. Verification is unanimous,
+// so raising claim count rather than lowering the bar is what actually lifts the
+// surviving reference count -- No.008 shipped 55 references at 3x2.
+const CLAIMS_PER_LENS = D._claimsPerLens ?? 5
+const VERIFIER_VOTES = D._votes ?? 3
 const MODE = `${CLAIMS_PER_LENS}x${VERIFIER_VOTES}`
 const PUBLISHED = D._published || 'August 2026'
 
+// Deep tier. Research moves to Opus because a lens that misses a claim costs the
+// whole downstream chain -- no verifier can rescue evidence that was never found.
+// Audit moves to Opus because it is the last read before publication and it is
+// now a gate, not a flag. Verify keeps the split: high-risk kinds get Opus, the
+// rest Sonnet, since refutation is a narrower judgement than discovery.
 const M = {
-  research: { model: 'sonnet', effort: 'medium' },
+  research: { model: 'opus', effort: 'high' },
   verifyHi: { model: 'opus', effort: 'high' },
   verifyLo: { model: 'sonnet', effort: 'medium' },
   compose: { model: 'opus', effort: 'high' },
-  audit: { model: 'sonnet', effort: 'medium' },
+  audit: { model: 'opus', effort: 'high' },
 }
 const HIGH_RISK = new Set(['quote', 'statistic', 'deployment', 'event', 'pricing'])
 const votesFor = k => (k === 'quote' ? VERIFIER_VOTES + 1 : VERIFIER_VOTES)
