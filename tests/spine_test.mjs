@@ -33,7 +33,14 @@ for (const f of files) {
   }
 
   const hasAps = (D.tasks || []).some(t => Number(t.aps) > 0)
-  const noVendor = (D.tasks || []).filter(t => !String(t.vendor || '').trim()).length
+  // "unserved" is spelled two ways in the corpus: an empty field (No.008) or a
+  // sentinel string like "No vendor - human only" (7 of 10 roles). The test must
+  // recognise BOTH, or it validates the spine against the same blind spot.
+  const NO_VENDOR = /^\s*(no vendor|none|n\/?a|-{1,2}|tbd|unserved)/i
+  const noVendor = (D.tasks || []).filter(t => {
+    const v = String(t.vendor || '').trim()
+    return !v || NO_VENDOR.test(v)
+  }).length
   const problems = []
 
   if (err) {
@@ -48,6 +55,12 @@ for (const f of files) {
     }
     if (noVendor === 0 && /carry NO vendor evidence/.test(SPINE)) {
       problems.push('claims unserved tasks when every task has a vendor')
+    }
+    // the number the spine PRINTS must equal the number actually unserved
+    const m = SPINE.match(/^\s*(\d+) of (\d+) tasks carry NO vendor evidence/m)
+    const hasStatus = (D.tasks || []).some(t => String(t.status || '').trim())
+    if (m && !hasStatus && Number(m[1]) !== noVendor) {
+      problems.push(`spine says ${m[1]} unserved, data shows ${noVendor}`)
     }
   }
 

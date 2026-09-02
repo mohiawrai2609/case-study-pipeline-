@@ -323,11 +323,20 @@ const TASKS  = D.tasks || []
 // assertSpine exists to stop. So each fact is derived only where its input is real.
 const HAS_STATUS = TASKS.some(t => String(t.status || '').trim())
 const HAS_APS    = TASKS.some(t => Number.isFinite(Number(t.aps)) && Number(t.aps) > 0)
-// empty `vendor` is the fallback coverage signal; on No.008, where both exist,
-// it selects exactly the same task the authoritative status does.
+// The fallback coverage signal is the `vendor` field, but "unserved" is spelled
+// two different ways across the corpus: No.008 leaves it empty, while 7 of the 10
+// roles write a SENTINEL string -- "No vendor - human only", with either a hyphen
+// or an em-dash. Testing only for emptiness counted all 11 of No.001's human-only
+// tasks as vendor-served and would have asserted full coverage on every one of
+// those seven roles.
+const NO_VENDOR = /^\s*(no vendor|none|n\/?a|-{1,2}|tbd|unserved)/i
+const unattributed = t => {
+  const v = String(t.vendor || '').trim()
+  return !v || NO_VENDOR.test(v)
+}
 const unserved = HAS_STATUS
   ? TASKS.filter(t => String(t.status).toUpperCase() === 'UNSERVED')
-  : TASKS.filter(t => !String(t.vendor || '').trim())
+  : TASKS.filter(unattributed)
 const byAps    = HAS_APS ? [...TASKS].sort((a, b) => Number(a.aps) - Number(b.aps)) : []
 const lowest   = byAps[0] || null, highest = byAps[byAps.length - 1] || null
 const near = (a, b, tol = 0.2) => Math.abs(a - b) < tol
@@ -341,9 +350,9 @@ function assertSpine() {
   if (cov != null && TASKS.length - unserved.length !== cov)
     bad.push(`task coverage disagrees with readiness.tasksCovered (${TASKS.length - unserved.length} vs ${cov})`)
   if (HAS_STATUS) {   // both signals present -> they must select the same tasks
-    const viaVendor = TASKS.filter(t => !String(t.vendor || '').trim()).length
+    const viaVendor = TASKS.filter(unattributed).length
     if (viaVendor !== unserved.length)
-      bad.push(`status says ${unserved.length} unserved, empty-vendor says ${viaVendor}`)
+      bad.push(`status says ${unserved.length} unserved, vendor field says ${viaVendor}`)
   }
   if (ANCHOR) {
     if (ANCHOR.rpi == null) bad.push('anchorRole carries no rpi')
@@ -367,7 +376,8 @@ const anchorLine = !ANCHOR ? `  This role has no peer anchor; make no cross-role
 
 const unservedLine = unserved.length
   ? `  ${unserved.length} of ${TASKS.length} tasks carry NO vendor evidence at all: `
-    + unserved.map(t => `"${t.name}"`).join('; ') + '.'
+    // `name` is truncated to ~40 chars for the grid; `desc` carries the full task
+    + unserved.map(t => `"${String(t.desc || t.name).trim()}"`).join('; ') + '.'
   : `  Every one of the ${TASKS.length} tasks carries vendor evidence.`
 
 const apsLine = HAS_APS
