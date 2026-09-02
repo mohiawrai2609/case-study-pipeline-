@@ -66,6 +66,17 @@ for (const f of files) {
     problems.push('died before compose: ' + outcome)
   }
   if (!prompts.length) problems.push('no prompt was ever assembled')
+  // the research SUBJECT must be this role: No.008's lenses asked every role about
+  // AI coding agents, and the answers verified as true -- about the wrong occupation
+  const research = prompts.filter(p => /RESEARCH LENS/.test(p))
+  if (research.length && !research.every(p => p.includes(D.role.title))) {
+    problems.push('a research lens does not name the role')
+  }
+  const LEAK = /AI[- ]coding|coding agent|AI-generated code|software development|engineering leaders/i
+  const isSoftware = /^15-/.test(String(D.role.soc))
+  if (!isSoftware && research.some(p => LEAK.test(p))) {
+    problems.push('research lens carries software-role vocabulary')
+  }
   for (const p of prompts) {
     const m = p.match(/.{0,40}(undefined|NaN|\[object Object\]).{0,25}/)
     if (m) { problems.push('prompt contains ' + m[1] + ': "' + m[0].trim() + '"'); break }

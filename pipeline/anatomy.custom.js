@@ -188,15 +188,6 @@ HARD RULES:
 - Prefer sources from the last 24 months; mark anything older with its date.
 ${LIMITS}`
 
-const LENSES = [
-  { key: 'industry', ask: 'How is AI-agent-directed software development actually landing right now? Named deployments, adoption rates, what measurably changed in the last 18 months. Prefer employer-side evidence over vendor marketing.' },
-  { key: 'regional', ask: 'How does this practice differ outside the US? At least two of Europe, Asia, Latin America. Regulation, labour cost, adoption gaps, outsourcing effects.' },
-  { key: 'quotes', ask: 'Find REAL published statements from named people: practitioners who build this way, engineering leaders deploying agents, critics, academics. Each needs speaker name, exact role at the time, publication, date and URL. Highest-risk lens -- return nothing rather than anything uncertain.' },
-  { key: 'deployments', ask: 'For the vendors listed, find documented production deployments and independent benchmark results: which employer, what scale, what measured outcome. Explicitly flag any vendor whose claims are marketing-only.' },
-  { key: 'counter', ask: 'Find the strongest evidence AGAINST the productivity narrative: studies showing AI coding tools slowing developers down, rework and review burden, security defect rates in generated code, abandoned rollouts, disputed benchmark claims.' },
-  { key: 'cautionary', ask: 'Find specific documented failures or harms from AI-generated code reaching production: outages, data loss, security breaches traced to generated code, supply-chain or dependency incidents, regulatory action. Named organisations and dates only.' },
-  { key: 'economics', ask: 'Find PUBLISHED LIST PRICES for AI coding agents and the compute they consume: per-seat subscription tiers, usage/credit pricing, published token or ACU rates, and any documented figure for what teams actually spend per month. Vendor pricing pages and official docs are acceptable primary sources here. Give exact figures, currency, plan name and the date observed. Do NOT include revenue, valuation or funding for any company.' },
-]
 
 // ---- HEAD:BEGIN (extracted by tests/head_test.mjs -- keep the markers)
 const R = D.role, S = D.scores, N = D.narrative || {}
@@ -310,6 +301,38 @@ ${taskLines}
 VENDOR CARDS (${(D.vendors || []).length} shown${RD && has(RD.distinctVendors) ? ` of ${RD.distinctVendors} with evidence` : ''}):
 ${vendorLines}${narrBlock}`
 // ---- HEAD:END
+
+// ---- LENSES:BEGIN (checked by tests/preflight.mjs -- keep the markers)
+// The seven lens SHAPES are generic -- industry, regional, quotes, deployments,
+// counter-evidence, cautionary tales, economics -- but their SUBJECT was written
+// for No.008 and asked every role about "AI coding agents" and "AI-generated
+// code reaching production". Run on Fast Food, the cautionary lens returned Replit
+// deleting a production database and the Nx supply-chain attack: true, verifiable,
+// and about the wrong occupation. The verifiers would have passed them. So the
+// subject is now built from the role's own title, its automated tasks and its
+// vendors, and the shapes stay fixed.
+const LENS_ROLE = `${R.title} (${R.soc})`
+const LENS_AUTO = (D.tasks || [])
+  .filter(t => t.type === 'r' || t.type === 'a')
+  .map(t => String(t.desc || t.name).trim().replace(/\.$/, ''))
+const LENS_VENDORS = (D.vendors || []).map(v => v.name)
+const LENS_CONTEXT = (LENS_AUTO.length || LENS_VENDORS.length)
+  ? `CONTEXT -- what automation actually consists of in this role today: `
+    + (LENS_AUTO.length ? LENS_AUTO.join('; ') + '. ' : '')
+    + (LENS_VENDORS.length ? `Vendors with task-level evidence: ${LENS_VENDORS.join(', ')}. ` : '')
+    + `Stay on THIS occupation and these tools. Evidence about a different occupation is off-topic even when true.`
+  : `Stay on THIS occupation. Evidence about a different occupation is off-topic even when true.`
+
+const LENSES = [
+  { key: 'industry', ask: `How is automation actually landing in the work of ${LENS_ROLE} right now? Named employers and deployments, adoption rates, what measurably changed in the last 18 months. Prefer employer-side and independent evidence over vendor claims. ${LENS_CONTEXT}` },
+  { key: 'regional', ask: `How does automation of ${LENS_ROLE} work differ outside the US? At least two of Europe, Asia, Latin America. Regulation, labour cost and wage floors, adoption gaps, labour-supply effects. ${LENS_CONTEXT}` },
+  { key: 'quotes', ask: `Find REAL published statements from named people about automation in the work of ${LENS_ROLE}: people who do the job, operators and managers who deployed the tools, worker or union representatives, critics, academics. Each needs the speaker's name, their exact role at the time, the publication and the date. No paraphrase -- the words as printed. ${LENS_CONTEXT}` },
+  { key: 'deployments', ask: `For the vendors listed, find documented production deployments and independent results in ${LENS_ROLE} settings: which employer, what scale, what measured outcome. Explicitly flag any vendor whose claims are marketing-only. ${LENS_CONTEXT}` },
+  { key: 'counter', ask: `Find the strongest evidence AGAINST the automation narrative for ${LENS_ROLE}: rollouts scaled back or abandoned, measured customer or throughput problems, error and rework rates, cost overruns, labour savings that did not materialise, tasks that reverted to people. ${LENS_CONTEXT}` },
+  { key: 'cautionary', ask: `Find specific documented failures or harms from automation in ${LENS_ROLE} settings: outages, safety incidents, service failures, data breaches, regulatory or legal action, publicly withdrawn systems. Named organisations and dates only. ${LENS_CONTEXT}` },
+  { key: 'economics', ask: `Find PUBLISHED LIST PRICES for the tools that automate ${LENS_ROLE} tasks: subscription tiers, per-location or per-terminal pricing, hardware and installation costs, usage or transaction fees. Vendor pricing pages and official docs are acceptable primary sources here. Give exact figures, currency, plan name and the date observed. Do NOT include revenue, valuation or funding for any company. ${LENS_CONTEXT}` },
+]
+// ---- LENSES:END
 
 // === Stage 1+2: research each lens, verify its claims as they land ===
 phase('Research')
