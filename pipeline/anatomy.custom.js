@@ -198,36 +198,118 @@ const LENSES = [
   { key: 'economics', ask: 'Find PUBLISHED LIST PRICES for AI coding agents and the compute they consume: per-seat subscription tiers, usage/credit pricing, published token or ACU rates, and any documented figure for what teams actually spend per month. Vendor pricing pages and official docs are acceptable primary sources here. Give exact figures, currency, plan name and the date observed. Do NOT include revenue, valuation or funding for any company.' },
 ]
 
-const R = D.role, S = D.scores, T = D.taxonomy, RD = D.readiness, N = D.narrative || {}
-const HEAD = `ROLE: ${R.title} (custom role code ${R.soc} -- NOT an O*NET occupation)
-This is a CUSTOM role: an emerging job title scored against the same framework as the 995 O*NET
-occupations, anchored structurally to Software Developers (${R.anchorSoc}). It has no BLS series,
-no employment count and no wage.
+// ---- HEAD:BEGIN (extracted by tests/head_test.mjs -- keep the markers)
+const R = D.role, S = D.scores, N = D.narrative || {}
+const RD = D.readiness || null
+const AR = D.anchorRole || null
 
-SCORES (authoritative -- never contradict these):
-  RPI ${S.rpi}%  |  APS ${S.aps}%  |  HRF ${S.hrf}%  |  Untouched ${S.untouched}%  |  AJCI ${S.ajci}%
-  Cognitive APS ${S.cognitive}% | Physical APS ${S.physical}% | Band ${R.band} | Timeline ${R.timeline}
-  Formula: RPI = APS x (1 - HRF) x 100 = ${S.aps} x ${(1 - S.hrf / 100).toFixed(2)} = ${S.rpi}
-  Job Zone ${R.jobZone}. No US employment figure, no median wage, no BLS growth rate exist.
+// ---- HEAD: DERIVED, never asserted -----------------------------------------
+// Everything below is prompt text, which reaches the model as fact and is never
+// verified. This block was written for No.008 -- a custom role with no BLS
+// series -- and asserted all of it unconditionally. Run against No.001 it would
+// have stated that Fast Food and Counter Workers is NOT an O*NET occupation, is
+// anchored to Software Developers, and has no employment count or wage, while
+// the record carries 3,796k workers at $30,480. Six falsehoods, four undefineds
+// and three crashes, none of which any verifier downstream could catch.
+// So every line is now conditional on the field actually existing.
+
+// A custom role code carries a non-numeric suffix (15-1299.VC); O*NET codes end
+// in digits (35-3023.00).
+const IS_CUSTOM = !/^\d{2}-\d{4}\.\d{2}$/.test(String(R.soc || ''))
+const has = v => v !== null && v !== undefined && v !== '' && !Number.isNaN(v)
+
+const NO_VENDOR = /^\s*(no vendor|none|n\/?a|-{1,2}|tbd|unserved)/i
+const unattributed = t => {
+  const v = String(t.vendor || '').trim()
+  return !v || NO_VENDOR.test(v)
+}
+
+
+const identityLine = `  Formula: RPI = APS x (1 - HRF) x 100 = ${S.aps} x ${(1 - S.hrf / 100).toFixed(2)} = ${S.rpi}`
+
+const labourLine = (has(R.emp_k) || has(R.wage))
+  ? `  US employment ${has(R.emp_k) ? R.emp_k + 'k' : 'not stated'} | median wage `
+    + `${has(R.wage) ? '$' + R.wage : 'not stated'}`
+    + `${has(R.growth) ? ' | BLS growth ' + R.growth + '%' : ''}`
+  : `  This role has NO employment count, NO median wage and NO growth rate. Do not state one, and `
+    + `never describe a platform user count as a number of job holders.`
+
+const openingLine = IS_CUSTOM
+  ? `ROLE: ${R.title} (custom role code ${R.soc} -- NOT an O*NET occupation)\n`
+    + `This is a CUSTOM role: an emerging job title scored against the same framework as the O*NET\n`
+    + `occupations. It has no BLS series.`
+  : `ROLE: ${R.title} (O*NET SOC ${R.soc})`
+
+const anchorHead = AR
+  ? `\nStructural anchor: ${AR.title} (${AR.soc}), RPI ${AR.rpi}%.`
+    + (has(AR.aps) && has(AR.hrf) ? ` Its APS is ${AR.aps}% and HRF ${AR.hrf}%.`
+       : ` No sourced APS/HRF pair exists for it -- compare on RPI only.`)
+  : ''
+
+const readinessBlock = RD ? `
 
 ECOSYSTEM READINESS (from the workbook):
   Readiness ${RD.pct}% (${RD.band}) | ${RD.tasksCovered} of ${RD.tasksTotal} tasks served (${RD.coveragePct}%)
   ${RD.distinctVendors} distinct vendors | ${RD.evidenceRows} evidence rows | ${RD.replacementTools} replacement-mode rows
-  Ecosystem: ${RD.ecosystem}. Note: vendor DEPTH is not the same as replaceability -- this role has the
-  densest vendor layer in the corpus attached to one of its lower RPI scores.
+  Ecosystem: ${RD.ecosystem}. Vendor DEPTH is not the same as replaceability.` : ''
 
-TASKS (${T.taskCount} total: ${T.traditional} traditional, ${T.aiAugmented} AI-augmented, ${T.aiCreated} AI-created):
-${D.tasks.map((t, i) => `  ${i + 1}. [${t.type === 'r' ? 'replaced' : t.type === 'a' ? 'augmented' : 'human'}] APS ${t.aps}%, importance ${t.importance} -- ${t.desc}${t.vendor ? ` (best coverage: ${t.vendor})` : ' (NO VENDOR EVIDENCE -- the only unserved task)'}`).join('\n')}
+// taxonomy counts are derived from the tasks when the record does not carry them
+const TX = D.taxonomy || {
+  taskCount: (D.tasks || []).length,
+  traditional: (D.tasks || []).filter(t => t.type === 'h').length,
+  aiAugmented: (D.tasks || []).filter(t => t.type === 'a').length,
+  aiCreated: (D.tasks || []).filter(t => t.type === 'r').length,
+}
+const UNSERVED_N = (D.tasks || []).filter(unattributed).length
 
-VENDOR CARDS (${D.vendors.length} shown of ${RD.distinctVendors} with evidence):
-${D.vendors.map(v => `  - ${v.name}: ${v.breadth} tasks, depth ${v.depth}, trust ${v.reach}, ${v.evidence}, verification ${v.verification} -- ${v.desc}`).join('\n')}
+const taskLines = (D.tasks || []).map((t, i) => {
+  const kind = t.type === 'r' ? 'replaced' : t.type === 'a' ? 'augmented' : 'human'
+  const bits = []
+  if (has(t.aps) && Number(t.aps) > 0) bits.push(`APS ${t.aps}%`)
+  if (has(t.importance)) bits.push(`importance ${t.importance}`)
+  const meta = bits.length ? bits.join(', ') + ' -- ' : ''
+  const tail = unattributed(t) ? '  (NO VENDOR EVIDENCE)' : `  (best coverage: ${String(t.vendor).trim()})`
+  return `  ${i + 1}. [${kind}] ${meta}${String(t.desc || t.name).trim()}${tail}`
+}).join('\n')
+
+const vendorLines = (D.vendors || []).map(v => {
+  const bits = []
+  const n = (v.tasks || []).length
+  if (n) bits.push(`${n} task${n === 1 ? '' : 's'}`)
+  if (has(v.depth)) bits.push(`depth ${v.depth}`)
+  if (has(v.reach)) bits.push(`trust ${v.reach}`)
+  if (has(v.evidence)) bits.push(String(v.evidence))
+  if (has(v.verification)) bits.push(`verification ${v.verification}`)
+  else bits.push('verification NOT ESTABLISHED -- treat every company fact as unpublishable')
+  return `  - ${v.name}: ${bits.join(', ')}${v.desc ? ' -- ' + v.desc : ''}`
+}).join('\n')
+
+const narrLines = [['SUMMARY', N.role_summary], ['VERDICT', N.verdict], ['APS CASE', N.aps_case],
+                   ['HRF CASE', N.hrf_case], ['OUTLOOK', N.forward_outlook]]
+  .filter(([, v]) => has(v)).map(([k, v]) => `  ${k}: ${v}`).join('\n')
+
+const narrBlock = narrLines ? `
 
 THE WORKBOOK'S OWN ANALYSIS (authoritative, build on this rather than re-deriving a thesis):
-  SUMMARY: ${N.role_summary}
-  VERDICT: ${N.verdict}
-  APS CASE: ${N.aps_case}
-  HRF CASE: ${N.hrf_case}
-  OUTLOOK: ${N.forward_outlook}`
+${narrLines}` : `
+
+The record carries NO written analysis for this role. Derive the thesis from the scores, the task
+mix and the vendor evidence above, and do not attribute a view to the workbook.`
+
+const HEAD = `${openingLine}${anchorHead}
+
+SCORES (authoritative -- never contradict these):
+  RPI ${S.rpi}%  |  APS ${S.aps}%  |  HRF ${S.hrf}%  |  Untouched ${S.untouched}%  |  AJCI ${S.ajci}%
+  Cognitive APS ${S.cognitive}% | Physical APS ${S.physical}% | Band ${R.band} | Timeline ${R.timeline}
+${identityLine}
+${labourLine}${has(R.jobZone) ? `\n  Job Zone ${R.jobZone}.` : ''}${readinessBlock}
+
+TASKS (${TX.taskCount} total: ${TX.traditional} human, ${TX.aiAugmented} augmented, ${TX.aiCreated} replaced; ${UNSERVED_N} with no vendor evidence):
+${taskLines}
+
+VENDOR CARDS (${(D.vendors || []).length} shown${RD && has(RD.distinctVendors) ? ` of ${RD.distinctVendors} with evidence` : ''}):
+${vendorLines}${narrBlock}`
+// ---- HEAD:END
 
 // === Stage 1+2: research each lens, verify its claims as they land ===
 phase('Research')
@@ -329,11 +411,6 @@ const HAS_APS    = TASKS.some(t => Number.isFinite(Number(t.aps)) && Number(t.ap
 // or an em-dash. Testing only for emptiness counted all 11 of No.001's human-only
 // tasks as vendor-served and would have asserted full coverage on every one of
 // those seven roles.
-const NO_VENDOR = /^\s*(no vendor|none|n\/?a|-{1,2}|tbd|unserved)/i
-const unattributed = t => {
-  const v = String(t.vendor || '').trim()
-  return !v || NO_VENDOR.test(v)
-}
 const unserved = HAS_STATUS
   ? TASKS.filter(t => String(t.status).toUpperCase() === 'UNSERVED')
   : TASKS.filter(unattributed)
@@ -396,6 +473,71 @@ ${apsLine}
 
 // ---- SPINE:END
 
+// ---- ECON:BEGIN (extracted by tests/econ_test.mjs -- keep the markers)
+// The Economics brief was written for No.008, which genuinely has no wage and no
+// headcount, and asserted that unconditionally -- "This role has NO wage and NO
+// employment count" -- while directing the calculator at agent compute spend. On
+// Fast Food, which carries $30,480 and 3,796k workers, that is simply false, and
+// it would have produced a compute-budget calculator for a counter job. 9 of the
+// 10 roles in the corpus use the labour model; only No.008 uses compute. So the
+// brief is selected by what the record actually holds.
+const HAS_WAGE = R.wage != null && R.wage !== '' && Number(R.wage) > 0
+const HAS_EMP = R.emp_k != null && Number(R.emp_k) > 0
+
+const ECON_BRIEF = HAS_WAGE ? `
+THE ECONOMICS SECTION -- labour model:
+  This role HAS a published median wage ($${R.wage}) and ${HAS_EMP ? `a US employment count (${R.emp_k}k)` : 'no employment count'}.
+  Build the standard labour-versus-technology calculator: what the human work costs at a given
+  volume, against what the tooling costs to do the automatable share of it.
+  Return an "econ" object with:
+    op: "diff" -- the reader is comparing two costs, not summing them.
+    sliderLabel: the operational volume the reader varies, in this role's own units
+                 (e.g. "Locations Operated", "Transactions per Month"). Never "builds".
+    labourBase: the annual labour cost at baseVolume, in whole dollars, built from the $${R.wage}
+                median wage and a headcount you state in "basis". Do not invent a different wage.
+    techFixed:  the annual cost of the tooling that covers the automatable tasks, in whole dollars,
+                built ONLY from prices that survived verification.
+    baseVolume: the slider's starting value, and the volume labourBase is quoted at.
+    labels: {labour, tech, net} in this role's language, e.g. "Crew Cost", "Platform and Hardware",
+            "Net Annual Difference".
+    basis: one sentence naming EXACTLY the wage, the headcount assumption, and which verified
+           published prices techFixed is built from, including plan names.
+  If NO pricing claim survived verification, set techFixed to 0 and say so plainly in basis. A
+  half-blank calculator is acceptable; an invented price is not. The $${R.wage} wage is a workbook
+  fact and needs no external citation; every technology figure needs a verified source.` : `
+THE ECONOMICS SECTION -- compute model:
+  This role has NO published wage and NO employment count, so a labour-redeployment calculator is
+  impossible and would be fabrication. Build it on the SPEND THE ROLE ITSELF GOVERNS -- the
+  subscription and usage cost of the tools its tasks run on.
+  Return an "econ" object with:
+    op: "sum" -- the two figures ADD to a monthly total; this is a cost model, not a savings model.
+    sliderLabel: what the reader varies, in this role's own units.
+    labourBase: the VARIABLE usage cost incurred at baseVolume, in whole dollars.
+    techFixed:  the FIXED monthly platform/seat cost, in whole dollars.
+    baseVolume: the slider's starting value, and the volume labourBase is quoted at.
+    labels: {labour, tech, net} naming the two cost lines and their total.
+    basis: one sentence naming EXACTLY which verified published prices these two numbers are built
+           from, including plan names. If no pricing claim survived verification, set labourBase and
+           techFixed to 0 and say so plainly in basis -- a blank calculator is acceptable, an
+           invented one is not.
+  Never state a wage or a headcount for this role. Platform user counts are TOOL USERS, never job
+  holders.`
+
+// The Innovators brief likewise asserted No.008's shape -- "the densest vendor
+// layer in the corpus" -- which is false for a role carrying 8 vendors. Counted,
+// not claimed.
+const VN = (D.vendors || []).length
+const V_UNVERIFIED = (D.vendors || []).filter(v => v.verification !== 'VERIFIED' && v.verification !== 'CORRECTED').length
+const INNOVATORS_BRIEF = `- In The Innovators, be accurate about the evidence base: ${VN} vendor${VN === 1 ? '' : 's'} `
+  + `carry task-level evidence for this role`
+  + (V_UNVERIFIED ? `, and ${V_UNVERIFIED} of them ${V_UNVERIFIED === 1 ? 'has' : 'have'} NOT had `
+      + `company-level verification -- name the vendor and describe the product, but state no company fact about `
+      + `${V_UNVERIFIED === VN ? 'any of them' : 'those'}.` : '.')
+  + ` Where the matrix leaves a quadrant empty, that absence is a finding about the market, not a`
+  + ` rendering fault. Do NOT describe this vendor layer as the densest or thinnest in the corpus`
+  + ` unless the data above actually establishes it.`
+// ---- ECON:END
+
 const composePrompt = `${HEAD}
 
 You are writing Automation Anatomy No. ${String(D.issue).padStart(3, '0')} for Replaceable.ai -- long-form
@@ -444,29 +586,13 @@ RULES:
   full:true for full-bleed. No Midjourney flags; aspect ratio is handled downstream.
 - One {"t":"ins","label":...} empirical-anchor callout in s-score.
 - The shift array is a real working day for this role, 8-12 entries, referencing the vendors above.
-- In The Innovators, be explicit that most vendors here are product-confirmed but company-unverified,
-  and that no vendor clears both the breadth and depth bars for the Leader quadrant. That absence is
-  a finding, not a rendering fault: the densest vendor layer in the corpus, and nobody owns the role.
+${INNOVATORS_BRIEF}
 - Cover title: short, arresting, may contain one <em>...</em>. Subtitle: one sentence, no colon.
 
-THE ECONOMICS SECTION -- special handling:
-  This role has NO wage and NO employment count, so the usual labour-redeployment calculator is
-  impossible and would be fabrication. Build it instead on AGENT COMPUTE SPEND, which is what one of
-  the thirteen tasks is literally about: governing agent compute consumption against budget.
-  Return an "econ" object with:
-    op: "sum" -- the two figures ADD to a monthly total; this is a cost model, not a savings model.
-    sliderLabel: what the reader varies (e.g. "Builds Shipped per Month").
-    labourBase: the VARIABLE agent-compute cost incurred at baseVolume builds, in whole dollars.
-    techFixed:  the FIXED monthly platform/seat cost, in whole dollars.
-    baseVolume: the slider's starting value, and the volume labourBase is quoted at.
-    labels: {labour, tech, net} -- e.g. "Agent Compute (variable)", "Platform Seats (fixed)",
-            "Total Monthly Build Spend".
-    basis: one sentence naming EXACTLY which verified published prices these two numbers are built
-           from, including plan names. If no pricing claim survived verification, set labourBase and
-           techFixed to 0 and say so plainly in basis -- a blank calculator is acceptable, an invented
-           one is not.
-  Every figure must trace to VERIFIED PRICING above. Do not estimate, do not average "typical" costs,
-  do not carry a number over from another role.`
+${ECON_BRIEF}
+
+  Every figure must trace to VERIFIED PRICING above. Do not estimate, do not
+  average "typical" costs, and do not carry a number over from another role.`
 
 let draft = null
 for (let attempt = 1; attempt <= 3 && !draft; attempt++) {
