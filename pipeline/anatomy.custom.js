@@ -142,8 +142,13 @@ const AUDIT = {
 
 // -- constraint block: the workbook's own publication limits --
 const C = D.constraints || {}
-const PUBLISHABLE = (D.vendorRoster || []).filter(v => v.canPublishEntityFacts).map(v => v.name)
-const GATED = (D.vendorRoster || []).filter(v => !v.canPublishEntityFacts).map(v => v.name)
+// Only a workbook-sourced role has a vendorRoster; adapt.py roles carry none, and
+// an empty GATED list left the model unaware which vendors were company-unverified.
+// PUBLISHABLE resolving to "(none)" already forbids every entity fact, so falling
+// back to D.vendors only makes the prohibition explicit -- it never widens it.
+const ROSTER = (D.vendorRoster && D.vendorRoster.length) ? D.vendorRoster : (D.vendors || [])
+const PUBLISHABLE = ROSTER.filter(v => v.canPublishEntityFacts).map(v => v.name)
+const GATED = ROSTER.filter(v => !v.canPublishEntityFacts).map(v => v.name)
 
 const LIMITS = `
 PUBLICATION LIMITS -- these come from the source workbook's own verification pass and are NOT negotiable:
@@ -302,6 +307,7 @@ const PRICING_BLOCK = pricing.length
   ? pricing.map(c => `- ${c.text}\n  SOURCE: ${c.source_name}, ${c.source_date} -- ${c.source_url}`).join('\n')
   : '(no pricing claim survived verification)'
 
+// ---- SPINE:BEGIN (extracted verbatim by tests/spine_test.mjs -- keep the markers)
 // ---- spine: DERIVED, never hand-written -------------------------------------
 // A figure typed into a compose prompt is asserted to the model as fact and never
 // reaches a verifier. No.008 was told "APS 49 vs 40" for Software Developers while
@@ -310,9 +316,20 @@ const PRICING_BLOCK = pricing.length
 // assertSpine() halts the run rather than composing from a figure it cannot source.
 const ANCHOR = D.anchorRole || null      // {soc,title,rpi,aps,hrf,source} from data/_anchors.json
 const TASKS  = D.tasks || []
-const unserved = TASKS.filter(t => String(t.status || '').toUpperCase() === 'UNSERVED')
-const byAps    = [...TASKS].sort((a, b) => a.aps - b.aps)
-const lowest   = byAps[0], highest = byAps[byAps.length - 1]
+// Only No.008 carries per-task aps/status: it came from a workbook, the rest came
+// through adapt.py, which emits neither. Reading them blind made this code assert
+// "every task carries vendor evidence" purely because `status` was absent -- a
+// false claim manufactured by the spine itself, which is the exact failure
+// assertSpine exists to stop. So each fact is derived only where its input is real.
+const HAS_STATUS = TASKS.some(t => String(t.status || '').trim())
+const HAS_APS    = TASKS.some(t => Number.isFinite(Number(t.aps)) && Number(t.aps) > 0)
+// empty `vendor` is the fallback coverage signal; on No.008, where both exist,
+// it selects exactly the same task the authoritative status does.
+const unserved = HAS_STATUS
+  ? TASKS.filter(t => String(t.status).toUpperCase() === 'UNSERVED')
+  : TASKS.filter(t => !String(t.vendor || '').trim())
+const byAps    = HAS_APS ? [...TASKS].sort((a, b) => Number(a.aps) - Number(b.aps)) : []
+const lowest   = byAps[0] || null, highest = byAps[byAps.length - 1] || null
 const near = (a, b, tol = 0.2) => Math.abs(a - b) < tol
 
 function assertSpine() {
@@ -322,7 +339,12 @@ function assertSpine() {
     bad.push(`RPI identity: ${S.aps}*(1-${S.hrf}) != ${S.rpi}`)
   const cov = D.readiness && D.readiness.tasksCovered
   if (cov != null && TASKS.length - unserved.length !== cov)
-    bad.push(`task status disagrees with readiness.tasksCovered (${TASKS.length - unserved.length} vs ${cov})`)
+    bad.push(`task coverage disagrees with readiness.tasksCovered (${TASKS.length - unserved.length} vs ${cov})`)
+  if (HAS_STATUS) {   // both signals present -> they must select the same tasks
+    const viaVendor = TASKS.filter(t => !String(t.vendor || '').trim()).length
+    if (viaVendor !== unserved.length)
+      bad.push(`status says ${unserved.length} unserved, empty-vendor says ${viaVendor}`)
+  }
   if (ANCHOR) {
     if (ANCHOR.rpi == null) bad.push('anchorRole carries no rpi')
     if (ANCHOR.aps != null && ANCHOR.hrf != null
@@ -348,13 +370,21 @@ const unservedLine = unserved.length
     + unserved.map(t => `"${t.name}"`).join('; ') + '.'
   : `  Every one of the ${TASKS.length} tasks carries vendor evidence.`
 
+const apsLine = HAS_APS
+  ? '  Lowest automation potential: "' + lowest.name + '" at ' + lowest.aps + '%. '
+    + 'Highest: "' + highest.name + '" at ' + highest.aps + '%.'
+  : '  Per-task automation scores are absent from this role record: do NOT rank tasks by '
+    + 'automation potential, and do NOT state a figure for any single task.'
+
 const SPINE = `WHAT MAKES THIS ROLE DIFFERENT -- the spine of the piece:
 ${anchorLine}
 ${unservedLine}
-  Lowest automation potential: "${lowest.name}" at ${lowest.aps}%. Highest: "${highest.name}" at ${highest.aps}%.
+${apsLine}
   THE WORKBOOK'S OWN VERDICT (authoritative, quote its reasoning not its wording):
   ${String((D.narrative && D.narrative.verdict) || '(none supplied)').replace(/\s+/g, ' ').trim()}
   Write the finding this data supports. Do not reach for a jobs-apocalypse frame the numbers do not carry.`
+
+// ---- SPINE:END
 
 const composePrompt = `${HEAD}
 
